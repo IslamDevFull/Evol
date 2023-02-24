@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    
+    <p id="demo"></p>
+
+    
+    <!-- <script>   (1)
+        function fan(){
+            document.getElementById("demo").innerHTML = "Salom JavaScript";
+        }
+    </script> -->
+
+    <!-- <script>   (2)
+        fan()  *** odatiy xolat chaqirish tepadan uzgaruvchani xam
+
+        function fan(){
+            document.getElementById("demo").innerHTML = "Salom JavaScript";
+        }
+        fan()
+    </script> -->
+      
+    <script>
+
+
+        // let x = fan("Salom");
+        function fan(a){
+            return a;
+        }
+        document.getElementById("demo").innerHTML = fan(25);
+        // document.getElementById("demo").innerHTML = x;
+
+    </script>
+
+    <!-- <script>   (4)
+        let x = fan("Salom ","Dunyo");
+        let x = fan(5 ,2) * 2;
+        function fan(a,b){
+            return a * b
+        }
+        document.getElementById("demo").innerHTML = x;
+
+    </script> -->
+
+    <!-- <script>   (5) Isimsiz funksiya uzgaruvchanga
+        const x = function(a,b){return a * b};
+        document.getElementById("demo").innerHTML = x(5,2);
+    </script> -->
+
+    <!-- <script>   (6) konstruktor funksiya  *** ishlatish shart emas mundan oldingisini xam ishlatsa bo'ladi
+        const myfunction = new Function("a","b", "return a * b");
+        document.getElementById("demo").innerHTML = myfunction(5, 3);
+    </script> -->
+
+    <!-- <script>   (7)
+        (function(){
+            document.getElementById("demo").innerHTML = "Salom JavaScript";
+        })();
+    </script> -->
+
+    <!-- <script>   (8)
+        document.getElementById("demo").innerHTML = fan(3,2,5);
+        function fan(x,b,a){
+            return arguments.length;
+        }
+    </script> -->
+
+    <!-- <script>   (9)
+        const x = (x, y) => x * y;
+        const x = (x, y) => {return x * y};
+        document.getElementById("demo").innerHTML = x(5, 2);
+    </script> -->
+
+    <!-- <script>   (10) undefined
+        function fan(a, b){
+            return a * b;
+            if(b === undefined){
+                b = 2;
+            }
+        }
+        document.getElementById("demo").innerHTML = fan(5)
+    </script> -->
+
+    <!-- <script>   (10.1)
+        function fan(a, b = 2){
+            return a * b;
+        }
+        document.getElementById("demo").innerHTML = fan(6)
+    </script> -->
+    
+    <!-- <script>   (11)   
+        function fan(){
+            let name = document.getElementById("input").value;
+            document.getElementById("demo").innerHTML += name;
+        }
+    </script> -->
+
+
+    <!-- <script>   (11.1)  
+        let a = 4;  global o'zgaruvchan (lokal va global xar-xel o'zgaruvchanlar)
+        fan();
+        function fan(){
+            let a = 4;  lokal o'zgaruvchan  bu yoshintirilga boshqa funcsiyalardan
+            a = 4;      kaletsiz yoligan bo'lsa global deyiladi
+            document.getElementById("demo").innerHTML = a * a;
+        }
+    </script> -->
+   
+                    <!-- <script>   (11.3)
+        let counter = 0;
+        function fan(){
+            // let counter = 0;
+            counter += 1;
+        }
+        fan();
+        fan();
+        document.getElementById("demo").innerHTML = "hisoblagich soni : " + counter;
+    </script> -->
+   
+    <!-- <script>   (11.4)  lokal uzgaruvchani umri qisqa
+        function fan(){
+            let counter = 0;
+            counter += 1;
+            return counter;
+        }
+        function myFan(){
+        document.getElementById("demo").innerHTML = fan();
+        }
+    </script> -->
+    
+    <!-- <script>   (11.5)
+        document.getElementById("demo").innerHTML = fan();
+        function fan(){
+            let counter = 0;
+            function plus(){
+                counter += 1;
+            }
+            plus()
+            plus()
+            return counter;
+        }
+    </script> -->
+   
+    <!-- <script>   (11.6)  Zamikaniya funksiya
+        const fan = (function (){
+            let counter = 0;
+            return function(){counter += 1; return counter;}
+        })();
+        function myFan(){
+            document.getElementById("demo").innerHTML = fan();
+        } 
+   
+    </script>-->
+
+</body>
+</html>

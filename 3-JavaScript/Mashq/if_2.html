@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaxifa if 2</title>
+    <style>
+        .nan{display: none;}
+    </style>
+</head>
+<body>
+    <b>Operator</b><br><b style="margin-left: 15px;">kodi</b> <b style="margin-left: 50px;">Telefon raqami</b><br>
+    <input type="text" id="demo" size="4" placeholder="+998(91)"> <input type="text">
+    <button onclick="fan()">try</button>
+    <h1 id="txt"></h1>
+    <input class="nan" type="text" id="demo1" value="99891"> 
+    <input class="nan" type="text" id="demo2" value="998 91"> 
+    <input class="nan" type="text" id="demo3" value="998(91)"> 
+    <input class="nan" type="text" id="demo4" value="+998(91)"> 
+    <input class="nan" type="text" id="demo5" value="91"> 
+    
+    <script>
+        function fan(){
+            let number = document.getElementById("demo").value;
+            let number1 = document.getElementById("demo1").value;
+            let number2 = document.getElementById("demo2").value;
+            let number3 = document.getElementById("demo3").value;
+            let number4 = document.getElementById("demo4").value;
+            let number5 = document.getElementById("demo5").value;
+            if(number === number1){
+                document.getElementById("txt").innerHTML = "To'g'ri";
+            }
+            else if(number === number2){
+                document.getElementById("txt").innerHTML = "To'g'ri";
+            }
+            else if(number === number3){
+                document.getElementById("txt").innerHTML = "To'g'ri";
+            }
+            else if(number === number4){
+                document.getElementById("txt").innerHTML = "To'g'ri";
+            }
+            else if(number === number5){
+                document.getElementById("txt").innerHTML = "To'g'ri";
+            }
+            else{
+                document.getElementById("txt").innerHTML = "Noto'g'ri";
+            }
+        }
+    </script>
+</body>
+</html>

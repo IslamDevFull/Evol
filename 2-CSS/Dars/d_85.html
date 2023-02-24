@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background-color: white;}
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+            color: red;
+            margin: auto;
+            margin-top: 10px;
+        }
+        .s1,.s2,.s3{background-color: yellow;}
+        .r1,.r2,.r3{background-color: cornflowerblue;}
+        .p1{background-color: coral;}
+        .t1:hover{transform: translate(50px,50px);}
+        .t2:hover{transform: translateX(50px);}
+        .t3:hover{transform: translateY(50px);}
+        .s1:hover{transform: scale(2,2);}
+        .s2:hover{transform: scaleX(2);}
+        .s3:hover{transform: scaleY(2);}
+        .r1:hover{transform: rotate(30deg);}
+        .r2:hover{transform: rotateX(50deg);}
+        .r3:hover{transform: rotateY(50deg);}
+        .p1:hover{transform: perspective(200px) rotateY(50deg);}
+        .w1:hover{transform: skew(10deg,20deg);}
+        .w2:hover{transform: skewX(10deg);}
+        .w3:hover{transform: skewY(20deg);}
+    </style>
+</head>
+<body>
+    <div class="t1">translate()</div>
+    <div class="t2">translateY()</div>
+    <div class="t3">translateX()</div>
+    <div class="s1">scale()</div>
+    <div class="s2">scaleX()</div>
+    <div class="s3">scaleY()</div>
+    <div class="r1">rotate()</div>
+    <div class="r2">rotateX()</div>
+    <div class="r3">rotateY()</div>
+    <div class="p1">perspective()</div>
+    <div class="w1">skew()</div>
+    <div class="w2">skewX()</div>
+    <div class="w3">skewY()</div>
+</body>
+</html>

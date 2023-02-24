@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for</title>
+</head>
+<body>
+    <h2 id="demo"></h2>
+    <!-- <h1 class="d1">Hello World</h1>
+    <h1 class="d1">Hello World</h1>
+    <h1 class="d1">Hello World</h1>
+    <h1 class="d1">Hello World</h1>
+    <h1 class="d1">Hello World</h1> -->
+    <script>
+
+
+
+
+
+
+
+
+
+
+// Mavzu \\
+
+        // 1) for -      blok kodlarni bir necha marta takrorlaydi
+        // 2) for/in -   Ob'ektning xususiyatlarini takrorlaydi
+        // 3) for/of -   Qiymatlar takrorlanadi takrorlanadigan ob'ekt
+        // 4) while -    Berilgan shart rost bo'lganda kodni bloki takrorlanadi
+        // 5) do/while - blok kodlar takrorlanadi berilgan shartni tekshiradi
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        // 1) for -      blok kodlarni bir necha marta takrorlaydi
+
+
+
+
+
+// Misol \\
+        
+        // const cars = ["Matiz", "Nexia", "Cobalt", "Gentra", "Malibu", "Matiz", "Nexia", "Cobalt", "Gentra", "Malibu"];
+        // document.getElementById("demo").innerHTML = cars[0] + "<br>" + cars[1] + "<br>" + 
+        // cars[2] + "<br>" + cars[3] + "<br>" + cars[4] + "<br>" + cars[5] + "<br>" + 
+        // cars[6] + "<br>" + cars[7] + "<br>" + cars[8] + "<br>" + cars[9] + "<br>";
+
+        
+
+
+// Misol \\
+      
+        // const cars = ["Matiz", "Nexia", "Cobalt", "Gentra"];
+
+        // let carsName = "";
+        // for (let i = 0; i < cars.length; i++) {
+        //     carsName += cars[i] + "<br>";
+        //     document.getElementById("demo").innerHTML = carsName;
+        // }
+
+
+
+
+
+
+// (1) \\
+
+// for (Qator 1; Qator 2; Qator 3) 
+// {
+//    block cod
+// }
+
+// 1 - (Qator) o'zgaruvchan yoziladi, block cod bajarilgandan so'ng o'zgaruvchan o'zgaradi.
+
+// 2 - (Qator) shart yoziladi.
+
+        // 3 - (Qator) shart to'g'ri kelgandan so'ng (har safar) block cod bajariladi.
+
+
+
+
+
+
+
+// (2) \\ // Vazifa \\
+
+        // let text = "";
+
+        // for (let i = 0; i < 5; i++) {
+        //       text += "Bu " + i + " raqam" + "<br>";
+        // }
+        // document.getElementById("demo").innerHTML = text;
+
+
+
+
+
+
+// (3) \\ // Vazifa \\
+
+        // let text = "Dekabr" + "<br>";
+
+        // for (let i = 1; i <= 31; i++) {
+        //       text +=  i + "<br>";
+        // }
+        // document.getElementById("demo").innerHTML = text;
+
+
+
+
+
+
+// (4) \\ // bu nima \\
+
+        // const cars = ["Matiz", "Nexia", "Cobalt", "Gentra"];
+        // let i, len, text;
+        // for (i = 0, len = cars.length, text = ""; i < len; i++) {
+        //     text += cars[i] + "<br>";
+        // }
+
+        // document.getElementById("demo").innerHTML = text;
+
+
+
+
+
+// (5) \\ // bu nima \\
+
+        // const cars = ["Matiz", "Nexia", "Cobalt", "Gentra"];
+        // let i, text;
+        // for (i = 0, text = ""; ; i++) {
+            //     text += cars[i] + "<br>";
+            // }
+            
+            // document.getElementById("demo").innerHTML = text;
+            
+            
+            
+            
+// (6) \\ // bu nima \\   
+            
+        // const cars = ["Matiz", "Nexia", "Cobalt", "Gentra"];
+        
+        // let i = 0;
+        // let len = cars.length;
+        // let text = "";
+        // for (; i < len; ) {
+        //     text += cars[i] + "<br>";
+        //     i++;
+        // }
+
+        // document.getElementById("demo").innerHTML = text;
+
+
+
+
+
+
+// (7) \\ // Farqi nimada \\
+
+        // var i = 5;
+        // for (var i = 0; i < 10; i++) {
+        //     // block cod
+        // }
+        // document.getElementById("demo").innerHTML = i;
+
+
+
+        // let i = 5;
+        // for (let i = 0; i < 10; i++) {
+        //     // block cod
+        // }
+        // document.getElementById("demo").innerHTML = i;
+        
+        
+      
+        
+
+
+
+
+
+        
+        
+        
+// (8) \\ // Vazifa \\
+        
+        // var result = 1;
+        // var arr = [2, 3, 4, 5];
+        // for (var i = 0; i < arr.length; i++) {
+        //     result = result * arr[i];
+        // }
+        // document.getElementById("demo").innerHTML = result;
+
+
+
+
+
+
+
+// (9) \\ // Vazifa \\
+
+        // let text = "";
+
+        // for (let i = 0; i <= 50; i+=2) {
+        //       text += "Juft raqamlar " + i + "<br>";
+        // }
+        // document.getElementById("demo").innerHTML = text;
+
+
+
+
+
+// (10) \\ // Vazifa \\
+
+// var i, x;
+// x = document.getElementsByClassName("d1");
+// for(i = 0; i < x.length; i++)
+// {
+//         x[i].style.color = "red";        
+// }
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+                // 2) for/in -   Ob'ektning xususiyatlarini takrorlaydi
+
+
+// (3) \\
+
+// const obj = {name:"Islam", lastName:"Fayzullayev", age: 28}
+// let text = "";
+// for(let x in obj){
+//         text += obj[x] + " ";
+
+// }
+
+// document.getElementById("demo").innerHTML = text;
+
+
+
+
+// (4) \\
+
+// const numbers = [15,20, 1 ,16, 50, 10];
+
+// let text = "";
+// for(let x in numbers)
+// {
+//     text +=numbers[x] + " " + "<br>";
+// }
+// document.getElementById("demo").innerHTML = text;
+
+
+
+
+
+
+
+// (3) \\ // Vazifa \\
+
+// const obj = {
+//         Uzbekistan:"Toshkent",
+//         Rossiya:"Moskva",
+//         Yaponiya:"Tokiyo"
+// }
+
+// let text = "";
+// for(let x in obj){
+//         text += x + " bu " +  obj[x] + " " + "<br>";
+// }
+
+// document.getElementById("demo").innerHTML = text;
+
+
+
+
+
+// (5) \\
+
+// const numbers = [15,20, 1 ,16, 50, 10];
+
+// let text = "";
+// for(let x in numbers)
+// {
+//     text += x + " - " + numbers[x] + "<br>";
+// }
+// document.getElementById("demo").innerHTML = text;
+
+
+
+////////////////////////////////////////////////////////////////////////////
+
+// 3) for/of -   Qiymatlar takrorlanadi takrorlanadigan ob'ekt
+
+
+
+// (1) \\
+
+// let language = "JavaScript";
+
+// let text = "";
+// for (let x of language) {
+//   text += x + "<br>";
+// }
+
+// document.getElementById("demo").innerHTML = text;
+
+
+
+// (2) \\
+
+// const cars = ["BMW", "Volvo", "Mini"];
+
+// let text = "";
+// for (let x of cars) {
+//   text += x + "<br>";
+// }
+
+// document.getElementById("demo").innerHTML = text;
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+// 4) while -    Berilgan shart rost bo'lganda kodni bloki takrorlanadi
+
+
+// (1) \\
+
+// let text = "";
+// let i = 0;
+// while (i < 10) {
+//   text += "<br>The number is " + i;
+//   i++;
+// }
+// document.getElementById("demo").innerHTML = text;
+
+
+
+// (2) \\
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford"];
+
+// let i = 0;
+// let text = "";
+// for (;cars[i];) {
+//   text += cars[i] + "<br>";
+//   i++;
+// }
+
+// document.getElementById("demo").innerHTML = text;
+
+
+
+
+// (3) \\
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford"];
+
+// let i = 0;
+// let text = "";
+// while (cars[i]) {
+//   text += cars[i] + "<br>";
+//   i++;
+// }
+
+// document.getElementById("demo").innerHTML = text;
+
+
+
+/////////////////////////////////////////////////////////////////////////////////
+
+
+// 5) do/while - blok kodlar takrorlanadi berilgan shartni tekshiradi
+
+
+
+// (1) \\
+
+// let text = ""
+// let i = 11;
+
+// do {
+//   text += "<br>The number is " + i;
+//   i++;
+// }
+// while (i < 10);  
+
+// document.getElementById("demo").innerHTML = text;
+
+
+    </script>
+</body>
+</html>

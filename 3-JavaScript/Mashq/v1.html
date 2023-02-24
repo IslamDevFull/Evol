@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    <select id="b">
+        <option hidden value="">Til</option>
+        <option value="UZB">UZB</option>
+        <option value="RUS">RUS</option>
+    </select>
+    <button onclick="fan()">Try</button><br><br>
+    <b id="demo"></b>
+    <b id="demo1"></b>
+    <b id="demo2"></b>
+    <b id="demo3"></b>
+    <b id="demo4"></b>
+    <b id="demo5"></b>
+    <b id="demo6"></b>
+    <!-- <script>
+        function fan(demo){
+            if(demo == 1){
+                document.getElementById("demo").innerHTML = "Dushanbe";
+            }
+           else if(demo == 2){
+                document.getElementById("demo").innerHTML = "Seshanbe";
+            }
+            else if(demo == 3){
+                document.getElementById("demo").innerHTML = "chorshanbe";
+            }
+            else if(demo == 4){
+                document.getElementById("demo").innerHTML = "payshanbe";
+            }
+            else if(demo == 5){
+                document.getElementById("demo").innerHTML = "juma";
+            }
+            else if(demo == 6){
+                document.getElementById("demo").innerHTML = "shanbe";
+            }
+            else if(demo == 7){
+                document.getElementById("demo").innerHTML = "yakshanbe";
+            }
+        }
+        // fan(5)
+    </script> -->
+    <!-- <script>
+        function fan(){
+            let num = document.getElementById("b").value;
+            switch(num){
+                case "1":
+                name = " Qish";
+                break;
+                case "2":
+                name = " Bahor";
+                break;
+                case "3":
+                name = " Yoz";
+                break;
+                case '4':
+                name = " Kuz";
+                break;
+                default:
+                name = " Nomalum son";
+
+            }
+        document.getElementById("demo").innerHTML = "Xozir bizlarga" + name;            
+        }
+    </script> -->
+    <script>
+        function fan(){
+            let num = document.getElementById("b").value;
+            switch(num){
+                case "UZB":
+                    document.getElementById("demo").innerHTML = "Dushanba";
+                    document.getElementById("demo1").innerHTML = "Seshanba";
+                    document.getElementById("demo2").innerHTML = "Chorshanba";
+                    document.getElementById("demo3").innerHTML = "Payshanba";
+                    document.getElementById("demo4").innerHTML = "Juma";
+                    document.getElementById("demo5").innerHTML = "Shanba";
+                    document.getElementById("demo6").innerHTML = "Yakshanba";
+                    break;
+                    case "RUS":
+                    document.getElementById("demo").innerHTML = "Понидельник";
+                    document.getElementById("demo1").innerHTML = "Вторник";
+                    document.getElementById("demo2").innerHTML = "Среда";
+                    document.getElementById("demo3").innerHTML = "Четверг";
+                    document.getElementById("demo4").innerHTML = "Пятница";
+                    document.getElementById("demo5").innerHTML = "Суббота";
+                    document.getElementById("demo6").innerHTML = "Воскресение";
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

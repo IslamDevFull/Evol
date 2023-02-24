@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .box{
+            padding: 40px;
+            background-color: #333;
+            color: wheat;
+            font-size: 30px;
+            border-radius: 50px 0;
+            margin-top: 250px;
+            margin-left: 250px;
+            border: 5px solid grey;
+        }
+    </style>
+</head>
+<body>
+    <!-- ...............1) Vazifa............................... -->
+    <!-- <h1 id="demo1">JavaScript</h1>
+    <h1 id="demo2">jQuery</h1> -->
+    <!-- ...............2) Vazifa........................................ -->
+    <!-- <h1 class="b" id="demo1">HTML</h1>
+    <h1 class="b" id="demo2">CSS</h1>
+    <h1 class="b" id="demo3">JavaScript</h1>
+    <h1 class="b" id="demo4">jQuery</h1> -->
+
+    <!-- ...............3) Vazifa........................................ -->
+    <!-- <h1 id="demo1">HTML</h1>
+    <h1 id="demo2">CSS</h1>
+    <h1 id="demo3">JavaScript</h1>
+    <h1 id="demo4">jQuery</h1> -->
+
+    <!-- .............4) Vazifa................................. -->
+    <!-- <div id="demo"></div> -->
+    
+    <!-- .............5) Vazifa................................. -->
+    <!-- <button></button> -->
+    <!-- .............6) Vazifa................................. -->
+    <!-- <h2>Hello World</h2>
+    <h2>Hello World</h2>
+    <h2>Hello World</h2>
+    <button></button> -->
+        
+        
+    <!-- .............7) Vazifa................................. -->
+    <button></button>
+
+
+    <script>
+
+// .........................1) Vazifa.........................................\\
+
+// let demo = $("#demo2").html();
+// $("#demo1").html(demo);
+
+
+// .........................2) Vazifa.........................................\\
+
+// let demo = $("#demo4").html();
+// $(".b").html(demo);
+
+// .........................3) Vazifa.........................................\\
+
+// $("#demo4").css({color:"red",fontSize:"50px"})
+
+
+// .........................4) Vazifa.........................................\\
+
+// $("#demo").html("<h1>JavaScript</h1><h1>jQuery</h1>");
+
+
+
+// .........................5) Vazifa.........................................\\
+
+// $("button").addClass("box").text("Click")
+
+
+
+// .........................6) Vazifa.........................................\\
+
+// $(document).ready(function(){
+//         $("button").dblclick(function(){
+//         $("h2").hide();
+//     }).addClass("box").text("button");
+// })
+
+
+
+// .........................7) Vazifa.........................................\\
+
+$("button").mouseenter(function(){
+    alert("Hello jQuery");
+    $("button").css({backgroundColor:"green",color:"black",border:"5px outset grey"});
+}).addClass("box").text("Button").dblclick(function(){
+    alert("double click jQuery");
+    $("button").css({backgroundColor:"green",color:"black",border:"5px inset grey",outline:"5px solid grey",outlineOffset:"5px"});
+}).mouseleave(function(){
+    alert("Bye jQuery");
+    $("button").css({backgroundColor:"#333",color:"wheat",border:"5px solid grey",outline:"0px solid grey",outlineOffset:"5px"});
+});
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

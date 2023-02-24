@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masiv</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+
+
+////////////////////////////////////// Array (Masiv) \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+
+        // const car = "Nexia";
+        // const car1 = "Matiz";
+        // const car3 = "Gentra";
+        // document.getElementById("demo").innerHTML = car;
+        
+                                                                                // 300 uzgaruvchan yaratkandan ko'ra masiv ishlatish yaxshi
+
+
+                            // 1 \\
+        // const cars = ["Nexia","Matiz","Gentra"];
+        // document.getElementById("demo").innerHTML = cars;
+
+                            // 2 \\
+        // const cars = new Array("Nexia","Matiz","Gentra");
+        // document.getElementById("demo").innerHTML = cars;
+        
+
+                
+                // 3 \\
+        const cars = ["Nexia","Matiz","Gentra"];
+        document.getElementById("demo").innerHTML = typeof cars;
+        
+        
+        
+        
+        
+        
+        // const cars = ["Nexia","Matiz","Gentra"];
+        // document.getElementById("demo").innerHTML = cars instanceof Array ;
+
+
+
+
+
+
+
+
+        // const cars = [
+        //     "Nexia",
+        //     "Matiz",
+        //     "Gentra"
+        // ];
+        // document.getElementById("demo").innerHTML = cars;
+        
+
+        
+
+
+
+
+        // const cars = [];
+        // cars[0]="Nexia";
+        // cars[1]="Matiz";
+        // cars[2]="Gentra";
+        // document.getElementById("demo").innerHTML = cars;
+        
+        
+
+
+        
+        
+        
+        
+
+
+        
+////////////////////////  Vazifa \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
+
+        // const cars = ["Nexia","Matiz","Gentra"];
+        // cars[0]="Cobalt";
+        // document.getElementById("demo").innerHTML = cars;
+        
+        
+        
+        
+
+
+
+        
+        // const person = ["Fayzullayev","Islam",27];
+        // document.getElementById("demo").innerHTML = person[1];
+        
+        
+        
+        
+
+
+        
+        
+        
+        
+        /////////////////////////////////  Vazifa \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
+        // const cars = ["Nexia","Matiz","Gentra"];
+        // let myCarsLangth = cars.length;
+        // document.getElementById("demo").innerHTML = myCarsLangth;
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        /////////////////////////////////////  Vazifa \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
+                                // 1 \\
+        // const cars = ["Nexia","Matiz","Gentra","Matiz","Nexia","Gentra"];
+        // document.getElementById("demo").innerHTML = cars[cars.length-1];
+        
+                                // 2 \\
+        // const cars = ["Nexia","Matiz","Gentra","Malibu"];
+        // document.getElementById("demo").innerHTML = cars.pop();
+                                // 33 \\
+        // const cars = ["Nexia","Matiz","Gentra"];
+        // document.getElementById("demo").innerHTML = cars.shift();
+        
+        
+        
+        
+        
+                            // 1 \\
+        // const cars = ["Nexia","Matiz","Gentra"];
+        // cars.push("Malibu");
+        // document.getElementById("demo").innerHTML = cars;
+        
+                            // 2 \\
+        // const cars = ["Nexia","Matiz","Gentra"];
+        // cars[cars.length] = "Malibu";
+        // document.getElementById("demo").innerHTML = cars;
+                            // 3 \\
+        // const cars = ["Nexia","Matiz","Gentra"];
+        // cars[cars.length] = "Malibu";
+        // cars.unshift("Tayota");
+        // document.getElementById("demo").innerHTML = cars;
+        
+        
+        
+
+
+
+
+        
+                        // 1 \\
+        // const cars = ["Nexia","Matiz","Gentra"];
+        // cars[cars.length] = "Malibu";
+        // cars.shift();
+        // document.getElementById("demo").innerHTML = cars;
+        
+                        // 2 \\
+        // const cars = ["Nexia","Matiz","Gentra","Malibu"];
+        // cars.pop();
+        // document.getElementById("demo").innerHTML = cars;
+        
+        
+        
+        
+        
+        
+        
+        
+        // ==================================================================================================================================================================       
+        
+        
+        // const cars = ["Nexia","Matiz","Gentra"];
+        // document.getElementById("demo").innerHTML = cars.join("*");
+        
+        
+        
+        // const meva = ["Olma","Uzum","Banan","Mango","Mandarin","Gilos"];
+        // document.getElementById("demo").innerHTML = meva;
+        
+        
+        
+        
+        
+        
+        // const meva = ["Olma","Uzum","Banan","Mango"];
+        // document.getElementById("demo").innerHTML = meva;
+        
+        
+        
+        
+        
+        
+        /////////////////////////////////////  Vazifa \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
+        // const number = [25, 100, 1, 10, 5, 40];
+        // // number.sort(function(a,b){return a - b});
+        // document.getElementById("demo").innerHTML = number;
+        
+        
+        
+
+
+        /////////////////////////////////////  Vazifa \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
+        // Eng kata soni topish kerak
+        // const number = [25, 100, 1, 10, 5, 40];
+        // // number.sort(function(a,b){return a - b});
+        // document.getElementById("demo").innerHTML = number;
+
+
+
+
+
+
+
+
+//       1)  length                     Masivni Uzunligi
+//       2)  typeof                     Masivni Turi
+//       3)  instanceof Array           Masivligini aniqlayudi masiv bo'lsa true
+//       4)  toString()                 Masivni qiymatlarini turini string qiladi (masiv odatiy string)
+//       5)  join()                     Masivni qiymatlarini orasiga belgi qoysa bo'ladi (odatiy vergul belgisi bo'ladi)
+//       6)  pop()                      Masivni oxirgi qiymatini o'chiradi
+//       7)  push()                     Masivni oxiriga yangi qiymat qo'shadi
+//       8)  shift()                    Masivni bosh qismidagi qiymatni o'chiradi
+//       9)  unshift()                  Masivni bosh qismiga yangi qiymat qo'shadi
+//       10) concat()                   Masivnilarni bir biriga qo'shadi
+//       11) splice(1,1,"name")         Masivni ichidagi qiymatlarini o'chirib va qo'shib bo'ladi
+//       12) slice(1,3)                 Masivni qiymatlarini olib o'chirib yangi qiymat yaratadi
+//       13) sort()                     massivni qiymatlarini alifbo tartibida joylashtiradi 
+//       14) reverse()                  massivni qiymatlarini teskari ko'rsatadi 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

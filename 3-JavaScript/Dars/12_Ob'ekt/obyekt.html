@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obyekt</title>
+</head>
+<body>
+
+    <p id="demo"></p>
+    
+    <!--  Объекты JavaScript — это контейнеры для именованных значений, называемых свойствами. -->
+    <script>
+
+        const car = {type:"Nexia", model: 2, color:"Kulrang"};
+
+        document.getElementById("demo").innerHTML = " Mening moshinim  " + car.type + " modeli " + car.model + " Rangi " + car.color;
+        // document.getElementById("demo").innerHTML = " Mening moshinim  " + car["type"] + " modeli " + car["model"] + " Rangi " + car["color"];
+        
+   
+    const person = {
+        name:"Islom",
+        lastName:"Fayzullayev",
+        age:27,
+        fullName:function(){
+            return this.name + " " + this.lastName;
+        }
+    };
+    document.getElementById("demo").innerHTML = person.fullName();
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+</script>
+    </body>
+</html>

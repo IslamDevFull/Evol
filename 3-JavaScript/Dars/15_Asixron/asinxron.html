@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asixron</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <script>
+
+/*
+                    Asinxron
+    Qayta chaqirish - bu boshqa funktsiyaga argument sifatida uzatiladigan funktsiya.
+
+    Bu usul funksiyaga boshqa funksiyani chaqirish imkonini beradi
+
+    Qayta chaqirish funktsiyasi boshqa funktsiya tugagandan so'ng bajarilishi mumkin.
+*/
+
+
+
+        //  1) Misol
+
+// function fan(demo)
+// {
+//     document.getElementById("demo").innerHTML = demo;
+// }
+
+// function first()
+// {
+//     fan("Hello");
+// }
+// function second()
+// {
+//     fan("Goodbye");
+// }
+
+// first();
+// second();
+
+
+
+
+
+        //  2) Misol va vazifa
+
+// function fan(demo)
+// {
+//     document.getElementById("demo").innerHTML = demo;
+// }    
+
+//  function calculator(num1, num2)
+//  {
+//     let sum = num1 + num2;
+//     return sum;
+//  }
+
+//  let result = calculator(10,10);
+
+//  fan(result);  /* vazifa */
+
+
+
+
+
+
+        //   3) Misol
+
+// function fan(demo)
+// {
+//     document.getElementById("demo").innerHTML = demo;
+// }    
+
+//  function calculator(num1, num2)
+//  {
+//     let sum = num1 + num2;
+//     fan(sum);  /* vazifa */
+//  }
+
+//  calculator(10,10);
+
+
+
+
+
+        //  4) misol
+
+// function fan(demo)
+// {
+//     document.getElementById("demo").innerHTML = demo;
+// }
+
+
+// function calculator(num1, num2, myFan)
+// {
+//    let sum = num1 + num2;
+//    myFan(sum); 
+// }
+
+// calculator(20, 10, fan);  /* Vazifa */
+
+
+
+
+
+        //  5) Misol
+
+// setTimeout(fan, 5000);
+
+// function fan() 
+// {
+//     document.getElementById("demo").innerHTML = "Hello World";
+// }
+
+
+
+
+        //  6)  Misol va Vazifa
+
+// setTimeout(function(){fan("Hello World");}, 5000)  /* Vazifa */
+
+// function fan(demo)
+// {
+//     document.getElementById("demo").innerHTML = demo;
+// }
+
+
+
+
+
+        //  7 ) misol 
+
+
+//     setInterval(fan, 1000)
+
+//     function fan()
+//     {
+//         document.getElementById("demo").innerHTML += "Hello World" + "<br>"; 
+//     }
+
+
+
+
+
+        //  8) Vazifa
+
+// setInterval(fan, 1000);
+
+// function fan()
+// {
+//     const time = new Date();
+//     document.getElementById("demo").innerHTML = time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds();
+// }
+
+
+
+
+
+
+
+        //  8) Vazifa
+
+setTimeout(fan,400);
+setTimeout(fan1,800);
+setTimeout(fan2,1000);
+setTimeout(fan3,1200);
+setTimeout(fan4,1400);
+setTimeout(fan5,1600);
+setTimeout(fan6,1800);
+setTimeout(fan7,2000);
+setTimeout(fan8,2200);
+setTimeout(fan9,2400);
+setTimeout(fan10,2600);
+setTimeout(fan11,2800);
+setTimeout(fan12,3000);
+setTimeout(fan13,3200);
+setTimeout(fan14,3400);
+setTimeout(fan15,3600);
+setTimeout(fan16,3800);
+setTimeout(fan17,4000);
+setTimeout(fan18,4200);
+setTimeout(fan19,4400);
+setTimeout(fan20,4600);
+setTimeout(fan21,4800);
+setTimeout(fan22,5000);
+setTimeout(fan23,5200);
+setTimeout(fan24,5400);
+setTimeout(fan25,5600);
+setTimeout(fan26,5800);
+setTimeout(fan27,6000);
+setTimeout(fan28,6200);
+setTimeout(fan29,6400);
+setTimeout(fan30,6600);
+setTimeout(fan31,6800);
+setTimeout(fan32,7000);
+
+
+function fan()
+{
+    // const alfa = ["d","a","s","t","u","r","l","a","s","h"];
+    // var i,result;
+    // for(i = 0; i < alfa.length; i++)
+    // {
+    //     result += alfa[i] + "<br>";
+    // }
+    document.getElementById("demo").innerHTML += "D";
+}
+function fan1()
+{
+    document.getElementById("demo").innerHTML += "a";
+}
+function fan2()
+{
+    document.getElementById("demo").innerHTML += "s";
+}
+function fan3()
+{
+    document.getElementById("demo").innerHTML += "t";
+}
+function fan4()
+{
+    document.getElementById("demo").innerHTML += "u";
+}
+function fan5()
+{
+    document.getElementById("demo").innerHTML += "r";
+}
+function fan6()
+{
+    document.getElementById("demo").innerHTML += "l";
+}
+function fan7()
+{
+    document.getElementById("demo").innerHTML += "a";
+}
+function fan8()
+{
+    document.getElementById("demo").innerHTML += "s";
+}
+function fan9()
+{
+    document.getElementById("demo").innerHTML += "h";
+}
+function fan10()
+{
+    document.getElementById("demo").innerHTML += " ";
+}
+function fan11()
+{
+    document.getElementById("demo").innerHTML += "K";
+}
+function fan12()
+{
+    document.getElementById("demo").innerHTML += "u";
+}
+function fan13()
+{
+    document.getElementById("demo").innerHTML += "r";
+}
+function fan14()
+{
+    document.getElementById("demo").innerHTML += "s";
+}
+function fan15()
+{
+    document.getElementById("demo").innerHTML += "i";
+}
+function fan16()
+{
+    document.getElementById("demo").innerHTML += " ";
+}
+function fan17()
+{
+    document.getElementById("demo").innerHTML += "I";
+}
+function fan18()
+{
+    document.getElementById("demo").innerHTML += "s";
+}
+function fan19()
+{
+    document.getElementById("demo").innerHTML += "l";
+}
+function fan20()
+{
+    document.getElementById("demo").innerHTML += "o";
+}
+function fan21()
+{
+    document.getElementById("demo").innerHTML += "m";
+}
+function fan22()
+{
+    document.getElementById("demo").innerHTML += " ";
+}
+function fan23()
+{
+    document.getElementById("demo").innerHTML += "R";
+}
+function fan24()
+{
+    document.getElementById("demo").innerHTML += "a";
+}
+function fan25()
+{
+    document.getElementById("demo").innerHTML += "x";
+}
+function fan26()
+{
+    document.getElementById("demo").innerHTML += "i";
+}
+function fan27()
+{
+    document.getElementById("demo").innerHTML += "m";
+}
+function fan28()
+{
+    document.getElementById("demo").innerHTML += "o";
+}
+function fan29()
+{
+    document.getElementById("demo").innerHTML += "v";
+}
+function fan30()
+{
+    document.getElementById("demo").innerHTML += "i";
+}
+function fan31()
+{
+    document.getElementById("demo").innerHTML += "c";
+}
+function fan32()
+{
+    document.getElementById("demo").innerHTML += "h";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
