@@ -76,20 +76,18 @@
     <script src="htmlmixed.js"></script>
     <title>Evolution</title>
     <style>
-        *{
-            box-sizing: border-box;
-        }
+        *{box-sizing: border-box;}
+        summary{font-size: 30px; font-weight: bold;}
+        .option{color: blue;}
         .col-1{
-            /* border: 2px solid yellow; */
-            height: 500px;
+            border: 2px solid yellow;
         }
         .col-2{
-            /* border: 2px solid blue; */
-            height: 500px;
+            border: 2px solid blue;
         }
         .edit{
             float: left;
-            /* border: 2px solid red; */
+            border: 2px solid red;
             width: 50%;
         }
         .frame{
@@ -120,14 +118,37 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="doc">Document</h1>
-        <div class="col-1"></div>
-        <div class="col-2">
+        <details>
+            <summary><code><</code><code>h1</code><code>></code></summary>
+            <div class="col-1">
+                <h3><span class="option">Vazifasi :</span> Определяет заголовок первого уровня.</h3>
+            </div>
+            <div class="col-2" style="height: 500px;">
+                <div class="btn">
+                    <button onclick="code()">Tekshirish</button>
+                </div>
+                <div class="edit">
+                    <textarea class="editor"><h1>Sarlavha 1</h1></textarea>
+                </div>
+                <div class="frame">
+                    <iframe class="iframe"></iframe>
+                </div>
+            </div>
+        </details>
+        </div>
+<details><summary>Document</summary>
+    <div class="container">
+    <details>
+        <summary><code><</code><code>!DOCTYPE html</code><code>></code></summary>
+        <div class="col-1">
+            <h3><span class="option">Vazifasi :</span> Декларация, которая определяет тип документа, помогая браузеру отобразить веб-страницу правильно.</h3>
+        </div>
+        <div class="col-2" style="height: 500px;">
             <div class="btn">
                 <button onclick="code()">Tekshirish</button>
             </div>
             <div class="edit">
-                <textarea id="editor">
+                <textarea class="editor">
 <!DOCTYPE html>
 <html>
     <head>
@@ -139,13 +160,129 @@
 </html></textarea>
             </div>
             <div class="frame">
-                <iframe id="iframe"></iframe>
+                <iframe class="iframe"></iframe>
             </div>
         </div>
+    </details>
     </div>
+    <div class="container">
+        <details>
+            <summary><code><</code><code>html</code><code>></code></summary>
+            <div class="col-1">
+                <h3><span class="option">Vazifasi :</span> Сообщает браузеру, что необходимо прочитать документ как программный код, написанный на языке HTML.</h3>
+            </div>
+            <div class="col-2" style="height: 500px;">
+                <div class="btn">
+                    <button onclick="code()">Tekshirish</button>
+                </div>
+                <div class="edit">
+                    <textarea class="editor">
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Mening Saytim</title>
+        </head>
+        <body>
+            <!-- Bu yerda Xamma kodlar yoziladi -->
+        </body>
+    </html></textarea>
+                </div>
+                <div class="frame">
+                    <iframe class="iframe"></iframe>
+                </div>
+            </div>
+        </details>
+    </div>
+    <div class="container">
+        <details>
+            <summary><code><</code><code>head</code><code>></code></summary>
+            <div class="col-1">
+                <h3><span class="option">Vazifasi :</span> Содержит информацию о документе (сведения о документе, которые не отображаются пользователю).</h3>
+            </div>
+            <div class="col-2" style="height: 500px;">
+                <div class="btn">
+                    <button onclick="code()">Tekshirish</button>
+                </div>
+                <div class="edit">
+                    <textarea class="editor">
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Mening Saytim</title>
+        </head>
+        <body>
+            <!-- Bu yerda Xamma kodlar yoziladi -->
+        </body>
+    </html></textarea>
+                </div>
+                <div class="frame">
+                    <iframe class="iframe"></iframe>
+                </div>
+            </div>
+        </details>
+    </div>
+    <div class="container">
+        <details>
+            <summary><code><</code><code>title</code><code>></code></summary>
+            <div class="col-1">
+                <h3><span class="option">Vazifasi :</span> Обеспечивает название для документа.</h3>
+            </div>
+            <div class="col-2" style="height: 500px;">
+                <div class="btn">
+                    <button onclick="code()">Tekshirish</button>
+                </div>
+                <div class="edit">
+                    <textarea class="editor">
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Mening Saytim</title>
+        </head>
+        <body>
+            <!-- Bu yerda Xamma kodlar yoziladi -->
+        </body>
+    </html></textarea>
+                </div>
+                <div class="frame">
+                    <iframe class="iframe"></iframe>
+                </div>
+            </div>
+        </details>
+    </div>
+    <div class="container">
+        <details>
+            <summary><code><</code><code>body</code><code>></code></summary>
+            <div class="col-1">
+                <h3><span class="option">Vazifasi :</span> Определяет видимое содержимое страницы.</h3>
+            </div>
+            <div class="col-2" style="height: 500px;">
+                <div class="btn">
+                    <button onclick="code()">Tekshirish</button>
+                </div>
+                <div class="edit">
+                    <textarea class="editor">
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Mening Saytim</title>
+        </head>
+        <body>
+            <!-- Bu yerda Xamma kodlar yoziladi -->
+        </body>
+    </html></textarea>
+                </div>
+                <div class="frame">
+                    <iframe class="iframe"></iframe>
+                </div>
+            </div>
+        </details>
+    </div>
+</details>
     <script>
         // ..............Editor...............\\
-        var editor = CodeMirror.fromTextArea(document.getElementById("editor"),{
+        var cod = document.getElementsByClassName("editor");
+        for(let i = 0; i < cod.length; i++){
+        var editor = CodeMirror.fromTextArea(cod[i],{
             mode: "htmlmixed",
             lineNumbers: true,
             // theme: "3024-day"
@@ -215,13 +352,17 @@
             // theme: "zenburn"
         });
         editor.setSize("915","400");
+    }
         // .............scren............\\
         code();
+        var iframe = document.getElementsByClassName("iframe");
+            for(let i = 0; i < iframe.length; i++){
+                i.contentWindow.document;
         function code(){
             var codeValue = editor.getValue();
-            var iframe = document.getElementById("iframe").contentWindow.document;
             iframe.write(codeValue);
             iframe.close();
+            }
         }
         // .............SlideDown............\\
         // $(document).ready(function(){

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./1-HTML/Dars/codemirror.css">
+    <link rel="stylesheet" href="./1-HTML/Dars/theme/dracula.css">
+    <link rel="stylesheet" href="./1-HTML/Dars/theme/panda-syntax.css">
+    <script src="./1-HTML/Dars/codemirror.js"></script>
+    <script src="./1-HTML/Dars/xml.js"></script>
+    <script src="./css.js"></script>
+    <script src="./javascript.js"></script>
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        .container{
+            height: 1500px;
+        }
+        .html{
+            border: 2px solid red;
+            width: 100%;
+            height: 400px;
+            margin-bottom: 50px;
+        }
+        .css{
+            border: 2px solid red;
+            width: 100%;
+            height: 400px;
+            margin-bottom: 50px;
+        }
+        .javascript{
+            border: 2px solid red;
+            width: 100%;
+            height: 400px;
+        }
+        .col-1{
+            border: 2px solid blue;
+            width: 50%;
+            float: left;
+            height: 400px;
+            text-align: center;
+            font-size: 30px;
+            background-color: powderblue;
+        }
+        .col-2{
+            border: 2px solid green;
+            width: 50%;
+            float: left;
+            height: 400px;
+        }
+        a{
+            background-color: #333;
+            color: yellowgreen;
+            padding: 10px 20px;
+            font-size: 20px;
+            border: 5px outset #333;
+            border-radius: 20px 0;
+            text-decoration: none;
+        }
+        a:active{
+            border: 5px inset #333;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="html">
+            <div class="col-1">
+                <h1>HTML</h1>
+                <a href="./1-HTML/Dars/Index.html" target="_blank">Dars</a>
+                <a href="./1-HTML/Mashq/index.html" target="_blank">Vazifa</a>
+            </div>
+            <div class="col-2">
+                <textarea id="editor">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Sarlavha 1</h1>       
+        <h2>Sarlavha 2</h1>       
+        <p>Paragraf</p>       
+        <p>Ikkinchi Paragraf</p>       
+    </body>
+    </html></textarea>
+            </div>
+        </div>
+        <div class="css">
+            <div class="col-1" style="background-color: violet;">
+                <h1>CSS</h1>
+                <a href="./2-CSS/Dars/Index.html" target="_blank">Dars</a>
+                <a href="./2-CSS/Mashq/index.html" target="_blank">Vazifa</a>
+            </div>
+            <div class="col-2">
+                <textarea id="editor-1">
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{ background-color: powderblue; }
+h1{
+    padding: 30px;
+    font-family: 'Franklin Gothic Medium';
+    color: #333;
+}
+p{
+    margin-top: 50px;
+    border: solid 2px red;
+    width: 50%;
+}</textarea>
+            </div>
+        </div>
+        <div class="javascript">
+            <div class="col-1" style="background-color: yellow;">
+                <h1>JavaScript</h1>
+                <a href="./3-JavaScript/Dars/index.html" target="_blank">Dars</a>
+                <a href="./3-JavaScript/Mashq/index.html" target="_blank">Vazifa</a>
+            </div>
+            <div class="col-2">
+                <textarea id="editor-2">
+var name = document.getElementsByClassName("demo");
+function fan(){
+    let text = "";
+    for(let i = 0; i < demo.length; i++){
+        text = name[i].style.color = "blue";
+    };
+    if(text == 1){
+        name.style.color = "red";
+    };
+    else if(text == 2){
+        name.style.color = "green";
+    };
+    else{
+        name.style.color = "red";
+    };
+};</textarea>
+            </div>
+        </div>
+    </div>
+    <script>
+        ///////// HTML \\\\\\\\\
+        var editor = CodeMirror.fromTextArea(document.getElementById("editor"),{
+            mode: "xml",
+            lineNumbers: true,
+            // theme: "dracula"
+            theme: "panda-syntax"
+        });
+        editor.setSize("100%","400")
+        ///////// CSS \\\\\\\\\
+        var editor_1 = CodeMirror.fromTextArea(document.getElementById("editor-1"),{
+            mode: "css",
+            lineNumbers: true,
+            // theme: "dracula"
+            theme: "panda-syntax"
+        });
+        editor_1.setSize("100%","400")
+        ///////// javaScript \\\\\\\\\
+        var editor_2 = CodeMirror.fromTextArea(document.getElementById("editor-2"),{
+            mode: "javascript",
+            lineNumbers: true,
+            // theme: "dracula"
+            theme: "panda-syntax"
+        });
+        editor_2.setSize("100%","400")
+    </script>
+</body>
+</html>
