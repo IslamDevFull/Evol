@@ -85,7 +85,7 @@
         .col-2{
             border: 2px solid blue;
         }
-        .edit{
+        .editor{
             float: left;
             border: 2px solid red;
             width: 50%;
@@ -117,27 +117,188 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <details>
-            <summary><code><</code><code>h1</code><code>></code></summary>
-            <div class="col-1">
-                <h3><span class="option">Vazifasi :</span> Определяет заголовок первого уровня.</h3>
-            </div>
-            <div class="col-2" style="height: 500px;">
-                <div class="btn">
-                    <button onclick="code()">Tekshirish</button>
-                </div>
-                <div class="edit">
-                    <textarea class="editor"><h1>Sarlavha 1</h1></textarea>
-                </div>
-                <div class="frame">
-                    <iframe class="iframe"></iframe>
-                </div>
-            </div>
-        </details>
+<details>
+    <summary><code><</code><code>h1</code><code>></code></summary>
+    <div class="col-1">
+        <h3><span class="option">Vazifasi :</span> Определяет заголовок первого уровня.</h3>
+    </div>
+    <div class="col-2" style="height: 500px;">
+        <div class="btn">
+            <button onclick="codeH1()">Tekshirish</button>
         </div>
+        <div class="editor">
+            <textarea id="editH1"><h1>Sarlavha 1</h1></textarea>
+        </div>
+        <div class="frame">
+            <iframe id="iframeH1"></iframe>
+        </div>
+    </div>
+</details>
+<details>
+    <summary><code><</code><code>h2</code><code>></code></summary>
+    <div class="col-1">
+        <h3><span class="option">Vazifasi :</span> Определяет заголовок второго уровня.</h3>
+    </div>
+    <div class="col-2" style="height: 500px;">
+        <div class="btn">
+            <button onclick="codeH2()">Tekshirish</button>
+        </div>
+        <div class="editor">
+            <textarea id="editH2"><h2>Sarlavha 2</h2></textarea>
+        </div>
+        <div class="frame">
+            <iframe id="iframeH2"></iframe>
+        </div>
+    </div>
+</details>
+<details>
+    <summary><code><</code><code>h3</code><code>></code></summary>
+    <div class="col-1">
+        <h3><span class="option">Vazifasi :</span> Определяет заголовок третьего уровня.</h3>
+    </div>
+    <div class="col-2" style="height: 500px;">
+        <div class="btn">
+            <button onclick="codeH3()">Tekshirish</button>
+        </div>
+        <div class="editor">
+            <textarea id="editH3"><h3>Sarlavha 3</h3></textarea>
+        </div>
+        <div class="frame">
+            <iframe id="iframeH3"></iframe>
+        </div>
+    </div>
+</details>
+<details>
+    <summary><code><</code><code>h4</code><code>></code></summary>
+    <div class="col-1">
+        <h3><span class="option">Vazifasi :</span> Определяет заголовок четвертого уровня.</h3>
+    </div>
+    <div class="col-2" style="height: 500px;">
+        <div class="btn">
+            <button onclick="codeH4()">Tekshirish</button>
+        </div>
+        <div class="editor">
+            <textarea id="editH4"><h4>Sarlavha 4</h4></textarea>
+        </div>
+        <div class="frame">
+            <iframe id="iframeH4"></iframe>
+        </div>
+    </div>
+</details>
+<details>
+    <summary><code><</code><code>h5</code><code>></code></summary>
+    <div class="col-1">
+        <h3><span class="option">Vazifasi :</span> Определяет заголовок пятого уровня.</h3>
+    </div>
+    <div class="col-2" style="height: 500px;">
+        <div class="btn">
+            <button onclick="codeH5()">Tekshirish</button>
+        </div>
+        <div class="editor">
+            <textarea id="editH5"><h5>Sarlavha 5</h5></textarea>
+        </div>
+        <div class="frame">
+            <iframe id="iframeH5"></iframe>
+        </div>
+    </div>
+</details>
+<details>
+    <summary><code><</code><code>h6</code><code>></code></summary>
+    <div class="col-1">
+        <h3><span class="option">Vazifasi :</span> Определяет заголовок шестого уровня.</h3>
+    </div>
+    <div class="col-2" style="height: 500px;">
+        <div class="btn">
+            <button onclick="codeH6()">Tekshirish</button>
+        </div>
+        <div class="editor">
+            <textarea id="editH6"><h6>Sarlavha 6</h6></textarea>
+        </div>
+        <div class="frame">
+            <iframe id="iframeH6"></iframe>
+        </div>
+    </div>
+</details>
+<details>
+    <summary><code><</code><code>p</code><code>></code></summary>
+    <div class="col-1">
+        <h3><span class="option">Vazifasi :</span> Определяет параграф.</h3>
+    </div>
+    <div class="col-2" style="height: 500px;">
+        <div class="btn">
+            <button onclick="codeP()">Tekshirish</button>
+        </div>
+        <div class="editor">
+<textarea id="editP">
+<p>Bu Birinchi Paragraf</p>
+<p>Bu Ikkinchi Paragraf</p></textarea>
+        </div>
+        <div class="frame">
+            <iframe id="iframeP"></iframe>
+        </div>
+    </div>
+</details>
+<details>
+    <summary><code><</code><code>br</code><code>></code></summary>
+    <div class="col-1">
+        <h3><span class="option">Vazifasi :</span> Устанавливает перевод строки в том месте, где этот тег обозначен.</h3>
+    </div>
+    <div class="col-2" style="height: 500px;">
+        <div class="btn">
+            <button onclick="codeBr()">Tekshirish</button>
+        </div>
+        <div class="editor">
+<textarea id="editBr">
+<h1>Bu Birinchi <br> Darajali Sarlavha</h1></textarea>
+        </div>
+        <div class="frame">
+            <iframe id="iframeBr"></iframe>
+        </div>
+    </div>
+</details>
+<details>
+    <summary><code><</code><code>hr</code><code>></code></summary>
+    <div class="col-1">
+        <h3><span class="option">Vazifasi :</span> Тэг создает горизонтальную линию на HTML-странице, может использоваться в роли тематического разрыва.</h3>
+    </div>
+    <div class="col-2" style="height: 500px;">
+        <div class="btn">
+            <button onclick="codeHr()">Tekshirish</button>
+        </div>
+        <div class="editor">
+<textarea id="editHr">
+<h1>Bu Birinchi <hr> Darajali Sarlavha</h1></textarea>
+        </div>
+        <div class="frame">
+            <iframe id="iframeHr"></iframe>
+        </div>
+    </div>
+</details>
+<details>
+    <summary><code><</code><code>!-- --</code><code>></code></summary>
+    <div class="col-1">
+        <h3><span class="option">Vazifasi :</span> Тег комментария. Используются для временного отключения кода, либо в качестве подсказки. Текст внутри комментария не отображается браузером на странице.</h3>
+    </div>
+    <div class="col-2" style="height: 500px;">
+        <div class="btn">
+            <button onclick="code_()">Tekshirish</button>
+        </div>
+        <div class="editor">
+<textarea id="edit_">
+<h1>Bu Birinchi Darajali Sarlavha</h1>  <!--Ushbu kod muhum sarlavhalarda ishlatiladi-->
+<!--
+    Bu Yerda Juda Ko'p
+    Izohlar Yozsak bo'ladi
+    Ko'p Qatorlik Izoh
+    Deb Ataladi
+--></textarea>
+        </div>
+        <div class="frame">
+            <iframe id="iframe_"></iframe>
+        </div>
+    </div>
+</details>
 <details><summary>Document</summary>
-    <div class="container">
     <details>
         <summary><code><</code><code>!DOCTYPE html</code><code>></code></summary>
         <div class="col-1">
@@ -164,8 +325,6 @@
             </div>
         </div>
     </details>
-    </div>
-    <div class="container">
         <details>
             <summary><code><</code><code>html</code><code>></code></summary>
             <div class="col-1">
@@ -192,8 +351,6 @@
                 </div>
             </div>
         </details>
-    </div>
-    <div class="container">
         <details>
             <summary><code><</code><code>head</code><code>></code></summary>
             <div class="col-1">
@@ -220,8 +377,6 @@
                 </div>
             </div>
         </details>
-    </div>
-    <div class="container">
         <details>
             <summary><code><</code><code>title</code><code>></code></summary>
             <div class="col-1">
@@ -248,8 +403,6 @@
                 </div>
             </div>
         </details>
-    </div>
-    <div class="container">
         <details>
             <summary><code><</code><code>body</code><code>></code></summary>
             <div class="col-1">
@@ -276,13 +429,16 @@
                 </div>
             </div>
         </details>
-    </div>
 </details>
     <script>
-        // ..............Editor...............\\
-        var cod = document.getElementsByClassName("editor");
-        for(let i = 0; i < cod.length; i++){
-        var editor = CodeMirror.fromTextArea(cod[i],{
+         // .............SlideDown............\\
+        // $(document).ready(function(){
+        //     $(".doc").click(function(){
+        //         $(".col-2").slideToggle(1000);
+        //     });
+        // });
+//////////////////////////////////////////////// h1 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editH1 = CodeMirror.fromTextArea(document.getElementById("editH1"),{
             mode: "htmlmixed",
             lineNumbers: true,
             // theme: "3024-day"
@@ -351,25 +507,141 @@
             // theme: "yonce"
             // theme: "zenburn"
         });
-        editor.setSize("915","400");
-    }
-        // .............scren............\\
-        code();
-        var iframe = document.getElementsByClassName("iframe");
-            for(let i = 0; i < iframe.length; i++){
-                i.contentWindow.document;
-        function code(){
-            var codeValue = editor.getValue();
-            iframe.write(codeValue);
-            iframe.close();
+        editH1.setSize("915","400");
+        var iframeH1 = document.getElementById("iframeH1").contentWindow.document;
+        function codeH1(){
+            let codeValue = editH1.getValue();
+            iframeH1.write(codeValue);
+            iframeH1.close();
             }
-        }
-        // .............SlideDown............\\
-        // $(document).ready(function(){
-        //     $(".doc").click(function(){
-        //         $(".col-2").slideToggle(1000);
-        //     });
-        // });
+            codeH1();
+//////////////////////////////////////////////// h2 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editH2 = CodeMirror.fromTextArea(document.getElementById("editH2"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editH2.setSize("915","400");
+        var iframeH2 = document.getElementById("iframeH2").contentWindow.document;
+        function codeH2(){
+            let codeValue = editH2.getValue();
+            iframeH2.write(codeValue);
+            iframeH2.close();
+            }
+            codeH2();
+//////////////////////////////////////////////// h3 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editH3 = CodeMirror.fromTextArea(document.getElementById("editH3"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editH3.setSize("915","400");
+        var iframeH3 = document.getElementById("iframeH3").contentWindow.document;
+        function codeH3(){
+            let codeValue = editH3.getValue();
+            iframeH3.write(codeValue);
+            iframeH3.close();
+            }
+            codeH3();
+//////////////////////////////////////////////// h4 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editH4 = CodeMirror.fromTextArea(document.getElementById("editH4"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editH4.setSize("915","400");
+        var iframeH4 = document.getElementById("iframeH4").contentWindow.document;
+        function codeH4(){
+            let codeValue = editH4.getValue();
+            iframeH4.write(codeValue);
+            iframeH4.close();
+            }
+            codeH4();
+//////////////////////////////////////////////// h5 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editH5 = CodeMirror.fromTextArea(document.getElementById("editH5"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editH5.setSize("915","400");
+        var iframeH5 = document.getElementById("iframeH5").contentWindow.document;
+        function codeH5(){
+            let codeValue = editH5.getValue();
+            iframeH5.write(codeValue);
+            iframeH5.close();
+            }
+            codeH5();
+//////////////////////////////////////////////// h6 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editH6 = CodeMirror.fromTextArea(document.getElementById("editH6"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editH6.setSize("915","400");
+        var iframeH6 = document.getElementById("iframeH6").contentWindow.document;
+        function codeH6(){
+            let codeValue = editH6.getValue();
+            iframeH6.write(codeValue);
+            iframeH6.close();
+            }
+            codeH6();
+//////////////////////////////////////////////// p \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editP = CodeMirror.fromTextArea(document.getElementById("editP"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editP.setSize("915","400");
+        var iframeP = document.getElementById("iframeP").contentWindow.document;
+        function codeP(){
+            let codeValue = editP.getValue();
+            iframeP.write(codeValue);
+            iframeP.close();
+            }
+            codeP();
+//////////////////////////////////////////////// br \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editBr = CodeMirror.fromTextArea(document.getElementById("editBr"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editBr.setSize("915","400");
+        var iframeBr = document.getElementById("iframeBr").contentWindow.document;
+        function codeBr(){
+            let codeValue = editBr.getValue();
+            iframeBr.write(codeValue);
+            iframeBr.close();
+            }
+            codeBr();
+//////////////////////////////////////////////// hr \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editHr = CodeMirror.fromTextArea(document.getElementById("editHr"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editHr.setSize("915","400");
+        var iframeHr = document.getElementById("iframeHr").contentWindow.document;
+        function codeHr(){
+            let codeValue = editHr.getValue();
+            iframeHr.write(codeValue);
+            iframeHr.close();
+            }
+            codeHr();
+//////////////////////////////////////////////// <!-- --> \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var edit_ = CodeMirror.fromTextArea(document.getElementById("edit_"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        edit_.setSize("915","400");
+        var iframe_ = document.getElementById("iframe_").contentWindow.document;
+        function code_(){
+            let codeValue = edit_.getValue();
+            iframe_.write(codeValue);
+            iframe_.close();
+            }
+            code_();
+       
     </script>
 </body>
 </html>
