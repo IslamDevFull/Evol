@@ -77,6 +77,9 @@
     <title>Evolution</title>
     <style>
         *{box-sizing: border-box;}
+        body{
+            height: 5000px;
+        }
         summary{font-size: 30px; font-weight: bold;}
         .option{color: blue;}
         .col-1{
@@ -114,13 +117,25 @@
         button:active{
             border: 10px inset #333;
         }
+        legend{font-size: 40px; font-weight: bold; color: brown;}
     </style>
 </head>
 <body>
+<fieldset><legend>Базовый HTML</legend>
 <details>
     <summary><code><</code><code>h1</code><code>></code></summary>
     <div class="col-1">
         <h3><span class="option">Vazifasi :</span> Определяет заголовок первого уровня.</h3>
+        <!-- <table border="5">
+            <tr>
+                <th>Global Atribut</th>
+                <td>Qabul qiladi</td>
+            </tr>
+            <tr>
+                <th>Hodisa Atribut</th>
+                <td>Qabul qiladi</td>
+            </tr>
+        </table> -->
     </div>
     <div class="col-2" style="height: 500px;">
         <div class="btn">
@@ -430,6 +445,387 @@
             </div>
         </details>
 </details>
+</fieldset>
+<fieldset><legend>Форматирование</legend>
+    <details>
+        <summary><code><</code><code>b</code><code>></code></summary>
+        <div class="col-1">
+            <h3><span class="option">Vazifasi :</span> Определяет жирное начертание текста.</h3>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="btn">
+                <button onclick="codeB()">Tekshirish</button>
+            </div>
+            <div class="editor">
+                <textarea id="editB"><b>Biror bir matn</b></textarea>
+            </div>
+            <div class="frame">
+                <iframe id="iframeB"></iframe>
+            </div>
+        </div>
+    </details>
+    <details>
+        <summary><code><</code><code>strong</code><code>></code></summary>
+        <div class="col-1">
+            <h3><span class="option">Vazifasi :</span> Текст, которому придают особое значение (важный текст).</h3>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="btn">
+                <button onclick="codeStrong()">Tekshirish</button>
+            </div>
+            <div class="editor">
+                <textarea id="editStrong"><strong>Biror bir matn</strong></textarea>
+            </div>
+            <div class="frame">
+                <iframe id="iframeStrong"></iframe>
+            </div>
+        </div>
+    </details>
+    <details>
+        <summary><code><</code><code>i</code><code>></code></summary>
+        <div class="col-1">
+            <h3><span class="option">Vazifasi :</span> Курсивное начертание текста</h3>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="btn">
+                <button onclick="codeI()">Tekshirish</button>
+            </div>
+            <div class="editor">
+                <textarea id="editI"><i>Biror bir matn</i></textarea>
+            </div>
+            <div class="frame">
+                <iframe id="iframeI"></iframe>
+            </div>
+        </div>
+    </details>
+    <details>
+        <summary><code><</code><code>em</code><code>></code></summary>
+        <div class="col-1">
+            <h3><span class="option">Vazifasi :</span> Экспрессивно-эмоциональное выделение текста</h3>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="btn">
+                <button onclick="codeEm()">Tekshirish</button>
+            </div>
+            <div class="editor">
+                <textarea id="editEm"><em>Biror bir matn</em></textarea>
+            </div>
+            <div class="frame">
+                <iframe id="iframeEm"></iframe>
+            </div>
+        </div>
+    </details>
+    <details>
+        <summary><code><</code><code>dfn</code><code>></code></summary>
+        <div class="col-1">
+            <h3><span class="option">Vazifasi :</span> Используется, когда в документе упоминается новый термин или слово (первое и поясняемое употребление). По умолчанию, оно выделяется курсивом.</h3>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="btn">
+                <button onclick="codeDfn()">Tekshirish</button>
+            </div>
+            <div class="editor">
+                <textarea id="editDfn"><dfn>Biror bir matn</dfn></textarea>
+            </div>
+            <div class="frame">
+                <iframe id="iframeDfn"></iframe>
+            </div>
+        </div>
+    </details>
+    <details>
+        <summary><code><</code><code>mark</code><code>></code></summary>
+        <div class="col-1">
+            <h3><span class="option">Vazifasi :</span> Выделенный/подсвеченный текст.</h3>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="btn">
+                <button onclick="codeMark()">Tekshirish</button>
+            </div>
+            <div class="editor">
+                <textarea id="editMark"><mark>Biror bir matn</mark></textarea>
+            </div>
+            <div class="frame">
+                <iframe id="iframeMark"></iframe>
+            </div>
+        </div>
+    </details>
+    <details>
+        <summary><code><</code><code>s</code><code>></code></summary>
+        <div class="col-1">
+            <h3><span class="option">Vazifasi :</span> Определяет текст, который больше не является правильным или актуальным.</h3>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="btn">
+                <button onclick="codeS()">Tekshirish</button>
+            </div>
+            <div class="editor">
+                <textarea id="editS"><s>Biror bir matn</s></textarea>
+            </div>
+            <div class="frame">
+                <iframe id="iframeS"></iframe>
+            </div>
+        </div>
+    </details>
+    <details>
+        <summary><code><</code><code>del</code><code>></code></summary>
+        <div class="col-1">
+            <h3><span class="option">Vazifasi :</span> Перечёркнутый (удалённый) текст</h3>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="btn">
+                <button onclick="codeDel()">Tekshirish</button>
+            </div>
+            <div class="editor">
+                <textarea id="editDel"><del>Biror bir matn</del></textarea>
+            </div>
+            <div class="frame">
+                <iframe id="iframeDel"></iframe>
+            </div>
+        </div>
+    </details>
+    <details>
+        <summary><code><</code><code>u</code><code>></code></summary>
+        <div class="col-1">
+            <h3><span class="option">Vazifasi :</span> Содержит в себе текст, который должен стилистически отличаться от обычного текста, например слова с орфографическими ошибками или текст на другом языке.</h3>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="btn">
+                <button onclick="codeU()">Tekshirish</button>
+            </div>
+            <div class="editor">
+                <textarea id="editU"><u>Biror bir matn</u></textarea>
+            </div>
+            <div class="frame">
+                <iframe id="iframeU"></iframe>
+            </div>
+        </div>
+    </details>
+    <details>
+        <summary><code><</code><code>ins</code><code>></code></summary>
+        <div class="col-1">
+            <h3><span class="option">Vazifasi :</span> Подчёркнутый текст, вставленный в документ.</h3>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="btn">
+                <button onclick="codeIns()">Tekshirish</button>
+            </div>
+            <div class="editor">
+                <textarea id="editIns"><ins>Biror bir matn</ins></textarea>
+            </div>
+            <div class="frame">
+                <iframe id="iframeIns"></iframe>
+            </div>
+        </div>
+    </details>
+    <details>
+        <summary><code><</code><code>small</code><code>></code></summary>
+        <div class="col-1">
+            <h3><span class="option">Vazifasi :</span> Шрифт, который отображается меньшим размером(мелкий/юридический шрифт).</h3>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="btn">
+                <button onclick="codeSmall()">Tekshirish</button>
+            </div>
+            <div class="editor">
+                <textarea id="editSmall"><small>Biror bir matn</small></textarea>
+            </div>
+            <div class="frame">
+                <iframe id="iframeSmall"></iframe>
+            </div>
+        </div>
+    </details>
+    <details>
+        <summary><code><</code><code>sup</code><code>></code></summary>
+        <div class="col-1">
+            <h3><span class="option">Vazifasi :</span> Текст с верхним индексом.</h3>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="btn">
+                <button onclick="codeSup()">Tekshirish</button>
+            </div>
+            <div class="editor">
+                <textarea id="editSup"><sup>Biror bir matn</sup></textarea>
+            </div>
+            <div class="frame">
+                <iframe id="iframeSup"></iframe>
+            </div>
+        </div>
+    </details>
+    <details>
+        <summary><code><</code><code>sub</code><code>></code></summary>
+        <div class="col-1">
+            <h3><span class="option">Vazifasi :</span> Текст с нижним индексом.</h3>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="btn">
+                <button onclick="codeSub()">Tekshirish</button>
+            </div>
+            <div class="editor">
+                <textarea id="editSub"><sub>Biror bir matn</sub></textarea>
+            </div>
+            <div class="frame">
+                <iframe id="iframeSub"></iframe>
+            </div>
+        </div>
+    </details>
+    <details>
+        <summary><code><</code><code>pre</code><code>></code></summary>
+        <div class="col-1">
+            <h3><span class="option">Vazifasi :</span> Определяет предварительно отформатированный текст, т.е. текст, который был помещён внутрь тега отобразится со шрифтом фиксированной ширины, и сохранит как пробелы, так и разрывы строк</h3>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="btn">
+                <button onclick="codePre()">Tekshirish</button>
+            </div>
+            <div class="editor">
+                <textarea id="editPre"><pre>Biror bir matn</pre></textarea>
+            </div>
+            <div class="frame">
+                <iframe id="iframePre"></iframe>
+            </div>
+        </div>
+    </details>
+    <details>
+        <summary><code><</code><code>abbr</code><code>></code></summary>
+        <div class="col-1">
+            <h3><span class="option">Vazifasi :</span> Определяет аббревиатуру или акроним. Маркировка сокращений является полезной информацией для браузеров, систем перевода и поисковиков.</h3>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="btn">
+                <button onclick="codeAbbr()">Tekshirish</button>
+            </div>
+            <div class="editor">
+                <textarea id="editAbbr"><abbr>Biror bir matn</abbr></textarea>
+            </div>
+            <div class="frame">
+                <iframe id="iframeAbbr"></iframe>
+            </div>
+        </div>
+    </details>
+    <details>
+        <summary><code><</code><code>meter</code><code>></code></summary>
+        <div class="col-1">
+            <h3><span class="option">Vazifasi :</span> Предназначен для отображения скалярной величины в заданном диапазоне, или же для графического представления дробного числа. Для использования данного тега должно быть известно максимальное значение.</h3>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="btn">
+                <button onclick="codeMeter()">Tekshirish</button>
+            </div>
+            <div class="editor">
+                <textarea id="editMeter"><meter>Biror bir matn</meter></textarea>
+            </div>
+            <div class="frame">
+                <iframe id="iframeMeter"></iframe>
+            </div>
+        </div>
+    </details>
+    <details>
+        <summary><code><</code><code>progress</code><code>></code></summary>
+        <div class="col-1">
+            <h3><span class="option">Vazifasi :</span> Предоставляет обратную связь, сообщая о состоянии текущего процесса, отображает какая часть задачи выполнена.</h3>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="btn">
+                <button onclick="codeProgress()">Tekshirish</button>
+            </div>
+            <div class="editor">
+                <textarea id="editProgress"><progress>Biror bir matn</progress></textarea>
+            </div>
+            <div class="frame">
+                <iframe id="iframeProgress"></iframe>
+            </div>
+        </div>
+    </details>
+</fieldset>
+<fieldset><legend>Ссылки</legend>
+    <details>
+        <summary><code><</code><code>a</code><code>></code></summary>
+        <div class="col-1">
+            <h3><span class="option">Vazifasi :</span> Элемент предназначен для размещения гиперссылок.</h3>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="btn">
+                <button onclick="codeA()">Tekshirish</button>
+            </div>
+            <div class="editor">
+                <textarea id="editA"><a>Biror bir matn</a></textarea>
+            </div>
+            <div class="frame">
+                <iframe id="iframeA"></iframe>
+            </div>
+        </div>
+    </details>
+</fieldset>
+<fieldset><legend>Изображения</legend>
+    <details>
+        <summary><code><</code><code>img</code><code>></code></summary>
+        <div class="col-1">
+            <h3><span class="option">Vazifasi :</span> Определяет изображение на странице.</h3>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="btn">
+                <button onclick="codeImg()">Tekshirish</button>
+            </div>
+            <div class="editor">
+                <textarea id="editImg"><img></textarea>
+            </div>
+            <div class="frame">
+                <iframe id="iframeImg"></iframe>
+            </div>
+        </div>
+    </details>
+    <details>
+        <summary><code><</code><code>figure</code><code>></code></summary>
+        <div class="col-1">
+            <h3><span class="option">Vazifasi :</span> Применяется для обозначения контента, иллюстрирующего или поддерживающего определенную идею текста.</h3>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="btn">
+                <button onclick="codeFigure()">Tekshirish</button>
+            </div>
+            <div class="editor">
+                <textarea id="editFigure"><figure>Biror bir matn</figure></textarea>
+            </div>
+            <div class="frame">
+                <iframe id="iframeFigure"></iframe>
+            </div>
+        </div>
+    </details>
+    <details>
+        <summary><code><</code><code>figcaption</code><code>></code></summary>
+        <div class="col-1">
+            <h3><span class="option">Vazifasi :</span> Выводит пояснение к фотографии или иллюстрации, которая находится внутри тега figure.</h3>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="btn">
+                <button onclick="codeFigcaption()">Tekshirish</button>
+            </div>
+            <div class="editor">
+                <textarea id="editFigcaption"><figcaption>Biror bir matn</figcaption></textarea>
+            </div>
+            <div class="frame">
+                <iframe id="iframeFigcaption"></iframe>
+            </div>
+        </div>
+    </details>
+    <details>
+        <summary><code><</code><code>picture</code><code>></code></summary>
+        <div class="col-1">
+            <h3><span class="option">Vazifasi :</span> Выводит пояснение к фотографии или иллюстрации, которая находится внутри тега figure.</h3>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="btn">
+                <button onclick="codePicture()">Tekshirish</button>
+            </div>
+            <div class="editor">
+                <textarea id="editPicture"><picture>Biror bir matn</picture></textarea>
+            </div>
+            <div class="frame">
+                <iframe id="iframePicture"></iframe>
+            </div>
+        </div>
+    </details>
+</fieldset>
     <script>
          // .............SlideDown............\\
         // $(document).ready(function(){
@@ -507,7 +903,7 @@
             // theme: "yonce"
             // theme: "zenburn"
         });
-        editH1.setSize("915","400");
+        editH1.setSize("895","400");
         var iframeH1 = document.getElementById("iframeH1").contentWindow.document;
         function codeH1(){
             let codeValue = editH1.getValue();
@@ -521,7 +917,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editH2.setSize("915","400");
+        editH2.setSize("895","400");
         var iframeH2 = document.getElementById("iframeH2").contentWindow.document;
         function codeH2(){
             let codeValue = editH2.getValue();
@@ -535,7 +931,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editH3.setSize("915","400");
+        editH3.setSize("895","400");
         var iframeH3 = document.getElementById("iframeH3").contentWindow.document;
         function codeH3(){
             let codeValue = editH3.getValue();
@@ -549,7 +945,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editH4.setSize("915","400");
+        editH4.setSize("895","400");
         var iframeH4 = document.getElementById("iframeH4").contentWindow.document;
         function codeH4(){
             let codeValue = editH4.getValue();
@@ -563,7 +959,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editH5.setSize("915","400");
+        editH5.setSize("895","400");
         var iframeH5 = document.getElementById("iframeH5").contentWindow.document;
         function codeH5(){
             let codeValue = editH5.getValue();
@@ -577,7 +973,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editH6.setSize("915","400");
+        editH6.setSize("895","400");
         var iframeH6 = document.getElementById("iframeH6").contentWindow.document;
         function codeH6(){
             let codeValue = editH6.getValue();
@@ -591,7 +987,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editP.setSize("915","400");
+        editP.setSize("895","400");
         var iframeP = document.getElementById("iframeP").contentWindow.document;
         function codeP(){
             let codeValue = editP.getValue();
@@ -605,7 +1001,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editBr.setSize("915","400");
+        editBr.setSize("895","400");
         var iframeBr = document.getElementById("iframeBr").contentWindow.document;
         function codeBr(){
             let codeValue = editBr.getValue();
@@ -619,7 +1015,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editHr.setSize("915","400");
+        editHr.setSize("895","400");
         var iframeHr = document.getElementById("iframeHr").contentWindow.document;
         function codeHr(){
             let codeValue = editHr.getValue();
@@ -633,7 +1029,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        edit_.setSize("915","400");
+        edit_.setSize("895","400");
         var iframe_ = document.getElementById("iframe_").contentWindow.document;
         function code_(){
             let codeValue = edit_.getValue();
@@ -641,6 +1037,258 @@
             iframe_.close();
             }
             code_();
+//////////////////////////////////////////////// b \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editB = CodeMirror.fromTextArea(document.getElementById("editB"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editB.setSize("895","400");
+        var iframeB = document.getElementById("iframeB").contentWindow.document;
+        function codeB(){
+            let codeValue = editB.getValue();
+            iframeB.write(codeValue);
+            iframeB.close();
+            }
+            codeB();
+//////////////////////////////////////////////// Strong \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editStrong = CodeMirror.fromTextArea(document.getElementById("editStrong"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editStrong.setSize("895","400");
+        var iframeStrong = document.getElementById("iframeStrong").contentWindow.document;
+        function codeStrong(){
+            let codeValue = editStrong.getValue();
+            iframeStrong.write(codeValue);
+            iframeStrong.close();
+            }
+            codeStrong();
+//////////////////////////////////////////////// i \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editI = CodeMirror.fromTextArea(document.getElementById("editI"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editI.setSize("895","400");
+        var iframeI = document.getElementById("iframeI").contentWindow.document;
+        function codeI(){
+            let codeValue = editI.getValue();
+            iframeI.write(codeValue);
+            iframeI.close();
+            }
+            codeI();
+//////////////////////////////////////////////// em \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editEm = CodeMirror.fromTextArea(document.getElementById("editEm"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editEm.setSize("895","400");
+        var iframeEm = document.getElementById("iframeEm").contentWindow.document;
+        function codeEm(){
+            let codeValue = editEm.getValue();
+            iframeEm.write(codeValue);
+            iframeEm.close();
+            }
+            codeEm();
+//////////////////////////////////////////////// dfn \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editDfn = CodeMirror.fromTextArea(document.getElementById("editDfn"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editDfn.setSize("895","400");
+        var iframeDfn = document.getElementById("iframeDfn").contentWindow.document;
+        function codeDfn(){
+            let codeValue = editDfn.getValue();
+            iframeDfn.write(codeValue);
+            iframeDfn.close();
+            }
+            codeDfn();
+//////////////////////////////////////////////// mark \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editMark = CodeMirror.fromTextArea(document.getElementById("editMark"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editMark.setSize("895","400");
+        var iframeMark = document.getElementById("iframeMark").contentWindow.document;
+        function codeMark(){
+            let codeValue = editMark.getValue();
+            iframeMark.write(codeValue);
+            iframeMark.close();
+            }
+            codeMark();
+//////////////////////////////////////////////// s \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editS = CodeMirror.fromTextArea(document.getElementById("editS"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editS.setSize("895","400");
+        var iframeS = document.getElementById("iframeS").contentWindow.document;
+        function codeS(){
+            let codeValue = editS.getValue();
+            iframeS.write(codeValue);
+            iframeS.close();
+            }
+            codeS();
+//////////////////////////////////////////////// del \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editDel = CodeMirror.fromTextArea(document.getElementById("editDel"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editDel.setSize("895","400");
+        var iframeDel = document.getElementById("iframeDel").contentWindow.document;
+        function codeDel(){
+            let codeValue = editDel.getValue();
+            iframeDel.write(codeValue);
+            iframeDel.close();
+            }
+            codeDel();
+//////////////////////////////////////////////// u \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editU = CodeMirror.fromTextArea(document.getElementById("editU"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editU.setSize("895","400");
+        var iframeU = document.getElementById("iframeU").contentWindow.document;
+        function codeU(){
+            let codeValue = editU.getValue();
+            iframeU.write(codeValue);
+            iframeU.close();
+            }
+            codeU();
+//////////////////////////////////////////////// ins \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editIns = CodeMirror.fromTextArea(document.getElementById("editIns"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editIns.setSize("895","400");
+        var iframeIns = document.getElementById("iframeIns").contentWindow.document;
+        function codeIns(){
+            let codeValue = editIns.getValue();
+            iframeIns.write(codeValue);
+            iframeIns.close();
+            }
+            codeIns();
+//////////////////////////////////////////////// small \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editSmall = CodeMirror.fromTextArea(document.getElementById("editSmall"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editSmall.setSize("895","400");
+        var iframeSmall = document.getElementById("iframeSmall").contentWindow.document;
+        function codeSmall(){
+            let codeValue = editSmall.getValue();
+            iframeSmall.write(codeValue);
+            iframeSmall.close();
+            }
+            codeSmall();
+//////////////////////////////////////////////// sup \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editSup = CodeMirror.fromTextArea(document.getElementById("editSup"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editSup.setSize("895","400");
+        var iframeSup = document.getElementById("iframeSup").contentWindow.document;
+        function codeSup(){
+            let codeValue = editSup.getValue();
+            iframeSup.write(codeValue);
+            iframeSup.close();
+            }
+            codeSup();
+//////////////////////////////////////////////// sub \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editSub = CodeMirror.fromTextArea(document.getElementById("editSub"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editSub.setSize("895","400");
+        var iframeSub = document.getElementById("iframeSub").contentWindow.document;
+        function codeSub(){
+            let codeValue = editSub.getValue();
+            iframeSub.write(codeValue);
+            iframeSub.close();
+            }
+            codeSub();
+//////////////////////////////////////////////// pre \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editPre = CodeMirror.fromTextArea(document.getElementById("editPre"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editPre.setSize("895","400");
+        var iframePre = document.getElementById("iframePre").contentWindow.document;
+        function codePre(){
+            let codeValue = editPre.getValue();
+            iframePre.write(codeValue);
+            iframePre.close();
+            }
+            codePre();
+//////////////////////////////////////////////// abbr \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editAbbr = CodeMirror.fromTextArea(document.getElementById("editAbbr"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editAbbr.setSize("895","400");
+        var iframeAbbr = document.getElementById("iframeAbbr").contentWindow.document;
+        function codeAbbr(){
+            let codeValue = editAbbr.getValue();
+            iframeAbbr.write(codeValue);
+            iframeAbbr.close();
+            }
+            codeAbbr();
+//////////////////////////////////////////////// meter \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editMeter = CodeMirror.fromTextArea(document.getElementById("editMeter"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editMeter.setSize("895","400");
+        var iframeMeter = document.getElementById("iframeMeter").contentWindow.document;
+        function codeMeter(){
+            let codeValue = editMeter.getValue();
+            iframeMeter.write(codeValue);
+            iframeMeter.close();
+            }
+            codeMeter();
+//////////////////////////////////////////////// progress \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editProgress = CodeMirror.fromTextArea(document.getElementById("editProgress"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editProgress.setSize("895","400");
+        var iframeProgress = document.getElementById("iframeProgress").contentWindow.document;
+        function codeProgress(){
+            let codeValue = editProgress.getValue();
+            iframeProgress.write(codeValue);
+            iframeProgress.close();
+            }
+            codeProgress();
+//////////////////////////////////////////////// a \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editA = CodeMirror.fromTextArea(document.getElementById("editA"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editA.setSize("895","400");
+        var iframeA = document.getElementById("iframeA").contentWindow.document;
+        function codeA(){
+            let codeValue = editA.getValue();
+            iframeA.write(codeValue);
+            iframeA.close();
+            }
+            codeA();
        
     </script>
 </body>
