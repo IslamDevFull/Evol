@@ -117,10 +117,40 @@
             border: 10px inset #333;
         }
         legend{font-size: 40px; font-weight: bold; color: brown;}
+        .s{font-size: 30px;}
     </style>
 </head>
 <body>
 <fieldset><legend>Базовый HTML</legend>
+    <details><summary>Document</summary>
+        <div class="col-1">
+            <h3><code class="s"><</code><code class="option s">!DOCTYPE html</code><code class="s">> -</code> Декларация, которая определяет тип документа, помогая браузеру отобразить вестраницу правильно.</h3>
+            <h3><code class="s"><</code><code class="option s">html</code><code class="s">> -</code> Сообщает браузеру, что необходимо прочитать документ как программный код, написанный на языке HTML.</h3>
+            <h3><code class="s"><</code><code class="option s">head</code><code class="s">> -</code> Содержит информацию о документе (сведения о документе, которые не отображаются пользователю).</h3>
+            <h3><code class="s"><</code><code class="option s">title</code><code class="s">> -</code> Обеспечивает название для документа.</h3>
+            <h3><code class="s"><</code><code class="option s">body</code><code class="s">> -</code> Определяет видимое содержимое страницы.</h3>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="btn">
+                <button onclick="codeDoc()">Tekshirish</button>
+            </div>
+            <div class="editor">
+                <textarea id="editDoc">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mening Saytim</title>
+    </head>
+    <body>
+        <!-- Bu yerda Xamma kodlar yoziladi -->
+     </body>
+</html></textarea>
+            </div>
+            <div class="frame">
+                <iframe id="iframeDoc"></iframe>
+            </div>
+        </div>
+    </details>
 <details>
     <summary><code><</code><code>h1</code><code>></code></summary>
     <div class="col-1">
@@ -312,138 +342,6 @@
         </div>
     </div>
 </details>
-<details><summary>Document</summary>
-    <details>
-        <summary><code><</code><code>!DOCTYPE html</code><code>></code></summary>
-        <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Декларация, которая определяет тип документа, помогая браузеру отобразить веб-страницу правильно.</h3>
-        </div>
-        <div class="col-2" style="height: 500px;">
-            <div class="btn">
-                <button onclick="code()">Tekshirish</button>
-            </div>
-            <div class="edit">
-                <textarea class="editor">
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Mening Saytim</title>
-    </head>
-    <body>
-        <!-- Bu yerda Xamma kodlar yoziladi -->
-    </body>
-</html></textarea>
-            </div>
-            <div class="frame">
-                <iframe class="iframe"></iframe>
-            </div>
-        </div>
-    </details>
-        <details>
-            <summary><code><</code><code>html</code><code>></code></summary>
-            <div class="col-1">
-                <h3><span class="option">Vazifasi :</span> Сообщает браузеру, что необходимо прочитать документ как программный код, написанный на языке HTML.</h3>
-            </div>
-            <div class="col-2" style="height: 500px;">
-                <div class="btn">
-                    <button onclick="code()">Tekshirish</button>
-                </div>
-                <div class="edit">
-                    <textarea class="editor">
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <title>Mening Saytim</title>
-        </head>
-        <body>
-            <!-- Bu yerda Xamma kodlar yoziladi -->
-        </body>
-    </html></textarea>
-                </div>
-                <div class="frame">
-                    <iframe class="iframe"></iframe>
-                </div>
-            </div>
-        </details>
-        <details>
-            <summary><code><</code><code>head</code><code>></code></summary>
-            <div class="col-1">
-                <h3><span class="option">Vazifasi :</span> Содержит информацию о документе (сведения о документе, которые не отображаются пользователю).</h3>
-            </div>
-            <div class="col-2" style="height: 500px;">
-                <div class="btn">
-                    <button onclick="code()">Tekshirish</button>
-                </div>
-                <div class="edit">
-                    <textarea class="editor">
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <title>Mening Saytim</title>
-        </head>
-        <body>
-            <!-- Bu yerda Xamma kodlar yoziladi -->
-        </body>
-    </html></textarea>
-                </div>
-                <div class="frame">
-                    <iframe class="iframe"></iframe>
-                </div>
-            </div>
-        </details>
-        <details>
-            <summary><code><</code><code>title</code><code>></code></summary>
-            <div class="col-1">
-                <h3><span class="option">Vazifasi :</span> Обеспечивает название для документа.</h3>
-            </div>
-            <div class="col-2" style="height: 500px;">
-                <div class="btn">
-                    <button onclick="code()">Tekshirish</button>
-                </div>
-                <div class="edit">
-                    <textarea class="editor">
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <title>Mening Saytim</title>
-        </head>
-        <body>
-            <!-- Bu yerda Xamma kodlar yoziladi -->
-        </body>
-    </html></textarea>
-                </div>
-                <div class="frame">
-                    <iframe class="iframe"></iframe>
-                </div>
-            </div>
-        </details>
-        <details>
-            <summary><code><</code><code>body</code><code>></code></summary>
-            <div class="col-1">
-                <h3><span class="option">Vazifasi :</span> Определяет видимое содержимое страницы.</h3>
-            </div>
-            <div class="col-2" style="height: 500px;">
-                <div class="btn">
-                    <button onclick="code()">Tekshirish</button>
-                </div>
-                <div class="edit">
-                    <textarea class="editor">
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <title>Mening Saytim</title>
-        </head>
-        <body>
-            <!-- Bu yerda Xamma kodlar yoziladi -->
-        </body>
-    </html></textarea>
-                </div>
-                <div class="frame">
-                    <iframe class="iframe"></iframe>
-                </div>
-            </div>
-        </details>
-</details>
 </fieldset>
 <fieldset><legend>Форматирование</legend>
     <details>
@@ -456,7 +354,9 @@
                 <button onclick="codeB()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editB"><b>Biror bir matn</b></textarea>
+                <textarea id="editB">
+<p>Paragraf</p>
+<b>Biror bir matn</b></textarea>
             </div>
             <div class="frame">
                 <iframe id="iframeB"></iframe>
@@ -473,7 +373,9 @@
                 <button onclick="codeStrong()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editStrong"><strong>Biror bir matn</strong></textarea>
+                <textarea id="editStrong">
+<p>Paragraf</p>
+<strong>Biror bir matn</strong></textarea>
             </div>
             <div class="frame">
                 <iframe id="iframeStrong"></iframe>
@@ -490,7 +392,9 @@
                 <button onclick="codeI()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editI"><i>Biror bir matn</i></textarea>
+                <textarea id="editI">
+<p>Paragraf</p>
+<i>Biror bir matn</i></textarea>
             </div>
             <div class="frame">
                 <iframe id="iframeI"></iframe>
@@ -1260,6 +1164,42 @@
         </div>
     </details>
 </fieldset>
+<fieldset><legend>Стили и семантика</legend>
+    <details>
+        <summary><code><</code><code>details</code><code>></code></summary>
+        <div class="col-1">
+            <h3><span class="option">Vazifasi :</span> Определяет дополнительные детали, которые пользователь может отобразить или скрыть.</h3>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="btn">
+                <button onclick="codeDetails()">Tekshirish</button>
+            </div>
+            <div class="editor">
+                <textarea id="editDetails"><img></textarea>
+            </div>
+            <div class="frame">
+                <iframe id="iframeDetails"></iframe>
+            </div>
+        </div>
+    </details>
+    <details>
+        <summary><code><</code><code>summary</code><code>></code></summary>
+        <div class="col-1">
+            <h3><span class="option">Vazifasi :</span> Определяет видимый заголовок для тега details.</h3>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="btn">
+                <button onclick="codeSummary()">Tekshirish</button>
+            </div>
+            <div class="editor">
+                <textarea id="editSummary"><img></textarea>
+            </div>
+            <div class="frame">
+                <iframe id="iframeSummary"></iframe>
+            </div>
+        </div>
+    </details>
+</fieldset>
     <script>
          // .............SlideDown............\\
         // $(document).ready(function(){
@@ -1267,6 +1207,20 @@
         //         $(".col-2").slideToggle(1000);
         //     });
         // });
+//////////////////////////////////////////////// doctype \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editDoc = CodeMirror.fromTextArea(document.getElementById("editDoc"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editDoc.setSize("895","400");
+        var iframeDoc = document.getElementById("iframeDoc").contentWindow.document;
+        function codeDoc(){
+            let codeValue = editDoc.getValue();
+            iframeDoc.write(codeValue);
+            iframeDoc.close();
+            }
+            codeDoc();
 //////////////////////////////////////////////// h1 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         var editH1 = CodeMirror.fromTextArea(document.getElementById("editH1"),{
             mode: "htmlmixed",
@@ -2129,6 +2083,34 @@
             iframeTd.close();
             }
             codeTd();
+//////////////////////////////////////////////// details \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editDetails = CodeMirror.fromTextArea(document.getElementById("editDetails"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editDetails.setSize("895","400");
+        var iframeDetails = document.getElementById("iframeDetails").contentWindow.document;
+        function codeDetails(){
+            let codeValue = editDetails.getValue();
+            iframeDetails.write(codeValue);
+            iframeDetails.close();
+            }
+            codeDetails();
+//////////////////////////////////////////////// summary \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        var editSummary = CodeMirror.fromTextArea(document.getElementById("editSummary"),{
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "panda-syntax"
+        });
+        editSummary.setSize("895","400");
+        var iframeSummary = document.getElementById("iframeSummary").contentWindow.document;
+        function codeSummary(){
+            let codeValue = editSummary.getValue();
+            iframeSummary.write(codeValue);
+            iframeSummary.close();
+            }
+            codeSummary();
        
     </script>
 </body>
