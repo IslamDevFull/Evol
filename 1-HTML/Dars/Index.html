@@ -707,7 +707,12 @@
                 <button onclick="codeFigure()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editFigure"><figure>Biror bir matn</figure></textarea>
+                <textarea id="editFigure">
+<figure> <!-- bo'sh konteyner  img ni va figcaption ni o'z ichiga oladi -->
+    <img src="bmw2.jpg" width="500" alt="Rasim serverdan Uchgan">
+    <figcaption>BMW ning Eng zur madelaridan biri</figcaption>
+</figure></textarea>
+
             </div>
             <div class="frame">
                 <iframe id="iframeFigure"></iframe>
@@ -724,7 +729,11 @@
                 <button onclick="codeFigcaption()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editFigcaption"><figcaption>Biror bir matn</figcaption></textarea>
+                <textarea id="editFigcaption">
+<figure>
+    <img src="bmw2.jpg" width="500" alt="Rasim serverdan Uchgan">
+    <figcaption>BMW ning Eng zur madelaridan biri</figcaption> <!-- img uchun sarlavha -->
+</figure></textarea>
             </div>
             <div class="frame">
                 <iframe id="iframeFigcaption"></iframe>
@@ -741,7 +750,12 @@
                 <button onclick="codePicture()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editPicture"><picture>Biror bir matn</picture></textarea>
+                <textarea id="editPicture">
+<picture>
+    <source media="(min-width: 650px)" srcset="lambo.jpg">
+    <source media="(min-width: 450px)" srcset="bmw2.jpg">
+    <img src="bmw1.jpeg" width="500" alt="Oxirgi rasm">
+</picture></textarea>
             </div>
             <div class="frame">
                 <iframe id="iframePicture"></iframe>
@@ -760,7 +774,14 @@
                 <button onclick="codeUl()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editUl"><img></textarea>
+                <textarea id="editUl">
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>Jquery</li>
+</ul>
+                </textarea>
             </div>
             <div class="frame">
                 <iframe id="iframeUl"></iframe>
@@ -777,7 +798,14 @@
                 <button onclick="codeOl()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editOl"><img></textarea>
+                <textarea id="editOl">
+<ol>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>Jquery</li>
+</ol>
+                </textarea>
             </div>
             <div class="frame">
                 <iframe id="iframeOl"></iframe>
@@ -794,7 +822,39 @@
                 <button onclick="codeLi()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editLi"><img></textarea>
+                <textarea id="editLi">
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <ul>
+        <li>Bootstrap</li>
+        <ul>
+            <li>Class</li>
+        </ul>
+    </ul>
+    <li>JavaScript</li>
+    <ul>
+        <li>Jquery</li>
+        <li>React</li>
+        <ul>
+            <li>Methot</li>
+        </ul>
+    </ul>
+</ul>
+<br><br>
+<ol>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <ul>
+        <li>Jquery</li>
+        <li>React</li>
+        <ul>
+            <li>Methot</li>
+        </ul>
+    </ul>
+</ol>
+                </textarea>
             </div>
             <div class="frame">
                 <iframe id="iframeLi"></iframe>
