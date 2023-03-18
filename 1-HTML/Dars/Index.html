@@ -775,11 +775,11 @@
             </div>
             <div class="editor">
                 <textarea id="editUl">
-<ul>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>Jquery</li>
+<ul>  <!-- Tartibsiz ro'yxat konteyneri -->
+    <li>HTML</li>       <!-- Ro'yxat -->
+    <li>CSS</li>        <!-- Ro'yxat -->
+    <li>JavaScript</li> <!-- Ro'yxat -->
+    <li>Jquery</li>     <!-- Ro'yxat -->
 </ul>
                 </textarea>
             </div>
@@ -799,11 +799,11 @@
             </div>
             <div class="editor">
                 <textarea id="editOl">
-<ol>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>Jquery</li>
+<ol>    <!-- Tartibli ro'yxat konteyneri -->
+    <li>HTML</li>       <!-- Ro'yxat -->
+    <li>CSS</li>        <!-- Ro'yxat -->
+    <li>JavaScript</li> <!-- Ro'yxat -->
+    <li>Jquery</li>     <!-- Ro'yxat -->
 </ol>
                 </textarea>
             </div>
@@ -823,33 +823,33 @@
             </div>
             <div class="editor">
                 <textarea id="editLi">
-<ul>
+<ul>    <!-- 1 konteyner -->
     <li>HTML</li>
     <li>CSS</li>
-    <ul>
+    <ul>    <!-- 2 konteyner -->
         <li>Bootstrap</li>
-        <ul>
+        <ul>    <!-- 3 konteyner -->
             <li>Class</li>
         </ul>
     </ul>
     <li>JavaScript</li>
-    <ul>
+    <ul>    <!-- 2 konteyner -->
         <li>Jquery</li>
         <li>React</li>
-        <ul>
+        <ul>    <!-- 3 konteyner -->
             <li>Methot</li>
         </ul>
     </ul>
 </ul>
 <br><br>
-<ol>
+<ol>    <!-- 1 konteyner -->
     <li>HTML</li>
     <li>CSS</li>
     <li>JavaScript</li>
-    <ul>
+    <ul>    <!-- 2 konteyner -->
         <li>Jquery</li>
         <li>React</li>
-        <ul>
+        <ul>    <!-- 3 konteyner -->
             <li>Methot</li>
         </ul>
     </ul>
@@ -871,7 +871,14 @@
                 <button onclick="codeDl()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editDl"><img></textarea>
+                <textarea id="editDl">
+<dl>  <!-- Ro'yxat uchun bo'sh konteyner -->
+    <dt>JavaScript</dt>
+    <dd>Jquery</dd>
+    <dd>React</dd>
+    <dd>Angular</dd>
+</dl>
+                </textarea>
             </div>
             <div class="frame">
                 <iframe id="iframeDl"></iframe>
@@ -888,7 +895,14 @@
                 <button onclick="codeDt()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editDt"><img></textarea>
+                <textarea id="editDt">
+<dl>
+    <dt>JavaScript</dt>  <!-- R'yxat uchun sarlavha -->
+    <dd>Jquery</dd>
+    <dd>React</dd>
+    <dd>Angular</dd>
+</dl>
+                </textarea>
             </div>
             <div class="frame">
                 <iframe id="iframeDt"></iframe>
@@ -905,7 +919,14 @@
                 <button onclick="codeDd()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editDd"><img></textarea>
+                <textarea id="editDd">
+<dl>
+    <dt>JavaScript</dt>
+    <dd>Jquery</dd>  <!-- Royxat -->
+    <dd>React</dd>   <!-- Royxat -->
+    <dd>Angular</dd> <!-- Royxat -->
+</dl>
+                </textarea>
             </div>
             <div class="frame">
                 <iframe id="iframeDd"></iframe>
@@ -924,7 +945,11 @@
                 <button onclick="codeForm()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editForm"><img></textarea>
+                <textarea id="editForm">
+<form>
+    <!-- Bu yerda serverga yuboriladigan malumotlar yoziladi -->
+</form>
+                </textarea>
             </div>
             <div class="frame">
                 <iframe id="iframeForm"></iframe>
@@ -941,7 +966,52 @@
                 <button onclick="codeInput()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editInput"><img></textarea>
+                <textarea id="editInput">
+<input type="text">
+<hr>
+<input type="button" value="Yuborish">
+<hr>
+<input type="checkbox">
+<hr>
+<input type="color">
+<hr>
+<input type="date">
+<hr>
+<input type="datetime">
+<hr>
+<input type="datetime-local">
+<hr>
+<input type="email">
+<hr>
+<input type="file">
+<hr>
+<input type="image">
+<hr>
+<input type="month">
+<hr>
+<input type="number">
+<hr>
+<input type="password">
+<hr>
+<input type="radio">
+<hr>
+<input type="range">
+<hr>
+<input type="reset">
+<hr>
+<input type="search">
+<hr>
+<input type="submit">
+<hr>
+<input type="tel">
+<hr>
+<input type="time">
+<hr>
+<input type="url">
+<hr>
+<input type="week">
+<hr>
+<input type="hidden"></textarea>
             </div>
             <div class="frame">
                 <iframe id="iframeInput"></iframe>
@@ -958,7 +1028,8 @@
                 <button onclick="codeTextarea()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editTextarea"><img></textarea>
+                <textarea id="editTextarea">
+<textarea cols="80" rows="20"></textarea></textarea>
             </div>
             <div class="frame">
                 <iframe id="iframeTextarea"></iframe>
@@ -975,7 +1046,8 @@
                 <button onclick="codeButton()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editButton"><img></textarea>
+                <textarea id="editButton">
+<button>Click</button></textarea>
             </div>
             <div class="frame">
                 <iframe id="iframeButton"></iframe>
@@ -992,7 +1064,16 @@
                 <button onclick="codeSelect()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editSelect"><img></textarea>
+                <textarea id="editSelect">
+<select>    <!-- Ochiladigan ro'yxatning konteyneri -->
+    <optgroup label="Frontend">
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+        <option>Jquery</option>
+        <option>React</option>
+    </optgroup>
+</select></textarea>
             </div>
             <div class="frame">
                 <iframe id="iframeSelect"></iframe>
@@ -1009,7 +1090,16 @@
                 <button onclick="codeOptgroup()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editOptgroup"><img></textarea>
+                <textarea id="editOptgroup">
+<select>
+    <optgroup label="Frontend"> <!-- Ochiladigan ro'yxatning sarlavhasi -->
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+        <option>Jquery</option>
+        <option>React</option>
+    </optgroup>
+</select></textarea>
             </div>
             <div class="frame">
                 <iframe id="iframeOptgroup"></iframe>
@@ -1026,7 +1116,16 @@
                 <button onclick="codeOption()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editOption"><img></textarea>
+                <textarea id="editOption">
+<select>
+    <optgroup label="Frontend">
+        <option>HTML</option>       <!-- Ro'yxat -->
+        <option>CSS</option>        <!-- Ro'yxat -->
+        <option>JavaScript</option> <!-- Ro'yxat -->
+        <option>Jquery</option>     <!-- Ro'yxat -->
+        <option>React</option>      <!-- Ro'yxat -->
+    </optgroup>
+</select></textarea>
             </div>
             <div class="frame">
                 <iframe id="iframeOption"></iframe>
