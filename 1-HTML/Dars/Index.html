@@ -82,14 +82,14 @@
         summary{font-size: 30px; font-weight: bold;}
         .option{color: blue;}
         .col-1{
-            border: 2px solid yellow;
+            /* border: 2px solid yellow; */
         }
         .col-2{
-            border: 2px solid blue;
+            /* border: 2px solid blue; */
         }
         .editor{
             float: left;
-            border: 2px solid red;
+            /* border: 2px solid blue; */
             width: 50%;
         }
         .frame{
@@ -108,7 +108,6 @@
         }
         button{
             padding: 15px;
-            margin-bottom: 20px;
             background-color: #333;
             color: yellowgreen;
             border: 10px outset #333;
@@ -118,6 +117,9 @@
         }
         legend{font-size: 40px; font-weight: bold; color: brown;}
         .s{font-size: 30px;}
+        .editor > h1{text-align: center;margin: 0;}
+        .frame > h1{text-align: center;margin: 0;}
+        .col-1 > table > caption{color: blue; font-size: 20px; font-weight: bold;}
     </style>
 </head>
 <body>
@@ -135,6 +137,7 @@
                 <button onclick="codeDoc()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editDoc">
 <!DOCTYPE html>
 <html>
@@ -147,6 +150,7 @@
 </html></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeDoc"></iframe>
             </div>
         </div>
@@ -171,9 +175,11 @@
             <button onclick="codeH1()">Tekshirish</button>
         </div>
         <div class="editor">
+            <h1>Sintaksis</h1>
             <textarea id="editH1"><h1>Sarlavha 1</h1></textarea>
         </div>
         <div class="frame">
+            <h1>Natija</h1>
             <iframe id="iframeH1"></iframe>
         </div>
     </div>
@@ -188,9 +194,11 @@
             <button onclick="codeH2()">Tekshirish</button>
         </div>
         <div class="editor">
+            <h1>Sintaksis</h1>
             <textarea id="editH2"><h2>Sarlavha 2</h2></textarea>
         </div>
         <div class="frame">
+            <h1>Natija</h1>
             <iframe id="iframeH2"></iframe>
         </div>
     </div>
@@ -205,9 +213,11 @@
             <button onclick="codeH3()">Tekshirish</button>
         </div>
         <div class="editor">
+            <h1>Sintaksis</h1>
             <textarea id="editH3"><h3>Sarlavha 3</h3></textarea>
         </div>
         <div class="frame">
+            <h1>Natija</h1>
             <iframe id="iframeH3"></iframe>
         </div>
     </div>
@@ -222,9 +232,11 @@
             <button onclick="codeH4()">Tekshirish</button>
         </div>
         <div class="editor">
+            <h1>Sintaksis</h1>
             <textarea id="editH4"><h4>Sarlavha 4</h4></textarea>
         </div>
         <div class="frame">
+            <h1>Natija</h1>
             <iframe id="iframeH4"></iframe>
         </div>
     </div>
@@ -239,9 +251,11 @@
             <button onclick="codeH5()">Tekshirish</button>
         </div>
         <div class="editor">
+            <h1>Sintaksis</h1>
             <textarea id="editH5"><h5>Sarlavha 5</h5></textarea>
         </div>
         <div class="frame">
+            <h1>Natija</h1>
             <iframe id="iframeH5"></iframe>
         </div>
     </div>
@@ -256,9 +270,11 @@
             <button onclick="codeH6()">Tekshirish</button>
         </div>
         <div class="editor">
+            <h1>Sintaksis</h1>
             <textarea id="editH6"><h6>Sarlavha 6</h6></textarea>
         </div>
         <div class="frame">
+            <h1>Natija</h1>
             <iframe id="iframeH6"></iframe>
         </div>
     </div>
@@ -273,11 +289,13 @@
             <button onclick="codeP()">Tekshirish</button>
         </div>
         <div class="editor">
+            <h1>Sintaksis</h1>
 <textarea id="editP">
 <p>Bu Birinchi Paragraf</p>
 <p>Bu Ikkinchi Paragraf</p></textarea>
         </div>
         <div class="frame">
+            <h1>Natija</h1>
             <iframe id="iframeP"></iframe>
         </div>
     </div>
@@ -292,10 +310,12 @@
             <button onclick="codeBr()">Tekshirish</button>
         </div>
         <div class="editor">
+            <h1>Sintaksis</h1>
 <textarea id="editBr">
 <h1>Bu Birinchi <br> Darajali Sarlavha</h1></textarea>
         </div>
         <div class="frame">
+            <h1>Natija</h1>
             <iframe id="iframeBr"></iframe>
         </div>
     </div>
@@ -310,10 +330,12 @@
             <button onclick="codeHr()">Tekshirish</button>
         </div>
         <div class="editor">
+            <h1>Sintaksis</h1>
 <textarea id="editHr">
 <h1>Bu Birinchi <hr> Darajali Sarlavha</h1></textarea>
         </div>
         <div class="frame">
+            <h1>Natija</h1>
             <iframe id="iframeHr"></iframe>
         </div>
     </div>
@@ -328,6 +350,7 @@
             <button onclick="code_()">Tekshirish</button>
         </div>
         <div class="editor">
+            <h1>Sintaksis</h1>
 <textarea id="edit_">
 <h1>Bu Birinchi Darajali Sarlavha</h1>  <!--Ushbu kod muhum sarlavhalarda ishlatiladi-->
 <!--
@@ -338,6 +361,7 @@
 --></textarea>
         </div>
         <div class="frame">
+            <h1>Natija</h1>
             <iframe id="iframe_"></iframe>
         </div>
     </div>
@@ -354,11 +378,13 @@
                 <button onclick="codeB()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editB">
 <p>Paragraf</p>
 <b>Biror bir matn</b></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeB"></iframe>
             </div>
         </div>
@@ -373,11 +399,13 @@
                 <button onclick="codeStrong()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editStrong">
 <p>Paragraf</p>
 <strong>Biror bir matn</strong></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeStrong"></iframe>
             </div>
         </div>
@@ -392,11 +420,13 @@
                 <button onclick="codeI()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editI">
 <p>Paragraf</p>
 <i>Biror bir matn</i></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeI"></iframe>
             </div>
         </div>
@@ -411,11 +441,13 @@
                 <button onclick="codeEm()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editEm">
 <p>Paragraf</p>
 <em>Biror bir matn</em></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeEm"></iframe>
             </div>
         </div>
@@ -430,11 +462,13 @@
                 <button onclick="codeDfn()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editDfn">
 <p>Paragraf</p>
 <dfn>Biror bir matn</dfn></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeDfn"></iframe>
             </div>
         </div>
@@ -449,9 +483,11 @@
                 <button onclick="codeMark()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editMark"><mark>Biror bir matn</mark></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeMark"></iframe>
             </div>
         </div>
@@ -466,9 +502,11 @@
                 <button onclick="codeS()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editS"><s>Biror bir matn</s></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeS"></iframe>
             </div>
         </div>
@@ -483,9 +521,11 @@
                 <button onclick="codeDel()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editDel"><del>Biror bir matn</del></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeDel"></iframe>
             </div>
         </div>
@@ -500,9 +540,11 @@
                 <button onclick="codeU()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editU"><u>Biror bir matn</u></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeU"></iframe>
             </div>
         </div>
@@ -517,9 +559,11 @@
                 <button onclick="codeIns()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editIns"><ins>Biror bir matn</ins></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeIns"></iframe>
             </div>
         </div>
@@ -534,11 +578,13 @@
                 <button onclick="codeSmall()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editSmall">
 <p>Biror bir matn</p>
 <p><small>Biror bir matn</small></p></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeSmall"></iframe>
             </div>
         </div>
@@ -553,10 +599,12 @@
                 <button onclick="codeSup()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editSup">
 <h1>Salom <sup>Dunyo</sup></h1></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeSup"></iframe>
             </div>
         </div>
@@ -571,10 +619,12 @@
                 <button onclick="codeSub()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editSub">
 <h1>Salom <sub>Dunyo</sub></h1></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeSub"></iframe>
             </div>
         </div>
@@ -589,12 +639,14 @@
                 <button onclick="codePre()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editPre">
 <h4>                        Biror bir matn</h4>
 <p>                         Biror bir matn</p>
 <pre>                       Biror bir matn</pre></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframePre"></iframe>
             </div>
         </div>
@@ -609,24 +661,64 @@
                 <button onclick="codeAbbr()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editAbbr">
 <abbr title="Barkamol Avlod Maktabi">BAM</abbr></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeAbbr"></iframe>
             </div>
         </div>
     </details>
-    <details>
+    <details open>
         <summary><code><</code><code>meter</code><code>></code></summary>
         <div class="col-1">
             <h3><span class="option">Vazifasi :</span> Предназначен для отображения скалярной величины в заданном диапазоне, или же для графического представления дробного числа. Для использования данного тега должно быть известно максимальное значение.</h3>
+            <table border="5">
+                <caption>Atributlar</caption>
+                <tr>
+                    <th>min=""</th>
+                    <td>Задаёт минимально возможное значение.</td>
+                </tr>
+                <tr>
+                    <th>max=""</th>
+                    <td>Задаёт максимально возможное значение.</td>
+                </tr>
+                <tr>
+                    <th>value=""</th>
+                    <td>Устанавливает значение.</td>
+                </tr>
+                <tr>
+                    <th>low=""</th>
+                    <td>Определяет предел, при достижении которого значение считается низким.</td>
+                </tr>
+                <tr>
+                    <th>high=""</th>
+                    <td>Определяет предел, при достижении которого значение считается высоким.</td>
+                </tr>
+                <tr>
+                    <th>optimum=""</th>
+                    <td>Определяет наилучшее или оптимальное значение.</td>
+                </tr>
+            </table>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
                 <button onclick="codeMeter()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editMeter">
 <meter min="0" max="100" value="15" low="20" high="80" optimum="90"></meter>
 <br><br>
@@ -635,6 +727,7 @@
 <meter min="0" max="100" value="90" low="20" high="80" optimum="90"></meter></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeMeter"></iframe>
             </div>
         </div>
@@ -649,12 +742,14 @@
                 <button onclick="codeProgress()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editProgress">
 <progress max="100" value="80"></progress>
 <br><br>
 <progress></progress></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeProgress"></iframe>
             </div>
         </div>
@@ -671,9 +766,11 @@
                 <button onclick="codeA()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editA"><a href="https://www.youtube.com">Youtube</a></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeA"></iframe>
             </div>
         </div>
@@ -690,9 +787,11 @@
                 <button onclick="codeImg()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editImg"><img src="bmw2.jpg" width="500"></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeImg"></iframe>
             </div>
         </div>
@@ -707,6 +806,7 @@
                 <button onclick="codeFigure()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editFigure">
 <figure> <!-- bo'sh konteyner  img ni va figcaption ni o'z ichiga oladi -->
     <img src="bmw2.jpg" width="500" alt="Rasim serverdan Uchgan">
@@ -715,6 +815,7 @@
 
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeFigure"></iframe>
             </div>
         </div>
@@ -729,6 +830,7 @@
                 <button onclick="codeFigcaption()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editFigcaption">
 <figure>
     <img src="bmw2.jpg" width="500" alt="Rasim serverdan Uchgan">
@@ -736,6 +838,7 @@
 </figure></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeFigcaption"></iframe>
             </div>
         </div>
@@ -750,6 +853,7 @@
                 <button onclick="codePicture()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editPicture">
 <picture>
     <source media="(min-width: 650px)" srcset="lambo.jpg">
@@ -758,6 +862,7 @@
 </picture></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframePicture"></iframe>
             </div>
         </div>
@@ -774,6 +879,7 @@
                 <button onclick="codeUl()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editUl">
 <ul>  <!-- Tartibsiz ro'yxat konteyneri -->
     <li>HTML</li>       <!-- Ro'yxat -->
@@ -784,6 +890,7 @@
                 </textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeUl"></iframe>
             </div>
         </div>
@@ -798,6 +905,7 @@
                 <button onclick="codeOl()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editOl">
 <ol>    <!-- Tartibli ro'yxat konteyneri -->
     <li>HTML</li>       <!-- Ro'yxat -->
@@ -808,6 +916,7 @@
                 </textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeOl"></iframe>
             </div>
         </div>
@@ -822,6 +931,7 @@
                 <button onclick="codeLi()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editLi">
 <ul>    <!-- 1 konteyner -->
     <li>HTML</li>
@@ -857,6 +967,7 @@
                 </textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeLi"></iframe>
             </div>
         </div>
@@ -871,6 +982,7 @@
                 <button onclick="codeDl()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editDl">
 <dl>  <!-- Ro'yxat uchun bo'sh konteyner -->
     <dt>JavaScript</dt>
@@ -881,6 +993,7 @@
                 </textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeDl"></iframe>
             </div>
         </div>
@@ -895,6 +1008,7 @@
                 <button onclick="codeDt()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editDt">
 <dl>
     <dt>JavaScript</dt>  <!-- R'yxat uchun sarlavha -->
@@ -905,6 +1019,7 @@
                 </textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeDt"></iframe>
             </div>
         </div>
@@ -919,6 +1034,7 @@
                 <button onclick="codeDd()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editDd">
 <dl>
     <dt>JavaScript</dt>
@@ -929,6 +1045,7 @@
                 </textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeDd"></iframe>
             </div>
         </div>
@@ -945,6 +1062,7 @@
                 <button onclick="codeForm()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editForm">
 <form>
     <!-- Bu yerda serverga yuboriladigan malumotlar yoziladi -->
@@ -952,6 +1070,7 @@
                 </textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeForm"></iframe>
             </div>
         </div>
@@ -1046,10 +1165,12 @@
                 <button onclick="codeButton()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editButton">
 <button>Click</button></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeButton"></iframe>
             </div>
         </div>
@@ -1142,9 +1263,11 @@
                 <button onclick="codeLabel()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editLabel"><img></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeLabel"></iframe>
             </div>
         </div>
@@ -1159,9 +1282,11 @@
                 <button onclick="codeFieldset()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editFieldset"><img></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeFieldset"></iframe>
             </div>
         </div>
@@ -1176,9 +1301,11 @@
                 <button onclick="codeLegend()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editLegend"><img></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeLegend"></iframe>
             </div>
         </div>
@@ -1193,9 +1320,11 @@
                 <button onclick="codeDatalist()">Tekshirish</button>
             </div>
             <div class="editor">
+                <h1>Sintaksis</h1>
                 <textarea id="editDatalist"><img></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeDatalist"></iframe>
             </div>
         </div>
@@ -1212,9 +1341,13 @@
                 <button onclick="codeIframe()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editIframe"><img></textarea>
+                <h1>Sintaksis</h1>
+                <textarea id="editIframe">
+<iframe src="../../index.html" frameborder="1" width="800" height="300"></iframe>
+                </textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeIframe"></iframe>
             </div>
         </div>
@@ -1231,9 +1364,12 @@
                 <button onclick="codeAudio()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editAudio"><img></textarea>
+                <h1>Sintaksis</h1>
+                <textarea id="editAudio">
+<audio src="Nina_Simonone.mp3" controls></audio></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeAudio"></iframe>
             </div>
         </div>
@@ -1248,9 +1384,12 @@
                 <button onclick="codeVideo()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editVideo"><img></textarea>
+                <h1>Sintaksis</h1>
+                <textarea id="editVideo">
+<video src="BUKHARA.mp4" controls width="500"></video></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeVideo"></iframe>
             </div>
         </div>
@@ -1267,9 +1406,22 @@
                 <button onclick="codeTable()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editTable"><img></textarea>
+                <h1>Sintaksis</h1>
+                <textarea id="editTable">
+<table border="2">  <!-- Jadval yaratadigan konteyner -->
+    <caption>Dasturlash</caption>
+    <tr>
+        <th>Frontend</th>
+        <th>Backend</th>
+    </tr>
+    <tr>
+        <td>JavaScript</td>
+        <td>Node.js</td>
+    </tr>
+</table></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeTable"></iframe>
             </div>
         </div>
@@ -1284,9 +1436,22 @@
                 <button onclick="codeCaption()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editCaption"><img></textarea>
+                <h1>Sintaksis</h1>
+                <textarea id="editCaption">
+<table border="2">
+    <caption>Dasturlash</caption>   <!-- Jadval uchun sarlavha -->
+    <tr>
+        <th>Frontend</th>
+        <th>Backend</th>
+    </tr>
+    <tr>
+        <td>JavaScript</td>
+        <td>Node.js</td>
+    </tr>
+</table></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeCaption"></iframe>
             </div>
         </div>
@@ -1301,9 +1466,22 @@
                 <button onclick="codeTr()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editTr"><img></textarea>
+                <h1>Sintaksis</h1>
+                <textarea id="editTr">
+<table border="2">
+    <caption>Dasturlash</caption>
+    <tr>    <!-- Jadval uchun qator yaratadi -->
+        <th>Frontend</th>
+        <th>Backend</th>
+    </tr>
+    <tr>    <!-- Jadval uchun qator yaratadi -->
+        <td>JavaScript</td>
+        <td>Node.js</td>
+    </tr>
+</table></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeTr"></iframe>
             </div>
         </div>
@@ -1318,9 +1496,22 @@
                 <button onclick="codeTh()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editTh"><img></textarea>
+                <h1>Sintaksis</h1>
+                <textarea id="editTh">
+<table border="2">
+    <caption>Dasturlash</caption>
+    <tr>
+        <th>Frontend</th>   <!-- Jadvalning kataklari uchun sarlavha -->
+        <th>Backend</th>    <!-- Jadvalning kataklari uchun sarlavha -->
+    </tr>
+    <tr>
+        <td>JavaScript</td>
+        <td>Node.js</td>
+    </tr>
+</table></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeTh"></iframe>
             </div>
         </div>
@@ -1335,9 +1526,22 @@
                 <button onclick="codeTd()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editTd"><img></textarea>
+                <h1>Sintaksis</h1>
+                <textarea id="editTd">
+<table border="2">
+    <caption>Dasturlash</caption>
+    <tr>
+        <th>Frontend</th>
+        <th>Backend</th>
+    </tr>
+    <tr>
+        <td>JavaScript</td>   <!-- Jadvalning kataklari uchun matn -->
+        <td>Node.js</td>      <!-- Jadvalning kataklari uchun matn -->
+    </tr>
+</table></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeTd"></iframe>
             </div>
         </div>
@@ -1354,9 +1558,15 @@
                 <button onclick="codeDetails()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editDetails"><img></textarea>
+                <h1>Sintaksis</h1>
+                <textarea id="editDetails">
+<details>   <!-- Ochiladigan ro'yxat konteyneri -->
+    <summary>Salom Dunyo</summary>
+    <h1>Hello World</h1>
+</details></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeDetails"></iframe>
             </div>
         </div>
@@ -1371,9 +1581,15 @@
                 <button onclick="codeSummary()">Tekshirish</button>
             </div>
             <div class="editor">
-                <textarea id="editSummary"><img></textarea>
+                <h1>Sintaksis</h1>
+                <textarea id="editSummary">
+<details>
+    <summary>Salom Dunyo</summary>  <!-- Ochiladigan ro'yxat sarlavhasi -->
+    <h1>Hello World</h1>
+</details></textarea>
             </div>
             <div class="frame">
+                <h1>Natija</h1>
                 <iframe id="iframeSummary"></iframe>
             </div>
         </div>
@@ -1392,7 +1608,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editDoc.setSize("895","400");
+        editDoc.setSize("925","400");
         var iframeDoc = document.getElementById("iframeDoc").contentWindow.document;
         function codeDoc(){
             let codeValue = editDoc.getValue();
@@ -1470,7 +1686,7 @@
             // theme: "yonce"
             // theme: "zenburn"
         });
-        editH1.setSize("895","400");
+        editH1.setSize("925","400");
         var iframeH1 = document.getElementById("iframeH1").contentWindow.document;
         function codeH1(){
             let codeValue = editH1.getValue();
@@ -1484,7 +1700,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editH2.setSize("895","400");
+        editH2.setSize("925","400");
         var iframeH2 = document.getElementById("iframeH2").contentWindow.document;
         function codeH2(){
             let codeValue = editH2.getValue();
@@ -1498,7 +1714,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editH3.setSize("895","400");
+        editH3.setSize("925","400");
         var iframeH3 = document.getElementById("iframeH3").contentWindow.document;
         function codeH3(){
             let codeValue = editH3.getValue();
@@ -1512,7 +1728,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editH4.setSize("895","400");
+        editH4.setSize("925","400");
         var iframeH4 = document.getElementById("iframeH4").contentWindow.document;
         function codeH4(){
             let codeValue = editH4.getValue();
@@ -1526,7 +1742,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editH5.setSize("895","400");
+        editH5.setSize("925","400");
         var iframeH5 = document.getElementById("iframeH5").contentWindow.document;
         function codeH5(){
             let codeValue = editH5.getValue();
@@ -1540,7 +1756,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editH6.setSize("895","400");
+        editH6.setSize("925","400");
         var iframeH6 = document.getElementById("iframeH6").contentWindow.document;
         function codeH6(){
             let codeValue = editH6.getValue();
@@ -1554,7 +1770,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editP.setSize("895","400");
+        editP.setSize("925","400");
         var iframeP = document.getElementById("iframeP").contentWindow.document;
         function codeP(){
             let codeValue = editP.getValue();
@@ -1568,7 +1784,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editBr.setSize("895","400");
+        editBr.setSize("925","400");
         var iframeBr = document.getElementById("iframeBr").contentWindow.document;
         function codeBr(){
             let codeValue = editBr.getValue();
@@ -1582,7 +1798,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editHr.setSize("895","400");
+        editHr.setSize("925","400");
         var iframeHr = document.getElementById("iframeHr").contentWindow.document;
         function codeHr(){
             let codeValue = editHr.getValue();
@@ -1596,7 +1812,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        edit_.setSize("895","400");
+        edit_.setSize("925","400");
         var iframe_ = document.getElementById("iframe_").contentWindow.document;
         function code_(){
             let codeValue = edit_.getValue();
@@ -1610,7 +1826,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editB.setSize("895","400");
+        editB.setSize("925","400");
         var iframeB = document.getElementById("iframeB").contentWindow.document;
         function codeB(){
             let codeValue = editB.getValue();
@@ -1624,7 +1840,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editStrong.setSize("895","400");
+        editStrong.setSize("925","400");
         var iframeStrong = document.getElementById("iframeStrong").contentWindow.document;
         function codeStrong(){
             let codeValue = editStrong.getValue();
@@ -1638,7 +1854,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editI.setSize("895","400");
+        editI.setSize("925","400");
         var iframeI = document.getElementById("iframeI").contentWindow.document;
         function codeI(){
             let codeValue = editI.getValue();
@@ -1652,7 +1868,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editEm.setSize("895","400");
+        editEm.setSize("925","400");
         var iframeEm = document.getElementById("iframeEm").contentWindow.document;
         function codeEm(){
             let codeValue = editEm.getValue();
@@ -1666,7 +1882,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editDfn.setSize("895","400");
+        editDfn.setSize("925","400");
         var iframeDfn = document.getElementById("iframeDfn").contentWindow.document;
         function codeDfn(){
             let codeValue = editDfn.getValue();
@@ -1680,7 +1896,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editMark.setSize("895","400");
+        editMark.setSize("925","400");
         var iframeMark = document.getElementById("iframeMark").contentWindow.document;
         function codeMark(){
             let codeValue = editMark.getValue();
@@ -1694,7 +1910,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editS.setSize("895","400");
+        editS.setSize("925","400");
         var iframeS = document.getElementById("iframeS").contentWindow.document;
         function codeS(){
             let codeValue = editS.getValue();
@@ -1708,7 +1924,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editDel.setSize("895","400");
+        editDel.setSize("925","400");
         var iframeDel = document.getElementById("iframeDel").contentWindow.document;
         function codeDel(){
             let codeValue = editDel.getValue();
@@ -1722,7 +1938,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editU.setSize("895","400");
+        editU.setSize("925","400");
         var iframeU = document.getElementById("iframeU").contentWindow.document;
         function codeU(){
             let codeValue = editU.getValue();
@@ -1736,7 +1952,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editIns.setSize("895","400");
+        editIns.setSize("925","400");
         var iframeIns = document.getElementById("iframeIns").contentWindow.document;
         function codeIns(){
             let codeValue = editIns.getValue();
@@ -1750,7 +1966,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editSmall.setSize("895","400");
+        editSmall.setSize("925","400");
         var iframeSmall = document.getElementById("iframeSmall").contentWindow.document;
         function codeSmall(){
             let codeValue = editSmall.getValue();
@@ -1764,7 +1980,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editSup.setSize("895","400");
+        editSup.setSize("925","400");
         var iframeSup = document.getElementById("iframeSup").contentWindow.document;
         function codeSup(){
             let codeValue = editSup.getValue();
@@ -1778,7 +1994,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editSub.setSize("895","400");
+        editSub.setSize("925","400");
         var iframeSub = document.getElementById("iframeSub").contentWindow.document;
         function codeSub(){
             let codeValue = editSub.getValue();
@@ -1792,7 +2008,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editPre.setSize("895","400");
+        editPre.setSize("925","400");
         var iframePre = document.getElementById("iframePre").contentWindow.document;
         function codePre(){
             let codeValue = editPre.getValue();
@@ -1806,7 +2022,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editAbbr.setSize("895","400");
+        editAbbr.setSize("925","400");
         var iframeAbbr = document.getElementById("iframeAbbr").contentWindow.document;
         function codeAbbr(){
             let codeValue = editAbbr.getValue();
@@ -1820,7 +2036,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editMeter.setSize("895","400");
+        editMeter.setSize("925","400");
         var iframeMeter = document.getElementById("iframeMeter").contentWindow.document;
         function codeMeter(){
             let codeValue = editMeter.getValue();
@@ -1834,7 +2050,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editProgress.setSize("895","400");
+        editProgress.setSize("925","400");
         var iframeProgress = document.getElementById("iframeProgress").contentWindow.document;
         function codeProgress(){
             let codeValue = editProgress.getValue();
@@ -1848,7 +2064,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editA.setSize("895","400");
+        editA.setSize("925","400");
         var iframeA = document.getElementById("iframeA").contentWindow.document;
         function codeA(){
             let codeValue = editA.getValue();
@@ -1862,7 +2078,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editImg.setSize("895","400");
+        editImg.setSize("925","400");
         var iframeImg = document.getElementById("iframeImg").contentWindow.document;
         function codeImg(){
             let codeValue = editImg.getValue();
@@ -1876,7 +2092,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editFigure.setSize("895","400");
+        editFigure.setSize("925","400");
         var iframeFigure = document.getElementById("iframeFigure").contentWindow.document;
         function codeFigure(){
             let codeValue = editFigure.getValue();
@@ -1890,7 +2106,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editFigcaption.setSize("895","400");
+        editFigcaption.setSize("925","400");
         var iframeFigcaption = document.getElementById("iframeFigcaption").contentWindow.document;
         function codeFigcaption(){
             let codeValue = editFigcaption.getValue();
@@ -1904,7 +2120,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editPicture.setSize("895","400");
+        editPicture.setSize("925","400");
         var iframePicture = document.getElementById("iframePicture").contentWindow.document;
         function codePicture(){
             let codeValue = editPicture.getValue();
@@ -1918,7 +2134,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editUl.setSize("895","400");
+        editUl.setSize("925","400");
         var iframeUl = document.getElementById("iframeUl").contentWindow.document;
         function codeUl(){
             let codeValue = editUl.getValue();
@@ -1932,7 +2148,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editOl.setSize("895","400");
+        editOl.setSize("925","400");
         var iframeOl = document.getElementById("iframeOl").contentWindow.document;
         function codeOl(){
             let codeValue = editOl.getValue();
@@ -1946,7 +2162,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editLi.setSize("895","400");
+        editLi.setSize("925","400");
         var iframeLi = document.getElementById("iframeLi").contentWindow.document;
         function codeLi(){
             let codeValue = editLi.getValue();
@@ -1960,7 +2176,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editDl.setSize("895","400");
+        editDl.setSize("925","400");
         var iframeDl = document.getElementById("iframeDl").contentWindow.document;
         function codeDl(){
             let codeValue = editDl.getValue();
@@ -1974,7 +2190,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editDt.setSize("895","400");
+        editDt.setSize("925","400");
         var iframeDt = document.getElementById("iframeDt").contentWindow.document;
         function codeDt(){
             let codeValue = editDt.getValue();
@@ -1988,7 +2204,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editDd.setSize("895","400");
+        editDd.setSize("925","400");
         var iframeDd = document.getElementById("iframeDd").contentWindow.document;
         function codeDd(){
             let codeValue = editDd.getValue();
@@ -2002,7 +2218,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editForm.setSize("895","400");
+        editForm.setSize("925","400");
         var iframeForm = document.getElementById("iframeForm").contentWindow.document;
         function codeForm(){
             let codeValue = editForm.getValue();
@@ -2016,7 +2232,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editInput.setSize("895","400");
+        editInput.setSize("925","400");
         var iframeInput = document.getElementById("iframeInput").contentWindow.document;
         function codeInput(){
             let codeValue = editInput.getValue();
@@ -2030,7 +2246,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editTextarea.setSize("895","400");
+        editTextarea.setSize("925","400");
         var iframeTextarea = document.getElementById("iframeTextarea").contentWindow.document;
         function codeTextarea(){
             let codeValue = editTextarea.getValue();
@@ -2044,7 +2260,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editButton.setSize("895","400");
+        editButton.setSize("925","400");
         var iframeButton = document.getElementById("iframeButton").contentWindow.document;
         function codeButton(){
             let codeValue = editButton.getValue();
@@ -2058,7 +2274,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editSelect.setSize("895","400");
+        editSelect.setSize("925","400");
         var iframeSelect = document.getElementById("iframeSelect").contentWindow.document;
         function codeSelect(){
             let codeValue = editSelect.getValue();
@@ -2072,7 +2288,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editOptgroup.setSize("895","400");
+        editOptgroup.setSize("925","400");
         var iframeOptgroup = document.getElementById("iframeOptgroup").contentWindow.document;
         function codeOptgroup(){
             let codeValue = editOptgroup.getValue();
@@ -2086,7 +2302,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editOption.setSize("895","400");
+        editOption.setSize("925","400");
         var iframeOption = document.getElementById("iframeOption").contentWindow.document;
         function codeOption(){
             let codeValue = editOption.getValue();
@@ -2100,7 +2316,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editLabel.setSize("895","400");
+        editLabel.setSize("925","400");
         var iframeLabel = document.getElementById("iframeLabel").contentWindow.document;
         function codeLabel(){
             let codeValue = editLabel.getValue();
@@ -2114,7 +2330,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editFieldset.setSize("895","400");
+        editFieldset.setSize("925","400");
         var iframeFieldset = document.getElementById("iframeFieldset").contentWindow.document;
         function codeFieldset(){
             let codeValue = editFieldset.getValue();
@@ -2128,7 +2344,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editLegend.setSize("895","400");
+        editLegend.setSize("925","400");
         var iframeLegend = document.getElementById("iframeLegend").contentWindow.document;
         function codeLegend(){
             let codeValue = editLegend.getValue();
@@ -2142,7 +2358,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editDatalist.setSize("895","400");
+        editDatalist.setSize("925","400");
         var iframeDatalist = document.getElementById("iframeDatalist").contentWindow.document;
         function codeDatalist(){
             let codeValue = editDatalist.getValue();
@@ -2156,7 +2372,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editIframe.setSize("895","400");
+        editIframe.setSize("925","400");
         var iframeIframe = document.getElementById("iframeIframe").contentWindow.document;
         function codeIframe(){
             let codeValue = editIframe.getValue();
@@ -2170,7 +2386,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editAudio.setSize("895","400");
+        editAudio.setSize("925","400");
         var iframeAudio = document.getElementById("iframeAudio").contentWindow.document;
         function codeAudio(){
             let codeValue = editAudio.getValue();
@@ -2184,7 +2400,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editVideo.setSize("895","400");
+        editVideo.setSize("925","400");
         var iframeVideo = document.getElementById("iframeVideo").contentWindow.document;
         function codeVideo(){
             let codeValue = editVideo.getValue();
@@ -2198,7 +2414,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editTable.setSize("895","400");
+        editTable.setSize("925","400");
         var iframeTable = document.getElementById("iframeTable").contentWindow.document;
         function codeTable(){
             let codeValue = editTable.getValue();
@@ -2212,7 +2428,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editCaption.setSize("895","400");
+        editCaption.setSize("925","400");
         var iframeCaption = document.getElementById("iframeCaption").contentWindow.document;
         function codeCaption(){
             let codeValue = editCaption.getValue();
@@ -2226,7 +2442,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editTr.setSize("895","400");
+        editTr.setSize("925","400");
         var iframeTr = document.getElementById("iframeTr").contentWindow.document;
         function codeTr(){
             let codeValue = editTr.getValue();
@@ -2240,7 +2456,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editTh.setSize("895","400");
+        editTh.setSize("925","400");
         var iframeTh = document.getElementById("iframeTh").contentWindow.document;
         function codeTh(){
             let codeValue = editTh.getValue();
@@ -2254,7 +2470,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editTd.setSize("895","400");
+        editTd.setSize("925","400");
         var iframeTd = document.getElementById("iframeTd").contentWindow.document;
         function codeTd(){
             let codeValue = editTd.getValue();
@@ -2268,7 +2484,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editDetails.setSize("895","400");
+        editDetails.setSize("925","400");
         var iframeDetails = document.getElementById("iframeDetails").contentWindow.document;
         function codeDetails(){
             let codeValue = editDetails.getValue();
@@ -2282,7 +2498,7 @@
             lineNumbers: true,
             theme: "panda-syntax"
         });
-        editSummary.setSize("895","400");
+        editSummary.setSize("925","400");
         var iframeSummary = document.getElementById("iframeSummary").contentWindow.document;
         function codeSummary(){
             let codeValue = editSummary.getValue();
