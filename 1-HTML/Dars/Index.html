@@ -129,10 +129,12 @@
 <fieldset><legend>Базовый HTML</legend>
     <details><summary>Document</summary>
         <div class="col-1">
-            <h3><code class="s"><</code><code class="option s">!DOCTYPE html</code><code class="s">> -</code> Декларация, которая определяет тип документа, помогая браузеру отобразить вестраницу правильно.</h3>
+            <h3><code class="s"><</code><code class="option s">!DOCTYPE html</code><code class="s">> -</code> DOCTYPE это декларация, которая определяет тип документа. Декларация не является тегом HTML это только инструкция для веб-браузера о том, какая версия HTML используется в документе. Декларация !DOCTYPE помогает браузеру отобразить веб-страницу правильно, для этого браузер должен знать, как тип, так и версию документа.
+                Декларация !DOCTYPE html сообщает, что в этом документе используется пятая версия языка гипертекстовой разметки - HTML 5.
+                Обращаю Ваше внимание на то, что декларация должна указываться самой первой в вашем HTML документе, перед тегом html. Декларация !DOCTYPE не чувствительна к регистру..</h3>
             <h3>
                 <details>
-                    <summary style="font-size: inherit;"><code class="s"><</code><code class="option s">html</code><code class="s">> -</code> Сообщает браузеру, что необходимо прочитать документ как программный код, написанный на языке HTML.</summary>
+                    <summary style="font-size: inherit;"><code class="s"><</code><code class="option s">html</code><code class="s">> -</code> Текст между тегами <html> и </html> сообщает браузеру, что необходимо прочитать документ как программный код, написанный на языке гипертекстовой разметки - HTML. Является корневым элементом HTML документа и все остальные элементы должны быть его потомками (вложены в него).</summary>
                     <table border="5" style="margin-top: 15px;">
                         <tr>
                             <th style="color: blue;">Universal atribut</th>
@@ -141,11 +143,35 @@
                     </table>
                 </details>
             </h3>
-            <h3><code class="s"><</code><code class="option s">head</code><code class="s">> -</code> Содержит информацию о документе (сведения о документе, которые не отображаются пользователю).</h3>
-            <h3><code class="s"><</code><code class="option s">title</code><code class="s">> -</code> Обеспечивает название для документа.</h3>
             <h3>
                 <details>
-                    <summary style="font-size: inherit;"><code class="s"><</code><code class="option s">body</code><code class="s">> -</code> Определяет видимое содержимое страницы.</summary>
+                    <summary style="font-size: inherit;"><code class="s"><</code><code class="option s">head</code><code class="s">> -</code> Текст между тегами head содержит информацию о документе (сведения о документе, которые не отображаются пользователю).</summary>
+                    <table border="5" style="margin-top: 15px;">
+                        <tr>
+                            <th style="color: blue;">Universal atribut</th>
+                            <td style="color: green;">Bor</td>
+                        </tr>
+                        <tr>
+                            <th style="color: blue;">Xodisa atribut</th>
+                            <td style="color: green;">Bor</td>
+                        </tr>
+                    </table>
+                </details>
+            </h3>
+            <h3>
+                <details>
+                    <summary style="font-size: inherit;"><code class="s"><</code><code class="option s">title</code><code class="s">> -</code> Текст между тегами title обеспечивает название для документа. Заголовок должен содержать важные ключевые слова, чтобы поисковые системы могли включить вашу страницу в результаты поиска (по определенным запросам пользователей).</summary>
+                    <table border="5" style="margin-top: 15px;">
+                        <tr>
+                            <th style="color: blue;">Universal atribut</th>
+                            <td style="color: green;">Bor</td>
+                        </tr>
+                    </table>
+                </details>
+            </h3>
+            <h3>
+                <details>
+                    <summary style="font-size: inherit;"><code class="s"><</code><code class="option s">body</code><code class="s">> -</code> Текст между элементами body и определяет видимое содержимое страницы.</summary>
                     <table border="5" style="margin-top: 15px;">
                         <tr>
                             <th style="color: blue;">Universal atribut</th>
@@ -185,7 +211,7 @@
 <details>
     <summary><code><</code><code>h1</code><code>></code></summary>
     <div class="col-1">
-        <h3><span class="option">Vazifasi :</span> Определяет заголовок первого уровня.</h3>
+        <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет заголовок первого уровня.</h3>
         <table border="5" style="margin-top: 15px;">
             <tr>
                 <th style="color: blue;">Universal atribut</th>
@@ -214,7 +240,7 @@
 <details>
     <summary><code><</code><code>h2</code><code>></code></summary>
     <div class="col-1">
-        <h3><span class="option">Vazifasi :</span> Определяет заголовок второго уровня.</h3>
+        <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет заголовок второго уровня.</h3>
         <table border="5" style="margin-top: 15px;">
             <tr>
                 <th style="color: blue;">Universal atribut</th>
@@ -243,7 +269,7 @@
 <details>
     <summary><code><</code><code>h3</code><code>></code></summary>
     <div class="col-1">
-        <h3><span class="option">Vazifasi :</span> Определяет заголовок третьего уровня.</h3>
+        <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет заголовок третьего уровня.</h3>
         <table border="5" style="margin-top: 15px;">
             <tr>
                 <th style="color: blue;">Universal atribut</th>
@@ -272,7 +298,7 @@
 <details>
     <summary><code><</code><code>h4</code><code>></code></summary>
     <div class="col-1">
-        <h3><span class="option">Vazifasi :</span> Определяет заголовок четвертого уровня.</h3>
+        <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет заголовок четвертого уровня.</h3>
         <table border="5" style="margin-top: 15px;">
             <tr>
                 <th style="color: blue;">Universal atribut</th>
@@ -301,7 +327,7 @@
 <details>
     <summary><code><</code><code>h5</code><code>></code></summary>
     <div class="col-1">
-        <h3><span class="option">Vazifasi :</span> Определяет заголовок пятого уровня.</h3>
+        <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет заголовок пятого уровня.</h3>
         <table border="5" style="margin-top: 15px;">
             <tr>
                 <th style="color: blue;">Universal atribut</th>
@@ -330,7 +356,7 @@
 <details>
     <summary><code><</code><code>h6</code><code>></code></summary>
     <div class="col-1">
-        <h3><span class="option">Vazifasi :</span> Определяет заголовок шестого уровня.</h3>
+        <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет заголовок шестого уровня.</h3>
         <table border="5" style="margin-top: 15px;">
             <tr>
                 <th style="color: blue;">Universal atribut</th>
@@ -359,7 +385,7 @@
 <details>
     <summary><code><</code><code>p</code><code>></code></summary>
     <div class="col-1">
-        <h3><span class="option">Vazifasi :</span> Определяет параграф.</h3>
+        <h3><span class="option">Vazifasi va qo'llanilishi :</span> Параграфы (абзацы) определяется тегом p (HTML Paragraph Element). Содержание элемента всегда начинается с новой строи</h3>
         <table border="5" style="margin-top: 15px;">
             <tr>
                 <th style="color: blue;">Universal atribut</th>
@@ -390,7 +416,17 @@
 <details>
     <summary><code><</code><code>br</code><code>></code></summary>
     <div class="col-1">
-        <h3><span class="option">Vazifasi :</span> Устанавливает перевод строки в том месте, где этот тег обозначен.</h3>
+        <h3><span class="option">Vazifasi va qo'llanilishi :</span> Тег br устанавливает перевод строки в том месте, где этот тег обозначен. Данный элемент используется без закрывающего тега.</h3>
+        <table border="5" style="margin-top: 15px;">
+            <tr>
+                <th style="color: blue;">Universal atribut</th>
+                <td style="color: green;">Bor</td>
+            </tr>
+            <tr>
+                <th style="color: blue;">Xodisa atribut</th>
+                <td style="color: green;">Bor</td>
+            </tr>
+        </table>
     </div>
     <div class="col-2" style="height: 500px;">
         <div class="btn">
@@ -410,7 +446,7 @@
 <details>
     <summary><code><</code><code>hr</code><code>></code></summary>
     <div class="col-1">
-        <h3><span class="option">Vazifasi :</span> Тэг создает горизонтальную линию на HTML-странице, может использоваться в роли тематического разрыва.</h3>
+        <h3><span class="option">Vazifasi va qo'llanilishi :</span> Тэг hr создает горизонтальную линию на HTML-странице. Элемент hr может использоваться в роли тематического разрыва. Элемент используется без закрывающего тега.</h3>
         <table border="5" style="margin-top: 15px;">
             <tr>
                 <th style="color: blue;">Universal atribut</th>
@@ -440,7 +476,7 @@
 <details>
     <summary><code><</code><code>!-- --</code><code>></code></summary>
     <div class="col-1">
-        <h3><span class="option">Vazifasi :</span> Тег комментария. Используются для временного отключения кода, либо в качестве подсказки. Текст внутри комментария не отображается браузером на странице.</h3>
+        <h3><span class="option">Vazifasi va qo'llanilishi :</span> Теги комментария в HTML коде используются для временного отключения кода (как правило, просто удалить код неудобно по той причине, что возможно его придется восстанавливать) и в качестве подсказки для себя, либо для лиц, которые будут разбираться в Вашем коде. Текст внутри комментария не отображается браузером на странице.Комментарии можно использовать в любом месте страницы, кроме тега title.</h3>
     </div>
     <div class="col-2" style="height: 500px;">
         <div class="btn">
@@ -468,7 +504,7 @@
     <details>
         <summary><code><</code><code>b</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Определяет жирное начертание текста.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Тег b определяет жирное начертание текста на странице.Тэг b представляет собой фрагмент текста, который стилистически отличается от обычного текста, без передачи какого-либо особого значения или значимости. Обычно он используется для указания ключевых слов в тексте, или других фрагментов текста, которые необходимо выделить жирным шрифтом.</h3>
             <table border="5" style="margin-top: 15px;">
                 <tr>
                     <th style="color: blue;">Universal atribut</th>
@@ -499,7 +535,7 @@
     <details>
         <summary><code><</code><code>strong</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Текст, которому придают особое значение (важный текст).</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Тег strong определяет текст, которому придают особое значение (важный текст).Внешне отображение тегов b (определяет жирное начертание текста) и strong не отличается, но элемент strong имеет больший вес для поисковых машин, рекомендуется не злоупотреблять им в документе и использовать его для действительно важного текста. Устройства, позволяющие читать с экрана могут выделять его определенной интонацией.</h3>
             <table border="5" style="margin-top: 15px;">
                 <tr>
                     <th style="color: blue;">Universal atribut</th>
@@ -530,7 +566,7 @@
     <details>
         <summary><code><</code><code>i</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Курсивное начертание текста</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Тег i обозначает курсивное начертание текста. Элемент может быть использован для указания технических терминов, фраз из другого языка, частей текста, которые отражены альтернативным голосом и т.п.</h3>
             <table border="5" style="margin-top: 15px;">
                 <tr>
                     <th style="color: blue;">Universal atribut</th>
@@ -561,7 +597,7 @@
     <details>
         <summary><code><</code><code>em</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Экспрессивно-эмоциональное выделение текста</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Тег em обозначает экспрессивно-эмоциональное выделение. Внешне отображение тега не отличается от тега i, но при этом элемент em используется только тогда, когда есть смысловая необходимость выделить текст. Кроме того, программы, считывающие текст с экрана, акцентирует на таких выделениях внимание определённой интонацией.</h3>
             <table border="5" style="margin-top: 15px;">
                 <tr>
                     <th style="color: blue;">Universal atribut</th>
@@ -592,7 +628,7 @@
     <details>
         <summary><code><</code><code>dfn</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Используется, когда в документе упоминается новый термин или слово (первое и поясняемое употребление). По умолчанию, оно выделяется курсивом.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Тег dfn (HTML Definition Element) используется, когда в документе упоминается новый термин или слово (первое и поясняемое употребление). По умолчанию, элемент выделяется курсивом</h3>
             <table border="5" style="margin-top: 15px;">
                 <tr>
                     <th style="color: blue;">Universal atribut</th>
@@ -623,7 +659,7 @@
     <details>
         <summary><code><</code><code>mark</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Выделенный/подсвеченный текст.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Тег mark html5 определяет выделенный / подсвеченный текст.Элемент может быть использован, например, чтобы выделить искомое слово в разделе, где отображены результаты поиска и т.п.</h3>
             <table border="5" style="margin-top: 15px;">
                 <tr>
                     <th style="color: blue;">Universal atribut</th>
@@ -652,7 +688,7 @@
     <details>
         <summary><code><</code><code>s</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Определяет текст, который больше не является правильным или актуальным.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Тег s определяет текст, который больше не является правильным или актуальным. Браузеры обычно отображают такой текст как перечеркнутый. Тег s не используется для того, чтобы пометить удаленный текст, для того чтобы пометить текст как удаленный, используйте тег del.</h3>
             <table border="5" style="margin-top: 15px;">
                 <tr>
                     <th style="color: blue;">Universal atribut</th>
@@ -678,10 +714,27 @@
             </div>
         </div>
     </details>
-    <details open>
+    <details>
         <summary><code><</code><code>del</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Перечёркнутый (удалённый) текст</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Тег del предназначен для выделения фрагмента текста, который был удален из документа. Как правило, браузеры отображают этот фрагмент как перечёркнутый текст.</h3>
+            <table border="5">
+                <tr>
+                    <th>Атрибут</th>
+                    <th>Значение</th>
+                    <th>Описание</th>
+                </tr>
+                <tr>
+                    <td>cite</td>
+                    <td>URL</td>
+                    <td>Указывает URL адрес документа, который поясняет причину удаления текста. Допускается указывать как абсолютные адреса (например: cite = "http://basicweb.ru/html/tag_del.php), так и относительные (например: cite = "tag_del.php).</td>
+                </tr>
+                <tr>
+                    <td>datetime</td>
+                    <td>YYYY-MM-DDThh:mm:ssTZD</td>
+                    <td>Указывает дату и время, когда текст был удален.</td>
+                </tr>
+            </table>
             <table border="5" style="margin-top: 15px;">
                 <tr>
                     <th style="color: blue;">Universal atribut</th>
@@ -710,7 +763,17 @@
     <details>
         <summary><code><</code><code>u</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Содержит в себе текст, который должен стилистически отличаться от обычного текста, например слова с орфографическими ошибками или текст на другом языке.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Тег u содержит в себе текст, который должен стилистически отличаться от обычного текста, например, слова с орфографическими ошибками или текст на другом языке. В некоторых случаях подчеркивание имеет смысловое значение, например, подчеркивание имён собственных в китайском языке, или указание неправильно написанного слова при проверке орфографии.Обратите внимание, что подчеркнутый текст легко спутать со ссылкой, и поэтому в целом следует избегать его использования, за исключением некоторых случаев.</h3>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -729,7 +792,34 @@
     <details>
         <summary><code><</code><code>ins</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Подчёркнутый текст, вставленный в документ.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Тег ins определяет текст, который был вставлен в документ. Как правило, браузеры по умолчанию отображают этот текст как подчеркнутый.</h3>
+            <table border="5">
+                <tr>
+                    <th>Атрибут</th>
+                    <th>Значение</th>
+                    <th>Описание</th>
+                </tr>
+                <tr>
+                    <td>cite</td>
+                    <td>URL</td>
+                    <td>Указывает URL адрес документа, который поясняет причину удаления текста. Допускается указывать как абсолютные адреса (например: cite = "http://basicweb.ru/html/tag_del.php), так и относительные (например: cite = "tag_del.php).</td>
+                </tr>
+                <tr>
+                    <td>datetime</td>
+                    <td>YYYY-MM-DDThh:mm:ssTZD</td>
+                    <td>Указывает дату и время, когда текст был удален.</td>
+                </tr>
+            </table>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -748,7 +838,17 @@
     <details>
         <summary><code><</code><code>small</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Шрифт, который отображается меньшим размером(мелкий/юридический шрифт).</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Тег small устанавливает размер шрифта текста на один размер меньше (например, от малого - 13px к очень маленькому размеру - 10px, от большого - 18px к среднему - 16px и так далее). Другими словами элемент small устанавливает размер шрифта меньшего размера, чем у родительского элемента.</h3>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -769,7 +869,17 @@
     <details>
         <summary><code><</code><code>sup</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Текст с верхним индексом.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Тег sup определяет текст с верхним индексом.</h3>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -789,7 +899,17 @@
     <details>
         <summary><code><</code><code>sub</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Текст с нижним индексом.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Тег sub определяет текст с нижним индексом.</h3>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -809,7 +929,17 @@
     <details>
         <summary><code><</code><code>pre</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Определяет предварительно отформатированный текст, т.е. текст, который был помещён внутрь тега отобразится со шрифтом фиксированной ширины, и сохранит как пробелы, так и разрывы строк</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Тег pre (HTML Preformatted Text) определяет предварительно отформатированный текст. Текст, который был помещён внутрь тега будет отображен со шрифтом фиксированной ширины и сохранит как пробелы, так и разрывы строк.</h3>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -831,7 +961,17 @@
     <details>
         <summary><code><</code><code>abbr</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Определяет аббревиатуру или акроним. Маркировка сокращений является полезной информацией для браузеров, систем перевода и поисковиков.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> HTML тег abbr (HTML Abbreviation Element) определяет аббревиатуру или акроним. Маркировка сокращений является полезной информацией для браузеров, систем перевода и поисковых машин, для пользователя применение этого элемента не видимо.Как правило, тег abbr применяется совместно с глобальным атрибутом title, для отображения полного описания аббревиатуры пользователю при наведении.</h3>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -851,32 +991,43 @@
     <details>
         <summary><code><</code><code>meter</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Предназначен для отображения скалярной величины в заданном диапазоне, или же для графического представления дробного числа. Для использования данного тега должно быть известно максимальное значение.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Элемент meter html5 предназначен для отображения скалярной величины в заданном диапазоне или же для графического представления дробного числа. Для использования данного тега должно быть известно максимальное значение.Данный тег используется, к примеру, как необходимость отображения релевантности поискового запроса, результатов опроса, заряда батареи, использования дискового пространства и тому подобное. Текст внутри тега отображается только для тех браузеров, которые его не поддерживают.</h3>
             <table border="5">
                 <caption>Atributlar</caption>
                 <tr>
-                    <th>min=""</th>
-                    <td>Задаёт минимально возможное значение.</td>
+                    <th>Атрибут</th>
+                    <th>Значение</th>
+                    <th>Описание</th>
                 </tr>
                 <tr>
-                    <th>max=""</th>
-                    <td>Задаёт максимально возможное значение.</td>
+                    <td>min</td>
+                    <td>number</td>
+                    <td>Атрибут обозначает минимально допустимое значение. Значение по умолчанию ноль.</td>
                 </tr>
                 <tr>
-                    <th>value=""</th>
-                    <td>Устанавливает значение.</td>
+                    <td>max</td>
+                    <td>number</td>
+                    <td>Атрибут обозначает максимально возможное значение. Значение по умолчанию один. Если максимальное значение задано меньшим чем минимальное, то они меняются местами.</td>
                 </tr>
                 <tr>
-                    <th>low=""</th>
-                    <td>Определяет предел, при достижении которого значение считается низким.</td>
+                    <td>value</td>
+                    <td>number</td>
+                    <td>Определяет текущее значение (обязательный атрибут).</td>
                 </tr>
                 <tr>
-                    <th>high=""</th>
-                    <td>Определяет предел, при достижении которого значение считается высоким.</td>
+                    <td>low</td>
+                    <td>number</td>
+                    <td>Атрибут определяет низкие значения (но не минимальные). Это значение должно быть меньше чем high. Если указывается значение low меньше чем значение min, то low = min.</td>
                 </tr>
                 <tr>
-                    <th>optimum=""</th>
-                    <td>Определяет наилучшее или оптимальное значение.</td>
+                    <td>high</td>
+                    <td>number</td>
+                    <td>Атрибут отделяет высокие значения (но не максимальные). Если значение high меньше чем значение low, то high = low. Если high задано большим, чем max, то high = max.</td>
+                </tr>
+                <tr>
+                    <td>optimum</td>
+                    <td>number</td>
+                    <td>Атрибут обозначает оптимальное значение и должен находиться в пределах от min до max. Оно может быть большим, чем значение high.</td>
                 </tr>
             </table>
             <table border="5" style="margin-top: 15px;">
@@ -898,9 +1049,9 @@
                 <h1>Sintaksis</h1>
                 <textarea id="editMeter">
 <meter min="0" max="100" value="15" low="20" high="80" optimum="90"></meter>
-<br><br>
-<meter min="0" max="100" value="70" low="20" high="80" optimum="90"></meter>
-<br><br>
+<br>
+<meter min="0" max="100" value="50" low="20" high="80" optimum="90"></meter>
+<br>
 <meter min="0" max="100" value="90" low="20" high="80" optimum="90"></meter></textarea>
             </div>
             <div class="frame">
@@ -912,7 +1063,35 @@
     <details>
         <summary><code><</code><code>progress</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Предоставляет обратную связь, сообщая о состоянии текущего процесса, отображает какая часть задачи выполнена.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Тег progress html5 предоставляет обратную связь пользователю, сообщая о состоянии текущего процесса. Элемент отображает какая часть задачи уже выполнена.</h3>
+            <table border="5">
+                <caption>Atributlar</caption>
+                <tr>
+                    <th>Атрибут</th>
+                    <th>Значение</th>
+                    <th>Описание</th>
+                </tr>
+                <tr>
+                    <td>max</td>
+                    <td>number</td>
+                    <td>Определяет общий объем текущего процесса. Значение должно быть больше нуля. Отрицательные значения не допускаются.</td>
+                </tr>
+                <tr>
+                    <td>value</td>
+                    <td>number</td>
+                    <td>Указывает уже выполненную часть процесса. Это должно быть положительное число с плавающей точкой между 0 и значением атрибута maxhtml5, или между 0 и 1 если атрибут не используется.</td>
+                </tr>
+            </table>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -936,7 +1115,79 @@
     <details>
         <summary><code><</code><code>a</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Элемент предназначен для размещения гиперссылок.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Гиперссылки (или просто "ссылки") определяются тегом a (HTML Anchor Element).Основная функция ссылок заключается в том, что они позволяют переходить с одного HTML документа на другой, либо содержать адрес файла, предназначенного для открытия в браузере пользователя, или для его дальнейшего скачивания.</h3>
+            <table border="5">
+                <caption>Atributlar</caption>
+                <tr>
+                    <th>Атрибут</th>
+                    <th>Значение</th>
+                    <th>Описание</th>
+                </tr>
+                <tr>
+                    <td>href</td>
+                    <td>URL</td>
+                    <td>Задает URL страницы, или документа на которую ведёт ссылка.</td>
+                </tr>
+                <tr>
+                    <td>download</td>
+                    <td>filename</td>
+                    <td>Если атрибут указан, то браузер не переходит по ссылке, а предлагает скачать документ, указанный в адресе ссылки.</td>
+                </tr>
+                <tr>
+                    <td>hreflang</td>
+                    <td>language_code</td>
+                    <td>Определяет язык связанного документа на который ведёт ссылка.</td>
+                </tr>
+                <tr>
+                    <td>media</td>
+                    <td>media_query</td>
+                    <td>Указывает, что документ на который ведёт ссылка адаптирован под определённые виды устройств.</td>
+                </tr>
+                <tr>
+                    <td>rel</td>
+                    <td>
+                        alternate<br>
+                        author<br>
+                        bookmark<br>
+                        help<br>
+                        license<br>
+                        next<br>
+                        nofollow<br>
+                        noreferrer<br>
+                        prefetch<br>
+                        prev<br>
+                        search<br>
+                        tag	
+                    </td>
+                    <td>Указывает отношение между текущим документом и связанным документом (на который ведёт ссылка).</td>
+                </tr>
+                <tr>
+                    <td>target</td>
+                    <td>
+                        _blank <br>
+                        _parent <br>
+                        _self <br>
+                        _top <br>
+                        framename	
+                    </td>
+                    <td>Указывает, где открыть документ.</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>media_type</td>
+                    <td>Указывает MIME-тип документа на который осуществляется переход.</td>
+                </tr>
+            </table>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -957,7 +1208,60 @@
     <details>
         <summary><code><</code><code>img</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Определяет изображение на странице.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Изображения в HTML документе определяются тегом img .Обращаю Ваше внимание, что элемент img имеет два обязательных атрибута: src, который определяет URL адрес изображения (допускается использовать как абсолютный, так и относительный адрес) и alt, который указывает альтернативный текст для изображения (для того случая, если изображение по каким-то причинам не было загружено).</h3>
+            <table border="5">
+                <caption>Atributlar</caption>
+                <tr>
+                    <th>Атрибут</th>
+                    <th>Значение</th>
+                    <th>Описание</th>
+                </tr>
+                <tr>
+                    <td>src</td>
+                    <td>URL</td>
+                    <td>Задает URL адрес изображения (допускается использовать как абсолютные, так и относительные адреса). Является обязательным атрибутом.</td>
+                </tr>
+                <tr>
+                    <td>alt</td>
+                    <td>text</td>
+                    <td>Определяет альтернативный текст для изображения (для того случая, если изображение по каким-то причинам не было загружено). Является обязательным атрибутом.</td>
+                </tr>
+                <tr>
+                    <td>width</td>
+                    <td>numder</td>
+                    <td>Определяет ширину изображения.</td>
+                </tr>
+                <tr>
+                    <td>height</td>
+                    <td>number</td>
+                    <td>Определяет высоту изображения.</td>
+                </tr>
+                <tr>
+                    <td>ismap</td>
+                    <td>ismap</td>
+                    <td>Сообщает браузеру, что изображение является серверной картой-изображением.</td>
+                </tr>
+                <tr>
+                    <td>longdesc</td>
+                    <td>URL</td>
+                    <td>Определяет URL адрес с аннотацией к изображению (URL более длинного, чем в атрибуте alt, описания изображения).</td>
+                </tr>
+                <tr>
+                    <td>usemap</td>
+                    <td>#mapname</td>
+                    <td>Ссылается на элемент map, содержащий координаты для клиентской части карты-изображения.</td>
+                </tr>
+            </table>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -976,7 +1280,17 @@
     <details>
         <summary><code><</code><code>figure</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Применяется для обозначения контента, иллюстрирующего или поддерживающего определенную идею текста.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Тег figure html5 применяется для обозначения к онтента, иллюстрирующего или поддерживающего определенную идею текста. Тег  figure html5 может содержать изображение, видеоролик, схему, фрагмент кода, диаграмму или даже таблицу — почти все, что может встретиться в потоке веб-контента и должно восприниматься как автономная единица.Благодаря тегу figcaption html5 вы можете вывести пояснение к содержимому, которое находится внутри тега figure html5. Тег figcaption html5 должен размещаться как первый, или последний элемент внутри тега figure html5.</h3>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1000,7 +1314,17 @@
     <details>
         <summary><code><</code><code>figcaption</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Выводит пояснение к фотографии или иллюстрации, которая находится внутри тега figure.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Благодаря тегу figcaption html5 вы можете вывести пояснение к содержимому, которое находится внутри тега figure html5. Тег figcaption html5 должен размещаться как первый, или последний элемент внутри тега figure html5.</h3>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1023,7 +1347,17 @@
     <details>
         <summary><code><</code><code>picture</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Выводит пояснение к фотографии или иллюстрации, которая находится внутри тега figure.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Представляет собой контейнер для хранения нескольких элементов source, которые поддерживают элемент img. Это позволяет указывать разные изображения с учётом размера экрана, плотности пикселей, формата изображения и других параметров. </h3>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1049,7 +1383,17 @@
     <details>
         <summary><code><</code><code>ul</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Определяет маркированный (неупорядоченный) список.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Маркированный (неупорядоченный) список в HTML определяется тегом ul (Unordered List Element). Каждый элемент списка должен начинаться с тега li (сокращенное от английского list item - элемент списка).По умолчанию, маркированные списки отображаются на веб-странице в виде списка, начинающегося с маленького чёрного круга.</h3>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1075,7 +1419,41 @@
     <details>
         <summary><code><</code><code>ol</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Определяет нумерованный список.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Нумерованный (упорядоченный) список предназначен для элементов, которые следуют в определённом порядке. Нумерованный список начинается с тега ol (сокращенное от английского ordered list - упорядоченный список). Каждый элемент списка начинается с тега li (элемент списка).</h3>
+            <table border="5">
+                <caption>Atributlar</caption>
+                <tr>
+                    <th>Атрибут</th>
+                    <th>Значение</th>
+                    <th>Описание</th>
+                </tr>
+                <tr>
+                    <td>start</td>
+                    <td>number</td>
+                    <td>Определяет начальное значение нумерованного (упорядоченного) списка. Значения должны быть целочисленными, допускается использование отрицательных значений. При использовании с буквами (type = "A" и type = "a"), число, указанное в значении атрибута является порядковым номером буквы в алфавите. Например, start = "4", будет соответствовать букве "D" и список начнётся именно с неё. При использовании значения start = "27" счетчик обнуляется, при этом список становится двухзначным ("27" = "AA", "28" = "AB", "29" = "AC"...).</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>
+                        1(по умолчанию) <br>
+                        A(большие) <br>
+                        a(строчные) <br>
+                        I(римские большие) <br>
+                        i(римские маленькие)
+                    </td>
+                    <td>Определяет тип маркера, который используется в построении нумерованного (упорядоченного) списка.</td>
+                </tr>
+            </table>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1101,7 +1479,30 @@
     <details>
         <summary><code><</code><code>li</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Элемент списка.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Каждый элемент списка начинается с тега li (сокращенное от английского list item - элемент списка). Данный элемент используется в нумерованных (упорядоченных) списках (ol), маркированных (неупорядоченных) списках (ul) и в контекстных меню(menu).Допускается не использовать закрывающий тег (li) в том случае, если после элемента списка сразу же следует еще один элемент списка li, или если дальнейшее содержание в родительском элементе отсутствует</h3>
+            <table border="5">
+                <caption>Atributlar</caption>
+                <tr>
+                    <th>Атрибут</th>
+                    <th>Значение</th>
+                    <th>Описание</th>
+                </tr>
+                <tr>
+                    <td>value</td>
+                    <td>number</td>
+                    <td>Задает значение для элемента списка, при этом значение следующих пунктов списка будет продолжено (инкрементировано). Значение должно быть целочисленным и может быть использовано только в нумерованных списках (ol). Допускается использование отрицательных значений.</td>
+                </tr>
+            </table>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1152,7 +1553,17 @@
     <details>
         <summary><code><</code><code>dl</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Определяет список описаний.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Списки определений используются для формирования пар типа «имя / значение», «вопрос / ответ» и т.п.Тэг (dl) определяет список, тэг (dt) определяет его имя, а тег (dd) описывает его значение.</h3>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1178,7 +1589,17 @@
     <details>
         <summary><code><</code><code>dt</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Определяет имя/теримн в списке определений.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Списки определений используются для формирования пар типа «имя / значение», «вопрос / ответ» и т.п.Тэг (dl) определяет список, тэг (dt) определяет его имя, а тег (dd) описывает его значение.</h3>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1204,7 +1625,17 @@
     <details>
         <summary><code><</code><code>dd</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Определяет значение в списке описаний.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Списки определений используются для формирования пар типа «имя / значение», «вопрос / ответ» и т.п.Тэг (dl) определяет список, тэг (dt) определяет его имя, а тег (dd) описывает его значение.</h3>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1232,7 +1663,7 @@
     <details>
         <summary><code><</code><code>form</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Определяет HTML форму для пользовательского ввода.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет HTML форму для пользовательского ввода.</h3>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1255,7 +1686,7 @@
     <details>
         <summary><code><</code><code>input</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Определяет элементы управления для пользовательского ввода различных данных в составе формы.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет элементы управления для пользовательского ввода различных данных в составе формы.</h3>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1317,7 +1748,7 @@
     <details>
         <summary><code><</code><code>textarea</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Представляет собой поле формы для создания области многострочного ввода (текстовая область).</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Представляет собой поле формы для создания области многострочного ввода (текстовая область).</h3>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1335,7 +1766,7 @@
     <details>
         <summary><code><</code><code>button</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Используется для размещения кнопки.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Используется для размещения кнопки.</h3>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1355,7 +1786,7 @@
     <details>
         <summary><code><</code><code>select</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Позволяет создать раскрывающийся список.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Позволяет создать раскрывающийся список.</h3>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1381,7 +1812,7 @@
     <details>
         <summary><code><</code><code>optgroup</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Используется для группировки связанных данных в раскрывающемся списке.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Используется для группировки связанных данных в раскрывающемся списке.</h3>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1407,7 +1838,7 @@
     <details>
         <summary><code><</code><code>option</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Определяет пункты раскрывающегося списка (параметры для выбора).</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет пункты раскрывающегося списка (параметры для выбора).</h3>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1433,7 +1864,7 @@
     <details>
         <summary><code><</code><code>label</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Служит текстовой меткой для элемента input.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Служит текстовой меткой для элемента input.</h3>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1441,7 +1872,10 @@
             </div>
             <div class="editor">
                 <h1>Sintaksis</h1>
-                <textarea id="editLabel"><img></textarea>
+                <textarea id="editLabel">
+<label for="demo">Ismingiz</label>
+<br><br>
+<input type="text" id="demo"></textarea>
             </div>
             <div class="frame">
                 <h1>Natija</h1>
@@ -1452,7 +1886,7 @@
     <details>
         <summary><code><</code><code>fieldset</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Служит для визуальной группировки элементов, размещенных внутри формы.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Служит для визуальной группировки элементов, размещенных внутри формы.</h3>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1460,7 +1894,10 @@
             </div>
             <div class="editor">
                 <h1>Sintaksis</h1>
-                <textarea id="editFieldset"><img></textarea>
+                <textarea id="editFieldset">
+<fieldset>  <!-- Malumotlarni grupalaydigan konteyner -->
+    <legend>Shaxsiy malumotlar</legend>
+</fieldset></textarea>
             </div>
             <div class="frame">
                 <h1>Natija</h1>
@@ -1471,7 +1908,7 @@
     <details>
         <summary><code><</code><code>legend</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Определяет заголовок для элемента </h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет заголовок для элемента </h3>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1479,7 +1916,11 @@
             </div>
             <div class="editor">
                 <h1>Sintaksis</h1>
-                <textarea id="editLegend"><img></textarea>
+                <textarea id="editLegend">
+<fieldset>
+    <legend>Shaxsiy malumotlar</legend>     <!-- Grupa uchun sarlavha -->
+</fieldset>
+                </textarea>
             </div>
             <div class="frame">
                 <h1>Natija</h1>
@@ -1490,7 +1931,7 @@
     <details>
         <summary><code><</code><code>datalist</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Определяет список предопределенных вариантов для ввода. </h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет список предопределенных вариантов для ввода. </h3>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1498,7 +1939,14 @@
             </div>
             <div class="editor">
                 <h1>Sintaksis</h1>
-                <textarea id="editDatalist"><img></textarea>
+                <textarea id="editDatalist">
+<input type="text" list="demo">
+<datalist id="demo">
+    <option value="HTML">Frontend</option>
+    <option value="CSS">Frontend</option>
+    <option value="JavaScript">Frontend</option>
+</datalist>
+                </textarea>
             </div>
             <div class="frame">
                 <h1>Natija</h1>
@@ -1511,7 +1959,7 @@
     <details>
         <summary><code><</code><code>iframe</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Определяет встроенную в веб-страницу область, которая может отображать содержимое отдельно взятого документа (например *.pdf)/медиа контента или другого веб-сайта в заданном пространстве.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет встроенную в веб-страницу область, которая может отображать содержимое отдельно взятого документа (например *.pdf)/медиа контента или другого веб-сайта в заданном пространстве.</h3>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1534,7 +1982,7 @@
     <details>
         <summary><code><</code><code>audio</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Добавляет аудио-контент на страницу.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Добавляет аудио-контент на страницу.</h3>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1554,7 +2002,7 @@
     <details>
         <summary><code><</code><code>video</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Добавляет видео-контент на страницу.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Добавляет видео-контент на страницу.</h3>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1576,7 +2024,7 @@
     <details>
         <summary><code><</code><code>table</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Определяет содержимое таблицы.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет содержимое таблицы.</h3>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1606,7 +2054,7 @@
     <details>
         <summary><code><</code><code>caption</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Определяет наименование таблицы.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет наименование таблицы.</h3>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1636,7 +2084,7 @@
     <details>
         <summary><code><</code><code>tr</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Определяет строку таблицы.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет строку таблицы.</h3>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1666,7 +2114,7 @@
     <details>
         <summary><code><</code><code>th</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Определяет заголовочную ячейку таблицы.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет заголовочную ячейку таблицы.</h3>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1696,7 +2144,7 @@
     <details>
         <summary><code><</code><code>td</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Определяет ячейку данных таблицы.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет ячейку данных таблицы.</h3>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1728,7 +2176,7 @@
     <details>
         <summary><code><</code><code>details</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Определяет дополнительные детали, которые пользователь может отобразить или скрыть.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет дополнительные детали, которые пользователь может отобразить или скрыть.</h3>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1751,7 +2199,7 @@
     <details>
         <summary><code><</code><code>summary</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi :</span> Определяет видимый заголовок для тега details.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет видимый заголовок для тега details.</h3>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
