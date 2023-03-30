@@ -122,7 +122,25 @@
         .s{font-size: 30px;}
         .editor > h1{text-align: center;margin: 0;}
         .frame > h1{text-align: center;margin: 0;}
-        .col-1 > table > caption{color: blue; font-size: 20px; font-weight: bold;}
+        table{
+            /* border: 2px solid red; */
+            width: 100%;
+        }
+        tr{
+            /* border: 2px solid green; */
+            
+        }
+        th{
+            /* border: 2px solid blue; */
+            font-size: 20px;
+        }
+        td{
+            /* border: 2px solid blue; */
+            background-color: rgb(41,42,43);
+            color: wheat;
+        }
+        .atribut{color: rgb(156,220,254);background-color: rgb(41,42,43);font-size: 15px;}
+        .string{color: rgb(206,145,120);background-color: rgb(41,42,43);font-size: 15px;}
     </style>
 </head>
 <body>
@@ -993,40 +1011,39 @@
         <div class="col-1">
             <h3><span class="option">Vazifasi va qo'llanilishi :</span> Элемент meter html5 предназначен для отображения скалярной величины в заданном диапазоне или же для графического представления дробного числа. Для использования данного тега должно быть известно максимальное значение.Данный тег используется, к примеру, как необходимость отображения релевантности поискового запроса, результатов опроса, заряда батареи, использования дискового пространства и тому подобное. Текст внутри тега отображается только для тех браузеров, которые его не поддерживают.</h3>
             <table border="5">
-                <caption>Atributlar</caption>
                 <tr>
                     <th>Атрибут</th>
                     <th>Значение</th>
                     <th>Описание</th>
                 </tr>
                 <tr>
-                    <td>min</td>
-                    <td>number</td>
+                    <td class="atribut"><code>min=""</code></td>
+                    <td class="string">number</td>
                     <td>Атрибут обозначает минимально допустимое значение. Значение по умолчанию ноль.</td>
                 </tr>
                 <tr>
-                    <td>max</td>
-                    <td>number</td>
+                    <td class="atribut"><code>max=""</code></td>
+                    <td class="string">number</td>
                     <td>Атрибут обозначает максимально возможное значение. Значение по умолчанию один. Если максимальное значение задано меньшим чем минимальное, то они меняются местами.</td>
                 </tr>
                 <tr>
-                    <td>value</td>
-                    <td>number</td>
+                    <td class="atribut"><code>value=""</code></td>
+                    <td class="string">number</td>
                     <td>Определяет текущее значение (обязательный атрибут).</td>
                 </tr>
                 <tr>
-                    <td>low</td>
-                    <td>number</td>
+                    <td class="atribut"><code>low=""</code></td>
+                    <td class="string">number</td>
                     <td>Атрибут определяет низкие значения (но не минимальные). Это значение должно быть меньше чем high. Если указывается значение low меньше чем значение min, то low = min.</td>
                 </tr>
                 <tr>
-                    <td>high</td>
-                    <td>number</td>
+                    <td class="atribut"><code>high=""</code></td>
+                    <td class="string">number</td>
                     <td>Атрибут отделяет высокие значения (но не максимальные). Если значение high меньше чем значение low, то high = low. Если high задано большим, чем max, то high = max.</td>
                 </tr>
                 <tr>
-                    <td>optimum</td>
-                    <td>number</td>
+                    <td class="atribut"><code>optimum=""</code></td>
+                    <td class="string">number</td>
                     <td>Атрибут обозначает оптимальное значение и должен находиться в пределах от min до max. Оно может быть большим, чем значение high.</td>
                 </tr>
             </table>
@@ -1040,6 +1057,7 @@
                     <td style="color: green;">Bor</td>
                 </tr>
             </table>
+            <input type="color">
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1065,7 +1083,6 @@
         <div class="col-1">
             <h3><span class="option">Vazifasi va qo'llanilishi :</span> Тег progress html5 предоставляет обратную связь пользователю, сообщая о состоянии текущего процесса. Элемент отображает какая часть задачи уже выполнена.</h3>
             <table border="5">
-                <caption>Atributlar</caption>
                 <tr>
                     <th>Атрибут</th>
                     <th>Значение</th>
@@ -1117,7 +1134,6 @@
         <div class="col-1">
             <h3><span class="option">Vazifasi va qo'llanilishi :</span> Гиперссылки (или просто "ссылки") определяются тегом a (HTML Anchor Element).Основная функция ссылок заключается в том, что они позволяют переходить с одного HTML документа на другой, либо содержать адрес файла, предназначенного для открытия в браузере пользователя, или для его дальнейшего скачивания.</h3>
             <table border="5">
-                <caption>Atributlar</caption>
                 <tr>
                     <th>Атрибут</th>
                     <th>Значение</th>
@@ -1210,7 +1226,6 @@
         <div class="col-1">
             <h3><span class="option">Vazifasi va qo'llanilishi :</span> Изображения в HTML документе определяются тегом img .Обращаю Ваше внимание, что элемент img имеет два обязательных атрибута: src, который определяет URL адрес изображения (допускается использовать как абсолютный, так и относительный адрес) и alt, который указывает альтернативный текст для изображения (для того случая, если изображение по каким-то причинам не было загружено).</h3>
             <table border="5">
-                <caption>Atributlar</caption>
                 <tr>
                     <th>Атрибут</th>
                     <th>Значение</th>
@@ -1421,7 +1436,6 @@
         <div class="col-1">
             <h3><span class="option">Vazifasi va qo'llanilishi :</span> Нумерованный (упорядоченный) список предназначен для элементов, которые следуют в определённом порядке. Нумерованный список начинается с тега ol (сокращенное от английского ordered list - упорядоченный список). Каждый элемент списка начинается с тега li (элемент списка).</h3>
             <table border="5">
-                <caption>Atributlar</caption>
                 <tr>
                     <th>Атрибут</th>
                     <th>Значение</th>
@@ -1481,7 +1495,6 @@
         <div class="col-1">
             <h3><span class="option">Vazifasi va qo'llanilishi :</span> Каждый элемент списка начинается с тега li (сокращенное от английского list item - элемент списка). Данный элемент используется в нумерованных (упорядоченных) списках (ol), маркированных (неупорядоченных) списках (ul) и в контекстных меню(menu).Допускается не использовать закрывающий тег (li) в том случае, если после элемента списка сразу же следует еще один элемент списка li, или если дальнейшее содержание в родительском элементе отсутствует</h3>
             <table border="5">
-                <caption>Atributlar</caption>
                 <tr>
                     <th>Атрибут</th>
                     <th>Значение</th>
@@ -1663,7 +1676,80 @@
     <details>
         <summary><code><</code><code>form</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет HTML форму для пользовательского ввода.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Форма в HTML это часть документа, которая позволяет пользователю ввести интересующую нас информацию, которую впоследствии можно принять и обработать на стороне сервера. Другими словами, формы используются для сбора информации введённой пользователями.Синтаксически парный тег form определяет форму в HTML документе. Элемент form по большому счету просто является контейнером, внутри которого могут размещаться различные надписи, элементы управления и типы входных элементов, флажки, радио-кнопки, кнопки отправки и прочие HTML элементы.</h3>
+            <table border="5">
+                <tr>
+                    <th>Атрибут</th>
+                    <th>Значение</th>
+                    <th>Описание</th>
+                </tr>
+                <tr>
+                    <td>accept-charset</td>
+                    <td>character_set</td>
+                    <td>Определяет кодировку, используемую в представленной форме (значением по умолчанию является зарезервированная строка "unknown", которая указывает, что кодировка соответствует кодировке документа, содержащего элемент form).</td>
+                </tr>
+                <tr>
+                    <td>action</td>
+                    <td>URL</td>
+                    <td>Определяет адрес, куда отправляется форма (по умолчанию действие установлено на текущую страницу).</td>
+                </tr>
+                <tr>
+                    <td>autocomplete</td>
+                    <td>
+                        on <br>
+                        off
+                    </td>
+                    <td>Указывает может ли браузер автоматически заполнять элементы формы (по умолчанию - включен). Этот атрибут помогает заполнять поля форм текстом, который был введён в них ранее (если не отключено настройками браузера).</td>
+                </tr>
+                <tr>
+                    <td>enctype</td>
+                    <td>
+                        application/x-www-form-urlencoded <br>
+                        multipart/form-data <br>
+                        text/plain
+                    </td>
+                    <td>Определяет способ кодирования данных формы при их отправке. Значение по умолчанию application/x-www-form-urlencoded.</td>
+                </tr>
+                <tr>
+                    <td>method</td>
+                    <td>
+                        get <br>
+                        post
+                    </td>
+                    <td>Атрибут определяет какой метод HTTP (get или post) используется при передаче формы. Метод get используется по умолчанию.</td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td>text</td>
+                    <td>Определяет имя формы, которое используется для идентификации (задает имя для формы).</td>
+                </tr>
+                <tr>
+                    <td>novalidate</td>
+                    <td>#novalidate</td>
+                    <td>Указывает, что проверка данных на корректность, введенных пользователем в форму не производится.</td>
+                </tr>
+                <tr>
+                    <td>target</td>
+                    <td>
+                        _blank <br>
+                        _self <br>
+                        _parent <br>
+                        _top <br>
+                        framename
+                    </td>
+                    <td>При помощи атрибута мы задаём браузеру, где показать ответ, полученный после отправки формы (вкладка, текущее окно, или фрейм). По умолчанию установлено значение _self - отображает ответ в текущем окне.</td>
+                </tr>
+            </table> 
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1683,10 +1769,123 @@
             </div>
         </div>
     </details>
-    <details>
+    <details open>
         <summary><code><</code><code>input</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет элементы управления для пользовательского ввода различных данных в составе формы.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Элемент input является основным элементом формы (HTML тег form) и определяет пользовательское поле для ввода информации. Поле ввода принимает различный вид, в зависимости от значения атрибута type, применённого к данному элементу.</h3>
+            <table class="tableTag">
+                <tr>
+                    <th>Атрибут</th><th>Значение</th><th class="tatt">Описание</th>
+                </tr>
+                <tr>
+                    <td>accept</td><td><span class="zna">file_extension<br>audio/<sup>*</sup><br>image/<sup>*</sup><br>video/<sup>*</sup><br>media_type</span></td><td>Задает типы файлов, которые сервер принимает (файлы, которые могут быть загружены для отправки на сервер). Атрибут используется только для  <span class="tag">&lt;input</span> <span class="att">type = </span><span class="zna">"file"</span><span class="tag">&gt;</span>.</td>
+                </tr>
+                <tr>
+                <td><span class="att">align</span></td><td><span class="zna">left<br>right<br>top<br>middle<br>bottom</span></td><td><strong class="sko">Не поддерживается в HTML5.</strong><br> Определяет выравнивание ввода изображения (только для <span class="tag">&lt;input</span> <span class="att">type = </span><span class="zna">"image"</span><span class="tag">&gt;</span>).</td>
+                </tr>
+                <tr>
+                <td><a href="/html/tag_input_att_alt.php" class="att" title="Атрибут alt HTML тега input">alt</a></td><td><span class="zna">text</span></td><td>Определяет альтернативный текст для изображений (только для <span class="tag">&lt;input</span> <span class="att">type = </span><span class="zna">"image"</span><span class="tag">&gt;</span>).</td>
+                </tr>
+                <tr>
+                <td><a href="/html/tag_input_att_autocomplete.php" class="att" title="Атрибут autocomplete HTML тега input">autocomplete<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">on<br>off<br>tokens</span></td><td>Указывает должен ли элемент иметь автозаполнение (заполнение автоматически завершается в браузере). <b>По умолчанию автозаполнение включено.</b></td>
+                </tr>
+                <tr>
+                <td>autofocus<img src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td><span class="zna">autofocus</span></td><td>Логический атрибут, который указывает, что элемент <a href="/html/tag_input.php" class="tag" title="HTML тег input" style="display:inline;">&lt;input&gt;</a> должен автоматически получать фокус при загрузке страницы.</td>
+                </tr>
+                <tr>
+                <td><a href="/html/tag_input_att_checked.php" class="att" title="Атрибут checked HTML тега input">checked</a></td><td><span class="zna">checked</span></td><td>Является логическим атрибутом и указывает, что элемент должен быть предварительно выбран при загрузке страницы (только для <span class="tag">&lt;input <span class="att">type = </span><span class="zna">"checkbox"</span>&gt;</span> и <span class="tag">&lt;input</span> <span class="att">type = </span><span class="zna">"radio"</span><span class="tag">&gt;</span>).</td>
+                </tr>
+                <tr>
+                <td><a href="/html/tag_input_att_disabled.php" class="att" title="Атрибут disabled HTML тега input">disabled</a></td><td><span class="zna">disabled</span></td><td>Является логическим атрибутом и указывает, что элемент должен быть отключен (недоступен для взаимодействия с пользователем).</td>
+                </tr>
+                <tr>
+                <td><a href="/html/tag_input_att_form.php" class="att" title="Атрибут form HTML тега input">form<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">form_id</span></td><td>Задает форму (элемент <a href="/html/tag_form.php" class="tag" title="HTML тег form" style="display:inline">&lt;form&gt;</a>) к которой элемент управления принадлежит. В качестве значения должен выступать идентификатор формы (<a href="/html/global_att_id.php" class="att" title="Глобальный HTML атрибут id" style="display:inline">id</a>) в этом же документе.</td>
+                </tr>
+                <tr>
+                <td><a href="/html/tag_input_att_formaction.php" class="att" title="Атрибут formaction HTML тега input">formaction<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">URL</span></td><td>Указывает URL файла, который будет обрабатывать (контролировать) входную информацию после отправки формы (только для <span class="tag">&lt;input <span class="att">type = </span><span class="zna">"image"</span>&gt;</span> и <span class="tag">&lt;input</span> <span class="att">type = </span><span class="zna">"submit"</span><span class="tag">&gt;</span>). </td>
+                </tr>
+                <tr>
+                <td><a href="/html/tag_input_att_formenctype.php" class="att" title="Атрибут formenctype HTML тега input">formenctype<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">application/x-www-form-urlencoded<br>
+                multipart/form-data<br>
+                text/plain</span></td><td>Определяет, как данные формы должны быть закодированы при передаче на сервер (только для <span class="tag">&lt;input <span class="att">type = </span><span class="zna">"image"</span>&gt;</span> и <span class="tag">&lt;input</span> <span class="att">type = </span><span class="zna">"submit"</span><span class="tag">&gt;</span>).</td>
+                </tr>
+                <tr>
+                <td><a href="/html/tag_input_att_formmethod.php" class="att" title="Атрибут formmethod HTML тега input">formmethod<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">get<br>post</span></td><td>Определяет метод HTTP для отправки данных (только для <span class="tag">&lt;input <span class="att">type = </span><span class="zna">"image"</span>&gt;</span> и <span class="tag">&lt;input</span> <span class="att">type = </span><span class="zna">"submit"</span><span class="tag">&gt;</span>).</td>
+                </tr>
+                <tr>
+                <td><a href="/html/tag_input_att_formnovalidate.php" class="att" title="Атрибут formnovalidate HTML тега input">formnovalidate<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">formnovalidate</span></td><td>Указывает, что проверка данных на корректность, введенных пользователем в форму не производится (только для <span class="tag">&lt;input <span class="att">type = </span><span class="zna">"submit"</span>&gt;</span>).</td>
+                </tr>
+                <tr>
+                <td><a href="/html/tag_input_att_formtarget.php" class="att" title="Атрибут formtarget HTML тега input">formtarget<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">_blank<br>
+                _self<br>
+                _parent<br>
+                _top<br>
+                framename</span></td><td>При помощи атрибута мы задаём браузеру, где показать ответ, полученный после отправки формы (вкладка, текущее окно, или фрейм). По умолчанию установлено значение <span class="zna">_self</span> - отображает ответ в текущем окне. Атрибут используется только только для <span class="tag">&lt;input <span class="att">type = </span><span class="zna">"image"</span>&gt;</span> и <span class="tag">&lt;input <span class="att">type = </span><span class="zna">"submit"</span>&gt;</span>.</td>
+                </tr>
+                <tr>
+                <td><a href="tag_input_att_height.php" title="Атрибут height HTML тега input" class="att">height<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">pixels</span></td><td>Задает высоту элемента (только для <span class="tag">&lt;input <span class="att">type = </span><span class="zna">"image"</span>&gt;</span>).</td>
+                </tr>
+                <tr>
+                <td><a href="/html/tag_input_att_list.php" class="att" title="Атрибут list HTML тега input">list<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">datalist_id</span></td><td>Определяет список предопределенных вариантов, который будет предложен пользователю. Значение атрибута должно соответствовать идентификатору элемента <a href="tag_datalist.php" style="display:inline" class="tag" title="HTML тег datalist">&lt;datalist&gt;</a>.</td>
+                </tr>
+                <tr>
+                <td><a href="/html/tag_input_att_max.php" class="att" title="Атрибут max HTML тега input">max<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">number<br>date</span></td><td>Определяет максимальное значение для элемента (значение может быть как числовым, так и в виде даты).</td>
+                </tr>
+                <tr>
+                <td><a href="/html/tag_input_att_maxlength.php" class="att" title="Атрибут maxlength HTML тега input">maxlength</a></td><td><span class="zna">number</span></td><td>Указывает максимально допустимое количество символов в элементе. Только для элементов управления следующих типов: <span class="zna">text</span>, <span class="zna">search</span>, <span class="zna">tel</span>, <span class="zna">url</span>, <span class="zna">email</span> и <span class="zna">password</span> (остальные игнорируются).</td>
+                </tr>
+                <tr>
+                <td><a href="/html/tag_input_att_min.php" class="att" title="Атрибут min HTML тега input">min<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">number<br>date</span></td><td>Определяет минимальное значение для элемента (значение может быть как числовым, так и в виде даты).</td>
+                </tr>
+                <tr>
+                <td><a href="/html/tag_input_att_multiple.php" class="att" title="Атрибут min HTML тега input">multiple<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">multiple</span></td><td>Указывает, что пользователь может ввести более одного значения в элементе (только для <span class="tag">&lt;input <span class="att">type = </span><span class="zna">"file"</span>&gt;</span> и <span class="tag">&lt;input <span class="att">type = </span><span class="zna">"email"</span>&gt;</span>). Является логическим атрибутом.</td>
+                </tr>
+                <tr>
+                <td><a href="/html/tag_input_att_name.php" class="att" title="Атрибут name HTML тега input">name</a></td><td><span class="zna">text</span></td><td>Задает имя для элемента <span class="tag">&lt;input&gt;</span>.</td>
+                </tr>
+                <tr>
+                <td><a href="/html/tag_input_att_pattern.php" class="att" title="Атрибут pattern HTML тега input"><span class="att">pattern<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></span></a></td><td><span class="zna">regexp</span></td><td>Задает регулярное выражение, которое сверяется со значением введёным в элементе. Синтаксис регулярного выражения соответствует языку <i>JavaScript</i>. Только для элементов управления следующих типов: <span class="zna">text</span>, <span class="zna">search</span>, <span class="zna">tel</span>, <span class="zna">url</span>, <span class="zna">email</span> и <span class="zna">password</span> (остальные игнорируются).</td>
+                </tr>
+                <tr>
+                <td><a href="/html/tag_input_att_placeholder.php" class="att" title="Атрибут placeholder HTML тега input">placeholder<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">text</span></td><td>Указывает подсказку, которая описывает ожидаемое значение для ввода в элемент. Подсказка отображается в поле ввода до того, как пользователь вводит значение.
+                Атрибут может быть использован с полями данных определенных типов  (атрибут <a href="/html/tag_input_att_type.php" class="att" title="Атрибут type HTML тега input" style="display:inline">type</a>) со значениями <span class="zna">email</span>, <span class="zna">password</span>, <span class="zna">search</span>, <span class="zna">tel</span>, <span class="zna">text</span>  и  <span class="zna">url</span>).
+                </td>
+                </tr>
+                <tr>
+                <td><a href="/html/tag_input_att_readonly.php" class="att" title="Атрибут readonly HTML тега input">readonly</a></td><td><span class="zna">readonly</span></td><td>Логический атрибут, который указывает, что поле ввода доступно только для чтения.</td>
+                </tr>
+                <tr>
+                <td><a href="/html/tag_input_att_required.php" class="att" title="Атрибут required HTML тега input">required<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">required</span></td><td>Логический атрибут, который указывает, что поле ввода должно быть заполнено перед отправкой формы.</td>
+                </tr>
+                <tr>
+                <td><a href="/html/tag_input_att_size.php" class="att" title="Атрибут size HTML тега input">size</a></td><td><span class="zna">number</span></td><td>Определяет ширину для элемента (в символах). Только для элементов управления следующих типов: <span class="zna">text</span>, <span class="zna">search</span>, <span class="zna">tel</span>, <span class="zna">url</span>, <span class="zna">email</span> и <span class="zna">password</span> (остальные игнорируются). <b>Значение по умолчанию 20 символов.</b></td>
+                </tr>
+                <tr>
+                <td><a href="tag_input_att_src.php" title="Атрибут src HTML тега input" class="att">src</a></td><td><span class="zna">URL</span></td><td>Задаёт URL-адрес изображения, которое используется в качестве кнопки отправки (только для <span class="tag">&lt;input</span> <span class="att">type = </span><span class="zna">"image"</span><span class="tag">&gt;</span>).</td>
+                </tr>
+                <tr>
+                <td><a href="tag_input_att_step.php" title="Атрибут step HTML тега input" class="att">step<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">number</span></td><td>Определяет размер "шага" для поля ввод. Например, если значение атрибута <span class="zna">2</span>, то значение элемента управления будет иметь шаг 2 и увеличиваться, или уменьшаться на 2 (..-4,-2,0,2, 4..). Только для элементов управления следующих типов: <span class="zna">number</span>, <span class="zna">range</span>, <span class="zna">tel</span>, <span class="zna">date</span>, <span class="zna">date</span>, <span class="zna">time</span>, <span class="zna">datetime-local</span>, <span class="zna">month</span>, <span class="zna">time</span> и <span class="zna">week</span> (остальные игнорируются). <b>Значение по умолчанию 1.</b></td>
+                </tr>
+                <tr>
+                <td><a href="/html/tag_input_att_type.php" class="att" title="Атрибут type HTML тега input">type</a></td><td><span class="zna">button<br>checkbox<br>color<br>date<br>datetime<br>datetime-local<br>email<br>file<br>hidden<br>image<br>month<br>number<br>password<br>radio<br>range<br>reset<br>search<br>submit<br>tel<br>text<br>time<br>url<br>week</span></td><td>Поле ввода принимает вид, в зависимости от применённого значения.</td>
+                </tr>
+                <tr>
+                <td><a href="/html/tag_input_att_value.php" class="att" title="Атрибут value HTML тега input">value</a></td><td><span class="zna">text</span></td><td>Задает значение для элемента.</td>
+                </tr>
+                <tr>
+                <td><a href="tag_input_att_width.php" title="Атрибут width HTML тега input" class="att">width<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">pixels</span></td><td>Задает ширину элемента (только для <span class="tag">&lt;input</span> <span class="att">type = </span><span class="zna">"image"</span><span class="tag">&gt;</span>).</td>
+                </tr>
+                </tbody></table>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1749,6 +1948,16 @@
         <summary><code><</code><code>textarea</code><code>></code></summary>
         <div class="col-1">
             <h3><span class="option">Vazifasi va qo'llanilishi :</span> Представляет собой поле формы для создания области многострочного ввода (текстовая область).</h3>
+             <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1767,6 +1976,16 @@
         <summary><code><</code><code>button</code><code>></code></summary>
         <div class="col-1">
             <h3><span class="option">Vazifasi va qo'llanilishi :</span> Используется для размещения кнопки.</h3>
+             <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1787,6 +2006,16 @@
         <summary><code><</code><code>select</code><code>></code></summary>
         <div class="col-1">
             <h3><span class="option">Vazifasi va qo'llanilishi :</span> Позволяет создать раскрывающийся список.</h3>
+             <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1813,6 +2042,16 @@
         <summary><code><</code><code>optgroup</code><code>></code></summary>
         <div class="col-1">
             <h3><span class="option">Vazifasi va qo'llanilishi :</span> Используется для группировки связанных данных в раскрывающемся списке.</h3>
+             <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1839,6 +2078,16 @@
         <summary><code><</code><code>option</code><code>></code></summary>
         <div class="col-1">
             <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет пункты раскрывающегося списка (параметры для выбора).</h3>
+             <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1865,6 +2114,16 @@
         <summary><code><</code><code>label</code><code>></code></summary>
         <div class="col-1">
             <h3><span class="option">Vazifasi va qo'llanilishi :</span> Служит текстовой меткой для элемента input.</h3>
+             <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1887,6 +2146,16 @@
         <summary><code><</code><code>fieldset</code><code>></code></summary>
         <div class="col-1">
             <h3><span class="option">Vazifasi va qo'llanilishi :</span> Служит для визуальной группировки элементов, размещенных внутри формы.</h3>
+             <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1909,6 +2178,16 @@
         <summary><code><</code><code>legend</code><code>></code></summary>
         <div class="col-1">
             <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет заголовок для элемента </h3>
+             <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1932,6 +2211,16 @@
         <summary><code><</code><code>datalist</code><code>></code></summary>
         <div class="col-1">
             <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет список предопределенных вариантов для ввода. </h3>
+             <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1959,7 +2248,66 @@
     <details>
         <summary><code><</code><code>iframe</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет встроенную в веб-страницу область, которая может отображать содержимое отдельно взятого документа (например *.pdf)/медиа контента или другого веб-сайта в заданном пространстве.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Тег iframe (HTML Inline Frame Element) определяет встроенную в веб-страницу область, которая может отображать содержимое отдельно взятого документа (например, *.pdf), медиа-контента или другого веб-сайта в заданном пространстве. Содержимое внутри области существует независимо от окружающей страницы.</h3>
+            <table border="5">
+                <tr>
+                    <th>Атрибут</th>
+                    <th>Значение</th>
+                    <th>Описание</th>
+                </tr>
+                <tr>
+                    <td>src</td>
+                    <td>URL</td>
+                    <td>Определяет адрес документа для встраивания в элемент.</td>
+                </tr>
+                <tr>
+                    <td>frameborder</td>
+                    <td>0 <br> 1</td>
+                    <td>Указывает, следует ли отображать рамку вокруг элемента.</td>
+                </tr>
+                <tr>
+                    <td>height</td>
+                    <td>number</td>
+                    <td>Определяет высоту элемента.</td>
+                </tr>
+                <tr>
+                    <td>width</td>
+                    <td>numder</td>
+                    <td>Определяет ширину элемента.</td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td>text</td>
+                    <td>Задаёт имя элемента.</td>
+                </tr>
+                <tr>
+                    <td>sandbox</td>
+                    <td>
+                        allow-forms <br>
+                        allow-pointer-lock <br>
+                        allow-popups <br>
+                        allow-same-origin <br>
+                        allow-scripts <br>
+                        allow-top-navigation
+                    </td>
+                    <td>Включает дополнительный набор ограничений для содержания в элементе.</td>
+                </tr>
+                <tr>
+                    <td>srcdoc</td>
+                    <td>HTML_code</td>
+                    <td>Указывает HTML-код, который будет показан во фрейме.</td>
+                </tr>
+            </table>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -1983,6 +2331,57 @@
         <summary><code><</code><code>audio</code><code>></code></summary>
         <div class="col-1">
             <h3><span class="option">Vazifasi va qo'llanilishi :</span> Добавляет аудио-контент на страницу.</h3>
+            <table border="5">
+                <tr>
+                    <th>Атрибут</th>
+                    <th>Значение</th>
+                    <th>Описание</th>
+                </tr>
+                <tr>
+                    <td>src</td>
+                    <td>URL</td>
+                    <td>Указывает URL аудиофайла.</td>
+                </tr>
+                <tr>
+                    <td>controls</td>
+                    <td>controls</td>
+                    <td>Отображение встроенных элементов управления мультимедийным файлом (кнопка воспроизведения/паузы, регулятор, позволяющий перейти к определенному фрагменту ролика, а также регулятор уровня громкости).</td>
+                </tr>
+                <tr>
+                    <td>loop</td>
+                    <td>loop</td>
+                    <td>Зацикливает воспроизведение файла (наша песня хороша – начинай сначала).</td>
+                </tr>
+                <tr>
+                    <td>autoplay</td>
+                    <td>autoplay</td>
+                    <td>Указывает, что аудио запустится автоматически, как только оно будет готово.</td>
+                </tr>
+                <tr>
+                    <td>muted</td>
+                    <td>muted</td>
+                    <td>Указывает, что аудио будет заглушено (без звука).</td>
+                </tr>
+                <tr>
+                    <td>preload</td>
+                    <td>
+                        auto <br>
+                        metadata <br>
+                        none
+                    </td>
+                    <td>Указывает как аудио должно загружаться при загрузке страницы. Атрибут игнорируется, если присутствует атрибут autoplay.</td>
+                </tr>
+            </table>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -2003,6 +2402,72 @@
         <summary><code><</code><code>video</code><code>></code></summary>
         <div class="col-1">
             <h3><span class="option">Vazifasi va qo'llanilishi :</span> Добавляет видео-контент на страницу.</h3>
+            <table border="5">
+                <tr>
+                    <th>Атрибут</th>
+                    <th>Значение</th>
+                    <th>Описание</th>
+                </tr>
+                <tr>
+                    <td>src</td>
+                    <td>URL</td>
+                    <td>Указывает URL адрес видео файла.</td>
+                </tr>
+                <tr>
+                    <td>controls</td>
+                    <td>controls</td>
+                    <td>Отображение встроенных элементов управления мультимедийным файлом (кнопка воспроизведения/паузы, регулятор, позволяющий перейти к определенному фрагменту ролика, а также регулятор уровня громкости).</td>
+                </tr>
+                <tr>
+                    <td>loop</td>
+                    <td>loop</td>
+                    <td>Зацикливает воспроизведение файла (наша песня хороша – начинай сначала).</td>
+                </tr>
+                <tr>
+                    <td>autoplay</td>
+                    <td>autoplay</td>
+                    <td>Указывает, что видео запустится автоматически, как только оно будет готово.</td>
+                </tr>
+                <tr>
+                    <td>muted</td>
+                    <td>muted</td>
+                    <td>Указывает, что видео будет заглушено (без звука).</td>
+                </tr>
+                <tr>
+                    <td>poster</td>
+                    <td>URL</td>
+                    <td>Задает изображение, которое отображается в то время пока видео загружается, или пока пользователь не нажмет кнопку воспроизведения.</td>
+                </tr>
+                <tr>
+                    <td>width</td>
+                    <td>pixels</td>
+                    <td>Устанавливает ширину видео проигрывателя.</td>
+                </tr>
+                <tr>
+                    <td>height</td>
+                    <td>pixels</td>
+                    <td>Устанавливает высоту видео проигрывателя.</td>
+                </tr>
+                <tr>
+                    <td>preload</td>
+                    <td>
+                        auto <br>
+                        metadata <br>
+                        none
+                    </td>
+                    <td>Указывает как видео должно загружаться при загрузке страницы. Атрибут игнорируется, если присутствует атрибут autoplay.</td>
+                </tr>
+            </table>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -2011,7 +2476,7 @@
             <div class="editor">
                 <h1>Sintaksis</h1>
                 <textarea id="editVideo">
-<video src="BUKHARA.mp4" controls width="500"></video></textarea>
+<video src="BUKHARA.mp4" controls width="500" poster="buxoro.jpg"></video></textarea>
             </div>
             <div class="frame">
                 <h1>Natija</h1>
@@ -2024,7 +2489,29 @@
     <details>
         <summary><code><</code><code>table</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет содержимое таблицы.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет содержимое таблицы Основное содержимое таблицы заключается в тег table .</h3>
+            <table border="5">
+                <tr>
+                    <th>Атрибут</th>
+                    <th>Значение</th>
+                    <th>Описание</th>
+                </tr>
+                <tr>
+                    <td>border</td>
+                    <td>number</td>
+                    <td>Атрибут определяет должна отображаться граница вокруг ячеек таблицы, или нет.</td>
+                </tr>
+            </table>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -2054,7 +2541,17 @@
     <details>
         <summary><code><</code><code>caption</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет наименование таблицы.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Наименование таблицы, если оно требуется размещается внутри элемента caption</h3>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -2084,7 +2581,17 @@
     <details>
         <summary><code><</code><code>tr</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет строку таблицы.</h3>
+            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Каждая строка таблицы помещается в элемент tr</h3>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -2115,6 +2622,16 @@
         <summary><code><</code><code>th</code><code>></code></summary>
         <div class="col-1">
             <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет заголовочную ячейку таблицы.</h3>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
@@ -2145,7 +2662,17 @@
         <summary><code><</code><code>td</code><code>></code></summary>
         <div class="col-1">
             <h3><span class="option">Vazifasi va qo'llanilishi :</span> Определяет ячейку данных таблицы.</h3>
-        </div>
+            <table border="5" style="margin-top: 15px;">
+                <tr>
+                    <th style="color: blue;">Universal atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+                <tr>
+                    <th style="color: blue;">Xodisa atribut</th>
+                    <td style="color: green;">Bor</td>
+                </tr>
+            </table>
+       </div>
         <div class="col-2" style="height: 500px;">
             <div class="btn">
                 <button onclick="codeTd()">Tekshirish</button>
