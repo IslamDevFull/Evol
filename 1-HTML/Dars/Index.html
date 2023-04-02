@@ -76,11 +76,9 @@
     <title>Evolution</title>
     <style>
         *{box-sizing: border-box;}
-        body{
-            height: 5000px;
-        }
+        body{ height: 5000px; }
         summary{font-size: 30px; font-weight: bold;}
-        .option{color: blue;}
+        .option{color: blue; font-weight: bold;}
         fieldset{background-color: rgb(231, 229, 229);}
         .col-1{
             /* border: 2px solid yellow; */
@@ -136,11 +134,17 @@
         }
         td{
             /* border: 2px solid blue; */
-            background-color: rgb(41,42,43);
-            color: wheat;
+            background-color: rgb(30,30,30);
+            color: whitesmoke;
         }
-        .atribut{color: rgb(156,220,254);background-color: rgb(41,42,43);font-size: 15px;}
-        .string{color: rgb(206,145,120);background-color: rgb(41,42,43);font-size: 15px;}
+        .img{width: 15px;}
+        .bacCod{background-color: rgb(30,30,30);}
+        .teg{color: rgb(86,156,214);}
+        .atr{color: rgb(156,220,254);}
+        .opp{color: rgb(212,212,212);}
+        .str{color: rgb(206,145,120);}
+        code{color: rgb(128,128,128);}
+        .red{color: tomato;}
     </style>
 </head>
 <body>
@@ -1676,68 +1680,41 @@
     <details>
         <summary><code><</code><code>form</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Форма в HTML это часть документа, которая позволяет пользователю ввести интересующую нас информацию, которую впоследствии можно принять и обработать на стороне сервера. Другими словами, формы используются для сбора информации введённой пользователями.Синтаксически парный тег form определяет форму в HTML документе. Элемент form по большому счету просто является контейнером, внутри которого могут размещаться различные надписи, элементы управления и типы входных элементов, флажки, радио-кнопки, кнопки отправки и прочие HTML элементы.</h3>
-            <table border="5">
+            <p><span class="option">Значение и применение :</span>Форма в HTML это часть документа, которая позволяет пользователю ввести интересующую нас информацию, которую  впоследствии можно принять и обработать на стороне сервера. Другими словами, формы используются для сбора информации введённой пользователями.</p>
+            <p>Синтаксически парный тег <code>&lt;</code><code class="teg">form</code><code>&gt;</code> определяет форму в HTML документе.Элемент <code>&lt;</code><code class="teg">form</code><code>&gt;</code> по большому счету просто является контейнером, внутри которого могут размещаться различные надписи, элементы управления и типы входных элементов, флажки, радио-кнопки, кнопки отправки и прочие HTML элементы.</p>
+            <hr>
+            <p><b>Основная задача формы заключается в том, чтобы принять от пользователя входящую информацию и передать её для дальнейшей обработки на стороне сервера.</b></p>
+            <hr>
+            <table>
                 <tr>
-                    <th>Атрибут</th>
-                    <th>Значение</th>
-                    <th>Описание</th>
+                    <th>Атрибут</th><th>Значение</th><th>Описание</th>
                 </tr>
                 <tr>
-                    <td>accept-charset</td>
-                    <td>character_set</td>
-                    <td>Определяет кодировку, используемую в представленной форме (значением по умолчанию является зарезервированная строка "unknown", которая указывает, что кодировка соответствует кодировке документа, содержащего элемент form).</td>
+                    <td class="atr">accept-charset<span class="opp">=</span><span class="str">" "</span></td><td class="str">character_set</td><td>Определяет кодировку, используемую в представленной форме (значением по умолчанию является зарезервированная строка <i>"unknown"</i>, которая указывает, что кодировка соответствует кодировке документа, содержащего элемент <code>&lt;</code><code class="teg">form</code><code>&gt;</code>).</td>
                 </tr>
                 <tr>
-                    <td>action</td>
-                    <td>URL</td>
-                    <td>Определяет адрес, куда отправляется форма (по умолчанию действие установлено на текущую страницу).</td>
+                    <td class="atr">action<span class="opp">=</span><span class="str">" "</span></td><td class="str">URL</td><td>Определяет адрес, куда отправляется форма (по умолчанию действие установлено на текущую страницу).</td>
                 </tr>
                 <tr>
-                    <td>autocomplete</td>
-                    <td>
-                        on <br>
-                        off
-                    </td>
-                    <td>Указывает может ли браузер автоматически заполнять элементы формы (по умолчанию - включен). Этот атрибут помогает заполнять поля форм текстом, который был введён в них ранее (если не отключено настройками браузера).</td>
+                    <td class="atr">autocomplete<span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">on<br>off</td><td>Указывает может ли браузер автоматически заполнять элементы формы (по умолчанию - включен). Этот атрибут помогает заполнять поля форм текстом, который был введён в них ранее (если не отключено настройками браузера).</td>
                 </tr>
                 <tr>
-                    <td>enctype</td>
-                    <td>
-                        application/x-www-form-urlencoded <br>
-                        multipart/form-data <br>
-                        text/plain
-                    </td>
-                    <td>Определяет способ кодирования данных формы при их отправке. Значение по умолчанию application/x-www-form-urlencoded.</td>
+                    <td class="atr">enctype<span class="opp">=</span><span class="str">" "</span></td><td class="str">application/x-www-form-urlencoded<br>multipart/form-data<br>text/plain</td><td>Определяет способ кодирования данных формы при их отправке. <b>Значение по умолчанию <span class="str">application/x-www-form-urlencoded</span>.</b></td>
                 </tr>
                 <tr>
-                    <td>method</td>
-                    <td>
-                        get <br>
-                        post
-                    </td>
-                    <td>Атрибут определяет какой метод HTTP (get или post) используется при передаче формы. Метод get используется по умолчанию.</td>
+                    <td class="atr">method<span class="opp">=</span><span class="str">" "</span></td><td class="str">get<br>post</td><td>Атрибут определяет какой метод HTTP (<span class="str">get</span> или <span class="str">post</span>) используется при передаче формы. <b>Метод <span class="str">get</span> используется по умолчанию.</b></td>
                 </tr>
                 <tr>
-                    <td>name</td>
-                    <td>text</td>
-                    <td>Определяет имя формы, которое используется для идентификации (задает имя для формы).</td>
+                    <td class="atr">name<span class="opp">=</span><span class="str">" "</span></td><td class="str">text</td><td>Определяет имя формы, которое используется для идентификации (задает имя для формы).</td>
                 </tr>
                 <tr>
-                    <td>novalidate</td>
-                    <td>#novalidate</td>
-                    <td>Указывает, что проверка данных на корректность, введенных пользователем в форму не производится.</td>
+                    <td class="atr">novalidate<span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">novalidate</td><td>Указывает, что проверка данных на корректность, введенных пользователем в форму не производится.</td>
                 </tr>
                 <tr>
-                    <td>target</td>
-                    <td>
-                        _blank <br>
-                        _self <br>
-                        _parent <br>
-                        _top <br>
-                        framename
-                    </td>
-                    <td>При помощи атрибута мы задаём браузеру, где показать ответ, полученный после отправки формы (вкладка, текущее окно, или фрейм). По умолчанию установлено значение _self - отображает ответ в текущем окне.</td>
+                    <td class="atr">target<span class="opp">=</span><span class="str">" "</span></td><td class="str">_blank<br>_self<br>_parent<br>_top<br>framename</td><td>При помощи атрибута мы задаём браузеру, где показать ответ, полученный после отправки формы (вкладка, текущее окно, или фрейм). <b>По умолчанию установлено значение <span class="str">_self</span> - отображает ответ в текущем окне.</b></td>
+                </tr>
+                <tr>
+                    <td class="atr">accept<span class="opp">=</span><span class="str">" "</span></td><td class="str">file_type></td><td><b class="red">Не поддерживается в HTML5.</b><br>Определяет разделенный запятыми список типов файлов, которые принимает сервер (который может быть представлен через загрузку файлов).</td>
                 </tr>
             </table> 
             <table border="5" style="margin-top: 15px;">
@@ -1769,113 +1746,105 @@
             </div>
         </div>
     </details>
-    <details open>
+    <details>
         <summary><code><</code><code>input</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Элемент input является основным элементом формы (HTML тег form) и определяет пользовательское поле для ввода информации. Поле ввода принимает различный вид, в зависимости от значения атрибута type, применённого к данному элементу.</h3>
-            <table class="tableTag">
+            <p><span class="option">Значение и применение :</span> Элемент <code>&lt;</code><code class="teg">input</code><code>&gt;</code> является основным элементом формы (HTML тег <code>&lt;</code><code class="teg">form</code><code>&gt;</code>) и определяет пользовательское поле для ввода информации.Поле ввода принимает различный вид, в зависимости от значения атрибута <code class="str">type</code>, применённого к данному элементу.</p>
+            <table>
                 <tr>
-                    <th>Атрибут</th><th>Значение</th><th class="tatt">Описание</th>
+                    <th>Атрибут</th><th>Значение</th><th>Описание</th>
                 </tr>
                 <tr>
-                    <td>accept</td><td><span class="zna">file_extension<br>audio/<sup>*</sup><br>image/<sup>*</sup><br>video/<sup>*</sup><br>media_type</span></td><td>Задает типы файлов, которые сервер принимает (файлы, которые могут быть загружены для отправки на сервер). Атрибут используется только для  <span class="tag">&lt;input</span> <span class="att">type = </span><span class="zna">"file"</span><span class="tag">&gt;</span>.</td>
+                    <td class="atr">accept<span class="opp">=</span><span class="str">" "</span></td><td><code class="str">file_extension<br>audio/<sup>*</sup><br>image/<sup>*</sup><br>video/<sup>*</sup><br>media_type</code></td><td>Задает типы файлов, которые сервер принимает (файлы, которые могут быть загружены для отправки на сервер). Атрибут используется только для <code>&lt;</code><code class="teg">input</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"file"</code><code>&gt;</code>.</td>
                 </tr>
                 <tr>
-                <td><span class="att">align</span></td><td><span class="zna">left<br>right<br>top<br>middle<br>bottom</span></td><td><strong class="sko">Не поддерживается в HTML5.</strong><br> Определяет выравнивание ввода изображения (только для <span class="tag">&lt;input</span> <span class="att">type = </span><span class="zna">"image"</span><span class="tag">&gt;</span>).</td>
+                    <td class="atr">align<span class="opp">=</span><span class="str">" "</span></td><td class="str">left<br>right<br>top<br>middle<br>bottom</td><td><b class="red">Не поддерживается в HTML5.</b><br> Определяет выравнивание ввода изображения (только для <code>&lt;</code><code class="teg">input</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"image"</code><code>&gt;</code>).</td>
                 </tr>
                 <tr>
-                <td><a href="/html/tag_input_att_alt.php" class="att" title="Атрибут alt HTML тега input">alt</a></td><td><span class="zna">text</span></td><td>Определяет альтернативный текст для изображений (только для <span class="tag">&lt;input</span> <span class="att">type = </span><span class="zna">"image"</span><span class="tag">&gt;</span>).</td>
+                <td class="atr">alt<span class="opp">=</span><span class="str">" "</span></td><td class="str">text</td><td>Определяет альтернативный текст для изображений (только для <code>&lt;</code><code class="teg">input</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"image"</code><code>&gt;</code>).</td>
                 </tr>
                 <tr>
-                <td><a href="/html/tag_input_att_autocomplete.php" class="att" title="Атрибут autocomplete HTML тега input">autocomplete<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">on<br>off<br>tokens</span></td><td>Указывает должен ли элемент иметь автозаполнение (заполнение автоматически завершается в браузере). <b>По умолчанию автозаполнение включено.</b></td>
+                <td class="atr">autocomplete<span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">on<br>off<br>tokens</td><td>Указывает должен ли элемент иметь автозаполнение (заполнение автоматически завершается в браузере). <b>По умолчанию автозаполнение включено.</b></td>
                 </tr>
                 <tr>
-                <td>autofocus<img src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td><span class="zna">autofocus</span></td><td>Логический атрибут, который указывает, что элемент <a href="/html/tag_input.php" class="tag" title="HTML тег input" style="display:inline;">&lt;input&gt;</a> должен автоматически получать фокус при загрузке страницы.</td>
+                    <td class="atr">autofocus<span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">autofocus</td><td>Логический атрибут, который указывает, что элемент <code>&lt;</code><code class="teg">input</code><code>&gt;</code> должен автоматически получать фокус при загрузке страницы.</td>
                 </tr>
                 <tr>
-                <td><a href="/html/tag_input_att_checked.php" class="att" title="Атрибут checked HTML тега input">checked</a></td><td><span class="zna">checked</span></td><td>Является логическим атрибутом и указывает, что элемент должен быть предварительно выбран при загрузке страницы (только для <span class="tag">&lt;input <span class="att">type = </span><span class="zna">"checkbox"</span>&gt;</span> и <span class="tag">&lt;input</span> <span class="att">type = </span><span class="zna">"radio"</span><span class="tag">&gt;</span>).</td>
+                    <td class="atr">checked<span class="opp">=</span><span class="str">" "</span></td><td class="str">checked</td><td>Является логическим атрибутом и указывает, что элемент должен быть предварительно выбран при загрузке страницы (только для <code>&lt;</code><code class="teg">input</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"checkbox</code><code>&gt;</code> и <code>&lt;</code><code class="teg">input</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"radio"</code><code>&gt;</code>).</td>
                 </tr>
                 <tr>
-                <td><a href="/html/tag_input_att_disabled.php" class="att" title="Атрибут disabled HTML тега input">disabled</a></td><td><span class="zna">disabled</span></td><td>Является логическим атрибутом и указывает, что элемент должен быть отключен (недоступен для взаимодействия с пользователем).</td>
+                    <td class="atr">disabled <span class="opp">=</span><span class="str">" "</span></td><td class="str">disabled</td><td>Является логическим атрибутом и указывает, что элемент должен быть отключен (недоступен для взаимодействия с пользователем).</td>
                 </tr>
                 <tr>
-                <td><a href="/html/tag_input_att_form.php" class="att" title="Атрибут form HTML тега input">form<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">form_id</span></td><td>Задает форму (элемент <a href="/html/tag_form.php" class="tag" title="HTML тег form" style="display:inline">&lt;form&gt;</a>) к которой элемент управления принадлежит. В качестве значения должен выступать идентификатор формы (<a href="/html/global_att_id.php" class="att" title="Глобальный HTML атрибут id" style="display:inline">id</a>) в этом же документе.</td>
+                    <td class="atr">form <span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">form_id</td><td>Задает форму (элемент <code>&lt;</code><code class="teg">form</code><code>&gt;</code>) к которой элемент управления принадлежит. В качестве значения должен выступать идентификатор формы (<code class="atr">id</code>) в этом же документе.</td>
                 </tr>
                 <tr>
-                <td><a href="/html/tag_input_att_formaction.php" class="att" title="Атрибут formaction HTML тега input">formaction<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">URL</span></td><td>Указывает URL файла, который будет обрабатывать (контролировать) входную информацию после отправки формы (только для <span class="tag">&lt;input <span class="att">type = </span><span class="zna">"image"</span>&gt;</span> и <span class="tag">&lt;input</span> <span class="att">type = </span><span class="zna">"submit"</span><span class="tag">&gt;</span>). </td>
+                    <td class="atr">formaction <span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">URL</td><td>Указывает URL файла, который будет обрабатывать (контролировать) входную информацию после отправки формы (только для <code>&lt;</code><code class="teg">input</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"image</code><code>&gt;</code> и <code>&lt;</code><code class="teg">input</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"submit</code><code>&gt;</code>). </td>
                 </tr>
                 <tr>
-                <td><a href="/html/tag_input_att_formenctype.php" class="att" title="Атрибут formenctype HTML тега input">formenctype<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">application/x-www-form-urlencoded<br>
-                multipart/form-data<br>
-                text/plain</span></td><td>Определяет, как данные формы должны быть закодированы при передаче на сервер (только для <span class="tag">&lt;input <span class="att">type = </span><span class="zna">"image"</span>&gt;</span> и <span class="tag">&lt;input</span> <span class="att">type = </span><span class="zna">"submit"</span><span class="tag">&gt;</span>).</td>
+                    <td class="atr">formenctype <span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">application/x-www-form-urlencoded<br>multipart/form-data<br>text/plain</td><td>Определяет, как данные формы должны быть закодированы при передаче на сервер (только для <code>&lt;</code><code class="teg">input</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"image</code><code>&gt;</code> и <code>&lt;</code><code class="teg">input</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"submit</code><code>&gt;</code>).</td>
                 </tr>
                 <tr>
-                <td><a href="/html/tag_input_att_formmethod.php" class="att" title="Атрибут formmethod HTML тега input">formmethod<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">get<br>post</span></td><td>Определяет метод HTTP для отправки данных (только для <span class="tag">&lt;input <span class="att">type = </span><span class="zna">"image"</span>&gt;</span> и <span class="tag">&lt;input</span> <span class="att">type = </span><span class="zna">"submit"</span><span class="tag">&gt;</span>).</td>
+                    <td class="atr">formmethod <span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">get<br>post</td><td>Определяет метод HTTP для отправки данных (только для <code>&lt;</code><code class="teg">input</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"image</code><code>&gt;</code> и <code>&lt;</code><code class="teg">input</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"submit</code><code>&gt;</code>).</td>
                 </tr>
                 <tr>
-                <td><a href="/html/tag_input_att_formnovalidate.php" class="att" title="Атрибут formnovalidate HTML тега input">formnovalidate<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">formnovalidate</span></td><td>Указывает, что проверка данных на корректность, введенных пользователем в форму не производится (только для <span class="tag">&lt;input <span class="att">type = </span><span class="zna">"submit"</span>&gt;</span>).</td>
+                    <td class="atr">formnovalidate <span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">formnovalidate</td><td>Указывает, что проверка данных на корректность, введенных пользователем в форму не производится (только для <code>&lt;</code><code class="teg">input</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"submit</code><code>&gt;</code>).</td>
                 </tr>
                 <tr>
-                <td><a href="/html/tag_input_att_formtarget.php" class="att" title="Атрибут formtarget HTML тега input">formtarget<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">_blank<br>
-                _self<br>
-                _parent<br>
-                _top<br>
-                framename</span></td><td>При помощи атрибута мы задаём браузеру, где показать ответ, полученный после отправки формы (вкладка, текущее окно, или фрейм). По умолчанию установлено значение <span class="zna">_self</span> - отображает ответ в текущем окне. Атрибут используется только только для <span class="tag">&lt;input <span class="att">type = </span><span class="zna">"image"</span>&gt;</span> и <span class="tag">&lt;input <span class="att">type = </span><span class="zna">"submit"</span>&gt;</span>.</td>
+                    <td class="atr">formtarget <span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">_blank<br>_self<br>_parent<br>_top<br>framename</td><td>При помощи атрибута мы задаём браузеру, где показать ответ, полученный после отправки формы (вкладка, текущее окно, или фрейм). По умолчанию установлено значение <code class="str">_self</code> - отображает ответ в текущем окне. Атрибут используется только только для <code>&lt;</code><code class="teg">input</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"image</code><code>&gt;</code> и <code>&lt;</code><code class="teg">input</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"submit</code><code>&gt;</code>.</td>
                 </tr>
                 <tr>
-                <td><a href="tag_input_att_height.php" title="Атрибут height HTML тега input" class="att">height<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">pixels</span></td><td>Задает высоту элемента (только для <span class="tag">&lt;input <span class="att">type = </span><span class="zna">"image"</span>&gt;</span>).</td>
+                    <td class="atr">height <span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">pixels</td><td>Задает высоту элемента (только для <code>&lt;</code><code class="teg">input</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"image</code><code>&gt;</code>).</td>
                 </tr>
                 <tr>
-                <td><a href="/html/tag_input_att_list.php" class="att" title="Атрибут list HTML тега input">list<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">datalist_id</span></td><td>Определяет список предопределенных вариантов, который будет предложен пользователю. Значение атрибута должно соответствовать идентификатору элемента <a href="tag_datalist.php" style="display:inline" class="tag" title="HTML тег datalist">&lt;datalist&gt;</a>.</td>
+                    <td class="atr">list <span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">datalist_id</td><td>Определяет список предопределенных вариантов, который будет предложен пользователю. Значение атрибута должно соответствовать идентификатору элемента <code>&lt;</code><code class="teg">datalist</code><code>&gt;</code>.</td>
                 </tr>
                 <tr>
-                <td><a href="/html/tag_input_att_max.php" class="att" title="Атрибут max HTML тега input">max<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">number<br>date</span></td><td>Определяет максимальное значение для элемента (значение может быть как числовым, так и в виде даты).</td>
+                    <td class="atr">max <span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">number<br>date</td><td>Определяет максимальное значение для элемента (значение может быть как числовым, так и в виде даты).</td>
                 </tr>
                 <tr>
-                <td><a href="/html/tag_input_att_maxlength.php" class="att" title="Атрибут maxlength HTML тега input">maxlength</a></td><td><span class="zna">number</span></td><td>Указывает максимально допустимое количество символов в элементе. Только для элементов управления следующих типов: <span class="zna">text</span>, <span class="zna">search</span>, <span class="zna">tel</span>, <span class="zna">url</span>, <span class="zna">email</span> и <span class="zna">password</span> (остальные игнорируются).</td>
+                    <td class="atr">maxlength <span class="opp">=</span><span class="str">" "</span></td><td class="str">number</td><td>Указывает максимально допустимое количество символов в элементе. Только для элементов управления следующих типов: <code class="str">text</code>, <code class="str">search</code>, <code class="str">tel</code>, <code class="str">url</code>, <code class="str">email</code> и <code class="str">password</code> (остальные игнорируются).</td>
                 </tr>
                 <tr>
-                <td><a href="/html/tag_input_att_min.php" class="att" title="Атрибут min HTML тега input">min<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">number<br>date</span></td><td>Определяет минимальное значение для элемента (значение может быть как числовым, так и в виде даты).</td>
+                    <td class="atr">min <span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">number<br>date</td><td>Определяет минимальное значение для элемента (значение может быть как числовым, так и в виде даты).</td>
                 </tr>
                 <tr>
-                <td><a href="/html/tag_input_att_multiple.php" class="att" title="Атрибут min HTML тега input">multiple<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">multiple</span></td><td>Указывает, что пользователь может ввести более одного значения в элементе (только для <span class="tag">&lt;input <span class="att">type = </span><span class="zna">"file"</span>&gt;</span> и <span class="tag">&lt;input <span class="att">type = </span><span class="zna">"email"</span>&gt;</span>). Является логическим атрибутом.</td>
+                    <td class="atr">multiple <span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">multiple</td><td>Указывает, что пользователь может ввести более одного значения в элементе (только для <code>&lt;</code><code class="teg">input</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"file</code><code>&gt;</code> и <code>&lt;</code><code class="teg">input</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"email</code><code>&gt;</code>). Является логическим атрибутом.</td>
                 </tr>
                 <tr>
-                <td><a href="/html/tag_input_att_name.php" class="att" title="Атрибут name HTML тега input">name</a></td><td><span class="zna">text</span></td><td>Задает имя для элемента <span class="tag">&lt;input&gt;</span>.</td>
+                    <td class="atr">name <span calss="opp">=</span><span calss="str">" "</span></td><td class="str">text</td><td>Задает имя для элемента <code>&lt;</code><code class="teg">input</code><code>&gt;</code>.</td>
                 </tr>
                 <tr>
-                <td><a href="/html/tag_input_att_pattern.php" class="att" title="Атрибут pattern HTML тега input"><span class="att">pattern<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></span></a></td><td><span class="zna">regexp</span></td><td>Задает регулярное выражение, которое сверяется со значением введёным в элементе. Синтаксис регулярного выражения соответствует языку <i>JavaScript</i>. Только для элементов управления следующих типов: <span class="zna">text</span>, <span class="zna">search</span>, <span class="zna">tel</span>, <span class="zna">url</span>, <span class="zna">email</span> и <span class="zna">password</span> (остальные игнорируются).</td>
+                    <td class="atr">pattern <span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">regexp</td><td>Задает регулярное выражение, которое сверяется со значением введёным в элементе. Синтаксис регулярного выражения соответствует языку <i>JavaScript</i>. Только для элементов управления следующих типов: <code class="str">text</code>, <code class="str">search</code>, <code class="str">tel</code>, <code class="str">url</code>, <code class="str">email</code> и <code class="str">password</code> (остальные игнорируются).</td>
                 </tr>
                 <tr>
-                <td><a href="/html/tag_input_att_placeholder.php" class="att" title="Атрибут placeholder HTML тега input">placeholder<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">text</span></td><td>Указывает подсказку, которая описывает ожидаемое значение для ввода в элемент. Подсказка отображается в поле ввода до того, как пользователь вводит значение.
-                Атрибут может быть использован с полями данных определенных типов  (атрибут <a href="/html/tag_input_att_type.php" class="att" title="Атрибут type HTML тега input" style="display:inline">type</a>) со значениями <span class="zna">email</span>, <span class="zna">password</span>, <span class="zna">search</span>, <span class="zna">tel</span>, <span class="zna">text</span>  и  <span class="zna">url</span>).
-                </td>
+                    <td class="atr">placeholder <span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">text</td><td>Указывает подсказку, которая описывает ожидаемое значение для ввода в элемент. Подсказка отображается в поле ввода до того, как пользователь вводит значение.Атрибут может быть использован с полями данных определенных типов  (атрибут <code class="atr">type</code>) со значениями <code class="str">email</code>, <code class="str">password</code>, <code class="str">search</code>, <code class="str">tel</code>, <code class="str">text</code>  и  <code class="str">url</code>).</td>
                 </tr>
                 <tr>
-                <td><a href="/html/tag_input_att_readonly.php" class="att" title="Атрибут readonly HTML тега input">readonly</a></td><td><span class="zna">readonly</span></td><td>Логический атрибут, который указывает, что поле ввода доступно только для чтения.</td>
+                    <td class="atr">readonly <span class="opp">=</span><span class="str">" "</span></td><td class="str">readonly</td><td>Логический атрибут, который указывает, что поле ввода доступно только для чтения.</td>
                 </tr>
                 <tr>
-                <td><a href="/html/tag_input_att_required.php" class="att" title="Атрибут required HTML тега input">required<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">required</span></td><td>Логический атрибут, который указывает, что поле ввода должно быть заполнено перед отправкой формы.</td>
+                    <td class="atr">required <span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">required</td><td>Логический атрибут, который указывает, что поле ввода должно быть заполнено перед отправкой формы.</td>
                 </tr>
                 <tr>
-                <td><a href="/html/tag_input_att_size.php" class="att" title="Атрибут size HTML тега input">size</a></td><td><span class="zna">number</span></td><td>Определяет ширину для элемента (в символах). Только для элементов управления следующих типов: <span class="zna">text</span>, <span class="zna">search</span>, <span class="zna">tel</span>, <span class="zna">url</span>, <span class="zna">email</span> и <span class="zna">password</span> (остальные игнорируются). <b>Значение по умолчанию 20 символов.</b></td>
+                    <td class="atr">size <span class="opp">=</span><span class="str">" "</span></td><td class="str">number</td><td>Определяет ширину для элемента (в символах). Только для элементов управления следующих типов: <code class="str">text</code>, <code class="str">search</code>, <code class="str">tel</code>, <code class="str">url</code>, <code class="str">email</code> и <code class="str">password</code> (остальные игнорируются). <b>Значение по умолчанию 20 символов.</b></td>
                 </tr>
                 <tr>
-                <td><a href="tag_input_att_src.php" title="Атрибут src HTML тега input" class="att">src</a></td><td><span class="zna">URL</span></td><td>Задаёт URL-адрес изображения, которое используется в качестве кнопки отправки (только для <span class="tag">&lt;input</span> <span class="att">type = </span><span class="zna">"image"</span><span class="tag">&gt;</span>).</td>
+                    <td class="atr">src <span class="opp">=</span><span class="str">" "</span></td><td class="str">URL</td><td>Задаёт URL-адрес изображения, которое используется в качестве кнопки отправки (только для <code>&lt;</code><code class="teg">input</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"image</code><code>&gt;</code>).</td>
                 </tr>
                 <tr>
-                <td><a href="tag_input_att_step.php" title="Атрибут step HTML тега input" class="att">step<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">number</span></td><td>Определяет размер "шага" для поля ввод. Например, если значение атрибута <span class="zna">2</span>, то значение элемента управления будет иметь шаг 2 и увеличиваться, или уменьшаться на 2 (..-4,-2,0,2, 4..). Только для элементов управления следующих типов: <span class="zna">number</span>, <span class="zna">range</span>, <span class="zna">tel</span>, <span class="zna">date</span>, <span class="zna">date</span>, <span class="zna">time</span>, <span class="zna">datetime-local</span>, <span class="zna">month</span>, <span class="zna">time</span> и <span class="zna">week</span> (остальные игнорируются). <b>Значение по умолчанию 1.</b></td>
+                    <td class="atr">step <span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">number</td><td>Определяет размер "шага" для поля ввод. Например, если значение атрибута <span class="str">2</span>, то значение элемента управления будет иметь шаг 2 и увеличиваться, или уменьшаться на 2 (..-4,-2,0,2, 4..). Только для элементов управления следующих типов: <code class="str">number</code>, <code class="str">range</code>, <code class="str">tel</code>, <code class="str">date</code>, <code class="str">date</code>, <code class="str">time</code>, <code class="str">datetime-local</code>, <code class="str">month</code>, <code class="str">time</code> и <code class="str">week</code> (остальные игнорируются). <b>Значение по умолчанию 1.</b></td>
                 </tr>
                 <tr>
-                <td><a href="/html/tag_input_att_type.php" class="att" title="Атрибут type HTML тега input">type</a></td><td><span class="zna">button<br>checkbox<br>color<br>date<br>datetime<br>datetime-local<br>email<br>file<br>hidden<br>image<br>month<br>number<br>password<br>radio<br>range<br>reset<br>search<br>submit<br>tel<br>text<br>time<br>url<br>week</span></td><td>Поле ввода принимает вид, в зависимости от применённого значения.</td>
+                    <td class="atr">type <span class="opp">=</span><span class="str">" "</span></td><td class="str">button<br>checkbox<br>color<br>date<br>datetime<br>datetime-local<br>email<br>file<br>hidden<br>image<br>month<br>number<br>password<br>radio<br>range<br>reset<br>search<br>submit<br>tel<br>text<br>time<br>url<br>week</td><td>Поле ввода принимает вид, в зависимости от применённого значения.</td>
                 </tr>
                 <tr>
-                <td><a href="/html/tag_input_att_value.php" class="att" title="Атрибут value HTML тега input">value</a></td><td><span class="zna">text</span></td><td>Задает значение для элемента.</td>
+                    <td class="atr">value <span class="opp">=</span><span class="str">" "</span></td><td class="str">text</td><td>Задает значение для элемента.</td>
                 </tr>
                 <tr>
-                <td><a href="tag_input_att_width.php" title="Атрибут width HTML тега input" class="att">width<img class="tag" src="/images/mini5.png" alt="html5" title="Добавлен в HTML5"></a></td><td><span class="zna">pixels</span></td><td>Задает ширину элемента (только для <span class="tag">&lt;input</span> <span class="att">type = </span><span class="zna">"image"</span><span class="tag">&gt;</span>).</td>
+                    <td class="atr">width <span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">pixels</td><td>Задает ширину элемента (только для <code>&lt;</code><code class="teg">input</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"image</code><code>&gt;</code>).</td>
                 </tr>
-                </tbody></table>
+            </table>
             <table border="5" style="margin-top: 15px;">
                 <tr>
                     <th style="color: blue;">Universal atribut</th>
@@ -1947,8 +1916,56 @@
     <details>
         <summary><code><</code><code>textarea</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Представляет собой поле формы для создания области многострочного ввода (текстовая область).</h3>
-             <table border="5" style="margin-top: 15px;">
+            <p><span class="option">Значение и применение :</span> Тег <code>&lt;</code><code class="teg">textarea</code><code>&gt;</code> представляет собой поле формы для создания области многострочного ввода (текстовая область). Основное отличие от тега <code>&lt;</code><code class="teg">input</code><code>&gt;</code> (пользовательское поле для ввода информации) заключается в том, что допускаются переносы строк (они сохраняются при отправке данных на сервер).</p>
+            <p>Текстовая область может содержать неограниченное количество символов, как правило, текст внутри нее отображается браузерами моноширинным шрифтом <i>Courier</i> (курьер).</p> 
+            <table>
+                <tr>
+                    <th>Атрибут</th><th>Значение</th><th>Описание</th>
+                </tr>
+                <tr>
+                    <td class="atr">autoсomplete<span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">on<br>off</td><td>Этот атрибут определяет, может ли значение элемента быть автоматически дополнено браузером (помощь пользователям в заполнении формы).</td>
+                </tr>
+                <tr>
+                    <td class="atr">autofocus<span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">autofocus</td><td>Указывает, что текстовая область должна автоматически получать фокус при загрузке страницы.</td>
+                </tr>
+                <tr>
+                    <td class="atr">dirname<span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">textareaname.dir</td><td>Определяет специальное имя поля формы, которое используется, чтобы указать направление текста в текстовой области, оно будет подставлено браузером автоматически и отправлено на сервер вместе с формой отправки.</td>
+                </tr>
+                <tr>
+                    <td class="atr">disabled<span class="opp">=</span><span class="str">" "</span></td><td class="str">disabled</td><td>Логический атрибут, который указывает, что текстовая область должна быть отключена.</td>
+                </tr>
+                <tr>
+                    <td class="atr">form<span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">form_id</td><td>Задает одну или несколько форм к которым элемент принадлежит.</td>
+                </tr>
+                <tr>
+                    <td class="atr">maxlength<span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">number</td><td>Указывает максимальное количество символов, которое может содержаться в текстовой области (при достижении заданного числа символов дальнейший ввод невозможен).</td>
+                </tr>
+                <tr>
+                    <td class="atr">minlength<span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">number</td><td>Указывает минимальное количество символов, которое может содержаться в текстовой области.</td>
+                </tr>
+                <tr>
+                    <td class="atr">name<span class="opp">=</span><span class="str">" "</span></td><td class="str">text</td><td>Определяет имя для текстовой области.</td>
+                </tr>
+                <tr>
+                    <td class="atr">placeholder<span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">text</td><td>Указывает текст подсказки, которая описывает ожидаемое значение для ввода пользователем в элемент.</td>
+                </tr>
+                <tr>
+                    <td class="atr">readonly<span class="opp">=</span><span class="str">" "</span></td><td class="str">readonly</td><td>Указывает, что текстовая область доступна только для чтения.</td>
+                </tr>
+                <tr>
+                    <td class="atr">required<span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">required</td><td>Логический атрибут, который указывает, что текстовая область должна быть заполнена перед тем как форма будет отправлена.</td>
+                </tr>
+                <tr>
+                    <td class="atr">cols<span class="opp">=</span><span class="str">" "</span></td><td class="str">number</td><td>Определяет видимую ширину текстовой области (в символах). <b>Значение по умолчанию 20 символов.</b></td>
+                </tr>
+                <tr>
+                    <td class="atr">rows<span class="opp">=</span><span class="str">" "</span></td><td class="str">number</td><td>Определяет видимое количество строк в текстовой области (в символах). <b>Значение по умолчанию 2 символа.</b></td>
+                </tr>
+                <tr>
+                    <td class="atr">wrap<span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">hard<br>soft</td><td>Определяет, как текст в текстовой области, должен быть перенесён, когда отправляется форма.</td>
+                </tr>
+            </table>
+            <table border="5" style="margin-top: 15px;">
                 <tr>
                     <th style="color: blue;">Universal atribut</th>
                     <td style="color: green;">Bor</td>
@@ -1975,8 +1992,47 @@
     <details>
         <summary><code><</code><code>button</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Используется для размещения кнопки.</h3>
-             <table border="5" style="margin-top: 15px;">
+            <p><span class="option">Значение и применение :</span> HTML тег <code>&lt;</code><code class="teg">button</code><code>&gt;</code> используется для размещения кнопки. Внутри тега <code>&lt;</code><code class="teg">button</code><code>&gt;</code> вы можете разместить как отформатированный текст, так и изображение. Это основная разница между этим элементом и кнопками, созданными с использованием тега <code>&lt;</code><code class="teg">input</code><code>&gt;</code> (c атрибутом <code class="atr">type</code><code class="opp">=</code><code class="str">"button"</code>).</p>
+            <p>Всегда указывайте для тега <code>&lt;</code><code class="teg">button</code><code>&gt;</code> тип атрибута  <code class="atr">type</code><code class="opp">=</code><code class="str">"button"</code> если элемент используется в качестве обычной кнопки. Если вы используете тег <code>&lt;</code><code class="teg">button</code><code>&gt;</code> внутри HTML формы, то вы можете столкнуться с тем, что старые версии браузеров могут представить различные значения при отправке формы. <b>Рекомендуется в этом случае использовать элемент <code>&lt;</code><code class="teg">input</code><code>&gt;</code> для отправки HTML форм.</b></p> 
+            <table>
+                <tr>
+                    <th>Атрибут</th><th>Значение</th><th>Описание</th>
+                </tr>
+                <tr>
+                    <td class="atr">autofocus<span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">autofocus</td><td>Логический атрибут, который указывает, что кнопка должна автоматически получить фокус при загрузке страницы.</td>
+                </tr>
+                <tr>
+                    <td class="atr">disabled<span class="opp">=</span><span class="str">" "</span></td><td class="str">disabled</td><td>Является логическим атрибутом и указывает, что кнопка должна быть отключена (недоступна для взаимодействия с пользователем).</td>
+                </tr>
+                <tr>
+                    <td class="atr">form<span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">form_id</td><td>Задает форму (элемент <code>&lt;</code><code class="teg">form</code><code>&gt;</code>) к которой кнопка принадлежит. В качестве значения должен выступать идентификатор формы (<code class="atr">id</code>) в этом же документе.</td>
+                </tr>
+                <tr>
+                    <td class="atr">formaction<span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">URL</td><td>Указывает URL файла, который будет обрабатывать (контролировать) входную информацию после отправки формы (только для <code>&lt;</code><code class="teg">button</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"submit"</code><code>&gt;</code>).</td>
+                </tr>
+                <tr>
+                    <td class="atr">formenctype<span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">application/x-www-form-urlencoded<br>multipart/form-data<br>text/plain</td><td>Определяет, как данные формы должны быть закодированы при передаче на сервер (только для <code>&lt;</code><code class="teg">button</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"submit"</code><code>&gt;</code>).</td>
+                </tr>
+                <tr>
+                    <td class="atr">formmethod<span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">get<br>post</td><td>Определяет, какой метод HTTP использовать при отправке данных формы (только для <code>&lt;</code><code class="teg">button</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"submit"</code><code>&gt;</code>).</td>
+                </tr>
+                <tr>
+                    <td class="atr">formnovalidate<span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">formnovalidate</td><td>Указывает, что проверка данных на корректность, введенных пользователем в форму не производится (только для <code>&lt;</code><code class="teg">button</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"submit"</code><code>&gt;</code>).</td>
+                </tr>
+                <tr>
+                    <td class="atr">formtarget<span class="opp">=</span><span class="str">" "</span><img class="img" src="mini5.png" alt="html5" title="Добавлен в HTML5"></td><td class="str">_blank<br>_self<br>_parent<br>_top<br>framename</td><td>Задаёт браузеру, где показать ответ, полученный после отправки формы (вкладка, текущее окно, или фрейм). По умолчанию установлено значение <code class="str">_self</code> - отображает ответ в текущем окне. Используется только для <code>&lt;</code><code class="teg">button</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"submit"</code><code>&gt;</code>.</td>
+                </tr>
+                <tr>
+                    <td class="atr">name<span class="opp">=</span><span class="str">" "</span></td><td class="str">name</td><td>Задает имя для кнопки, которое передается при отправке формы.</td>
+                </tr>
+                <tr>
+                    <td class="atr">type<span class="opp">=</span><span class="str">" "</span></td><td class="str">button<br>reset<br>submit</td><td>Указывает тип кнопки. <b>Значение по умолчанию <b><code class="str">submit</code>.</b></b></td>
+                </tr>
+                <tr>
+                    <td class="atr">value<span class="opp">=</span><span class="str">" "</span></td><td class="str">text</td><td>Определяет начальное значение для кнопки.</td>
+                </tr>
+            </table>
+            <table border="5" style="margin-top: 15px;">
                 <tr>
                     <th style="color: blue;">Universal atribut</th>
                     <td style="color: green;">Bor</td>
@@ -2002,11 +2058,15 @@
             </div>
         </div>
     </details>
-    <details>
+    <details open>
         <summary><code><</code><code>select</code><code>></code></summary>
         <div class="col-1">
-            <h3><span class="option">Vazifasi va qo'llanilishi :</span> Позволяет создать раскрывающийся список.</h3>
-             <table border="5" style="margin-top: 15px;">
+            <p><span class="option">Значение и применение :</span> Тег <code>&lt;</code><code class="teg">select</code><code>&gt;</code> представляет собой элемент управления, который позволяет создать раскрывающийся (выпадающий) список.Тег <code>&lt;</code><code class="teg">option</code><code>&gt;</code> определяет пункты раскрывающегося списка (параметры для выбора), он применяется как вложенный элемент тега <code>&lt;</code><code class="teg">select</code><code>&gt;</code>.</p>
+            <hr>
+            <p>Первый пункт в списке, как правило, отображается как выбранный, но вы сможете добавить к этому элементу атрибут <code class="str">selected</code> (HTML тега <code>&lt;</code><code class="teg">option</code><code>&gt;</code>), чтобы задать предопределенный вариант.</p>
+            <hr>
+            <p>Используя элемент <code>&lt;</code><code class="teg">optgroup</code><code>&gt;</code> вы можете группировать связанные данные в раскрывающемся списке и создавать отдельные группы.</p>
+            <table border="5" style="margin-top: 15px;">
                 <tr>
                     <th style="color: blue;">Universal atribut</th>
                     <td style="color: green;">Bor</td>
