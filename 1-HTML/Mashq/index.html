@@ -17,12 +17,19 @@
             height: 100vh;
         }
         body{
-            background-color: powderblue;
-
+            background-color: #dadada;
+        }
+        ol{
+            /* outline: 2px solid blue; */
+            width: 100%;
+            text-align: left;
         }
         ol li{
             padding: 6px 0;
-            text-align: center;
+            /* outline: 2px solid red; */
+            list-style-position: inside;
+            margin-left: -20px;
+            width: 100%;
         }
         ol li a{
             text-decoration: none;
@@ -31,6 +38,7 @@
             font-weight: bold;
             transition: color 1s, border 0.2s;
             font-size: 20px;
+            /* outline: 2px solid green; */
         }
         a:hover{
             color: blue;
@@ -38,6 +46,7 @@
         }
         h2{
             text-align: center;
+            color: brown;
         }
         .content{
             width: 90%;
@@ -50,6 +59,7 @@
             animation: fan 1s linear forwards;
         }
         img{
+            margin: 40px 0px 0px 5px;
             width: 100%;
             display: none;
             animation: fan 1s linear forwards;
@@ -104,24 +114,26 @@
 </head>
 <body>
     <div class="sideBar">
-        <h2>Asosiy HTML</h2>
-        <ol>
-            <li onclick="yo[0].style.display = 'block';"><a href="#" id="btn_1" onclick="fan1()">Vazifa 1</a></li>
-            <li onclick="yo[1].style.display = 'block';"><a href="#" id="btn_2" onclick="fan2()">Vazifa 2</a></li>
-            <li onclick="yo[2].style.display = 'block';"><a href="#" id="btn_3" onclick="fan3()">Vazifa 3</a></li>
-        </ol><hr>
-        <h2>Formatlash</h2>
-        <ol>
-            <li onclick="yo[3].style.display = 'block';"><a href="#" id="btn_4" onclick="fan4()">Vazifa 4</a></li>
-            <li onclick="yo[4].style.display = 'block';"><a href="#" id="btn_5" onclick="fan5()">Vazifa 5</a></li>
-            <li onclick="yo[5].style.display = 'block';"><a href="#" id="btn_6" onclick="fan6()">Vazifa 6</a></li>
-            <li onclick="yo[6].style.display = 'block';"><a href="#" id="btn_7" onclick="fan7()">Vazifa 7</a></li>
-            <li onclick="yo[7].style.display = 'block';"><a href="#" id="btn_8" onclick="fan8()">Vazifa 8</a></li>
-            <li onclick="yo[8].style.display = 'block';"><a href="#" id="btn_8_1" onclick="fan8_1()">Vazifa 8.1</a></li>
-            <li onclick="yo[9].style.display = 'block';"><a href="#" id="btn_8_2" onclick="fan8_2()">Vazifa 8.2</a></li>
-            <li onclick="yo[10].style.display = 'block';"><a href="#" id="btn_9" onclick="fan9()">Vazifa 9</a></li>
-            <li onclick="yo[11].style.display = 'block';"><a href="#" id="btn_10" onclick="fan10()">Vazifa 10</a></li>
-        </ol><hr>
+            <h2>Asosiy HTML</h2>
+            <ol>
+                <li onclick="yo[0].style.display = 'block';"><a href="#" id="btn_1" onclick="fan1()">Vazifa 1</a></li>
+                <li onclick="yo[1].style.display = 'block';"><a href="#" id="btn_2" onclick="fan2()">Vazifa 2</a></li>
+                <li onclick="yo[2].style.display = 'block';"><a href="#" id="btn_3" onclick="fan3()">Vazifa 3</a></li>
+            </ol>
+            <hr>
+            <h2>Formatlash</h2>
+            <ol>
+                <li onclick="yo[3].style.display = 'block';"><a href="#" id="btn_4" onclick="fan4()">Vazifa 4</a></li>
+                <li onclick="yo[4].style.display = 'block';"><a href="#" id="btn_5" onclick="fan5()">Vazifa 5</a></li>
+                <li onclick="yo[5].style.display = 'block';"><a href="#" id="btn_6" onclick="fan6()">Vazifa 6</a></li>
+                <li onclick="yo[6].style.display = 'block';"><a href="#" id="btn_7" onclick="fan7()">Vazifa 7</a></li>
+                <li onclick="yo[7].style.display = 'block';"><a href="#" id="btn_8" onclick="fan8()">Vazifa 8</a></li>
+                <li onclick="yo[8].style.display = 'block';"><a href="#" id="btn_8_1" onclick="fan8_1()">Vazifa 8.1</a></li>
+                <li onclick="yo[9].style.display = 'block';"><a href="#" id="btn_8_2" onclick="fan8_2()">Vazifa 8.2</a></li>
+                <li onclick="yo[10].style.display = 'block';"><a href="#" id="btn_9" onclick="fan9()">Vazifa 9</a></li>
+                <li onclick="yo[11].style.display = 'block';"><a href="#" id="btn_10" onclick="fan10()">Vazifa 10</a></li>
+            </ol>
+        <hr>
         <h2>Havolalar</h2>
         <ol>
             <li><a href="#" id="btn_11" onclick="fan11()">Vazifa 11</a></li>
@@ -2325,4 +2337,4 @@
     </script>
 </body>
 </html>
-<!-- 1989 -->
+<!-- 2334 -->
