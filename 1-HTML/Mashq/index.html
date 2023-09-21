@@ -74,7 +74,7 @@
         }
 
         .yo{
-            width: 20%;
+            width: 30%;
             font-size: 30px;
             font-weight: bold;
             text-align: center;
@@ -82,9 +82,14 @@
             position: fixed;
             right: 10px;
             top: 10px;
-            color: wheat;
-            background-color: black;
+            color: brown;
+            background-color: rgb(0, 0, 0,0.0);
             display: none;
+            transition: all 1s;
+        }
+        .yo:hover{
+            background-color: rgb(0, 0, 0,1);
+            
         }
         .drop{
             position: absolute;
@@ -92,10 +97,12 @@
             display: none;
             background-color: black;
             color: white;
+            width: 100%;
         }
         .drop > li{
             padding: 10px;
             text-align: left;
+            font-size: 20px;
         }
 
         .bacCod{background-color: rgb(30,30,30);}
@@ -109,73 +116,74 @@
         .show{display: block;}
     </style>
     <script>
-       let yo = document.getElementsByClassName("yo");
+        var yo = document.getElementsByClassName("yo");
     </script>
 </head>
 <body>
     <div class="sideBar">
-            <h2>Asosiy HTML</h2>
-            <ol>
-                <li onclick="yo[0].style.display = 'block';"><a href="#" id="btn_1" onclick="fan1()">Vazifa 1</a></li>
-                <li onclick="yo[1].style.display = 'block';"><a href="#" id="btn_2" onclick="fan2()">Vazifa 2</a></li>
-                <li onclick="yo[2].style.display = 'block';"><a href="#" id="btn_3" onclick="fan3()">Vazifa 3</a></li>
-            </ol>
-            <hr>
-            <h2>Formatlash</h2>
-            <ol>
-                <li onclick="yo[3].style.display = 'block';"><a href="#" id="btn_4" onclick="fan4()">Vazifa 4</a></li>
-                <li onclick="yo[4].style.display = 'block';"><a href="#" id="btn_5" onclick="fan5()">Vazifa 5</a></li>
-                <li onclick="yo[5].style.display = 'block';"><a href="#" id="btn_6" onclick="fan6()">Vazifa 6</a></li>
-                <li onclick="yo[6].style.display = 'block';"><a href="#" id="btn_7" onclick="fan7()">Vazifa 7</a></li>
-                <li onclick="yo[7].style.display = 'block';"><a href="#" id="btn_8" onclick="fan8()">Vazifa 8</a></li>
-                <li onclick="yo[8].style.display = 'block';"><a href="#" id="btn_8_1" onclick="fan8_1()">Vazifa 8.1</a></li>
-                <li onclick="yo[9].style.display = 'block';"><a href="#" id="btn_8_2" onclick="fan8_2()">Vazifa 8.2</a></li>
-                <li onclick="yo[10].style.display = 'block';"><a href="#" id="btn_9" onclick="fan9()">Vazifa 9</a></li>
-                <li onclick="yo[11].style.display = 'block';"><a href="#" id="btn_10" onclick="fan10()">Vazifa 10</a></li>
-            </ol>
+        <h2>Asosiy HTML</h2>
+        <ol>
+            <li onclick="yo[0].style.display = 'block';"><a href="#" id="btn_1" onclick="cler(); fan1();">Vazifa 1</a></li>
+            <li onclick="yo[1].style.display = 'block';"><a href="#" id="btn_2" onclick="cler(); fan2();">Vazifa 2</a></li>
+            <li onclick="yo[2].style.display = 'block';"><a href="#" id="btn_3" onclick="cler(); fan3();">Vazifa 3</a></li>
+            <li><a style="color: red;">Test</a></li>
+        </ol>
+        <hr>
+        <h2>Formatlash</h2>
+        <ol>
+            <li onclick="yo[3].style.display = 'block';"><a href="#" id="btn_4" onclick="cler(); fan4();">Vazifa 4</a></li>
+            <li onclick="yo[4].style.display = 'block';"><a href="#" id="btn_5" onclick="cler(); fan5();">Vazifa 5</a></li>
+            <li onclick="yo[5].style.display = 'block';"><a href="#" id="btn_6" onclick="cler(); fan6();">Vazifa 6</a></li>
+            <li onclick="yo[6].style.display = 'block';"><a href="#" id="btn_7" onclick="cler(); fan7();">Vazifa 7</a></li>
+            <li onclick="yo[7].style.display = 'block';"><a href="#" id="btn_8" onclick="cler(); fan8();">Vazifa 8</a></li>
+            <li onclick="yo[8].style.display = 'block';"><a href="#" id="btn_8_1" onclick="cler(); fan8_1();">Vazifa 8.1</a></li>
+            <li onclick="yo[9].style.display = 'block';"><a href="#" id="btn_8_2" onclick="cler(); fan8_2();">Vazifa 8.2</a></li>
+            <li onclick="yo[10].style.display = 'block';"><a href="#" id="btn_9" onclick="cler(); fan9();">Vazifa 9</a></li>
+            <li onclick="yo[11].style.display = 'block';"><a href="#" id="btn_10" onclick="cler(); fan10();">Vazifa 10</a></li>
+        </ol>
         <hr>
         <h2>Havolalar</h2>
         <ol>
-            <li><a href="#" id="btn_11" onclick="fan11()">Vazifa 11</a></li>
-            <li><a href="#" id="btn_12" onclick="fan12()">Vazifa 12</a></li>
+            <li><a href="#" id="btn_11" onclick="cler(); fan11();">Vazifa 11</a></li>
+            <li><a href="#" id="btn_12" onclick="cler(); fan12();">Vazifa 12</a></li>
         </ol><hr>
         <h2>Rasm Tasvirlar</h2>
         <ol>
-            <li><a href="#" id="btn_13" onclick="fan13()">Vazifa 13</a></li>
-            <li><a href="#" id="btn_14" onclick="fan14()">Vazifa 14</a></li>
-            <li><a href="#" id="btn_15" onclick="fan15()">Vazifa 15</a></li>
-            <li><a href="#" id="btn_16" onclick="fan16()">Vazifa 16</a></li>
-            <li><a href="#" id="btn_17" onclick="fan17()">Vazifa 17</a></li>
+            <li><a href="#" id="btn_13" onclick="cler(); fan13();">Vazifa 13</a></li>
+            <li><a href="#" id="btn_14" onclick="cler(); fan14();">Vazifa 14</a></li>
+            <li><a href="#" id="btn_15" onclick="cler(); fan15();">Vazifa 15</a></li>
+            <li><a href="#" id="btn_16" onclick="cler(); fan16();">Vazifa 16</a></li>
+            <li><a href="#" id="btn_17" onclick="cler(); fan17();">Vazifa 17</a></li>
         </ol><hr>
         <h2>Ro'yxatlar</h2>
         <ol>
-            <li><a href="#" id="btn_18" onclick="fan18()">Vazifa 18</a></li>
-            <li><a href="#" id="btn_19" onclick="fan19()">Vazifa 19</a></li>
+            <li><a href="#" id="btn_18" onclick="cler(); fan18();">Vazifa 18</a></li>
+            <li><a href="#" id="btn_19" onclick="cler(); fan19();">Vazifa 19</a></li>
         </ol><hr>
         <h2>Shakllar va kiritish</h2>
         <ol>
-            <li><a href="#" id="btn_20" onclick="fan20()">Vazifa 20</a></li>
-            <li><a href="#" id="btn_21" onclick="fan21()">Vazifa 21</a></li>
-            <li><a href="#" id="btn_22" onclick="fan22()">Vazifa 22</a></li>
-            <li><a href="#" id="btn_23" onclick="fan23()">Vazifa 23</a></li>
+            <li><a href="#" id="btn_20" onclick="cler(); fan20();">Vazifa 20</a></li>
+            <li><a href="#" id="btn_21" onclick="cler(); fan21();">Vazifa 21</a></li>
+            <li><a href="#" id="btn_22" onclick="cler(); fan22();">Vazifa 22</a></li>
+            <li><a href="#" id="btn_23" onclick="cler(); fan23();">Vazifa 23</a></li>
         </ol><hr>
         <h2>Ramkalar</h2>
         <ol>
-            <li><a href="#" id="btn_24" onclick="fan24()">Vazifa 24</a></li>
+            <li><a href="#" id="btn_24" onclick="cler(); fan24();">Vazifa 24</a></li>
         </ol><hr>
         <h2>Audio va Video</h2>
         <ol>
-            <li><a href="#" id="btn_25" onclick="fan25()">Vazifa 25</a></li>
-            <li><a href="#" id="btn_26" onclick="fan26()">Vazifa 26</a></li>
+            <li><a href="#" id="btn_25" onclick="cler(); fan25();">Vazifa 25</a></li>
+            <li><a href="#" id="btn_26" onclick="cler(); fan26();">Vazifa 26</a></li>
         </ol><hr>
         <h2>Jadvallar</h2>
         <ol>
-            <li><a href="#" id="btn_27" onclick="fan27()">Vazifa 27</a></li>
-            <li><a href="#" id="btn_28" onclick="fan28()">Vazifa 28</a></li>
+            <li><a href="#" id="btn_27" onclick="cler(); fan27();">Vazifa 27</a></li>
+            <li><a href="#" id="btn_28" onclick="cler(); fan28();">Vazifa 28</a></li>
         </ol><hr>
         <h2>Uslublar va semantika</h2>
         <ol>
-            <li><a href="#" id="btn_29" onclick="fan29()">Vazifa 29</a></li>
+            <li><a href="#" id="btn_29" onclick="cler(); fan29();">Vazifa 29</a></li>
         </ol>
     </div>
 <!-- ************************************************************************************* -->
@@ -234,27 +242,27 @@
         </div>
         <div onclick="document.getElementsByClassName('drop')[2].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">p</code><code>&gt;</code> kodini,</li>
-                <li><code>&lt;</code><code class="teg">br</code><code>&gt;</code> kodini,</li>
-                <li><code>&lt;</code><code class="teg">hr</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">p</code><code>&gt;</code> kodini ichida xamma matni yozib oling va</li>
+                <li><code>&lt;</code><code class="teg">br</code><code>&gt;</code> kodi orqali so'zlarni pastga tushuring</li>
+                <li><code>&lt;</code><code class="teg">hr</code><code>&gt;</code> kodi orqali esa chiziq torting va pastga tushuring</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[3].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
                 <li><code>&lt;</code><code class="teg">p</code><code>&gt;</code> kodini ichida xamma matni yozing</li>
-                <li><code>&lt;</code><code class="teg">b</code><code>&gt;</code> kodida esa qalin qilingan matni yozing</li>
+                <li><code>&lt;</code><code class="teg">b</code><code>&gt;</code> kodi orqali so'zlarni qalin qiling</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[4].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
                 <li><code>&lt;</code><code class="teg">p</code><code>&gt;</code> kodini ichida xamma matni yozing</li>
-                <li><code>&lt;</code><code class="teg">b</code><code>&gt;</code> kodida esa qalin qilingan matni yozing</li>
-                <li><code>&lt;</code><code class="teg">i</code><code>&gt;</code> kodida esa kursiv qilingan matni yozing</li>
+                <li><code>&lt;</code><code class="teg">b</code><code>&gt;</code> kodi orqali so'zlarni qalin qiling</li>
+                <li><code>&lt;</code><code class="teg">i</code><code>&gt;</code> kodi orqali so'zlarni kursiv qiling</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[5].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodi orqali sarlavhani yozing</li>
                 <li><code>&lt;</code><code class="teg">h3</code><code>&gt;</code> kodini ishlating</li>
                 <li><code>&lt;</code><code class="teg">i</code><code>&gt;</code> kodini ishlating</li>
                 <li><code>&lt;</code><code class="teg">mark</code><code>&gt;</code> kodini ishlating</li>
@@ -319,6 +327,7 @@
         </div>
     </div>
     <script>
+        function cler(){for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}}
         function fan1(){
             document.getElementById("btn_1").style.borderBottom = " 2px solid blue";
             document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
@@ -359,8 +368,8 @@
             document.getElementById("v6").style.display = "none";
             document.getElementById("v7").style.display = "none";
             document.getElementById("v8").style.display = "none";
-            document.getElementById("v8.1").style.display = "none";
-            document.getElementById("v8.2").style.display = "none";
+            document.getElementById("v8_1").style.display = "none";
+            document.getElementById("v8_2").style.display = "none";
             document.getElementById("v9").style.display = "none";
             document.getElementById("v10").style.display = "none";
             document.getElementById("v11").style.display = "none";
@@ -382,7 +391,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan2(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -424,8 +432,8 @@
             document.getElementById("v6").style.display = "none";
             document.getElementById("v7").style.display = "none";
             document.getElementById("v8").style.display = "none";
-            document.getElementById("v8.1").style.display = "none";
-            document.getElementById("v8.2").style.display = "none";
+            document.getElementById("v8_1").style.display = "none";
+            document.getElementById("v8_2").style.display = "none";
             document.getElementById("v9").style.display = "none";
             document.getElementById("v10").style.display = "none";
             document.getElementById("v11").style.display = "none";
@@ -447,7 +455,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan3(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -489,8 +496,8 @@
             document.getElementById("v6").style.display = "none";
             document.getElementById("v7").style.display = "none";
             document.getElementById("v8").style.display = "none";
-            document.getElementById("v8.1").style.display = "none";
-            document.getElementById("v8.2").style.display = "none";
+            document.getElementById("v8_1").style.display = "none";
+            document.getElementById("v8_2").style.display = "none";
             document.getElementById("v9").style.display = "none";
             document.getElementById("v10").style.display = "none";
             document.getElementById("v11").style.display = "none";
@@ -512,7 +519,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan4(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -554,8 +560,8 @@
             document.getElementById("v6").style.display = "none";
             document.getElementById("v7").style.display = "none";
             document.getElementById("v8").style.display = "none";
-            document.getElementById("v8.1").style.display = "none";
-            document.getElementById("v8.2").style.display = "none";
+            document.getElementById("v8_1").style.display = "none";
+            document.getElementById("v8_2").style.display = "none";
             document.getElementById("v9").style.display = "none";
             document.getElementById("v10").style.display = "none";
             document.getElementById("v11").style.display = "none";
@@ -577,7 +583,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan5(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -619,8 +624,8 @@
             document.getElementById("v6").style.display = "none";
             document.getElementById("v7").style.display = "none";
             document.getElementById("v8").style.display = "none";
-            document.getElementById("v8.1").style.display = "none";
-            document.getElementById("v8.2").style.display = "none";
+            document.getElementById("v8_1").style.display = "none";
+            document.getElementById("v8_2").style.display = "none";
             document.getElementById("v9").style.display = "none";
             document.getElementById("v10").style.display = "none";
             document.getElementById("v11").style.display = "none";
@@ -642,7 +647,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan6(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -684,8 +688,8 @@
             document.getElementById("v6").style.display = "block";
             document.getElementById("v7").style.display = "none";
             document.getElementById("v8").style.display = "none";
-            document.getElementById("v8.1").style.display = "none";
-            document.getElementById("v8.2").style.display = "none";
+            document.getElementById("v8_1").style.display = "none";
+            document.getElementById("v8_2").style.display = "none";
             document.getElementById("v9").style.display = "none";
             document.getElementById("v10").style.display = "none";
             document.getElementById("v11").style.display = "none";
@@ -707,7 +711,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan7(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -749,8 +752,8 @@
             document.getElementById("v6").style.display = "none";
             document.getElementById("v7").style.display = "block";
             document.getElementById("v8").style.display = "none";
-            document.getElementById("v8.1").style.display = "none";
-            document.getElementById("v8.2").style.display = "none";
+            document.getElementById("v8_1").style.display = "none";
+            document.getElementById("v8_2").style.display = "none";
             document.getElementById("v9").style.display = "none";
             document.getElementById("v10").style.display = "none";
             document.getElementById("v11").style.display = "none";
@@ -772,7 +775,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan8(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -814,8 +816,8 @@
             document.getElementById("v6").style.display = "none";
             document.getElementById("v7").style.display = "none";
             document.getElementById("v8").style.display = "block";
-            document.getElementById("v8.1").style.display = "none";
-            document.getElementById("v8.2").style.display = "none";
+            document.getElementById("v8_1").style.display = "none";
+            document.getElementById("v8_2").style.display = "none";
             document.getElementById("v9").style.display = "none";
             document.getElementById("v10").style.display = "none";
             document.getElementById("v11").style.display = "none";
@@ -837,7 +839,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan8_1(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -902,7 +903,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan8_2(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -967,7 +967,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan9(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -1032,7 +1031,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan10(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -1097,7 +1095,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan11(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -1162,7 +1159,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan12(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -1227,7 +1223,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan13(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -1292,7 +1287,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan14(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -1357,7 +1351,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan15(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -1422,7 +1415,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan16(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -1487,7 +1479,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan17(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -1552,7 +1543,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan18(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -1617,7 +1607,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan19(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -1682,7 +1671,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan20(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -1747,7 +1735,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan21(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -1812,7 +1799,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan22(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -1877,7 +1863,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan23(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -1942,7 +1927,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan24(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -2007,7 +1991,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan25(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -2072,7 +2055,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan26(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -2137,7 +2119,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan27(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -2202,7 +2183,6 @@
             document.getElementById("v27").style.display = "block";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan28(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -2267,7 +2247,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "block";
             document.getElementById("v29").style.display = "none";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
         function fan29(){
             document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
@@ -2332,7 +2311,6 @@
             document.getElementById("v27").style.display = "none";
             document.getElementById("v28").style.display = "none";
             document.getElementById("v29").style.display = "block";
-            for(let i = 0; i < yo.length; i++){yo[i].style.display = 'none';}
         }
     </script>
 </body>
