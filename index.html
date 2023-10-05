@@ -17,24 +17,25 @@
             height: 1500px;
         }
         .html{
-            border: 2px solid red;
+            border: 2px solid powderblue;
             width: 100%;
-            height: 400px;
-            margin-bottom: 50px;
+            height: 405px;
+            margin-bottom: 30px;
         }
         .css{
-            border: 2px solid red;
+            border: 2px solid violet;
             width: 100%;
-            height: 400px;
-            margin-bottom: 50px;
+            height: 405px;
+            margin-bottom: 30px;
         }
         .javascript{
-            border: 2px solid red;
+            border: 2px solid yellow;
             width: 100%;
-            height: 400px;
+            height: 405px;
+            margin-bottom: 30px;
         }
         .col-1{
-            border: 2px solid blue;
+            /* border: 2px solid blue; */
             width: 50%;
             float: left;
             height: 400px;
@@ -43,7 +44,7 @@
             background-color: powderblue;
         }
         .col-2{
-            border: 2px solid green;
+            /* border: 2px solid green; */
             width: 50%;
             float: left;
             height: 400px;
@@ -142,6 +143,32 @@ function fan(){
 };</textarea>
             </div>
         </div>
+        <div class="jQuery">
+            <div class="col-1" style="background-color: gold;">
+                <h1>JQuery</h1>
+                <a href="" target="_blank">Dars</a>
+                <a href="4-jQuery/index.html" target="_blank">Vazifa</a>
+            </div>
+            <div class="col-2">
+                <textarea id="editor-3">
+ $(document).ready(function(){
+    $(".h1").click(function(){
+        $(".div").slideToggle();
+    });
+});
+ $(document).ready(function(){
+    $("button").dblclick(function(){
+    $("h2").hide();
+}).addClass("box").text("button");
+});
+$(document).ready(function(){
+     $(".div3").click(function(){
+         $(".div3").animate({left:"+=300px"});
+     });
+ });
+                </textarea>
+            </div>
+        </div>
     </div>
     <script>
         ///////// HTML \\\\\\\\\
@@ -162,6 +189,14 @@ function fan(){
         editor_1.setSize("100%","400")
         ///////// javaScript \\\\\\\\\
         var editor_2 = CodeMirror.fromTextArea(document.getElementById("editor-2"),{
+            mode: "javascript",
+            lineNumbers: true,
+            // theme: "dracula"
+            theme: "panda-syntax"
+        });
+        editor_2.setSize("100%","400")
+        ///////// jQuery \\\\\\\\\
+        var editor_2 = CodeMirror.fromTextArea(document.getElementById("editor-3"),{
             mode: "javascript",
             lineNumbers: true,
             // theme: "dracula"

@@ -14,7 +14,7 @@ function cargarPreguntas() {
      <div id="encabezado-pregunta">
           ${
             p.ayuda
-              ? `<ul>
+              ? `
                <a class="btn btn-primary" onclick="
                     Swal.fire({
                          title: 'Ayuda',
@@ -28,7 +28,7 @@ function cargarPreguntas() {
                `
               : ""
           }
-          <div id="pregunta" style="margin: 20px;">
+          <div class="pregunta" id="pregunta" style="margin: 20px;">
                ${p.pregunta}
           </div>
           ${
@@ -38,23 +38,23 @@ function cargarPreguntas() {
                `
               : ""
           }
-      <ul></div>
+      </div>
 
      <div>
           <input type="radio" name="opcion-${ID}" id="opcion1-${ID}">
-          <label for="opcion1-${ID}" id="label1-${ID}"> ${opciones[0]} </label>
+          <label class="javob" for="opcion1-${ID}" id="label1-${ID}"> ${opciones[0]} </label>
      </div>
      <div>
           <input type="radio" name="opcion-${ID}" id="opcion2-${ID}">
-          <label for="opcion2-${ID}" id="label2-${ID}"> ${opciones[1]} </label>
+          <label class="javob" for="opcion2-${ID}" id="label2-${ID}"> ${opciones[1]} </label>
      </div>
      <div>
           <input type="radio" name="opcion-${ID}" id="opcion3-${ID}">
-          <label for="opcion3-${ID}" id="label3-${ID}"> ${opciones[2]} </label>
+          <label class="javob" for="opcion3-${ID}" id="label3-${ID}"> ${opciones[2]} </label>
      </div>
      <div>
           <input type="radio" name="opcion-${ID}" id="opcion4-${ID}">
-          <label for="opcion4-${ID}" id="label4-${ID}"> ${opciones[3]} </label>
+          <label class="javob" for="opcion4-${ID}" id="label4-${ID}"> ${opciones[3]} </label>
      </div>
      `;
     ID++;
@@ -64,7 +64,7 @@ function cargarPreguntas() {
 
 async function heFinalizado() {
   let contadorPuntos = 0;
-  let html = `<ol style="display: inline-block;">`;
+  let html = `<ol style="display: inline-block; text-align: center;">`;
   for (let i = 0; i < baseDePreguntas.length; i++) {
     p = baseDePreguntas[i];
     for (let j = 1; j <= 5; j++) {

@@ -11,52 +11,52 @@ baseDePreguntas = [
   },
   {
     pregunta: `<b class="number">2)</b> Eng katta sarlavha uchun to'g'ri HTML elementini tanlang...`,
-    respuesta: `<code>&lt;</code><code>h1</code><code>&gt;</code>`,
+    respuesta: `<kbd>&lt;</kbd><kbd class="teg">h1</kbd><kbd>&gt;</kbd>`,
     distractores: 
     [
-    `  <code>&lt;</code><code>heading</code><code>&gt;</code>`,
-    `  <code>&lt;</code><code>head</code><code>&gt;</code>`,
-    ` <code>&lt;</code><code>h6</code><code>&gt;</code>`
+    `  <kbd>&lt;</kbd><kbd class="teg">heading</kbd><kbd>&gt;</kbd>`,
+    `  <kbd>&lt;</kbd><kbd class="teg">head</kbd><kbd>&gt;</kbd>`,
+    ` <kbd>&lt;</kbd><kbd class="teg">h6</kbd><kbd>&gt;</kbd>`
   ],
   },
   {
     pregunta: `<b class="number">3)</b> Satr uzilishini kiritish uchun to'g'ri HTML elementi nima?`,
-    respuesta: `  <code>&lt;</code><code>br</code><code>&gt;</code>`,
+    respuesta: `  <kbd>&lt;</kbd><kbd class="teg">br</kbd><kbd>&gt;</kbd>`,
     distractores: 
     [
-    `  <code>&lt;</code><code>break</code><code>&gt;</code>`,
-    `  <code>&lt;</code><code>lb</code><code>&gt;</code>`,
-    `  <code>&lt;</code><code>ul</code><code>&gt;</code>`
+    `  <kbd>&lt;</kbd><kbd class="teg">break</kbd><kbd>&gt;</kbd>`,
+    `  <kbd>&lt;</kbd><kbd class="teg">lb</kbd><kbd>&gt;</kbd>`,
+    `  <kbd>&lt;</kbd><kbd class="teg">ul</kbd><kbd>&gt;</kbd>`
   ],
   },
   {
     pregunta: `<b class="number">4)</b> Yakuniy tegni ko'rsatish uchun qaysi belgi ishlatiladi?`,
-    respuesta: ` /`,
+    respuesta: `<kbd>/</kbd>`,
     distractores: 
     [
-    `^`,
-    ` <`,
-    `*`
+    `<kbd>^</kbd>`,
+    `<kbd><</kbd>`,
+    `<kbd>*</kbd>`
   ],
   },
   {
     pregunta: `<b class="number">5)</b> Qaysi HTML elementi saytni sarlavhasini belgilaydi?`,
-    respuesta: `   <code>&lt;title&gt;</code>`,
+    respuesta: `   <kbd>&lt;<kbd class="teg">title</kbd>&gt;</kbd>`,
     distractores: 
     [
-    `  <code>&lt;meta&gt;</code>`,
-    ` <code>&lt;head&gt;</code>`,
-    ` <code>&lt;h1&gt;</code>`
+    `  <kbd>&lt;<kbd class="teg">meta</kbd>&gt;</kbd>`,
+    ` <kbd>&lt;<kbd class="teg">head</kbd>&gt;</kbd>`,
+    ` <kbd>&lt;<kbd class="teg">h1</kbd>&gt;</kbd>`
   ]
 },
   {
     pregunta: `<b class="number">6)</b> HTML5 uchun qaysi hujjat turi to'g'ri?`,
-    respuesta: `   <code>&lt;!DOCTYPE html&gt;</code>`,
+    respuesta: `   <kbd>&lt;<kbd class="teg">!DOCTYPE</kbd> <kbd class="atr">html</kbd>&gt;</kbd>`,
     distractores: 
     [
-    `  <code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 5.0//EN" "http://www.w3.org/TR/html5/strict.dtd"&gt;</code>`,
-    ` <code>&lt;!DOCTYPE HTML5&gt;</code>`,
-    ` <code>&lt;html&gt;</code>`
+    `  <kbd>&lt;<kbd class="teg">!DOCTYPE</kbd> <kbd class="atr">HTML PUBLIC</kbd> <kbd class="str">"-//W3C//DTD HTML 5.0//EN" "http://www.w3.org/TR/html5/strict.dtd"</kbd>&gt;</kbd>`,
+    ` <kbd>&lt;<kbd class="teg">!DOCTYPE</kbd> <kbd class="atr">HTML5</kbd>&gt;</kbd>`,
+    ` <kbd>&lt;<kbd class="teg">html</kbd>&gt;</kbd>`
   ]
 }
 ];
