@@ -90,7 +90,7 @@ async function heFinalizado() {
   }
   html += `</ol>`;
   puntaje = (100 * contadorPuntos) / baseDePreguntas.length;
-  html = `<h1>Bajarilgan: ${puntaje.toFixed(2)}%</h1>` + html;
+  html = `<h1 style="text-align: center;">Bajarilgan: ${puntaje.toFixed(2)}%</h1>` + html;
   document.getElementById("resumen").innerHTML = html;
   swal.fire({
     title: "Natija",
