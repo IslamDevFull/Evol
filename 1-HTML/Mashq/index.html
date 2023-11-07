@@ -127,7 +127,7 @@
 /* /////////////// Test \\\\\\\\\\\\\\\\ */
 .test{
     background-color: rgb(30,30,30);
-    /* display: none; */
+    display: none;
     animation: test 2s forwards;
 }
 .contenedor{
@@ -204,16 +204,16 @@ kbd{
         <hr>
         <h2>Havolalar</h2>
         <ol>
-            <li><a id="btn_11" onclick="cler(); fan11();">Vazifa</a></li>
-            <li><a id="btn_12" onclick="cler(); fan12();">Vazifa</a></li>
+            <li onclick="yo[12].style.display = 'block';"><a id="btn_11" onclick="cler(); fan11();">Vazifa</a></li>
+            <li onclick="yo[13].style.display = 'block';"><a id="btn_12" onclick="cler(); fan12();">Vazifa</a></li>
             <li><a style="color: red;">Dastur</a></li>
         </ol><hr>
         <h2>Rasm Tasvirlar</h2>
         <ol>
-            <li><a id="btn_13" onclick="cler(); fan13();">Vazifa</a></li>
-            <li><a id="btn_14" onclick="cler(); fan14();">Vazifa</a></li>
-            <li><a id="btn_15" onclick="cler(); fan15();">Vazifa</a></li>
-            <li><a id="btn_16" onclick="cler(); fan16();">Vazifa</a></li>
+            <li onclick="yo[14].style.display = 'block';"><a id="btn_13" onclick="cler(); fan13();">Vazifa</a></li>
+            <li onclick="yo[15].style.display = 'block';"><a id="btn_14" onclick="cler(); fan14();">Vazifa</a></li>
+            <li onclick="yo[16].style.display = 'block';"><a id="btn_15" onclick="cler(); fan15();">Vazifa</a></li>
+            <li onclick="yo[17].style.display = 'block';"><a id="btn_16" onclick="cler(); fan16();">Vazifa</a></li>
             <li><a id="btn_17" onclick="cler(); fan17();">Vazifa</a></li>
             <li><a style="color: red;">Dastur</a></li>
         </ol><hr>
@@ -401,6 +401,49 @@ kbd{
                 <li><code>&lt;</code><code class="teg">i</code><code>&gt;</code> kodini ishlating</li>
                 <li><code>&lt;</code><code class="teg">br</code><code>&gt;</code> kodini ishlating</li>
                 <li><code>&lt;</code><code class="teg">hr</code><code>&gt;</code> kodini ishlating</li>
+            </ul>
+        </div>
+        <div onclick="document.getElementsByClassName('drop')[12].classList.toggle('show')" class="yo">Yordam
+            <ul class="drop">
+                <li><code>&lt;</code><code class="teg">pre</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">b</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">mark</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">a</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">br</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">hr</code><code>&gt;</code> kodini ishlating</li>
+            </ul>
+        </div>
+        <div onclick="document.getElementsByClassName('drop')[13].classList.toggle('show')" class="yo">Yordam
+            <ul class="drop">
+                <li><code>&lt;</code><code class="teg">h1</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">p</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">b</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">u</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">a</code><code>&gt;</code> kodini ishlating</li>
+            </ul>
+        </div>
+        <div onclick="document.getElementsByClassName('drop')[14].classList.toggle('show')" class="yo">Yordam
+            <ul class="drop">
+                <li><code>&lt;</code><code class="teg">img</code><code>&gt;</code> kodini ishlating</li>
+            </ul>
+        </div>
+        <div onclick="document.getElementsByClassName('drop')[15].classList.toggle('show')" class="yo">Yordam
+            <ul class="drop">
+                <li><code>&lt;</code><code class="teg">img</code><code>&gt;</code> kodini ishlating</li>
+            </ul>
+        </div>
+        <div onclick="document.getElementsByClassName('drop')[16].classList.toggle('show')" class="yo">Yordam
+            <ul class="drop">
+                <li><code>&lt;</code><code class="teg">a</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">img</code><code>&gt;</code> kodini ishlating</li>
+            </ul>
+        </div>
+        <div onclick="document.getElementsByClassName('drop')[17].classList.toggle('show')" class="yo">Yordam
+            <ul class="drop">
+                <li><code>&lt;</code><code class="teg">a</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">img</code><code>&gt;</code> kodini ishlating</li>
             </ul>
         </div>
     </div>
