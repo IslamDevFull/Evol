@@ -94,19 +94,19 @@ baseDePreguntas = [
     respuesta: `<code>&lt;</code><code class="teg">a</code> <code class="atr">href</code><code class="opp">=</code><code class="str">"http://www.w3schools.com"</code><code>&gt;</code>W3Schools<code>&lt;</code><code class="teg"><code>/</code>a</code><code>&gt;</code>`,
     distractores: 
     [
-    `<code>&lt;</code><code class="teg">a url<code class="opp">=</code>"http://www.w3schools.com"</code><code>&gt;</code>W3Schools.com<code>&lt;</code><code class="teg">/a</code><code>&gt;</code>`,
-    `<code>&lt;</code><code class="teg">a</code><code>&gt;</code>http://www.w3schools.com<code>&lt;</code><code class="teg">/a</code><code>&gt;</code>`,
-    `<code>&lt;</code><code class="teg">a name<code class="opp">=</code>"http://www.w3schools.com"</code><code>&gt;</code>W3Schools.com<code>&lt;</code><code class="teg">/a</code><code>&gt;</code>`
+    `<code>&lt;</code><code class="teg">a</code> <code class="atr">url</code><code class="opp">=</code><code class="str">"http://www.w3schools.com"</code><code>&gt;</code>W3Schools.com<code>&lt;</code><code class="teg"><code>/</code>a</code><code>&gt;</code>`,
+    `<code>&lt;</code><code class="teg">a</code><code>&gt;</code>http://www.w3schools.com<code>&lt;</code><code class="teg"><code>/</code>a</code><code>&gt;</code>`,
+    `<code>&lt;</code><code class="teg">a</code> <code class="atr">name</code><code class="opp">=</code><code class="str">"http://www.w3schools.com"</code><code>&gt;</code>W3Schools.com<code>&lt;</code><code class="teg"><code>/</code>a</code><code>&gt;</code>`
   ]
 },
   {
     pregunta: `<b class="number">11)</b> Brauzer oynasida Yangi havola oynasini qanday ochish mumkin?`,
-    respuesta: `<code>&lt;</code><code class="teg">a href="url" target="_blank"</code><code>&gt;</code>`,
+    respuesta: `<code>&lt;</code><code class="teg">a</code> <code class="atr">href</code><code class="opp">=</code><code class="str">"url"</code> <code class="atr">target</code><code class="opp">=</code><code class="str">"_blank"</code><code>&gt;</code>`,
     distractores: 
     [
-    `<code>&lt;</code><code class="teg">a href="url" new</code><code>&gt;</code>`,
-    `<code>&lt;</code><code class="teg">a href="url" target="new"</code><code>&gt;</code>`,
-    `<code>&lt;</code><code class="teg">a href="#" target="new #"</code><code>&gt;</code>`
+    `<code>&lt;</code><code class="teg">a</code> <code class="atr">href</code><code class="opp">=</code><code class="str">"url"</code> <code class="atr">new</code><code class="opp">=</code><code class="str">"new"</code><code>&gt;</code>`,
+    `<code>&lt;</code><code class="teg">a</code> <code class="atr">href</code><code class="opp">=</code><code class="str">"url"</code> <code class="atr">target</code><code class="opp">=</code><code class="str">"new"</code><code>&gt;</code>`,
+    `<code>&lt;</code><code class="teg">a</code> <code class="atr">href</code><code class="opp">=</code><code class="str">"#"</code> <code class="atr">target</code><code class="opp">=</code><code class="str">"new #"</code><code>&gt;</code>`
   ]
 },
   {
@@ -141,22 +141,22 @@ baseDePreguntas = [
 },
   {
     pregunta: `<b class="number">15)</b> Belgilash katakchasini qo'yish uchun to'g'ri HTML nima?`,
-    respuesta: `<code>&lt;</code><code class="teg">input type="checkbox"</code><code>&gt;</code>`,
+    respuesta: `<code>&lt;</code><code class="teg">input</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"checkbox"</code><code>&gt;</code>`,
     distractores: 
     [
-    `<code>&lt;</code><code class="teg">input type="check"</code><code>&gt;</code>`,
+    `<code>&lt;</code><code class="teg">input</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"check"</code><code>&gt;</code>`,
     `<code>&lt;</code><code class="teg">check</code><code>&gt;</code>`,
     `<code>&lt;</code><code class="teg">checkbox</code><code>&gt;</code>`
   ]
 },
   {
     pregunta: `<b class="number">16)</b> Matn kiritish maydonini yaratish uchun to'g'ri HTML nima?`,
-    respuesta: `<code>&lt;</code><code class="teg">input type="text"</code><code>&gt;</code>`,
+    respuesta: `<code>&lt;</code><code class="teg">input</code> <code class="atr">type</code><code class="opp">=</code><code class=str>"text"</code><code>&gt;</code>`,
     distractores: 
     [
     `<code>&lt;</code><code class="teg">textfield</code><code>&gt;</code>`,
-    `<code>&lt;</code><code class="teg">textinput type="text"</code><code>&gt;</code>`,
-    `<code>&lt;</code><code class="teg">input type="textfield"</code><code>&gt;</code>`
+    `<code>&lt;</code><code class="teg">textinput</code> <code class="atr">type</code><code class="opp">=</code><code class=str>"text"</code><code>&gt;</code>`,
+    `<code>&lt;</code><code class="teg">input</code> <code class="atr">type</code><code class="opp">=</code><code class=str>"textfield"</code><code>&gt;</code>`
   ]
 },
   {
@@ -164,8 +164,8 @@ baseDePreguntas = [
     respuesta: `<code>&lt;</code><code class="teg">select</code><code>&gt;</code>`,
     distractores: 
     [
-    `<code>&lt;</code><code class="teg">input type="dropdown"</code><code>&gt;</code>`,
-    `<code>&lt;</code><code class="teg">input type="list"</code><code>&gt;</code>`,
+    `<code>&lt;</code><code class="teg">input</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"dropdown"</code><code>&gt;</code>`,
+    `<code>&lt;</code><code class="teg">input</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"list"</code><code>&gt;</code>`,
     `<code>&lt;</code><code class="teg">list</code><code>&gt;</code>`
   ]
 },
@@ -174,19 +174,19 @@ baseDePreguntas = [
     respuesta: `<code>&lt;</code><code class="teg">textarea</code><code>&gt;</code>`,
     distractores: 
     [
-    `<code>&lt;</code><code class="teg">input type="textarea"</code><code>&gt;</code>`,
-    `<code>&lt;</code><code class="teg">input type="textbox"</code><code>&gt;</code>`,
+    `<code>&lt;</code><code class="teg">input</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"textarea"</code><code>&gt;</code>`,
+    `<code>&lt;</code><code class="teg">input</code> <code class="atr">type</code><code class="opp">=</code><code class="str">"textbox"</code><code>&gt;</code>`,
     `<code>&lt;</code><code class="teg">text</code><code>&gt;</code>`
   ]
 },
   {
     pregunta: `<b class="number">19)</b> Rasm qo'shish uchun to'g'ri HTML kodi nima?`,
-    respuesta: `<code>&lt;</code><code class="teg">img src="image.gif" alt="MyImage"</code><code>&gt;</code>`,
+    respuesta: `<code>&lt;</code><code class="teg">img</code> <code class="atr">src</code><code class="opp">=</code><code class="str">"image.gif"</code> <code class="atr">alt</code><code class="opp">=</code><code class="str">"MyImage"</code><code>&gt;</code>`,
     distractores: 
     [
-    `<code>&lt;</code><code class="teg">image src="image.gif" alt="MyImage"</code><code>&gt;</code>`,
-    `<code>&lt;</code><code class="teg">img alt="MyImage"</code><code>&gt;</code>image.gif<code>&lt;</code><code class="teg">/img</code><code>&gt;</code>`,
-    `<code>&lt;</code><code class="teg">img href="image.gif" alt="MyImage"</code><code>&gt;</code>`
+    `<code>&lt;</code><code class="teg">image</code> <code class="atr">src</code><code class="opp">=</code><code class="str">"image.gif"</code> <code class="atr">alt</code><code class="opp">=</code><code class="str">"MyImage"</code><code>&gt;</code>`,
+    `<code>&lt;</code><code class="teg">img</code> <code class="atr">alt</code><code class="opp">=</code><code class="str">"MyImage"</code><code>&gt;</code>image.gif<code>&lt;</code><code class="teg">/img</code><code>&gt;</code>`,
+    `<code>&lt;</code><code class="teg">img</code> <code class="atr">href</code><code class="opp">=</code><code class="str">"image.gif"</code> <code class="atr">alt</code><code class="opp">=</code><code class="str">"MyImage"</code><code>&gt;</code>`
   ]
 },
   {
@@ -201,22 +201,22 @@ baseDePreguntas = [
 },
   {
     pregunta: `<b class="number">21)</b> HTML da izoh yaratish uchun qaysi kod ishlatiladi ?`,
-    respuesta: `<code>&lt;</code><code class="teg">!-- --</code><code>&gt;</code>`,
+    respuesta: `<code class="com">&lt;!-- --</>&gt;</code>`,
     distractores: 
     [
-    `/* */`,
-    `//`,
-    `#`
+    `<code class="com">/* */</code>`,
+    `<code class="com">//</code>`,
+    `<code class="com">#</code>`
   ]
 },
   {
     pregunta: `<b class="number">22)</b> Rasmni ko'rsatish imkoni bo'lmasa, qaysi HTML atributi rasmni o'rnida matnni ko'rsatadi?`,
-    respuesta: `alt`,
+    respuesta: `<code class="atr">alt</code>`,
     distractores: 
     [
-    `src`,
-    `title`,
-    `longdesc`
+    `<code class="atr">src</code>`,
+    `<code class="atr">title</code>`,
+    `<code class="atr">longdesc</code>`
   ]
 },
   {
@@ -286,7 +286,7 @@ baseDePreguntas = [
     [
     `<code>&lt;</code><code class="teg">navigate</code><code>&gt;</code>`,
     `<code>&lt;</code><code class="teg">navigation</code><code>&gt;</code>`,
-    `<code>&lt;</code><code class="teg">a href="#"</code><code>&gt;</code>`
+    `<code>&lt;</code><code class="teg">a</code> <code class="atr">href</code><code class="opp">=</code><code class="str">"#"</code><code>&gt;</code>`
   ]
 },
   {
