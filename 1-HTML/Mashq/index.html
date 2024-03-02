@@ -237,23 +237,25 @@ input[type="radio"]{
         <h2>Ramkalar</h2>
         <ol>
             <li onclick="yo[28].style.display = 'block';"><a id="ramka_btn_1" onclick="cler(); ramka_1();">Vazifa</a></li>
+            <li onclick="yo[29].style.display = 'block';"><a id="ramka_btn_2" onclick="cler(); ramka_2();">Vazifa</a></li>
             <!-- <li><a style="color: red;" onclick="Swal.fire({title: 'Yaratilish jarayonda!',icon: 'info'});">Dastur</a></li> -->
         </ol><hr>
         <h2>Audio va Video</h2>
         <ol>
-            <li onclick="yo[29].style.display = 'block';"><a id="video_btn_1" onclick="cler(); video_1();">Vazifa</a></li>
-            <li onclick="yo[30].style.display = 'block';"><a id="video_btn_2" onclick="cler(); video_2();">Vazifa</a></li>
+            <li onclick="yo[30].style.display = 'block';"><a id="video_btn_1" onclick="cler(); video_1();">Vazifa</a></li>
+            <li onclick="yo[31].style.display = 'block';"><a id="video_btn_2" onclick="cler(); video_2();">Vazifa</a></li>
             <!-- <li><a style="color: red;" onclick="Swal.fire({title: 'Yaratilish jarayonda!',icon: 'info'});">Dastur</a></li> -->
         </ol><hr>
         <h2>Jadvallar</h2>
         <ol>
-            <li onclick="yo[31].style.display = 'block';"><a id="jadval_btn_1" onclick="cler(); jadval_1();">Vazifa</a></li>
-            <li onclick="yo[32].style.display = 'block';"><a id="jadval_btn_2" onclick="cler(); jadval_2();">Vazifa</a></li>
+            <li onclick="yo[32].style.display = 'block';"><a id="jadval_btn_1" onclick="cler(); jadval_1();">Vazifa</a></li>
+            <li onclick="yo[33].style.display = 'block';"><a id="jadval_btn_2" onclick="cler(); jadval_2();">Vazifa</a></li>
             <!-- <li><a style="color: red;" onclick="Swal.fire({title: 'Yaratilish jarayonda!',icon: 'info'});">Dastur</a></li> -->
         </ol><hr>
         <h2>Uslublar va semantika</h2>
         <ol>
             <li onclick="yo[34].style.display = 'block';"><a id="uslub_btn_1" onclick="cler(); uslub_1();">Vazifa</a></li>
+            <li onclick="yo[35].style.display = 'block';"><a id="uslub_btn_2" onclick="cler(); uslub_2();">Vazifa</a></li>
             <li><a style="color: red;" onclick="Swal.fire({title: 'Yaratilish jarayonda!',icon: 'info'});">Dastur</a></li>
             <li><a id="test_btn" onclick="test()" style="color: blue;">Test</a></li>
         </ol>
@@ -274,7 +276,7 @@ input[type="radio"]{
         <img src="formatlash_7.png" alt="RASMDA XATOLIK" id="format_7">
         <img src="formatlash_8.png" alt="RASMDA XATOLIK" id="format_8">
         <img src="formatlash_9.png" alt="RASMDA XATOLIK" id="format_9">
-        <video class="nan anime" id="format_10" controls autoplay muted loop src="formatlash_10.mp4"></video>
+        <video class="nan anime" id="format_10" width="1650" autoplay muted loop src="formatlash_10.mp4"></video>
 <!-- ************************************************************************************* -->
         <img src="havola_1.png" alt="RASMDA XATOLIK" id="havola_1">
         <video class="nan anime" id="havola_2" width="1650" controls autoplay muted loop src="havola_2.mp4"></video>
@@ -294,16 +296,18 @@ input[type="radio"]{
         <img src="form_2.png" alt="RASMDA XATOLIK" id="form_2">
         <video class="nan anime" id="form_3" width="1650" controls autoplay muted loop src="form_3.mp4"></video>
         <video class="nan anime" id="form_4" width="1650" controls autoplay muted loop src="form_4.mp4"></video>
-<!-- ************************************************************************************* -->
+        <!-- ************************************************************************************* -->
         <img src="ramka_1.png" alt="RASMDA XATOLIK" id="ramka_1">
+        <video class="nan anime" id="ramka_2" width="1650" autoplay muted loop src="ramka_2.mp4"></video>
 <!-- ************************************************************************************* -->
         <video class="nan anime" id="video_1" width="1650" controls autoplay muted loop src="video_1.mp4"></video>
         <video class="nan anime" id="video_2" width="1650" controls autoplay muted loop src="video_2.mp4"></video>
-<!-- ************************************************************************************* -->
+        <!-- ************************************************************************************* -->
         <img src="jadval_1.png" alt="RASMDA XATOLIK" id="jadval_1">
         <img src="jadval_2.png" alt="RASMDA XATOLIK" id="jadval_2">
-<!-- ************************************************************************************* -->
-        <img src="uslub_1.png" alt="RASMDA XATOLIK" id="uslub_1">
+        <!-- ************************************************************************************* -->
+        <video class="nan anime" id="uslub_1" width="1650" controls autoplay muted loop src="uslub_1.mp4"></video>
+        <video class="nan anime" id="uslub_2" width="1650" controls autoplay muted loop src="uslub_2.mp4"></video>
         <div class="test" id="test" >
             <div id="contenedor" class="contenedor"></div>
             <div id="resumen"></div>
@@ -327,7 +331,7 @@ input[type="radio"]{
         </div>
         <div onclick="document.getElementsByClassName('drop')[2].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">p</code><code>&gt;</code> kodini ichida xamma matni yozib oling va</li>
+                <li><code>&lt;</code><code class="teg">p</code><code>&gt;</code> kodini ichida xamma matni yozib va</li>
                 <li><code>&lt;</code><code class="teg">br</code><code>&gt;</code> kodi orqali so'zlarni pastga tushuring</li>
                 <li><code>&lt;</code><code class="teg">hr</code><code>&gt;</code> kodi orqali esa chiziq torting va pastga tushuring</li>
             </ul>
@@ -336,262 +340,294 @@ input[type="radio"]{
             <ul class="drop">
                 <li><code>&lt;</code><code class="teg">h1</code><code>&gt;</code> kodi orqali sarlavhani yozing</li>
                 <li><code>&lt;</code><code class="teg">br</code><code>&gt;</code> kodi orqali yangi qatorlar oching</li>
-                <li><code>&lt;</code><code class="teg">hr</code><code>&gt;</code> kodi orqali yangi qator oching va chiziq torting</li>
+                <li><code>&lt;</code><code class="teg">hr</code><code>&gt;</code> kodi orqali yangi qatorlar ochilgan joyda chiziq torting</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[4].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
                 <li><code>&lt;</code><code class="teg">p</code><code>&gt;</code> kodini ichida xamma matni yozing</li>
-                <li><code>&lt;</code><code class="teg">b</code><code>&gt;</code> kodi orqali so'zlarni qalin qiling</li>
+                <li><code>&lt;</code><code class="teg">b</code><code>&gt;</code> kodi orqali so'zlarni qora va qalin qiling</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[5].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
                 <li><code>&lt;</code><code class="teg">p</code><code>&gt;</code> kodini ichida xamma matni yozing</li>
-                <li><code>&lt;</code><code class="teg">b</code><code>&gt;</code> kodi orqali so'zlarni qalin qiling</li>
+                <li><code>&lt;</code><code class="teg">b</code><code>&gt;</code> kodi orqali so'zlarni qora va qalin qiling</li>
                 <li><code>&lt;</code><code class="teg">i</code><code>&gt;</code> kodi orqali so'zlarni kursiv qiling</li>
-            </ul>
-        </div>
-        <div onclick="document.getElementsByClassName('drop')[5].classList.toggle('show')" class="yo">Yordam
-            <ul class="drop">
-                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodi orqali sarlavhani yozing</li>
-                <li><code>&lt;</code><code class="teg">h3</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">i</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">mark</code><code>&gt;</code> kodini ishlating</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[6].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">h3</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">i</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">del</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">mark</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodi orqali sarlavhani yozing</li>
+                <li><code>&lt;</code><code class="teg">b</code><code>&gt;</code> kodi orqali so'zlarni qora va qalin qiling</li>
+                <li><code>&lt;</code><code class="teg">i</code><code>&gt;</code> kodi orqali so'zlarni kursiv qiling</li>
+                <li><code>&lt;</code><code class="teg">mark</code><code>&gt;</code> kodi orqali so'zlarni Sariq qiling</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[7].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">p</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">sup</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">sub</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">h1</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodi orqali sarlavhani yozing</li>
+                <li><code>&lt;</code><code class="teg">b</code><code>&gt;</code> kodi orqali so'zlarni qora va qalin qiling</li>
+                <li><code>&lt;</code><code class="teg">i</code><code>&gt;</code> kodi orqali so'zlarni kursiv qiling</li>
+                <li><code>&lt;</code><code class="teg">del</code><code>&gt;</code> kodi orqali so'zlarni ustidan chiziq torting</li>
+                <li><code>&lt;</code><code class="teg">mark</code><code>&gt;</code> kodi orqali so'zlarni Sariq qiling</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[8].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">h1</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">sup</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">i</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">small</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">h1</code><code>&gt;</code> kodi orqali sarlavhani yozing</li>
+                <li><code>&lt;</code><code class="teg">p</code><code>&gt;</code> kodi orqali xamma matni yozing</li>
+                <li><code>&lt;</code><code class="teg">sup</code><code>&gt;</code> kodi orqali so'zlarni tepaga ko'taring</li>
+                <li><code>&lt;</code><code class="teg">sub</code><code>&gt;</code> kodi orqali so'zlarni pastga tushuring</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[9].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">h1</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">sub</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">small</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodi orqali sarlavhani yozing</li>
+                <li><code>&lt;</code><code class="teg">b</code><code>&gt;</code> kodi orqali so'zlarni qora va qalin qiling</li>
+                <li><code>&lt;</code><code class="teg">i</code><code>&gt;</code> kodi orqali so'zlarni kursiv qiling</li>
+                <li><code>&lt;</code><code class="teg">sup</code><code>&gt;</code> kodi orqali so'zlarni tepaga ko'taring</li>
+                <li><code>&lt;</code><code class="teg">small</code><code>&gt;</code> kodi orqali so'zlarni kichik qiling</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[10].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">pre</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">h1</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">h3</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">mark</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">u</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">i</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodi orqali sarlavhani yozing</li>
+                <li><code>&lt;</code><code class="teg">b</code><code>&gt;</code> kodi orqali so'zlarni qora va qalin qiling</li>
+                <li><code>&lt;</code><code class="teg">sub</code><code>&gt;</code> kodi orqali so'zlarni pastga tushuring</li>
+                <li><code>&lt;</code><code class="teg">small</code><code>&gt;</code> kodi orqali so'zlarni kichik qiling</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[11].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">pre</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">b</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">meter</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">progress</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">i</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">br</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">hr</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">pre</code><code>&gt;</code> kodini ichida xamma matni yozing</li>
+                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodi orqali sarlavhani yozing</li>
+                <li><code>&lt;</code><code class="teg">u</code><code>&gt;</code> kodi orqali xamma matnga ostgi chiziq qiling</li>
+                <li><code>&lt;</code><code class="teg">mark</code><code>&gt;</code> kodi orqali so'zlarni Sariq qiling</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[12].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">pre</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">b</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">mark</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">a</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">br</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">hr</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">meter</code><code>&gt;</code> kodi orqali ko'rsatgichlarni taxlang</li>
+                <li><code>&lt;</code><code class="teg">b</code><code>&gt;</code> kodi orqali foizlarni yozing</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[13].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">h1</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">p</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">b</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">u</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">a</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">h1</code><code>&gt;</code> kodi orqali katta sarlavhani yozing</li>
+                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodi orqali kichik sarlavhalarni yozing</li>
+                <li><code>&lt;</code><code class="teg">pre</code><code>&gt;</code> ni sarlavhalarni surish uchun ishlating</li>
+                <li><code>&lt;</code><code class="teg">b</code><code>&gt;</code> kodi orqali so'zlarni qora va qalin qiling</li>
+                <li><code>&lt;</code><code class="teg">i</code><code>&gt;</code> kodi orqali so'zlarni kursiv qiling</li>
+                <li><code>&lt;</code><code class="teg">meter</code><code>&gt;</code> kodi orqali ko'rsatgichlarni taxlang</li>
+                <li><code>&lt;</code><code class="teg">progress</code><code>&gt;</code> kodi orqali ko'rsatgichlarni taxlang</li>
+                <li><code>&lt;</code><code class="teg">br</code><code>&gt;</code> kodi orqali yangi qatorlar oching</li>
+                <li><code>&lt;</code><code class="teg">hr</code><code>&gt;</code> kodi orqali yangi qatorlar ochilgan joyda chiziq torting</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[14].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">img</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodi orqali sarlavhani yozing</li>
+                <li><code>&lt;</code><code class="teg">hr</code><code>&gt;</code> kodi orqali sarlavhadan keyin chhiziq torting</li>
+                <li><code>&lt;</code><code class="teg">b</code><code>&gt;</code> kodi orqali so'zlarni qora va qalin qiling</li>
+                <li><code>&lt;</code><code class="teg">mark</code><code>&gt;</code> kodi orqali so'zlarni Sariq qiling</li>
+                <li><code>&lt;</code><code class="teg">a</code><code>&gt;</code> kodi orqali havola yarating</li>
+                <li><code>&lt;</code><code class="teg">br</code><code>&gt;</code> kodi orqali yangi qatorlar oching</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[15].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">img</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">h1</code><code>&gt;</code> kodi orqali birinchi sarlavhani yozing</li>
+                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodi orqali ikkinchi sarlavhalarni yozing</li>
+                <li><code>&lt;</code><code class="teg">p</code><code>&gt;</code> kodini ichida xamma matni yozing</li>
+                <li><code>&lt;</code><code class="teg">a</code><code>&gt;</code> kodi orqali havola yarating</li>
+                <li><code>&lt;</code><code class="teg">b</code><code>&gt;</code> kodi orqali so'zlarni qora va qalin qiling</li>
+                <li><code>&lt;</code><code class="teg">u</code><code>&gt;</code> kodi orqali matnga ostgi chiziq qiling</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[16].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">a</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">img</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">img</code><code>&gt;</code> kodi orqali rasm qo'ying</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[17].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">a</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">img</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">img</code><code>&gt;</code> kodi orqali 4 ta rasm qo'ying</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[18].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">picture</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">source</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">img</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">a</code><code>&gt;</code> kodi orqali havola yarating</li>
+                <li><code>&lt;</code><code class="teg">img</code><code>&gt;</code> kodi orqali <code>&lt;</code><code class="teg">a</code><code>&gt;</code> ichida rasm qo'ying</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[19].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">h3</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">ul</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">ol</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">li</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">b</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">i</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">mark</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">hr</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">a</code><code>&gt;</code> kodi orqali havola yarating</li>
+                <li><code>&lt;</code><code class="teg">img</code><code>&gt;</code> kodi orqali <code>&lt;</code><code class="teg">a</code><code>&gt;</code> ichida rasm qo'ying</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[20].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">picture</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">source</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">img</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">picture</code><code>&gt;</code> kodini ichida xamma kodlarni yozing</li>
+                <li><code>&lt;</code><code class="teg">source</code><code>&gt;</code> kodi orqali ekran hajmiga mos qilib rasm qo'ying</li>
+                <li><code>&lt;</code><code class="teg">img</code><code>&gt;</code> kodi orqali eng kichik ekran uchun rasm qo'ying/li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[21].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">h1</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">hr</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">h3</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">h4</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">input</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">textarea</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">ul</code><code>&gt;</code> kodini ichida xamma kodni yozing</li>
+                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodi orqali sarlavhani yozing</li>
+                <li><code>&lt;</code><code class="teg">li</code><code>&gt;</code> kodi orqali ro'yxat taxlang</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[22].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">h3</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">input</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">textarea</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">br</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">hr</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodi orqali sarlavhani yozing</li>
+                <li><code>&lt;</code><code class="teg">ul</code><code>&gt;</code> kodi orqali nuqtalik ro'yxat yarating</li>
+                <li><code>&lt;</code><code class="teg">ol</code><code>&gt;</code> kodi orqali raqamlik ro'yxat yarating</li>
+                <li><code>&lt;</code><code class="teg">h3</code><code>&gt;</code> kodi orqali <code>&lt;</code><code class="teg">ul</code><code>&gt;</code> ni ichida sarlavha yozing</li>
+                <li><code>&lt;</code><code class="teg">b</code><code>&gt;</code> kodi orqali so'zlarni qora va qalin qiling</li>
+                <li><code>&lt;</code><code class="teg">i</code><code>&gt;</code> kodi orqali so'zlarni kursiv qiling</li>
+                <li><code>&lt;</code><code class="teg">mark</code><code>&gt;</code> kodi orqali so'zlarni Sariq qiling</li>
+                <li><code>&lt;</code><code class="teg">hr</code><code>&gt;</code> kodi orqali chiziq torting</li>
+                
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[23].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">h1</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">pre</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">label</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">datalist</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">option</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">input</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">textarea</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">img</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">br</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">h1</code><code>&gt;</code> kodi orqali sarlavhani yozing</li>
+                <li><code>&lt;</code><code class="teg">ul</code><code>&gt;</code> kodi orqali nuqtalik ro'yxat yarating</li>
+                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodi orqali <code>&lt;</code><code class="teg">ul</code><code>&gt;</code> ni ichida sarlavha yozing</li>
+                <li><code>&lt;</code><code class="teg">b</code><code>&gt;</code> kodi orqali so'zlarni qora va qalin qiling</li>
+                <li><code>&lt;</code><code class="teg">i</code><code>&gt;</code> kodi orqali so'zlarni kursiv qiling</li>
+                <li><code>&lt;</code><code class="teg">mark</code><code>&gt;</code> kodi orqali so'zlarni Sariq qiling</li>
+                <li><code>&lt;</code><code class="teg">a</code><code>&gt;</code> kodi orqali rasimga kirilaydigan havola yarating</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[24].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">h1</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">h3</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">h4</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">p</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">fieldset</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">legend</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">pre</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">label</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">select</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">option</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">input</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">textarea</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">button</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">br</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">h1</code><code>&gt;</code> kodi orqali sarlavhani yozing</li>
+                <li><code>&lt;</code><code class="teg">hr</code><code>&gt;</code> kodi orqali chiziq torting</li>
+                <li><code>&lt;</code><code class="teg">h3</code><code>&gt;</code> kodi orqali Ism familiya sarlavhasini yozing</li>
+                <li><code>&lt;</code><code class="teg">input</code><code>&gt;</code> kodi orqali matn kiritish moslamasini yarating</li>
+                <li><code>&lt;</code><code class="teg">h4</code><code>&gt;</code> kodi orqali izoh sarlavhasini yozing</li>
+                <li><code>&lt;</code><code class="teg">textarea</code><code>&gt;</code> kodi orqali izoh kiritish moslamasini yarating</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[25].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">iframe</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodi orqali sarlavhani yozing</li>
+                <li><code>&lt;</code><code class="teg">hr</code><code>&gt;</code> kodi orqali chiziq torting</li>
+                <li><code>&lt;</code><code class="teg">h3</code><code>&gt;</code> kodi orqali Ism familiya sarlavhasini yozing</li>
+                <li><code>&lt;</code><code class="teg">input</code><code>&gt;</code> kodi orqali matn kiritish moslamasini yarating</li>
+                <li><code>&lt;</code><code class="teg">textarea</code><code>&gt;</code> kodi orqali izoh kiritish moslamasini yarating</li>
+                <li><code>&lt;</code><code class="teg">br</code><code>&gt;</code> kodini ishlating yangi qator ochish uchun</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[26].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">img</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">sup</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">audio</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">a</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">br</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">h1</code><code>&gt;</code> kodi orqali sarlavhani yozing</li>
+                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodi orqali Ism familiya sarlavhasini yozing</li>
+                <li><code>&lt;</code><code class="teg">pre</code><code>&gt;</code> kodini ishlating matnlarni va kiritish moslamalarni to'g'ri joylashtirish uchun</li>
+                <li><code>&lt;</code><code class="teg">label</code><code>&gt;</code> kodini ichida ism familiya yozib <code>&lt;</code><code class="teg">input</code><code>&gt;</code> kodiga ulang</li>
+                <li><code>&lt;</code><code class="teg">datalist</code><code>&gt;</code> va <code>&lt;</code><code class="teg">option</code><code>&gt;</code> kodi orqali malumot saqlash moslamasini yarating</li>
+                <li><code>&lt;</code><code class="teg">input</code><code>&gt;</code> kodi orqali matn kiritish moslamasini yarating</li>
+                <li><code>&lt;</code><code class="teg">textarea</code><code>&gt;</code> kodi orqali izoh kiritish moslamasini yarating</li>
+                <li><code>&lt;</code><code class="teg">img</code><code>&gt;</code> kodi orqali CAPTCHA rasimini qo'ying</li>
+                <li><code>&lt;</code><code class="teg">br</code><code>&gt;</code> kodini ishlating yangi qator ochish uchun</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[27].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">h3</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">h4</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">img</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">pre</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">video</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">textarea</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">button</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">br</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">hr</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">h1</code><code>&gt;</code> kodi orqali sarlavhani yozing</li>
+                <li><code>&lt;</code><code class="teg">p</code><code>&gt;</code> kodini ishlating odiy matn yozish uchun</li>
+                <li><code>&lt;</code><code class="teg">fieldset</code><code>&gt;</code> kodini ishlating xamma bo'limlarni guruhlash uchun</li>
+                <li><code>&lt;</code><code class="teg">legend</code><code>&gt;</code> kodini ishlating bo'limlarga sarlavha  yozish uchun</li>
+                <li><code>&lt;</code><code class="teg">h3</code><code>&gt;</code> kodi orqali Ism familiya sarlavhasini yozing</li>
+                <li><code>&lt;</code><code class="teg">pre</code><code>&gt;</code> kodini ishlating matnlarni va kiritish moslamalarni to'g'ri joylashtirish uchun</li>
+                <li><code>&lt;</code><code class="teg">label</code><code>&gt;</code> kodini ichida ism familiya yozib <code>&lt;</code><code class="teg">input</code><code>&gt;</code> kodiga ulang</li>
+                <li><code>&lt;</code><code class="teg">input</code><code>&gt;</code> kodi orqali matn kiritish moslamasini yarating</li>
+                <li><code>&lt;</code><code class="teg">select</code><code>&gt;</code> va <code>&lt;</code><code class="teg">option</code><code>&gt;</code> kodi orqali malumot saqlash moslamasini yarating</li>
+                <li><code>&lt;</code><code class="teg">textarea</code><code>&gt;</code> kodi orqali izoh kiritish moslamasini yarating</li>
+                <li><code>&lt;</code><code class="teg">h4</code><code>&gt;</code> kodi orqali izoh sarlavhasini yozing</li>
+                <li><code>&lt;</code><code class="teg">br</code><code>&gt;</code> kodini ishlating yangi qator ochish uchun</li>
+                <li><code>&lt;</code><code class="teg">button</code><code>&gt;</code> kodi orqali tugmalar yarating</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[28].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">table</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">caption</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">tr</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">th</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">td</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">br</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">iframe</code><code>&gt;</code> kodi orqali ramkalarni joylashtiring</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[29].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">table</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">caption</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">tr</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">th</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">td</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">br</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">iframe</code><code>&gt;</code> kodining <code class="atr">src</code> atributi orqali o'tgan mavzudagi qilgan vazifalarizni ramkalarga ulang</li>
             </ul>
         </div>
         <div onclick="document.getElementsByClassName('drop')[30].classList.toggle('show')" class="yo">Yordam
             <ul class="drop">
-                <li><code>&lt;</code><code class="teg">details</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">summary</code><code>&gt;</code> kodini ishlating</li>
-                <li><code>&lt;</code><code class="teg">img</code><code>&gt;</code> kodini ishlating</li>
+                <li><code>&lt;</code><code class="teg">h2</code><code>&gt;</code> kodi orqali sarlavhani yozing</li>
+                <li><code>&lt;</code><code class="teg">img</code><code>&gt;</code> kodi orqali rasm qo'ying</li>
+                <li><code>&lt;</code><code class="teg">sup</code><code>&gt;</code> kodi orqali so'zlarni tepaga ko'taring</li>
+                <li><code>&lt;</code><code class="teg">audio</code><code>&gt;</code> kodi orqali mp3 ulang</li>
+                <li><code>&lt;</code><code class="teg">a</code><code>&gt;</code> va <code>&lt;</code><code class="teg">img</code><code>&gt;</code> kodi orqali rasmlik havola yarating</li>
+                <li><code>&lt;</code><code class="teg">br</code><code>&gt;</code> kodini ishlating yangi qator ochish uchun</li>
+            </ul>
+        </div>
+        <div onclick="document.getElementsByClassName('drop')[31].classList.toggle('show')" class="yo">Yordam
+            <ul class="drop">
+                <li><code>&lt;</code><code class="teg">video</code><code>&gt;</code> kodi orqali video (mp4) qo'ying</li>
+                <li><code>&lt;</code><code class="teg">h3</code><code>&gt;</code> kodini sarlavhalar uchun ishlating</li>
+                <li><code>&lt;</code><code class="teg">h4</code><code>&gt;</code> kodini sarlavhalar uchun ishlating</li>
+                <li><code>&lt;</code><code class="teg">button</code><code>&gt;</code> va <code>&lt;</code><code class="teg">img</code><code>&gt;</code> kodi orqali rasimlik tugma yarating</li>
+                <li><code>&lt;</code><code class="teg">pre</code><code>&gt;</code> kodini ishlating matnlarni va tugmalarni to'g'ri joylashtirish uchun</li>
+                <li><code>&lt;</code><code class="teg">textarea</code><code>&gt;</code> kodi orqali izoh kiritish moslamasini yarating</li>
+                <li><code>&lt;</code><code class="teg">br</code><code>&gt;</code> kodini ishlating yangi qator ochish uchun</li>
+                <li><code>&lt;</code><code class="teg">hr</code><code>&gt;</code> kodi orqali chiziq torting</li>
+            </ul>
+        </div>
+        <div onclick="document.getElementsByClassName('drop')[32].classList.toggle('show')" class="yo">Yordam
+            <ul class="drop">
+                <li><code>&lt;</code><code class="teg">table</code><code>&gt;</code> kodini ichida xamma jadval kodini yozing</li>
+                <li><code>&lt;</code><code class="teg">caption</code><code>&gt;</code> kodi orqali jadval uchun sarlavha yozing</li>
+                <li><code>&lt;</code><code class="teg">tr</code><code>&gt;</code> kodi orqali jadval uchun qator yarating</li>
+                <li><code>&lt;</code><code class="teg">th</code><code>&gt;</code> kodi orqali jadvalning kataklari uchun sarlavha yozing</li>
+                <li><code>&lt;</code><code class="teg">td</code><code>&gt;</code> kodini ishlating jadvalning kataklariga malumot yozish uuchun</li>
+                <li><code>&lt;</code><code class="teg">br</code><code>&gt;</code> kodini ishlating yangi qator ochish uchun</li>
+            </ul>
+        </div>
+        <div onclick="document.getElementsByClassName('drop')[33].classList.toggle('show')" class="yo">Yordam
+            <ul class="drop">
+                <li><code>&lt;</code><code class="teg">table</code><code>&gt;</code> kodini ichida xamma jadval kodini yozing</li>
+                <li><code>&lt;</code><code class="teg">caption</code><code>&gt;</code> kodi orqali jadval uchun sarlavha yozing</li>
+                <li><code>&lt;</code><code class="teg">tr</code><code>&gt;</code> kodi orqali jadval uchun qator yarating</li>
+                <li><code>&lt;</code><code class="teg">th</code><code>&gt;</code> kodi orqali jadvalning kataklari uchun sarlavha yozing</li>
+                <li><code>&lt;</code><code class="teg">td</code><code>&gt;</code> kodini ishlating jadvalning kataklariga malumot yozish uuchun</li>
+                <li><code>&lt;</code><code class="teg">br</code><code>&gt;</code> kodini ishlating yangi qator ochish uchun</li>
+            </ul>
+        </div>
+        <div onclick="document.getElementsByClassName('drop')[34].classList.toggle('show')" class="yo">Yordam
+            <ul class="drop">
+                <li><code>&lt;</code><code class="teg">h1</code><code>&gt;</code> kodi orqali sarlavhani yozing</li>
+                <li><code>&lt;</code><code class="teg">details</code><code>&gt;</code> kodi orqali ochiladigan ro'yxat yarating</li>
+                <li><code>&lt;</code><code class="teg">summary</code><code>&gt;</code> kodi orqali ochiladigan ro'yxat uchun sarlavha yozing</li>
+                <li><code>&lt;</code><code class="teg">img</code><code>&gt;</code> kodini rasm qo'yish uchun ishlating ishlating</li>
+                <li><code>&lt;</code><code class="teg">hr</code><code>&gt;</code> kodi orqali chiziq torting</li>
+            </ul>
+        </div>
+        <div onclick="document.getElementsByClassName('drop')[35].classList.toggle('show')" class="yo">Yordam
+            <ul class="drop">
+                <li><code>&lt;</code><code class="teg">dialog</code><code>&gt;</code> kodi va <code class="atr">open</code> atributi orqali muloqot oynasini yarating</li>
+                <li><code>&lt;</code><code class="teg">h1</code><code>&gt;</code> kodi orqali sarlavhani yozing</li>
+                <li><code>&lt;</code><code class="teg">h3</code><code>&gt;</code> kodi orqali sarlavhani yozing</li>
+                <li><code>&lt;</code><code class="teg">select</code><code>&gt;</code> va <code>&lt;</code><code class="teg">option</code><code>&gt;</code> kodi orqali malumot saqlash moslamasini yarating</li>
+                <li><code>&lt;</code><code class="teg">img</code><code>&gt;</code> kodini rasm qo'yish uchun ishlating ishlating</li>
+                <li><code>&lt;</code><code class="teg">sup</code><code>&gt;</code> kodi orqali rasmni pastga tushuring</li>
+                <li><code>&lt;</code><code class="teg">hr</code><code>&gt;</code> kodi orqali chiziq torting</li>
+                <li><code>&lt;</code><code class="teg">b</code><code>&gt;</code> kodi orqali so'zlarni qora va qalin qiling</li>
+                <li><code>&lt;</code><code class="teg">input</code><code>&gt;</code> kodi va <code class="atr">checkbox</code> atributi orqali belgilash katagchalarini yarating</li>
+                <li><code>&lt;</code><code class="teg">button</code><code>&gt;</code> kodi orqali tugmalar yarating</li>
             </ul>
         </div>
     </div>
@@ -628,11 +664,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "block";
             document.getElementById("asos_2").style.display = "none";
@@ -663,11 +701,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function asos_2(){
             document.getElementById("test").style.display = " none";
@@ -700,11 +740,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "block";
@@ -735,11 +777,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function asos_3(){
             document.getElementById("test").style.display = " none";
@@ -772,11 +816,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -807,11 +853,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function asos_4(){
             document.getElementById("test").style.display = " none";
@@ -844,11 +892,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -879,11 +929,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function format_1(){
             document.getElementById("test").style.display = " none";
@@ -916,11 +968,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -951,11 +1005,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function format_2(){
             document.getElementById("test").style.display = " none";
@@ -988,11 +1044,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -1023,11 +1081,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function format_3(){
             document.getElementById("test").style.display = " none";
@@ -1060,11 +1120,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -1095,11 +1157,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function format_4(){
             document.getElementById("test").style.display = " none";
@@ -1132,11 +1196,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -1167,11 +1233,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function format_5(){
             document.getElementById("test").style.display = " none";
@@ -1204,11 +1272,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -1239,11 +1309,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function format_6(){
             document.getElementById("test").style.display = " none";
@@ -1276,11 +1348,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -1311,11 +1385,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function format_7(){
             document.getElementById("test").style.display = " none";
@@ -1348,11 +1424,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -1383,11 +1461,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function format_8(){
             document.getElementById("test").style.display = " none";
@@ -1420,11 +1500,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -1455,11 +1537,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function format_9(){
             document.getElementById("test").style.display = " none";
@@ -1492,11 +1576,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -1527,11 +1613,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function format_10(){
             document.getElementById("test").style.display = " none";
@@ -1564,11 +1652,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -1599,11 +1689,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function havola_1(){
             document.getElementById("test").style.display = " none";
@@ -1636,11 +1728,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -1671,11 +1765,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function havola_2(){
             document.getElementById("test").style.display = " none";
@@ -1708,11 +1804,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -1743,11 +1841,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function rasm_1(){
             document.getElementById("test").style.display = " none";
@@ -1780,11 +1880,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -1815,11 +1917,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function rasm_2(){
             document.getElementById("test").style.display = " none";
@@ -1852,11 +1956,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -1887,11 +1993,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function rasm_3(){
             document.getElementById("test").style.display = " none";
@@ -1924,11 +2032,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -1959,11 +2069,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function rasm_4(){
             document.getElementById("test").style.display = " none";
@@ -1996,11 +2108,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -2031,11 +2145,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function rasm_5(){
             document.getElementById("test").style.display = " none";
@@ -2068,11 +2184,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -2103,11 +2221,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function ruyxat_1(){
             document.getElementById("test").style.display = " none";
@@ -2140,11 +2260,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -2175,11 +2297,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function ruyxat_2(){
             document.getElementById("test").style.display = " none";
@@ -2212,11 +2336,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -2247,11 +2373,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function ruyxat_3(){
             document.getElementById("test").style.display = " none";
@@ -2284,11 +2412,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -2319,11 +2449,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function form_1(){
             document.getElementById("test").style.display = " none";
@@ -2356,11 +2488,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -2391,11 +2525,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function form_2(){
             document.getElementById("test").style.display = " none";
@@ -2428,11 +2564,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -2463,11 +2601,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function form_3(){
             document.getElementById("test").style.display = " none";
@@ -2500,11 +2640,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 2px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -2535,11 +2677,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "block";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function form_4(){
             document.getElementById("test").style.display = " none";
@@ -2572,11 +2716,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 2px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -2607,11 +2753,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "block";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function ramka_1(){
             document.getElementById("test").style.display = " none";
@@ -2644,11 +2792,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 2px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -2679,11 +2829,89 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "block";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
+        }
+        function ramka_2(){
+            document.getElementById("test").style.display = " none";
+            document.getElementById("asos_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("asos_btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("asos_btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("asos_btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("format_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("format_btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("format_btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("format_btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("format_btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("format_btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("format_btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("format_btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("format_btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("format_btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("havola_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("havola_btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("rasm_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("rasm_btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("rasm_btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("rasm_btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("rasm_btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("ruyxat_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ruyxat_btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("ruyxat_btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("form_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("form_btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 2px solid blue";
+            document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
+            document.getElementById("asos_1").style.display = "none";
+            document.getElementById("asos_2").style.display = "none";
+            document.getElementById("asos_3").style.display = "none";
+            document.getElementById("asos_4").style.display = "none";
+            document.getElementById("format_1").style.display = "none";
+            document.getElementById("format_2").style.display = "none";
+            document.getElementById("format_3").style.display = "none";
+            document.getElementById("format_4").style.display = "none";
+            document.getElementById("format_5").style.display = "none";
+            document.getElementById("format_6").style.display = "none";
+            document.getElementById("format_7").style.display = "none";
+            document.getElementById("format_8").style.display = "none";
+            document.getElementById("format_9").style.display = "none";
+            document.getElementById("format_10").style.display = "none";
+            document.getElementById("havola_1").style.display = "none";
+            document.getElementById("havola_2").style.display = "none";
+            document.getElementById("rasm_1").style.display = "none";
+            document.getElementById("rasm_2").style.display = "none";
+            document.getElementById("rasm_3").style.display = "none";
+            document.getElementById("rasm_4").style.display = "none";
+            document.getElementById("rasm_5").style.display = "none";
+            document.getElementById("ruyxat_1").style.display = "none";
+            document.getElementById("ruyxat_2").style.display = "none";
+            document.getElementById("ruyxat_3").style.display = "none";
+            document.getElementById("form_1").style.display = "none";
+            document.getElementById("form_2").style.display = "none";
+            document.getElementById("form_3").style.display = "none";
+            document.getElementById("form_4").style.display = "none";
+            document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "block";
+            document.getElementById("video_1").style.display = "none";
+            document.getElementById("video_2").style.display = "none";
+            document.getElementById("jadval_1").style.display = "none";
+            document.getElementById("jadval_2").style.display = "none";
+            document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function video_1(){
             document.getElementById("test").style.display = " none";
@@ -2716,11 +2944,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 2px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -2751,11 +2981,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "block";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function video_2(){
             document.getElementById("test").style.display = " none";
@@ -2788,11 +3020,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 2px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -2823,11 +3057,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "block";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function jadval_1(){
             document.getElementById("test").style.display = " none";
@@ -2860,11 +3096,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 2px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -2895,11 +3133,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "block";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function jadval_2(){
             document.getElementById("test").style.display = " none";
@@ -2932,11 +3172,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 2px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -2967,11 +3209,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "block";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
         function uslub_1(){
             document.getElementById("test").style.display = " none";
@@ -3004,11 +3248,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 2px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -3039,11 +3285,89 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "block";
+            document.getElementById("uslub_2").style.display = "none";
+        }
+        function uslub_2(){
+            document.getElementById("test").style.display = " none";
+            document.getElementById("asos_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("asos_btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("asos_btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("asos_btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("format_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("format_btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("format_btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("format_btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("format_btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("format_btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("format_btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("format_btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("format_btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("format_btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("havola_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("havola_btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("rasm_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("rasm_btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("rasm_btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("rasm_btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("rasm_btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("ruyxat_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ruyxat_btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("ruyxat_btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("form_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("form_btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 2px solid blue";
+            document.getElementById("test_btn").style.borderBottom = " 0px solid blue";
+            document.getElementById("asos_1").style.display = "none";
+            document.getElementById("asos_2").style.display = "none";
+            document.getElementById("asos_3").style.display = "none";
+            document.getElementById("asos_4").style.display = "none";
+            document.getElementById("format_1").style.display = "none";
+            document.getElementById("format_2").style.display = "none";
+            document.getElementById("format_3").style.display = "none";
+            document.getElementById("format_4").style.display = "none";
+            document.getElementById("format_5").style.display = "none";
+            document.getElementById("format_6").style.display = "none";
+            document.getElementById("format_7").style.display = "none";
+            document.getElementById("format_8").style.display = "none";
+            document.getElementById("format_9").style.display = "none";
+            document.getElementById("format_10").style.display = "none";
+            document.getElementById("havola_1").style.display = "none";
+            document.getElementById("havola_2").style.display = "none";
+            document.getElementById("rasm_1").style.display = "none";
+            document.getElementById("rasm_2").style.display = "none";
+            document.getElementById("rasm_3").style.display = "none";
+            document.getElementById("rasm_4").style.display = "none";
+            document.getElementById("rasm_5").style.display = "none";
+            document.getElementById("ruyxat_1").style.display = "none";
+            document.getElementById("ruyxat_2").style.display = "none";
+            document.getElementById("ruyxat_3").style.display = "none";
+            document.getElementById("form_1").style.display = "none";
+            document.getElementById("form_2").style.display = "none";
+            document.getElementById("form_3").style.display = "none";
+            document.getElementById("form_4").style.display = "none";
+            document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
+            document.getElementById("video_1").style.display = "none";
+            document.getElementById("video_2").style.display = "none";
+            document.getElementById("jadval_1").style.display = "none";
+            document.getElementById("jadval_2").style.display = "none";
+            document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "block";
         }
         function test(){
             document.getElementById("test").style.display = "block";
@@ -3076,11 +3400,13 @@ input[type="radio"]{
             document.getElementById("form_btn_3").style.borderBottom = " 0px solid blue";
             document.getElementById("form_btn_4").style.borderBottom = " 0px solid blue";
             document.getElementById("ramka_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("ramka_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("video_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_1").style.borderBottom = " 0px solid blue";
             document.getElementById("jadval_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("uslub_btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("uslub_btn_2").style.borderBottom = " 0px solid blue";
             document.getElementById("test_btn").style.borderBottom = " 2px solid blue";
             document.getElementById("asos_1").style.display = "none";
             document.getElementById("asos_2").style.display = "none";
@@ -3111,11 +3437,13 @@ input[type="radio"]{
             document.getElementById("form_3").style.display = "none";
             document.getElementById("form_4").style.display = "none";
             document.getElementById("ramka_1").style.display = "none";
+            document.getElementById("ramka_2").style.display = "none";
             document.getElementById("video_1").style.display = "none";
             document.getElementById("video_2").style.display = "none";
             document.getElementById("jadval_1").style.display = "none";
             document.getElementById("jadval_2").style.display = "none";
             document.getElementById("uslub_1").style.display = "none";
+            document.getElementById("uslub_2").style.display = "none";
         }
     </script>
 </body>
