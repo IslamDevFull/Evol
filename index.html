@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Code/lib/codemirror.css">
     <link rel="stylesheet" href="./Code/theme/panda-syntax.css">
+    <link rel="stylesheet" href="./Code/theme/darcula.css">
     <script src="./Code/lib/codemirror.js"></script>
     <script src="./Code/mode/xml.js"></script>
     <script src="./Code/mode/css.js"></script>
@@ -69,8 +70,8 @@
         <div class="html">
             <div class="col-1">
                 <h1>HTML</h1>
-                <a href="./1-HTML/Dars/Index.html" target="_blank">Dars</a>
-                <a href="./1-HTML/Mashq/index.html" target="_blank">Vazifa</a>
+                <a href="./1-HTML/Dars/dars.html" target="_blank">Dars</a>
+                <a href="./1-HTML/Mashq/mashq.html" target="_blank">Vazifa</a>
             </div>
             <div class="col-2">
                 <textarea id="editor">
@@ -84,7 +85,7 @@
     </head>
     <body>
         <h1>Sarlavha 1</h1>       
-        <h2>Sarlavha 2</h1>       
+        <h2>Sarlavha 2</h2>       
         <p>Paragraf</p>       
         <p>Ikkinchi Paragraf</p>       
     </body>
@@ -175,7 +176,6 @@ $(document).ready(function(){
         var editor = CodeMirror.fromTextArea(document.getElementById("editor"),{
             mode: "xml",
             lineNumbers: true,
-            // theme: "dracula"
             theme: "panda-syntax"
         });
         editor.setSize("100%","400")
@@ -183,15 +183,13 @@ $(document).ready(function(){
         var editor_1 = CodeMirror.fromTextArea(document.getElementById("editor-1"),{
             mode: "css",
             lineNumbers: true,
-            // theme: "dracula"
-            theme: "panda-syntax"
+            theme: "darcula"
         });
         editor_1.setSize("100%","400")
         ///////// javaScript \\\\\\\\\
         var editor_2 = CodeMirror.fromTextArea(document.getElementById("editor-2"),{
             mode: "javascript",
             lineNumbers: true,
-            // theme: "dracula"
             theme: "panda-syntax"
         });
         editor_2.setSize("100%","400")
@@ -199,7 +197,6 @@ $(document).ready(function(){
         var editor_2 = CodeMirror.fromTextArea(document.getElementById("editor-3"),{
             mode: "javascript",
             lineNumbers: true,
-            // theme: "dracula"
             theme: "panda-syntax"
         });
         editor_2.setSize("100%","400")
