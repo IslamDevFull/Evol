@@ -1,0 +1,292 @@
+*{box-sizing: border-box;}
+body{
+    height: 3000px;
+}
+.col-2{
+    background-color: white;
+    margin-bottom: 10px;
+}
+.editorHTML{
+    clear: both;
+    float: left;
+    width: 22%;
+}
+.editorCSS{
+    float: left;
+    width: 27%;
+    margin-left: 5px;
+}
+.frame{
+    float: left;
+    width: 50%;
+    margin-left: 5px;
+}
+iframe{
+    height: 400px;
+    width: 100%;
+    border: 2px solid black;
+}
+.editorHTML > h1{text-align: center;margin: 0;}
+.editorCSS > h1{text-align: center;margin: 0;}
+.frame > h1{text-align: center;margin: 0;}
+.calit{
+    background-color: #2B2B2B;
+    color: rgb(156, 220, 254);
+    font-size: 18px; 
+    font-weight: bold;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 2px rgb(156, 220, 254);
+    transition: all 0.5s;
+}
+.calit:hover{background-color: #444;}
+fieldset{
+    border: 5px solid purple;
+}
+legend{
+    font-size: 30px;
+    font-weight: bold;
+}
+.pales{
+    position: relative;
+    top: 15px;
+}
+/* tr,td,th{border: 2px solid purple;}
+td{
+    background-color: #2B2B2B;
+} */
+/**************************** Code ********************************/
+.css{
+    width: 300px; 
+    height: 100px;
+    background-color: rgb(30,30,30);
+    float: left;
+    margin: 50px 50px 50px 0px;
+    padding: 5px;
+    font-size: 16px;
+}
+.selektor{color: rgb(240, 40, 100)}
+.figura{color: white}
+.fan{color: white}
+.nuqta{color: white}
+.string{color: rgb(255,120,180);}
+.number{color: rgb(240,185,100);}
+.tag{color: rgb(86, 156, 214);}
+.size{font-size: 16px; font-weight: bold;}
+.l{margin-left: 20px;}
+.xl{margin-left: 135px;}
+hr{clear: both;}
+/* ***************************Anime border************************************** */
+.anime1{
+    animation: anime1 10s 1s infinite;
+    position: relative;
+}
+.anime2{
+    animation: anime2 10s 1.3s infinite;
+    position: relative;
+}
+.anime3{
+    animation: anime3 10s 1.6s infinite;
+    position: relative;
+}
+.animeStyleTop{
+    animation: animeStyleTop 10s 1s infinite;
+    position: relative;
+}
+.animeStyleRight{
+    animation: animeStyleRight 10s 1.3s infinite;
+    position: relative;
+}
+.animeStyleBottom{
+    animation: animeStyleBottom 10s 1.6s infinite;
+    position: relative;
+}
+.animeStyleLeft{
+    animation: animeStyleLeft 10s 1.9s infinite;
+    position: relative;
+}
+.animeStyleTop_2{
+    animation: animeStyleTop_2 10s 1s infinite;
+    position: relative;
+}
+.animeStyleRight_2{
+    animation: animeStyleRight_2 10s 1.3s infinite;
+    position: relative;
+}
+.animeStyleBottom_2{
+    animation: animeStyleBottom_2 10s 1.6s infinite;
+    position: relative;
+}
+.animeStyleLeft_2{
+    animation: animeStyleLeft_2 10s 1.9s infinite;
+    position: relative;
+}
+@keyframes anime1 {
+    0%{
+        left: 0px;
+    }
+    50%{
+        left: 295px;
+    }
+    100%{
+        left: 295px;
+    }
+}
+@keyframes anime2 {
+    0%{
+        left: 0px;
+        bottom: 0px;
+    }
+    50%{
+        left: 350px;
+        bottom: 19px;
+    }
+    100%{
+        left: 350px;
+        bottom: 19px;
+    }
+}
+@keyframes anime3 {
+    0%{
+        left: 0px;
+        bottom: 0px;
+    }
+    50%{
+        left: 394px;
+        bottom: 37.5px;
+    }
+    100%{
+        left: 394px;
+        bottom: 37.5px;
+    }
+}
+@keyframes animeStyleTop {
+    0%{
+        left: 0px;
+    }
+    50%{
+        left: 315px;
+    }
+    100%{
+        left: 315px;
+    }
+}
+@keyframes animeStyleRight {
+    0%{
+        left: 0px;
+        bottom: 0px;
+    }
+    50%{
+        left: 357px;
+        bottom: 19px;;
+    }
+    100%{
+        left: 357px;
+        bottom: 19px;
+    }
+}
+@keyframes animeStyleBottom {
+    0%{
+        left: 0px;
+        bottom: 0px;
+    }
+    50%{
+        left: 407px;
+        bottom: 37.8px;
+    }
+    100%{
+        left: 407px;
+        bottom: 37.8px;
+    }
+}
+@keyframes animeStyleLeft {
+    0%{
+        left: 0px;
+        bottom: 0px;
+    }
+    50%{
+        left: 475px;
+        bottom: 57px;
+    }
+    100%{
+        left: 475px;
+        bottom: 57px;
+    }
+}
+@keyframes animeStyleTop_2 {
+    0%{
+        left: 0px;
+    }
+    50%{
+        left: 315px;
+    }
+    100%{
+        left: 315px;
+    }
+}
+@keyframes animeStyleRight_2 {
+    0%{
+        opacity: 1;
+        left: 0px;
+        bottom: 0px;
+    }
+    50%{
+        opacity: 0;
+        left: 308px;
+        bottom: 19px;;
+    }
+    100%{
+        opacity: 0;
+        left: 308px;
+        bottom: 19px;
+    }
+}
+@keyframes animeStyleBottom_2 {
+    0%{
+        opacity: 1;
+        left: 0px;
+        bottom: 0px;
+    }
+    50%{
+        opacity: 0;
+        left: 308px;
+        bottom: 37.8px;
+    }
+    100%{
+        opacity: 0;
+        left: 308px;
+        bottom: 37.8px;
+    }
+}
+@keyframes animeStyleLeft_2 {
+    0%{
+        opacity: 1;
+        left: 0px;
+        bottom: 0px;
+    }
+    50%{
+        opacity: 0;
+        left: 308px;
+        bottom: 57px;
+    }
+    100%{
+        opacity: 0;
+        left: 308px;
+        bottom: 57px;
+    }
+}
+@keyframes m1 {from{opacity: 0;}to{opacity: 1;}}
+/* ***************************Transform shows******************************** */
+.show{transform: translate(50px,50px);}
+.show1{transform: translateX(50px);}
+.show2{transform: translateY(50px);}
+.show3{transform: scale(2,2);}
+.show4{transform: scaleX(2);}
+.show5{transform: scaleY(2);}
+.show6{transform: rotate(30deg);}
+.show7{transform: rotateX(50deg);}
+.show8{transform: rotateY(50deg);}
+.show9{transform: perspective(200px) rotateY(50deg);}
+.show10{transform: skew(10deg,20deg);}
+.show11{transform: skewX(10deg);}
+.show12{transform: skewY(20deg);}
+.sho{transition: all 1s; border: 2px solid red; width: 100px; height: 100px; background-color: yellow;}
