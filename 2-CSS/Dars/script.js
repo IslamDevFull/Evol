@@ -1544,6 +1544,37 @@ editHtml_48.on('change', editorOnChange_48);
 setTimeout(updateResult_48, timeoutDelay);
 editHtml_48.setSize("100%","400");
 editCss_48.setSize("100%","400");
+/////////////////////////////////////////////////////// 49 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+var editHtml_49 = CodeMirror.fromTextArea(document.getElementById("editHtml_49"),{
+    lineNumbers: true,
+    styleActiveLine: true,
+    mode: "htmlmixed",
+    theme: "panda-syntax",
+});
+var editCss_49 = CodeMirror.fromTextArea(document.getElementById("editCss_49"),{
+    lineNumbers: true,
+    styleActiveLine: true,
+    mode: "css",
+    theme: "darcula"
+});
+let updateResult_49 = function() {
+let result_49 = document.querySelector('#result_49');
+let resultDocument = result_49.contentDocument || result_49.contentWindow.document;
+resultDocument.open();
+resultDocument.write(editHtml_49.getValue());
+resultDocument.close();
+resultDocument.querySelector('head').innerHTML = '<style>' + editCss_49.getValue() + '</style>';
+}
+
+let editorOnChange_49 = function() {
+    clearTimeout(timeoutDelay);
+    onChangeDelay = setTimeout(updateResult_49, timeoutDelay);
+};
+editCss_49.on('change', editorOnChange_49);
+editHtml_49.on('change', editorOnChange_49);
+setTimeout(updateResult_49, timeoutDelay);
+editHtml_49.setSize("100%","400");
+editCss_49.setSize("100%","400");
 /////////////////////////////////////////////////////// 50 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 var editHtml_50 = CodeMirror.fromTextArea(document.getElementById("editHtml_50"),{
     lineNumbers: true,
