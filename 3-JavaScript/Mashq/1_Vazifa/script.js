@@ -1,0 +1,1 @@
+window.alert("Salom Saytimizga Xush Kelibsiz");

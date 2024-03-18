@@ -12,13 +12,18 @@
     // cursorChar: '_',
 // });
 
+
+
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
 $(document).ready(function(){
     $(".down-1").hide();
     $(".drop-1").click(function(){
         $(".down-1").slideToggle(1000);
+    });
+    $(".down-2").hide();
+    $(".drop-2").click(function(){
+        $(".down-2").slideToggle(1000);
     });
 // ///////////////////////////// Xususiyat \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\
     $(".downs-1").hide();
@@ -32,5 +37,33 @@ $(document).ready(function(){
     $(".downs-3").hide();
     $(".drops-3").click(function(){
         $(".downs-3").slideToggle(1000);
+    });
+    $(".downs-4").hide();
+    $(".drops-4").click(function(){
+        $(".downs-4").slideToggle(1000);
+    });
+    $(".downs-5").hide();
+    $(".drops-5").click(function(){
+        $(".downs-5").slideToggle(1000);
+    });
+    $(".downs-6").hide();
+    $(".drops-6").click(function(){
+        $(".downs-6").slideToggle(1000);
+    });
+    $(".downs-7").hide();
+    $(".drops-7").click(function(){
+        $(".downs-7").slideToggle(1000);
+    });
+    $(".downs-8").hide();
+    $(".drops-8").click(function(){
+        $(".downs-8").slideToggle(1000);
+    });
+    $(".downs-9").hide();
+    $(".drops-9").click(function(){
+        $(".downs-9").slideToggle(1000);
+    });
+    $(".downs-10").hide();
+    $(".drops-10").click(function(){
+        $(".downs-10").slideToggle(1000);
     });
 });

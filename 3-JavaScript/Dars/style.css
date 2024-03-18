@@ -24,7 +24,14 @@ legend{
     font-size: 30px;
     font-weight: bold;
 }
-.logo-wrap{display: none;}
+.vazifa{
+    background-color: #2B2B2B;
+    color: rgb(220, 220, 170);
+    padding: 5px;
+    display: block;
+    text-decoration: none;
+    color: greenyellow;
+}
 /**************************** Code ********************************/
 .selektor{color: rgb(240, 40, 100)}
 .figura{color: white}
