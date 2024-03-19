@@ -66,4 +66,8 @@ $(document).ready(function(){
     $(".drops-10").click(function(){
         $(".downs-10").slideToggle(1000);
     });
+    $(".downs-11").hide();
+    $(".drops-11").click(function(){
+        $(".downs-11").slideToggle(1000);
+    });
 });
