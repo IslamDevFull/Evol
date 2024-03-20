@@ -15,6 +15,7 @@ body{
     color: rgb(220, 220, 170);
     background-color: #2B2B2B;
     border: 2px solid red;
+    padding: 15px;
 }
 .obj:hover{background-color: #444;}
 fieldset{
@@ -33,7 +34,8 @@ legend{
     color: greenyellow;
 }
 /**************************** Code ********************************/
-.selektor{color: rgb(240, 40, 100)}
+.calit{color: rgb(86,156,214)}
+
 .figura{color: white}
 .fan{color: white}
 .nuqta{color: white}

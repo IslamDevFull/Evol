@@ -12,9 +12,6 @@
     // cursorChar: '_',
 // });
 
-
-
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 $(document).ready(function(){
     $(".down-1").hide();
@@ -70,4 +67,25 @@ $(document).ready(function(){
     $(".drops-11").click(function(){
         $(".downs-11").slideToggle(1000);
     });
+    $(".downs-12").hide();
+    $(".drops-12").click(function(){
+        $(".downs-12").slideToggle(1000);
+    });
+    $(".downs-13").hide();
+    $(".drops-13").click(function(){
+        $(".downs-13").slideToggle(1000);
+    });
+    $(".downs-14").hide();
+    $(".drops-14").click(function(){
+        $(".downs-14").slideToggle(1000);
+    });
+    $(".downs-15").hide();
+    $(".drops-15").click(function(){
+        $(".downs-15").slideToggle(1000);
+    });
+    $(".downV-1").hide();
+    $(".dropV-1").click(function(){
+        $(".downV-1").slideToggle(1000);
+    });
+// ///////////////////////////// Xususiyat \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\
 });

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vazifa 25</title>
+    <style>
+        .container{
+            width: 350px;
+            height: 350px;
+            border: 3px outset;
+            margin: auto;
+        }
+        .svet{
+            background-color: blueviolet;
+            margin: 0;
+            padding: 10px;
+        }
+        .blok{
+            margin-top: 10px;
+            width: 50px;
+            height: 50px;
+            border: 1px solid red;
+            display: inline-block;
+            border: 3px outset;
+            margin-left: 8px;
+        }
+        .blok:hover{
+            outline: 3px solid blueviolet;
+            outline-offset: 2px;
+        }
+        .blok:active{
+            border: 3px inset;
+        }
+    </style>
+</head>
+<body id="demo">
+    <div class="container">
+        <h2 class="svet">Svet</h2>
+        <div onclick="fan1()" style="background-color: green;" class="blok"></div>
+        <div onclick="fan2()" style="background-color: grey;" class="blok"></div>
+        <div onclick="fan3()" style="background-color: yellow;" class="blok"></div>
+        <div onclick="fan4()" style="background-color: blue;" class="blok"></div>
+        <div onclick="fan5()" style="background-color: blueviolet;" class="blok"></div>
+        <div onclick="fan6()" style="background-color: greenyellow;" class="blok"></div>
+        <div onclick="fan7()" style="background-color: black;" class="blok"></div>
+        <div onclick="fan8()" style="background-color: wheat;" class="blok"></div>
+        <div onclick="fan9()" style="background-color: red;" class="blok"></div>
+        <div onclick="fan10()" style="background-color: powderblue;" class="blok"></div>
+        <div onclick="fan11()" style="background-color: tomato;" class="blok"></div>
+        <div onclick="fan12()" style="background-color: saddlebrown;" class="blok"></div>
+        <div onclick="fan13()" style="background-color: plum;" class="blok"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
