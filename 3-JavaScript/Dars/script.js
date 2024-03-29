@@ -83,9 +83,17 @@ $(document).ready(function(){
     $(".drops-15").click(function(){
         $(".downs-15").slideToggle(1000);
     });
+    $(".downs-16").hide();
+    $(".drops-16").click(function(){
+        $(".downs-16").slideToggle(1000);
+    });
     $(".downV-1").hide();
     $(".dropV-1").click(function(){
         $(".downV-1").slideToggle(1000);
+    });
+    $(".downV-2").hide();
+    $(".dropV-2").click(function(){
+        $(".downV-2").slideToggle(1000);
     });
 // ///////////////////////////// Xususiyat \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\
 });
