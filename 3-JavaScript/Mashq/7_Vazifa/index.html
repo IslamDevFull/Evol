@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vazifa</title>
+    <style>
+        body{
+            background-color: #999;
+        }
+        div{
+            width: 550px;
+            height: 310px;
+            background-color: white;
+            float: left;
+            margin-left: 50px;
+        }
+        img,h2{
+            display: none;
+        }
+        img{
+            width: 550px;
+            animation: img 1s linear forwards;
+        }
+        h1{text-align: center;}
+        h2{
+            position: absolute;
+        }
+        p{
+            clear: both;
+            margin-top: 500px;
+        }
+        button{
+            margin-left: 50px;
+        }
+        br{
+            clear: both;
+        }
+        @keyframes img {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+        @keyframes bmw {
+            from{
+                left: -100px;
+            }
+            to{
+                left: 80px;
+            }
+        }
+        @keyframes porsh {
+            from{
+                top: -10px;
+            }
+            to{
+                top: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Auto Park</h1>
+    <div>
+        <h2 style="animation: bmw 1s linear forwards;" id="bmw1">BMW 330i</h2>
+        <img id="bmw2" src="bmw.png">
+    </div>
+    <div>
+        <h2 style="animation: porsh 1s linear forwards; margin-left: 20px;" id="porsh1">Porsche 911 Turbo</h2>
+        <img style="margin-top: 70px;" id="porsh2" src="porsh.png">
+    </div>
+    <p>
+        <button onclick="myBmw()">BMW</button>
+        <button style="margin-left: 600px;" onclick="myPorsh()">Porsche</button>
+    </p>
+    <script>
+        function myBmw(){
+            document.getElementById("bmw1").style.display = "block";
+            document.getElementById("bmw2").style.display = "block";
+        }
+        function myPorsh(){
+            document.getElementById("porsh1").style.display = "block";
+            document.getElementById("porsh2").style.display = "block";
+        }
+    </script>
+</body>
+</html>

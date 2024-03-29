@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(fon.jpeg);
+            background-blend-mode: multiply;
+            background-size: 100% 155%;
+            background-repeat: no-repeat;
+        }
+        .img{
+            width: 70%;
+            position: absolute; 
+            left: 0;
+            top: 0;
+            display: none;
+            cursor: zoom-out;
+            margin-left: 15%;
+            animation: foto 1s linear forwards;
+        }
+        @keyframes foto {
+            from{
+                transform: scale(0);
+            }   
+            to{
+                transform: scale(1);
+            }         
+        }
+        .card{
+            width: 600px;
+            background-color: white;
+            height: 580px;
+            padding: 10px;
+            text-align: center;
+            margin: auto;
+        }
+        img{
+            width: 100%;
+            cursor: zoom-in;
+        }
+    </style>
+</head>
+<body id="demo">
+    <div class="card">
+        <h1 id="demo">Minorai Kalon</h1>
+        <img src="minor.jpg" onclick="myFunction()">
+        <p>
+            Ibn Battutaning “Sayohatnoma”sida Chingizxon haqida shunday ma'lumot berilgan: “Chingiz Movarounnahrni bosib oldi, Buxoro, Samarqand, Termizni vayron qildi... Ammo keyin Buxoro va Samarqand aholisini afv etib, ularga tegmadi va Iroqqa qaytib ketdi”. Bu kitobda Chingizxon mazkur shaharlarni nima sababdan afv etgani haqida ma'lumot yo‘q. 
+        </p>
+        <img class="img" id="img" src="minor.jpg" onclick="non()">
+    </div>
+    <script>
+
+        function myFunction(){
+            document.getElementById("img").style.display = "block";
+            document.getElementById("demo").style.backgroundColor = "#555";
+        }
+        function non(){
+            document.getElementById("img").style.display = "none";
+            document.getElementById("demo").style.backgroundColor = "white";
+        }
+
+    </script>
+</body>
+</html>
