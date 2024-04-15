@@ -67,15 +67,90 @@ var typingBacBlend = new Typed(".typingBacBlend", {
     backDelay: 2000,
     loop: true
 });
-var typingBorderTop = new Typed(".typingBorderTop", {
+var typingBorderTopS = new Typed(".typingBorderTopS", {
     strings: [' none',' hidden',' dotted',' dashed',' solid',' double',' groove',' ridge',' inset',' outset'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 2000,
     loop: true
 });
-
-
+var typingBorderTopW = new Typed(".typingBorderTopW", {
+    strings: [' medium',' thin',' thick',' <code class="number">5px</code>'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingBorderTopC = new Typed(".typingBorderTopC", {
+    strings: [' red', ' green', ' blue'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingBorderRightS = new Typed(".typingBorderRightS", {
+    strings: [' none',' hidden',' dotted',' dashed',' solid',' double',' groove',' ridge',' inset',' outset'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingBorderRightW = new Typed(".typingBorderRightW", {
+    strings: [' medium',' thin',' thick',' <code class="number">5px</code>'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingBorderRightC = new Typed(".typingBorderRightC", {
+    strings: [' red', ' green', ' blue'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingBorderBottomtS = new Typed(".typingBorderBottomtS", {
+    strings: [' none',' hidden',' dotted',' dashed',' solid',' double',' groove',' ridge',' inset',' outset'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingBorderBottomW = new Typed(".typingBorderBottomW", {
+    strings: [' medium',' thin',' thick',' <code class="number">5px</code>'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingBorderBottomC = new Typed(".typingBorderBottomC", {
+    strings: [' red', ' green', ' blue'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingBorderLeftS = new Typed(".typingBorderLeftS", {
+    strings: [' none',' hidden',' dotted',' dashed',' solid',' double',' groove',' ridge',' inset',' outset'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingBorderLeftW = new Typed(".typingBorderLeftW", {
+    strings: [' medium',' thin',' thick',' <code class="number">5px</code>'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingBorderLeftC = new Typed(".typingBorderLeftC", {
+    strings: [' red', ' green', ' blue'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
 ////////////////////////////////////////////////// Function transform \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 function haver(){
     document.getElementById("haver").classList.toggle("show");
@@ -2957,10 +3032,10 @@ $(document).ready(function(){
     $(".drop-11").click(function(){
         $(".down-11").slideToggle(1000);
     });
-    // $(".down-12").hide();
-    // $(".drop-12").click(function(){
-    //     $(".down-12").slideToggle(1000);
-    // });
+    $(".down-12").hide();
+    $(".drop-12").click(function(){
+        $(".down-12").slideToggle(1000);
+    });
     $(".down-13").hide();
     $(".drop-13").click(function(){
         $(".down-13").slideToggle(1000);
@@ -3013,10 +3088,10 @@ $(document).ready(function(){
     $(".drop-25").click(function(){
         $(".down-25").slideToggle(1000);
     });
-    $(".down-26").hide();
-    $(".drop-26").click(function(){
-        $(".down-26").slideToggle(1000);
-    });
+    // $(".down-26").hide();
+    // $(".drop-26").click(function(){
+    //     $(".down-26").slideToggle(1000);
+    // });
     $(".down-27").hide();
     $(".drop-27").click(function(){
         $(".down-27").slideToggle(1000);
@@ -3318,6 +3393,62 @@ $(document).ready(function(){
     $(".dropVal_11").click(function(){
         $(".downVal_11").slideToggle(1000);
     });
+    $(".downVal_12").hide();
+    $(".dropVal_12").click(function(){
+        $(".downVal_12").slideToggle(1000);
+    });
+    $(".downVal_13").hide();
+    $(".dropVal_13").click(function(){
+        $(".downVal_13").slideToggle(1000);
+    });
+    $(".downVal_14").hide();
+    $(".dropVal_14").click(function(){
+        $(".downVal_14").slideToggle(1000);
+    });
+    $(".downVal_15").hide();
+    $(".dropVal_15").click(function(){
+        $(".downVal_15").slideToggle(1000);
+    });
+    $(".downVal_16").hide();
+    $(".dropVal_16").click(function(){
+        $(".downVal_16").slideToggle(1000);
+    });
+    $(".downVal_17").hide();
+    $(".dropVal_17").click(function(){
+        $(".downVal_17").slideToggle(1000);
+    });
+    $(".downVal_18").hide();
+    $(".dropVal_18").click(function(){
+        $(".downVal_18").slideToggle(1000);
+    });
+    $(".downVal_19").hide();
+    $(".dropVal_19").click(function(){
+        $(".downVal_19").slideToggle(1000);
+    });
+    $(".downVal_20").hide();
+    $(".dropVal_20").click(function(){
+        $(".downVal_20").slideToggle(1000);
+    });
+    $(".downVal_21").hide();
+    $(".dropVal_21").click(function(){
+        $(".downVal_21").slideToggle(1000);
+    });
+    $(".downVal_22").hide();
+    $(".dropVal_22").click(function(){
+        $(".downVal_22").slideToggle(1000);
+    });
+    $(".downVal_23").hide();
+    $(".dropVal_23").click(function(){
+        $(".downVal_23").slideToggle(1000);
+    });
+    $(".downVal_24").hide();
+    $(".dropVal_24").click(function(){
+        $(".downVal_24").slideToggle(1000);
+    });
+    $(".downVal_25").hide();
+    $(".dropVal_25").click(function(){
+        $(".downVal_25").slideToggle(1000);
+    });
 // ///////////////////////////// Misol \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\
     $(".downEx_1").hide();
     $(".dropEx_1").click(function(){
@@ -3362,5 +3493,61 @@ $(document).ready(function(){
     $(".downEx_11").hide();
     $(".dropEx_11").click(function(){
         $(".downEx_11").slideToggle(1000);
+    });
+    $(".downEx_12").hide();
+    $(".dropEx_12").click(function(){
+        $(".downEx_12").slideToggle(1000);
+    });
+    $(".downEx_13").hide();
+    $(".dropEx_13").click(function(){
+        $(".downEx_13").slideToggle(1000);
+    });
+    $(".downEx_14").hide();
+    $(".dropEx_14").click(function(){
+        $(".downEx_14").slideToggle(1000);
+    });
+    $(".downEx_15").hide();
+    $(".dropEx_15").click(function(){
+        $(".downEx_15").slideToggle(1000);
+    });
+    $(".downEx_16").hide();
+    $(".dropEx_16").click(function(){
+        $(".downEx_16").slideToggle(1000);
+    });
+    $(".downEx_17").hide();
+    $(".dropEx_17").click(function(){
+        $(".downEx_17").slideToggle(1000);
+    });
+    $(".downEx_18").hide();
+    $(".dropEx_18").click(function(){
+        $(".downEx_18").slideToggle(1000);
+    });
+    $(".downEx_19").hide();
+    $(".dropEx_19").click(function(){
+        $(".downEx_19").slideToggle(1000);
+    });
+    $(".downEx_20").hide();
+    $(".dropEx_20").click(function(){
+        $(".downEx_20").slideToggle(1000);
+    });
+    $(".downEx_21").hide();
+    $(".dropEx_21").click(function(){
+        $(".downEx_21").slideToggle(1000);
+    });
+    $(".downEx_22").hide();
+    $(".dropEx_22").click(function(){
+        $(".downEx_22").slideToggle(1000);
+    });
+    $(".downEx_23").hide();
+    $(".dropEx_23").click(function(){
+        $(".downEx_23").slideToggle(1000);
+    });
+    $(".downEx_24").hide();
+    $(".dropEx_24").click(function(){
+        $(".downEx_24").slideToggle(1000);
+    });
+    $(".downEx_25").hide();
+    $(".dropEx_25").click(function(){
+        $(".downEx_25").slideToggle(1000);
     });
 });

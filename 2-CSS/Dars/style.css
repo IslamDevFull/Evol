@@ -137,7 +137,8 @@ code{color: rgb(128,128,128);}
 .xl{margin-left: 135px;}
 .p{padding: 5px;}
 hr{clear: both;}
-/* ***************************Anime border************************************** */
+/* ************************Animetion*************************** */
+/* ////////////////////////Backgrund//////////////////////// */
 .aniBac{animation: aniBac 12s 1s infinite; position: relative;}
 .aniBac1{animation: aniBac1 12s 1.3s infinite; position: relative;}
 .aniBac2{animation: aniBac2 12s 1.6s infinite; position: relative;}
@@ -145,51 +146,14 @@ hr{clear: both;}
 .aniBac4{animation: aniBac4 12s 2.2s infinite; position: relative;}
 .aniBac5{animation: aniBac5 12s 2.5s infinite; position: relative;}
 .aniSlesh{animation: aniSlesh 12s 2.2s infinite; position: relative; opacity: 0;}
+/* ////////////////////////Border//////////////////////// */
+.aniBorS{animation: aniBorS 12s 1s infinite; position: relative;}
+.aniBorW{animation: aniBorW 12s 1.3s infinite; position: relative;}
+.aniBorC{animation: aniBorC 12s 1.6s infinite; position: relative;}
+.aniSleshBor{animation: aniSleshBor 12s 2.2s infinite; position: relative; opacity: 0;}
 
-.anime1{
-    animation: anime1 10s 1s infinite;
-    position: relative;
-}
-.anime2{
-    animation: anime2 10s 1.3s infinite;
-    position: relative;
-}
-.anime3{
-    animation: anime3 10s 1.6s infinite;
-    position: relative;
-}
-.animeStyleTop{
-    animation: animeStyleTop 10s 1s infinite;
-    position: relative;
-}
-.animeStyleRight{
-    animation: animeStyleRight 10s 1.3s infinite;
-    position: relative;
-}
-.animeStyleBottom{
-    animation: animeStyleBottom 10s 1.6s infinite;
-    position: relative;
-}
-.animeStyleLeft{
-    animation: animeStyleLeft 10s 1.9s infinite;
-    position: relative;
-}
-.animeStyleTop_2{
-    animation: animeStyleTop_2 10s 1s infinite;
-    position: relative;
-}
-.animeStyleRight_2{
-    animation: animeStyleRight_2 10s 1.3s infinite;
-    position: relative;
-}
-.animeStyleBottom_2{
-    animation: animeStyleBottom_2 10s 1.6s infinite;
-    position: relative;
-}
-.animeStyleLeft_2{
-    animation: animeStyleLeft_2 10s 1.9s infinite;
-    position: relative;
-}
+
+/* ////////////////////////Backgrund//////////////////////// */
 @keyframes aniBac{
     0%{left: 0px;}
     20%{left: 0px;}
@@ -237,159 +201,33 @@ hr{clear: both;}
     40%{opacity: 0;}
     100%{opacity: 1;}
 }
-@keyframes anime1 {
-    0%{
-        left: 0px;
-    }
-    50%{
-        left: 295px;
-    }
-    100%{
-        left: 295px;
-    }
+/* ////////////////////////Border//////////////////////// */
+@keyframes aniBorS{
+    0%{left: 0px;}
+    20%{left: 0px;}
+    40%{left: 360px;}
+    50%{left: 360px;}
+    100%{left: 360px;}
 }
-@keyframes anime2 {
-    0%{
-        left: 0px;
-        bottom: 0px;
-    }
-    50%{
-        left: 350px;
-        bottom: 19px;
-    }
-    100%{
-        left: 350px;
-        bottom: 19px;
-    }
+@keyframes aniBorW{
+    0%{left: 0px; bottom: 0px;}
+    20%{left: 0px; bottom: 0px;}
+    40%{left: 415px;bottom: 19px;}
+    50%{left: 415px;bottom: 19px;}
+    100%{left: 415px;bottom: 19px;}
 }
-@keyframes anime3 {
-    0%{
-        left: 0px;
-        bottom: 0px;
-    }
-    50%{
-        left: 394px;
-        bottom: 37.5px;
-    }
-    100%{
-        left: 394px;
-        bottom: 37.5px;
-    }
+@keyframes aniBorC{
+    0%{left: 0px; bottom: 0px;}
+    20%{left: 0px; bottom: 0px;}
+    40%{left: 450px;bottom: 37.5px;}
+    50%{left: 450px;bottom: 37.5px;}
+    100%{left: 450px;bottom: 37.5px;}
 }
-@keyframes animeStyleTop {
-    0%{
-        left: 0px;
-    }
-    50%{
-        left: 315px;
-    }
-    100%{
-        left: 315px;
-    }
-}
-@keyframes animeStyleRight {
-    0%{
-        left: 0px;
-        bottom: 0px;
-    }
-    50%{
-        left: 357px;
-        bottom: 19px;;
-    }
-    100%{
-        left: 357px;
-        bottom: 19px;
-    }
-}
-@keyframes animeStyleBottom {
-    0%{
-        left: 0px;
-        bottom: 0px;
-    }
-    50%{
-        left: 407px;
-        bottom: 37.8px;
-    }
-    100%{
-        left: 407px;
-        bottom: 37.8px;
-    }
-}
-@keyframes animeStyleLeft {
-    0%{
-        left: 0px;
-        bottom: 0px;
-    }
-    50%{
-        left: 475px;
-        bottom: 57px;
-    }
-    100%{
-        left: 475px;
-        bottom: 57px;
-    }
-}
-@keyframes animeStyleTop_2 {
-    0%{
-        left: 0px;
-    }
-    50%{
-        left: 315px;
-    }
-    100%{
-        left: 315px;
-    }
-}
-@keyframes animeStyleRight_2 {
-    0%{
-        opacity: 1;
-        left: 0px;
-        bottom: 0px;
-    }
-    50%{
-        opacity: 0;
-        left: 308px;
-        bottom: 19px;;
-    }
-    100%{
-        opacity: 0;
-        left: 308px;
-        bottom: 19px;
-    }
-}
-@keyframes animeStyleBottom_2 {
-    0%{
-        opacity: 1;
-        left: 0px;
-        bottom: 0px;
-    }
-    50%{
-        opacity: 0;
-        left: 308px;
-        bottom: 37.8px;
-    }
-    100%{
-        opacity: 0;
-        left: 308px;
-        bottom: 37.8px;
-    }
-}
-@keyframes animeStyleLeft_2 {
-    0%{
-        opacity: 1;
-        left: 0px;
-        bottom: 0px;
-    }
-    50%{
-        opacity: 0;
-        left: 308px;
-        bottom: 57px;
-    }
-    100%{
-        opacity: 0;
-        left: 308px;
-        bottom: 57px;
-    }
+@keyframes aniSleshBor{
+    0%{opacity: 0;}
+    30%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 1;}
 }
 @keyframes m1 {from{opacity: 0;}to{opacity: 1;}}
 /* ***************************Transform shows******************************** */
