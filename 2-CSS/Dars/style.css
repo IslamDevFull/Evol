@@ -38,6 +38,7 @@ iframe{
     box-shadow: 0px 0px 5px 2px rgb(156, 220, 254);
     transition: all 0.5s;
     clear: both;
+    cursor: pointer;
 }
 .calit:hover{background-color: #444;}
 fieldset{
@@ -51,32 +52,100 @@ legend{
     position: relative;
     top: 15px;
 }
-/* tr,td,th{border: 2px solid purple;}
+.pales2{
+    position: relative;
+    top: 15px;
+    width: 35px;
+}
+.val{
+    padding: 0px 0px 15px 10px;
+}
+table{
+    background-color: #292A2B;
+    /* box-shadow: 0px 0px 5px 5px rgb(156, 220, 254); */
+}
+th{
+    /* background-color: #292A2B; */
+    /* border: 5px solid rgb(156, 220, 254); */
+    color: rgb(156, 220, 254);
+    padding: 15px;
+    box-shadow: 0px 0px 10px 1px rgb(156, 220, 254);
+}
 td{
-    background-color: #2B2B2B;
-} */
+    box-shadow: 0px 0px 10px 1px rgb(156, 220, 254);
+    padding: 10px;
+    /* background-color: #292A2B; */
+    /* border: 5px solid rgb(156, 220, 254); */
+    color: white;
+}
+
+/* tr,td,th{border: 2px solid purple;} */
 /**************************** Code ********************************/
-.css{
-    width: 300px; 
-    height: 100px;
-    background-color: rgb(30,30,30);
+.html{
+    width: 20%; 
+    background-color: #2B2B2B;
     float: left;
     margin: 50px 50px 50px 0px;
-    padding: 5px;
+    /* padding: 5px; */
     font-size: 16px;
 }
-.selektor{color: rgb(240, 40, 100)}
-.figura{color: white}
-.fan{color: white}
+.css{
+    width: 20%; 
+    background-color: #2B2B2B;
+    float: left;
+    margin: 20px 50px 50px 0px;
+    font-size: 16px;
+}
+
+.fl-1{
+    width: 10%;
+    height: 200px;
+    float: left;
+    padding: 5px;
+    text-align: right;
+    background-color: #313335;
+}
+.fl-2{
+    padding: 5px;
+    width: 90%;
+    height: 200px;
+    float: left;
+    background-color: #2B2B2B;
+
+}
+/* .ekran{
+    margin-top: 50px;
+    float: right;
+    width: 50%;
+    height: 200px;
+    border: 2px solid;
+} */
+.lineNum{color: #606366}
+.center{text-align: center;}
+.white{color: white}
+.selektr{color: rgb(218, 186, 125);}
+.figura{color: #A9B7C6}
+.fan{color: rgb(156, 220, 254)}
 .nuqta{color: white}
 .string{color: rgb(255,120,180);}
-.number{color: rgb(240,185,100);}
+.string2{color: rgb(206,145,120);}
+.number{color: rgb(181, 206, 168);}
 .tag{color: rgb(86, 156, 214);}
+code{color: rgb(128,128,128);}
 .size{font-size: 16px; font-weight: bold;}
 .l{margin-left: 20px;}
 .xl{margin-left: 135px;}
+.p{padding: 5px;}
 hr{clear: both;}
 /* ***************************Anime border************************************** */
+.aniBac{animation: aniBac 12s 1s infinite; position: relative;}
+.aniBac1{animation: aniBac1 12s 1.3s infinite; position: relative;}
+.aniBac2{animation: aniBac2 12s 1.6s infinite; position: relative;}
+.aniBac3{animation: aniBac3 12s 1.9s infinite; position: relative;}
+.aniBac4{animation: aniBac4 12s 2.2s infinite; position: relative;}
+.aniBac5{animation: aniBac5 12s 2.5s infinite; position: relative;}
+.aniSlesh{animation: aniSlesh 12s 2.2s infinite; position: relative; opacity: 0;}
+
 .anime1{
     animation: anime1 10s 1s infinite;
     position: relative;
@@ -120,6 +189,53 @@ hr{clear: both;}
 .animeStyleLeft_2{
     animation: animeStyleLeft_2 10s 1.9s infinite;
     position: relative;
+}
+@keyframes aniBac{
+    0%{left: 0px;}
+    20%{left: 0px;}
+    40%{left: 410px;}
+    50%{left: 410px;}
+    100%{left: 410px;}
+}
+@keyframes aniBac1{
+    0%{left: 0px; bottom: 0px;}
+    20%{left: 0px; bottom: 0px;}
+    40%{left: 445px;bottom: 19px;}
+    50%{left: 445px;bottom: 19px;}
+    100%{left: 445px;bottom: 19px;}
+}
+@keyframes aniBac2{
+    0%{left: 0px; bottom: 0px;}
+    20%{left: 0px; bottom: 0px;}
+    40%{left: 565px;bottom: 37.5px;}
+    50%{left: 565px;bottom: 37.5px;}
+    100%{left: 565px;bottom: 37.5px;}
+}
+@keyframes aniBac3{
+    0%{left: 0px; bottom: 0px;}
+    20%{left: 0px; bottom: 0px;}
+    40%{left: 615px;bottom: 56px;}
+    50%{left: 615px;bottom: 56px;}
+    100%{left: 615px;bottom: 56px;}
+}
+@keyframes aniBac4{
+    0%{left: 0px; bottom: 0px;}
+    20%{left: 0px; bottom: 0px;}
+    40%{left: 685px;bottom: 76px;}
+    50%{left: 685px;bottom: 76px;}
+    100%{left: 685px;bottom: 76px;}
+}
+@keyframes aniBac5{
+    0%{left: 0px; bottom: 0px;}
+    20%{left: 0px; bottom: 0px;}
+    40%{left: 835px;bottom: 94px;}
+    50%{left: 835px;bottom: 94px;}
+    100%{left: 835px;bottom: 94px;}
+}
+@keyframes aniSlesh{
+    0%{opacity: 0;}
+    40%{opacity: 0;}
+    100%{opacity: 1;}
 }
 @keyframes anime1 {
     0%{
@@ -291,3 +407,23 @@ hr{clear: both;}
 .show11{transform: skewX(10deg);}
 .show12{transform: skewY(20deg);}
 .sho{transition: all 1s; border: 2px solid red; width: 100px; height: 100px; background-color: yellow;}
+
+
+
+/* *********************test*************************** */
+
+/* .animeColor{
+    animation: animeColor 10s 2.5s infinite;
+} */
+/* @keyframes animeColor{
+    0%{color: black;}
+    10%{color: red;}
+    20%{color: red;}
+    30%{color: red;}
+    40%{color: green;}
+    50%{color: green;}
+    60%{color: green;}
+    70%{color: blue;}
+    80%{color: blue;}
+    100%{color: blue;}
+} */

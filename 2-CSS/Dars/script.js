@@ -1,15 +1,78 @@
 ////////////////////////////////////////////////////Test uchun joy\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-var typed = new Typed(".typing", {
-    strings: ["margin: <code class='number'>50px</code>", "margin: 150px", "margin: 250px",],
+var typingColor = new Typed(".typingColor", {
+    strings: [' red', ' green', ' blue'],
     typeSpeed: 100,
-    backSpeed: 60,
-    backDelay: 5000,
+    backSpeed: 100,
+    backDelay: 2000,
     loop: true
-    // fadeOut: true,
-    // startDelay: 5000,
+    // startDelay: 4000,
+    // fadeOut: true
     // smartBackspace: true,
     // cursorChar: '_',
+});
+var typingOpacity = new Typed(".typingOpacity", {
+    strings: ['1','0.5','0.3','0.1'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingBacColor = new Typed(".typingBacColor", {
+    strings: [' red', ' green', ' blue'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingBacImage = new Typed(".typingBacImage", {
+    strings: [' url(<i>porsh.png</i>)', ' url(<i>bmw.png</i>)', ' url(<i>lambo.png</i>)'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingBacAttachment = new Typed(".typingBacAttachment", {
+    strings: [' scroll', ' fixed'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingBacRepeat = new Typed(".typingBacRepeat", {
+    strings: [' repeat', ' repeat-x',' repeat-y',' no-repeat'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingBacSize = new Typed(".typingBacSize", {
+    strings: [' auto', ' <code class="number">300px</code>',' <code class="number">100%</code>',' cover',' contain'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingBacPosition = new Typed(".typingBacPosition", {
+    strings: [' left center', ' <code class="number">300px 100px</code>',' <code class="number">50% 10%</code>',' right center',' bottom right'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingBacBlend = new Typed(".typingBacBlend", {
+    strings: [' normal',' multiply',' screen',' overlay',' darken',' lighten',' color-dodge',' color-burn',' hard-light',' soft-light',' difference',' exclusion',' hue',' saturation',' color',' luminosity' ],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingBorderTop = new Typed(".typingBorderTop", {
+    strings: [' none',' hidden',' dotted',' dashed',' solid',' double',' groove',' ridge',' inset',' outset'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
 });
 
 
@@ -2894,10 +2957,10 @@ $(document).ready(function(){
     $(".drop-11").click(function(){
         $(".down-11").slideToggle(1000);
     });
-    $(".down-12").hide();
-    $(".drop-12").click(function(){
-        $(".down-12").slideToggle(1000);
-    });
+    // $(".down-12").hide();
+    // $(".drop-12").click(function(){
+    //     $(".down-12").slideToggle(1000);
+    // });
     $(".down-13").hide();
     $(".drop-13").click(function(){
         $(".down-13").slideToggle(1000);
@@ -3211,8 +3274,93 @@ $(document).ready(function(){
         $(".down-90").slideToggle(1000);
     });
 // ///////////////////////////// Qiymat \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\
-    $(".downSvet_1").hide();
-    $(".dropSvet_1").click(function(){
-        $(".downSvet_1").slideToggle(1000);
+    $(".downVal_1").hide();
+    $(".dropVal_1").click(function(){
+        $(".downVal_1").slideToggle(1000);
+    });
+    $(".downVal_2").hide();
+    $(".dropVal_2").click(function(){
+        $(".downVal_2").slideToggle(1000);
+    });
+    $(".downVal_3").hide();
+    $(".dropVal_3").click(function(){
+        $(".downVal_3").slideToggle(1000);
+    });
+    $(".downVal_4").hide();
+    $(".dropVal_4").click(function(){
+        $(".downVal_4").slideToggle(1000);
+    });
+    $(".downVal_5").hide();
+    $(".dropVal_5").click(function(){
+        $(".downVal_5").slideToggle(1000);
+    });
+    $(".downVal_6").hide();
+    $(".dropVal_6").click(function(){
+        $(".downVal_6").slideToggle(1000);
+    });
+    $(".downVal_7").hide();
+    $(".dropVal_7").click(function(){
+        $(".downVal_7").slideToggle(1000);
+    });
+    $(".downVal_8").hide();
+    $(".dropVal_8").click(function(){
+        $(".downVal_8").slideToggle(1000);
+    });
+    $(".downVal_9").hide();
+    $(".dropVal_9").click(function(){
+        $(".downVal_9").slideToggle(1000);
+    });
+    $(".downVal_10").hide();
+    $(".dropVal_10").click(function(){
+        $(".downVal_10").slideToggle(1000);
+    });
+    $(".downVal_11").hide();
+    $(".dropVal_11").click(function(){
+        $(".downVal_11").slideToggle(1000);
+    });
+// ///////////////////////////// Misol \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\
+    $(".downEx_1").hide();
+    $(".dropEx_1").click(function(){
+        $(".downEx_1").slideToggle(1000);
+    });
+    $(".downEx_2").hide();
+    $(".dropEx_2").click(function(){
+        $(".downEx_2").slideToggle(1000);
+    });
+    $(".downEx_3").hide();
+    $(".dropEx_3").click(function(){
+        $(".downEx_3").slideToggle(1000);
+    });
+    $(".downEx_4").hide();
+    $(".dropEx_4").click(function(){
+        $(".downEx_4").slideToggle(1000);
+    });
+    $(".downEx_5").hide();
+    $(".dropEx_5").click(function(){
+        $(".downEx_5").slideToggle(1000);
+    });
+    $(".downEx_6").hide();
+    $(".dropEx_6").click(function(){
+        $(".downEx_6").slideToggle(1000);
+    });
+    $(".downEx_7").hide();
+    $(".dropEx_7").click(function(){
+        $(".downEx_7").slideToggle(1000);
+    });
+    $(".downEx_8").hide();
+    $(".dropEx_8").click(function(){
+        $(".downEx_8").slideToggle(1000);
+    });
+    $(".downEx_9").hide();
+    $(".dropEx_9").click(function(){
+        $(".downEx_9").slideToggle(1000);
+    });
+    $(".downEx_10").hide();
+    $(".dropEx_10").click(function(){
+        $(".downEx_10").slideToggle(1000);
+    });
+    $(".downEx_11").hide();
+    $(".dropEx_11").click(function(){
+        $(".downEx_11").slideToggle(1000);
     });
 });

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vazifa</title>
+
+    <script src="../../../js/sweetalert.js"></script>
+</head>
+<body>
+    <input type="text" id="demo">
+    <button onclick="fan()">OK</button>
+    <script>
+        function fan(){
+           let name = document.getElementById("demo").value;
+           if(name == ""){
+            swal({
+                title: "To'ldiring",
+                icon: "error",
+                buttons:{
+                    cancel:"Net",
+                    confirm: 'Da'
+                },
+            })
+        }
+        else{
+               swal({
+                icon:"success",
+                   title: "Raxmat",
+                   buttons:{
+                       cancel:"Net",
+                       confirm: 'Da'
+                   },
+               })
+
+           }
+        }
+    </script>
+</body>
+</html>
