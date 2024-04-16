@@ -3100,14 +3100,14 @@ $(document).ready(function(){
     $(".drop-28").click(function(){
         $(".down-28").slideToggle(1000);
     });
-    // $(".down-29").hide();
-    // $(".drop-29").click(function(){
-    //     $(".down-29").slideToggle(1000);
-    // });
-    $(".down-30").hide();
-    $(".drop-30").click(function(){
-        $(".down-30").slideToggle(1000);
+    $(".down-29").hide();
+    $(".drop-29").click(function(){
+        $(".down-29").slideToggle(1000);
     });
+    // $(".down-30").hide();
+    // $(".drop-30").click(function(){
+    //     $(".down-30").slideToggle(1000);
+    // });
     $(".down-31").hide();
     $(".drop-31").click(function(){
         $(".down-31").slideToggle(1000);
@@ -3461,6 +3461,10 @@ $(document).ready(function(){
     $(".dropVal_28").click(function(){
         $(".downVal_28").slideToggle(1000);
     });
+    $(".downVal_29").hide();
+    $(".dropVal_29").click(function(){
+        $(".downVal_29").slideToggle(1000);
+    });
 // ///////////////////////////// Misol \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\
     $(".downEx_1").hide();
     $(".dropEx_1").click(function(){
@@ -3573,5 +3577,9 @@ $(document).ready(function(){
     $(".downEx_28").hide();
     $(".dropEx_28").click(function(){
         $(".downEx_28").slideToggle(1000);
+    });
+    $(".downEx_29").hide();
+    $(".dropEx_29").click(function(){
+        $(".downEx_29").slideToggle(1000);
     });
 });
