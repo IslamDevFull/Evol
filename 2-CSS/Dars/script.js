@@ -3088,10 +3088,10 @@ $(document).ready(function(){
     $(".drop-25").click(function(){
         $(".down-25").slideToggle(1000);
     });
-    // $(".down-26").hide();
-    // $(".drop-26").click(function(){
-    //     $(".down-26").slideToggle(1000);
-    // });
+    $(".down-26").hide();
+    $(".drop-26").click(function(){
+        $(".down-26").slideToggle(1000);
+    });
     $(".down-27").hide();
     $(".drop-27").click(function(){
         $(".down-27").slideToggle(1000);
@@ -3100,10 +3100,10 @@ $(document).ready(function(){
     $(".drop-28").click(function(){
         $(".down-28").slideToggle(1000);
     });
-    $(".down-29").hide();
-    $(".drop-29").click(function(){
-        $(".down-29").slideToggle(1000);
-    });
+    // $(".down-29").hide();
+    // $(".drop-29").click(function(){
+    //     $(".down-29").slideToggle(1000);
+    // });
     $(".down-30").hide();
     $(".drop-30").click(function(){
         $(".down-30").slideToggle(1000);
@@ -3449,6 +3449,18 @@ $(document).ready(function(){
     $(".dropVal_25").click(function(){
         $(".downVal_25").slideToggle(1000);
     });
+    $(".downVal_26").hide();
+    $(".dropVal_26").click(function(){
+        $(".downVal_26").slideToggle(1000);
+    });
+    $(".downVal_27").hide();
+    $(".dropVal_27").click(function(){
+        $(".downVal_27").slideToggle(1000);
+    });
+    $(".downVal_28").hide();
+    $(".dropVal_28").click(function(){
+        $(".downVal_28").slideToggle(1000);
+    });
 // ///////////////////////////// Misol \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\
     $(".downEx_1").hide();
     $(".dropEx_1").click(function(){
@@ -3549,5 +3561,17 @@ $(document).ready(function(){
     $(".downEx_25").hide();
     $(".dropEx_25").click(function(){
         $(".downEx_25").slideToggle(1000);
+    });
+    $(".downEx_26").hide();
+    $(".dropEx_26").click(function(){
+        $(".downEx_26").slideToggle(1000);
+    });
+    $(".downEx_27").hide();
+    $(".dropEx_27").click(function(){
+        $(".downEx_27").slideToggle(1000);
+    });
+    $(".downEx_28").hide();
+    $(".dropEx_28").click(function(){
+        $(".downEx_28").slideToggle(1000);
     });
 });

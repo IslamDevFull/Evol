@@ -93,7 +93,7 @@ td{
     width: 20%; 
     background-color: #2B2B2B;
     float: left;
-    margin: 20px 50px 50px 0px;
+    margin: 20px 50px 30px 0px;
     font-size: 16px;
 }
 
@@ -152,6 +152,21 @@ hr{clear: both;}
 .aniBorC{animation: aniBorC 12s 1.6s infinite; position: relative;}
 .aniSleshBor{animation: aniSleshBor 12s 2.2s infinite; position: relative; opacity: 0;}
 
+/* ////////////////////////Border-style//////////////////////// */
+.aniBorTopS{animation: aniBorTopS 12s 1s infinite; position: relative;}
+.aniBorRightS{animation: aniBorRightS 12s 1.3s infinite; position: relative;}
+.aniBorBottomS{animation: aniBorBottomS 12s 1.6s infinite; position: relative;}
+.aniBorLeftS{animation: aniBorLeftS 12s 1.9s infinite; position: relative;}
+
+.aniBorTopOpS{animation: aniBorTopOpS 12s 1s infinite; position: relative;}
+.aniBorRightOpS{animation: aniBorRightOpS 12s 1.2s infinite; position: relative;}
+.aniBorBottomOpS{animation: aniBorBottomOpS 12s 1.4s infinite; position: relative;}
+.aniBorLeftOpS{animation: aniBorLeftOpS 12s 1.6s infinite; position: relative;}
+/* ////////////////////////Border-width//////////////////////// */
+.aniBorTopW{animation: aniBorTopW 12s 1s infinite; position: relative;}
+.aniBorRightW{animation: aniBorRightW 12s 1.3s infinite; position: relative;}
+.aniBorBottomW{animation: aniBorBottomW 12s 1.6s infinite; position: relative;}
+.aniBorLeftW{animation: aniBorLeftW 12s 1.9s infinite; position: relative;}
 
 /* ////////////////////////Backgrund//////////////////////// */
 @keyframes aniBac{
@@ -229,6 +244,94 @@ hr{clear: both;}
     50%{opacity: 1;}
     100%{opacity: 1;}
 }
+/* ////////////////////////Border-style//////////////////////// */
+@keyframes aniBorTopS{
+    0%{left: 0px;}
+    20%{left: 0px;}
+    40%{left: 380px;}
+    50%{left: 380px;}
+    100%{left: 380px;}
+}
+@keyframes aniBorRightS{
+    0%{left: 0px; bottom: 0px;}
+    20%{left: 0px; bottom: 0px;}
+    40%{left: 425px;bottom: 19px;}
+    50%{left: 425px;bottom: 19px;}
+    100%{left: 425px;bottom: 19px;}
+}
+@keyframes aniBorBottomS{
+    0%{left: 0px; bottom: 0px;}
+    20%{left: 0px; bottom: 0px;}
+    40%{left: 480px;bottom: 37.5px;}
+    50%{left: 480px;bottom: 37.5px;}
+    100%{left: 480px;bottom: 37.5px;}
+}
+@keyframes aniBorLeftS{
+    0%{left: 0px; bottom: 0px;}
+    20%{left: 0px; bottom: 0px;}
+    40%{left: 560px;bottom: 56px;}
+    50%{left: 560px;bottom: 56px;}
+    100%{left: 560px;bottom: 56px;}
+}
+/*********************************/
+@keyframes aniBorTopOpS{
+    0%{left: 0px;}
+    20%{left: 0px;}
+    40%{left: 380px;}
+    50%{left: 380px;}
+    100%{left: 380px;}
+}
+@keyframes aniBorRightOpS{
+    0%{left: 0px; bottom: 0px; opacity: 1;}
+    20%{left: 0px; bottom: 0px; opacity: 1;}
+    40%{left: 380px;bottom: 19px; opacity: 0;}
+    50%{left: 380px;bottom: 19px; opacity: 0;}
+    100%{left: 380px;bottom: 19px; opacity: 0;}
+}
+@keyframes aniBorBottomOpS{
+    0%{left: 0px; bottom: 0px; opacity: 1;}
+    20%{left: 0px; bottom: 0px; opacity: 1;}
+    40%{left: 380px;bottom: 37.5px; opacity: 0;}
+    50%{left: 380px;bottom: 37.5px; opacity: 0;}
+    100%{left: 380px;bottom: 37.5px; opacity: 0;}
+}
+@keyframes aniBorLeftOpS{
+    0%{left: 0px; bottom: 0px; opacity: 1;}
+    20%{left: 0px; bottom: 0px; opacity: 1;}
+    40%{left: 380px;bottom: 56px; opacity: 0;}
+    50%{left: 380px;bottom: 56px; opacity: 0;}
+    100%{left: 380px;bottom: 56px; opacity: 0;}
+}
+/* ////////////////////////Border-width//////////////////////// */
+@keyframes aniBorTopW{
+    0%{left: 0px;}
+    20%{left: 0px;}
+    40%{left: 380px;}
+    50%{left: 380px;}
+    100%{left: 380px;}
+}
+@keyframes aniBorRightW{
+    0%{left: 0px; bottom: 0px;}
+    20%{left: 0px; bottom: 0px;}
+    40%{left: 400px;bottom: 19px;}
+    50%{left: 400px;bottom: 19px;}
+    100%{left: 400px;bottom: 19px;}
+}
+@keyframes aniBorBottomW{
+    0%{left: 0px; bottom: 0px;}
+    20%{left: 0px; bottom: 0px;}
+    40%{left: 435px;bottom: 37.5px;}
+    50%{left: 435px;bottom: 37.5px;}
+    100%{left: 435px;bottom: 37.5px;}
+}
+@keyframes aniBorLeftW{
+    0%{left: 0px; bottom: 0px;}
+    20%{left: 0px; bottom: 0px;}
+    40%{left: 500px;bottom: 55.5px;}
+    50%{left: 500px;bottom: 55.5px;}
+    100%{left: 500px;bottom: 55.5px;}
+}
+
 @keyframes m1 {from{opacity: 0;}to{opacity: 1;}}
 /* ***************************Transform shows******************************** */
 .show{transform: translate(50px,50px);}
