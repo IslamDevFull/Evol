@@ -90,7 +90,7 @@ td{
     font-size: 16px;
 }
 .css{
-    width: 20%; 
+    width: 350px; 
     background-color: #2B2B2B;
     float: left;
     margin: 20px 50px 30px 0px;
@@ -158,10 +158,10 @@ hr{clear: both;}
 .aniBorBottomS{animation: aniBorBottomS 12s 1.6s infinite; position: relative;}
 .aniBorLeftS{animation: aniBorLeftS 12s 1.9s infinite; position: relative;}
 
-.aniBorTopOpS{animation: aniBorTopOpS 12s 1s infinite; position: relative;}
-.aniBorRightOpS{animation: aniBorRightOpS 12s 1.2s infinite; position: relative;}
-.aniBorBottomOpS{animation: aniBorBottomOpS 12s 1.4s infinite; position: relative;}
-.aniBorLeftOpS{animation: aniBorLeftOpS 12s 1.6s infinite; position: relative;}
+.aniBorTopOp{animation: aniBorTopOp 12s 1s infinite; position: relative;}
+.aniBorRightOp{animation: aniBorRightOp 12s 1.2s infinite; position: relative;}
+.aniBorBottomOp{animation: aniBorBottomOp 12s 1.4s infinite; position: relative;}
+.aniBorLeftOp{animation: aniBorLeftOp 12s 1.6s infinite; position: relative;}
 /* ////////////////////////Border-width//////////////////////// */
 .aniBorTopW{animation: aniBorTopW 12s 1s infinite; position: relative;}
 .aniBorRightW{animation: aniBorRightW 12s 1.3s infinite; position: relative;}
@@ -172,44 +172,44 @@ hr{clear: both;}
 @keyframes aniBac{
     0%{left: 0px;}
     20%{left: 0px;}
-    40%{left: 410px;}
-    50%{left: 410px;}
-    100%{left: 410px;}
+    40%{left: 400px;}
+    50%{left: 400px;}
+    100%{left: 400px;}
 }
 @keyframes aniBac1{
     0%{left: 0px; bottom: 0px;}
     20%{left: 0px; bottom: 0px;}
-    40%{left: 445px;bottom: 19px;}
-    50%{left: 445px;bottom: 19px;}
-    100%{left: 445px;bottom: 19px;}
+    40%{left: 435px;bottom: 19px;}
+    50%{left: 435px;bottom: 19px;}
+    100%{left: 435px;bottom: 19px;}
 }
 @keyframes aniBac2{
     0%{left: 0px; bottom: 0px;}
     20%{left: 0px; bottom: 0px;}
-    40%{left: 565px;bottom: 37.5px;}
-    50%{left: 565px;bottom: 37.5px;}
-    100%{left: 565px;bottom: 37.5px;}
+    40%{left: 555px;bottom: 37.5px;}
+    50%{left: 555px;bottom: 37.5px;}
+    100%{left: 555px;bottom: 37.5px;}
 }
 @keyframes aniBac3{
     0%{left: 0px; bottom: 0px;}
     20%{left: 0px; bottom: 0px;}
-    40%{left: 615px;bottom: 56px;}
-    50%{left: 615px;bottom: 56px;}
-    100%{left: 615px;bottom: 56px;}
+    40%{left: 605px;bottom: 56px;}
+    50%{left: 605px;bottom: 56px;}
+    100%{left: 605px;bottom: 56px;}
 }
 @keyframes aniBac4{
     0%{left: 0px; bottom: 0px;}
     20%{left: 0px; bottom: 0px;}
-    40%{left: 685px;bottom: 76px;}
-    50%{left: 685px;bottom: 76px;}
-    100%{left: 685px;bottom: 76px;}
+    40%{left: 675px;bottom: 76px;}
+    50%{left: 675px;bottom: 76px;}
+    100%{left: 675px;bottom: 76px;}
 }
 @keyframes aniBac5{
     0%{left: 0px; bottom: 0px;}
     20%{left: 0px; bottom: 0px;}
-    40%{left: 835px;bottom: 94px;}
-    50%{left: 835px;bottom: 94px;}
-    100%{left: 835px;bottom: 94px;}
+    40%{left: 825px;bottom: 94px;}
+    50%{left: 825px;bottom: 94px;}
+    100%{left: 825px;bottom: 94px;}
 }
 @keyframes aniSlesh{
     0%{opacity: 0;}
@@ -220,23 +220,23 @@ hr{clear: both;}
 @keyframes aniBorS{
     0%{left: 0px;}
     20%{left: 0px;}
-    40%{left: 360px;}
-    50%{left: 360px;}
-    100%{left: 360px;}
+    40%{left: 350px;}
+    50%{left: 350px;}
+    100%{left: 350px;}
 }
 @keyframes aniBorW{
     0%{left: 0px; bottom: 0px;}
     20%{left: 0px; bottom: 0px;}
-    40%{left: 415px;bottom: 19px;}
-    50%{left: 415px;bottom: 19px;}
-    100%{left: 415px;bottom: 19px;}
+    40%{left: 405px;bottom: 19px;}
+    50%{left: 405px;bottom: 19px;}
+    100%{left: 405px;bottom: 19px;}
 }
 @keyframes aniBorC{
     0%{left: 0px; bottom: 0px;}
     20%{left: 0px; bottom: 0px;}
-    40%{left: 450px;bottom: 37.5px;}
-    50%{left: 450px;bottom: 37.5px;}
-    100%{left: 450px;bottom: 37.5px;}
+    40%{left: 440px;bottom: 37.5px;}
+    50%{left: 440px;bottom: 37.5px;}
+    100%{left: 440px;bottom: 37.5px;}
 }
 @keyframes aniSleshBor{
     0%{opacity: 0;}
@@ -248,91 +248,89 @@ hr{clear: both;}
 @keyframes aniBorTopS{
     0%{left: 0px;}
     20%{left: 0px;}
-    40%{left: 380px;}
-    50%{left: 380px;}
-    100%{left: 380px;}
+    40%{left: 365px;}
+    50%{left: 365px;}
+    100%{left: 365px;}
 }
 @keyframes aniBorRightS{
     0%{left: 0px; bottom: 0px;}
     20%{left: 0px; bottom: 0px;}
-    40%{left: 425px;bottom: 19px;}
-    50%{left: 425px;bottom: 19px;}
-    100%{left: 425px;bottom: 19px;}
+    40%{left: 410px;bottom: 19px;}
+    50%{left: 410px;bottom: 19px;}
+    100%{left: 410px;bottom: 19px;}
 }
 @keyframes aniBorBottomS{
     0%{left: 0px; bottom: 0px;}
     20%{left: 0px; bottom: 0px;}
-    40%{left: 480px;bottom: 37.5px;}
-    50%{left: 480px;bottom: 37.5px;}
-    100%{left: 480px;bottom: 37.5px;}
+    40%{left: 465px;bottom: 37.5px;}
+    50%{left: 465px;bottom: 37.5px;}
+    100%{left: 465px;bottom: 37.5px;}
 }
 @keyframes aniBorLeftS{
     0%{left: 0px; bottom: 0px;}
     20%{left: 0px; bottom: 0px;}
-    40%{left: 560px;bottom: 56px;}
-    50%{left: 560px;bottom: 56px;}
-    100%{left: 560px;bottom: 56px;}
+    40%{left: 545px;bottom: 56px;}
+    50%{left: 545px;bottom: 56px;}
+    100%{left: 545px;bottom: 56px;}
 }
 /*********************************/
-@keyframes aniBorTopOpS{
+@keyframes aniBorTopOp{
     0%{left: 0px;}
     20%{left: 0px;}
-    40%{left: 380px;}
-    50%{left: 380px;}
-    100%{left: 380px;}
+    40%{left: 365px;}
+    50%{left: 365px;}
+    100%{left: 365px;}
 }
-@keyframes aniBorRightOpS{
+@keyframes aniBorRightOp{
     0%{left: 0px; bottom: 0px; opacity: 1;}
     20%{left: 0px; bottom: 0px; opacity: 1;}
-    40%{left: 380px;bottom: 19px; opacity: 0;}
-    50%{left: 380px;bottom: 19px; opacity: 0;}
-    100%{left: 380px;bottom: 19px; opacity: 0;}
+    40%{left: 365px;bottom: 19px; opacity: 0;}
+    50%{left: 365px;bottom: 19px; opacity: 0;}
+    100%{left: 365px;bottom: 19px; opacity: 0;}
 }
-@keyframes aniBorBottomOpS{
+@keyframes aniBorBottomOp{
     0%{left: 0px; bottom: 0px; opacity: 1;}
     20%{left: 0px; bottom: 0px; opacity: 1;}
-    40%{left: 380px;bottom: 37.5px; opacity: 0;}
-    50%{left: 380px;bottom: 37.5px; opacity: 0;}
-    100%{left: 380px;bottom: 37.5px; opacity: 0;}
+    40%{left: 365px;bottom: 37.5px; opacity: 0;}
+    50%{left: 365px;bottom: 37.5px; opacity: 0;}
+    100%{left: 365px;bottom: 37.5px; opacity: 0;}
 }
-@keyframes aniBorLeftOpS{
+@keyframes aniBorLeftOp{
     0%{left: 0px; bottom: 0px; opacity: 1;}
     20%{left: 0px; bottom: 0px; opacity: 1;}
-    40%{left: 380px;bottom: 56px; opacity: 0;}
-    50%{left: 380px;bottom: 56px; opacity: 0;}
-    100%{left: 380px;bottom: 56px; opacity: 0;}
+    40%{left: 365px;bottom: 56px; opacity: 0;}
+    50%{left: 365px;bottom: 56px; opacity: 0;}
+    100%{left: 365px;bottom: 56px; opacity: 0;}
 }
 /* ////////////////////////Border-width//////////////////////// */
 @keyframes aniBorTopW{
     0%{left: 0px;}
     20%{left: 0px;}
-    40%{left: 380px;}
-    50%{left: 380px;}
-    100%{left: 380px;}
+    40%{left: 362px;}
+    50%{left: 362px;}
+    100%{left: 362px;}
 }
 @keyframes aniBorRightW{
     0%{left: 0px; bottom: 0px;}
     20%{left: 0px; bottom: 0px;}
-    40%{left: 400px;bottom: 19px;}
-    50%{left: 400px;bottom: 19px;}
-    100%{left: 400px;bottom: 19px;}
+    40%{left: 378px;bottom: 18.8px;}
+    50%{left: 378px;bottom: 18.8px;}
+    100%{left: 378px;bottom: 18.8px;}
 }
 @keyframes aniBorBottomW{
     0%{left: 0px; bottom: 0px;}
     20%{left: 0px; bottom: 0px;}
-    40%{left: 435px;bottom: 37.5px;}
-    50%{left: 435px;bottom: 37.5px;}
-    100%{left: 435px;bottom: 37.5px;}
+    40%{left: 413px;bottom: 37.8px;}
+    50%{left: 413px;bottom: 37.8px;}
+    100%{left: 413px;bottom: 37.8px;}
 }
 @keyframes aniBorLeftW{
     0%{left: 0px; bottom: 0px;}
     20%{left: 0px; bottom: 0px;}
-    40%{left: 500px;bottom: 55.5px;}
-    50%{left: 500px;bottom: 55.5px;}
-    100%{left: 500px;bottom: 55.5px;}
+    40%{left: 476px;bottom: 55.8px;}
+    50%{left: 476px;bottom: 55.8px;}
+    100%{left: 476px;bottom: 55.8px;}
 }
-
-@keyframes m1 {from{opacity: 0;}to{opacity: 1;}}
 /* ***************************Transform shows******************************** */
 .show{transform: translate(50px,50px);}
 .show1{transform: translateX(50px);}
