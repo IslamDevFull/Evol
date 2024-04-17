@@ -2524,6 +2524,253 @@ background:
             <div class="downVal_30">
                 <table border="2">
                     <tr>
+                        <th>Значение</th><th>Описание</th>
+                    </tr>
+                    <tr>
+                        <td class="fan">border-style</td><td>Задает стиль границы. <b>По умолчанию - "<code class="string2">none</code>".</b></td>
+                    </tr>
+                    <tr>
+                        <td class="fan">border-width</td><td>Задает ширину границы. <b>По умолчанию - "<code class="string2">medium</code>".</b></td>
+                    </tr>
+                    <tr>
+                        <td class="fan">border-color</td><td>Задает цвет границы. <b>По умолчанию - цвет элемента.</b></td>
+                    </tr>
+                    <tr>
+                        <td class="string2">initial</td><td>Устанавливает свойство в значение по умолчанию.</td>
+                    </tr>
+                    <tr>
+                        <td class="string2">inherit</td><td>Указывает, что значение наследуется от родительского элемента.</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="calit val dropEx_30">Примеры <img class="pales2" src="img/1f448.png" alt="Error"></div>
+            <div class="downEx_30">
+                <div class="css" style="margin-bottom: 5px;">
+                    <div class="fl-1">
+                        <code class="lineNum">1</code><br>
+                        <code class="lineNum">2</code><br>
+                        <code class="lineNum">3</code><br>
+                        <code class="lineNum">4</code><br>
+                        <code class="lineNum">5</code><br>
+                    </div>
+                    <div class="fl-2">
+                        <code class="selektr">h1</code><code class="figura">{</code><br>
+                        <code class="fan l">border-style</code><code class="nuqta">:</code>
+                        <code class="string2 aniBorS">solid</code><code class="nuqta">;</code><br>
+                        <code class="fan l">border-width</code><code class="nuqta">:</code>
+                        <code class="number aniBorW">10px</code><code class="nuqta">;</code><br>
+                        <code class="fan l">border-color</code><code class="nuqta">:</code>
+                        <code class="string aniBorC">green</code><code class="nuqta">;</code><br>
+                        <code class="figura">}</code>
+                    </div>
+                </div>
+                <div class="css" style="width: 400px; margin-bottom: 5px;">
+                    <div class="fl-1" style="width: 8%;">
+                        <code class="lineNum">1</code><br>
+                        <code class="lineNum">2</code><br>
+                        <code class="lineNum">3</code><br>
+                    </div>
+                    <div class="fl-2" style="width: 92%;">
+                        <code class="selektr">h1</code><code class="figura">{</code><br>
+                        <code class="fan l">border</code><code class="nuqta">:</code><code class="nuqta aniSleshBor" style="margin-left: 145px;">;</code><br>
+                        <code class="figura">}</code>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="editorHTML">
+                <h1>HTML</h1>
+                <textarea id="editHtml_30">
+<br>
+<h1>Заголовок 1</h1></textarea>
+            </div>
+            <div class="editorCSS">
+                <h1>CSS</h1>
+                <textarea id="editCss_30">h1{
+    border: solid 10px red;
+}</textarea>
+            </div>
+            <div class="frame">
+                <h1>Результат</h1>
+                <iframe id="result_30"></iframe>
+            </div>
+        </div>
+    </div><hr>
+    <div class="calit drop-31"><code class="fan">outline-style :</code></div>
+    <div class="down-31">
+        <div class="col-1">
+            <h3><span class="option">Определение и применение <img class="pales" src="img/pales.gif" width="40"></h3>
+            <p>CSS свойство <span class="calit p">outline-style:</span> Устанавливает стиль внешней границы элемента. В отличие от линии, задаваемой через border, линия через outline отображается вокруг элемента, не влияя на ширину блока или его положение.</p>
+            <hr>
+            <div class="calit val dropVal_31">Значение <img class="pales2" src="img/1f448.png" alt="Error"></div>
+            <div class="downVal_31">
+                <table border="2">
+                    <tr>
+                        <th>Значение</th>
+                        <th>Описание</th>
+                    </tr>
+                    <tr>
+                        <td class="string2">none</td>
+                        <td>Указывает на отсутствие границы. Это значение по умолчанию.</td>
+                    </tr>
+                    <tr>
+                        <td class="string2">hidden</td>
+                        <td>
+                            Указывает на отсутствие границы как и значение none, но имеет более высокий приоритет.
+                            Например, если в таблице для первой ячейки задано значение none, а для второй (соседней) задана видимая граница, то граница между ячейками отображается. Если для первой ячейки таблицы задано значение hidden, а для второй (соседней) задана видимая граница, то граница между ячейками не будут отображаться.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="string2">dotted</td>
+                        <td>Точечная граница.</td>
+                    </tr>
+                    <tr>
+                        <td class="string2">dashed</td>
+                        <td>Пунктирная граница.</td>
+                    </tr>
+                    <tr>
+                        <td class="string2">solid</td>
+                        <td>Сплошная граница.</td>
+                    </tr>
+                    <tr>
+                        <td class="string2">double</td>
+                        <td>Двойная граница.</td>
+                    </tr>
+                    <tr>
+                        <td class="string2">groove</td>
+                        <td>Отображает границы с 3d эффектом (противоположно значению ridge).</td>
+                    </tr>
+                    <tr>
+                        <td class="string2">ridge</td>
+                        <td>Отображает границы с 3d эффектом (противоположно значению groove).</td>
+                    </tr>
+                    <tr>
+                        <td class="string2">inset</td>
+                        <td>Отображает границы с 3d эффектом (противоположно значению outset).При применении к ячейке таблицы с border-collapse : "collapse" - это значение ведет себя как groove.</td>
+                    </tr>
+                    <tr>
+                        <td class="string2">outset</td>
+                        <td>Отображает границы с 3d эффектом (противоположно значению inset).При применении к ячейке таблицы с border-collapse : "collapse" - это значение ведет себя как ridge.</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="calit val dropEx_31">Примеры <img class="pales2" src="img/1f448.png" alt="Error"></div>
+            <div class="downEx_31">
+                <div class="css">
+                    <div class="fl-1">
+                        <code class="lineNum">1</code><br>
+                    </div>
+                    <div class="fl-2">
+                        <code class="selektr">h1</code><code class="figura">{</code>
+                        <code class="fan">outline-style</code><code class="nuqta">:</code>
+                        <code class="string2 typingOutlineS"></code>
+                        <code class="nuqta">;</code><code class="figura">}</code>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="editorHTML">
+                <h1>HTML</h1>
+                <textarea id="editHtml_31">
+<br>
+<h1>Заголовок 1</h1></textarea>
+            </div>
+            <div class="editorCSS">
+                <h1>CSS</h1>
+                <textarea id="editCss_31">h1{
+    outline-style: solid;
+}</textarea>
+            </div>
+            <div class="frame">
+                <h1>Результат</h1>
+                <iframe id="result_31"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="calit drop-32"><code class="fan">outline-width :</code></div>
+    <div class="down-32">
+        <div class="col-1">
+            <h3><span class="option">Определение и применение <img class="pales" src="img/pales.gif" width="40"></h3>
+            <p>CSS свойство <span class="calit p">outline-width:</span> Определяет толщину внешней границы элемента. В отличие от свойства border-width, для outline-width нельзя задать границу для каждой стороны элемента индивидуально. Чтобы outline-width работал, необходимо установить у свойства outline-style любое значение кроме none.</p>
+            <hr>
+            <div class="calit val dropVal_32">Значение <img class="pales2" src="img/1f448.png" alt="Error"></div>
+            <div class="downVal_32">
+                <table border="2">
+                    <tr>
+                        <th>Значение</th>
+                        <th>Описание</th>
+                    </tr>
+                    <tr>
+                        <td class="string2">medium</td>
+                        <td>Задает границу средней ширины. Это значение по умолчанию.</td>
+                    </tr>
+                    <tr>
+                        <td class="string2">thin</td>
+                        <td>Задает узкую ширину границы.</td>
+                    </tr>
+                    <tr>
+                        <td class="string2">thick</td>
+                        <td>Задает толстую ширину границы.</td>
+                    </tr>
+                    <tr>
+                        <td class="number">px</td>
+                        <td>Позволяет вам определить толщину границы (например - 7px).</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="calit val dropEx_32">Примеры <img class="pales2" src="img/1f448.png" alt="Error"></div>
+            <div class="downEx_32">
+                <div class="css">
+                    <div class="fl-1">
+                        <code class="lineNum">1</code><br>
+                    </div>
+                    <div class="fl-2">
+                        <code class="selektr">h1</code><code class="figura">{</code>
+                        <code class="fan">outline-width:</code><code class="nuqta">:</code>
+                        <code class="string2 typingOutlineW"></code>
+                        <code class="nuqta">;</code><code class="figura">}</code>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="col-2" style="height: 500px;">
+            <div class="editorHTML">
+                <h1>HTML</h1>
+                <textarea id="editHtml_32">
+<br>
+<h1>Заголовок 1</h1></textarea>
+            </div>
+            <div class="editorCSS">
+                <h1>CSS</h1>
+                <textarea id="editCss_32">h1{
+    outline-style: solid;
+    outline-width: 10px;
+}</textarea>
+            </div>
+            <div class="frame">
+                <h1>Результат</h1>
+                <iframe id="result_32"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="calit drop-33"><code class="fan">outline-color :</code></div>
+    <div class="down-33">
+        <div class="col-1">
+            <h3><span class="option">Определение и применение <img class="pales" src="img/pales.gif" width="40"></h3>
+            <p>CSS свойство <span class="calit p">border-color:</span> Указывает цвет внешней границы элемента. В отличие от линии, задаваемой через border, линия через свойство outline отображается вокруг элемента, не влияя на ширину блока или его положение.</p>
+            <hr>
+            <div class="calit val dropVal_33">Значение <img class="pales2" src="img/1f448.png" alt="Error"></div>
+            <div class="downVal_33">
+                <table border="2">
+                    <tr>
                         <th>Значение</th>
                         <th>Описание</th>
                     </tr>
@@ -2554,218 +2801,21 @@ background:
                 </table>
             </div>
             <hr>
-            <div class="calit val dropEx_30">Примеры <img class="pales2" src="img/1f448.png" alt="Error"></div>
-            <div class="downEx_30">
-                <div class="css" style="margin-bottom: 5px;">
+            <div class="calit val dropEx_33">Примеры <img class="pales2" src="img/1f448.png" alt="Error"></div>
+            <div class="downEx_33">
+                <div class="css">
                     <div class="fl-1">
                         <code class="lineNum">1</code><br>
-                        <code class="lineNum">2</code><br>
-                        <code class="lineNum">3</code><br>
-                        <code class="lineNum">4</code><br>
-                        <code class="lineNum">5</code><br>
                     </div>
                     <div class="fl-2">
-                        <code class="selektr">h1</code><code class="figura">{</code><br>
-                        <code class="fan l">border-style</code><code class="nuqta">:</code>
-                        <code class="string aniBorTopC">red</code><code class="nuqta">;</code><br>
-                        <code class="fan l">border-width</code><code class="nuqta">:</code>
-                        <code class="string aniBorRightC">green</code><code class="nuqta">;</code><br>
-                        <code class="fan l">border-color</code><code class="nuqta">:</code>
-                        <code class="string aniBorBottomC">blue</code><code class="nuqta">;</code><br>
-                        <code class="figura">}</code>
-                    </div>
-                </div>
-                <div class="css" style="width: 400px; margin-bottom: 5px;">
-                    <div class="fl-1" style="width: 8%;">
-                        <code class="lineNum">1</code><br>
-                        <code class="lineNum">2</code><br>
-                        <code class="lineNum">3</code><br>
-                    </div>
-                    <div class="fl-2" style="width: 92%;">
-                        <code class="selektr">h1</code><code class="figura">{</code><br>
-                        <code class="fan l">border-color</code><code class="nuqta">:</code><code class="nuqta aniSleshBor" style="margin-left: 185px;">;</code><br>
-                        <code class="figura">}</code>
+                        <code class="selektr">h1</code><code class="figura">{</code>
+                        <code class="fan">outline-color</code><code class="nuqta">:</code>
+                        <code class="string typingOutlineC"></code>
+                        <code class="nuqta">;</code><code class="figura">}</code>
                     </div>
                 </div>
             </div>
             <hr>
-        </div>
-        <div class="col-2" style="height: 500px;">
-            <div class="editorHTML">
-                <h1>HTML</h1>
-                <textarea id="editHtml_30">
-<br>
-<h1>Заголовок 1</h1></textarea>
-            </div>
-            <div class="editorCSS">
-                <h1>CSS</h1>
-                <textarea id="editCss_30">h1{
-    border: solid 10px red;
-}</textarea>
-            </div>
-            <div class="frame">
-                <h1>Результат</h1>
-                <iframe id="result_30"></iframe>
-            </div>
-        </div>
-    </div>
-    <div class="calit drop-31"><code class="fan">outline-style :</code></div>
-    <div class="down-31">
-        <div class="col-1">
-            <h3><span class="option">Определение и применение <img class="pales" src="img/pales.gif" width="40"></h3>
-            <p>CSS свойство <span class="calit">outline-style:</span> Устанавливает стиль внешней границы элемента. В отличие от линии, задаваемой через border, линия через outline отображается вокруг элемента, не влияя на ширину блока или его положение.</p>
-            <table border="2">
-                <tr>
-                    <th>Значение</th>
-                    <th>Описание</th>
-                </tr>
-                <tr>
-                    <td>none</td>
-                    <td>Указывает на отсутствие границы. Это значение по умолчанию.</td>
-                </tr>
-                <tr>
-                    <td>hidden</td>
-                    <td>
-                        Указывает на отсутствие границы как и значение none, но имеет более высокий приоритет.
-                        Например, если в таблице для первой ячейки задано значение none, а для второй (соседней) задана видимая граница, то граница между ячейками отображается. Если для первой ячейки таблицы задано значение hidden, а для второй (соседней) задана видимая граница, то граница между ячейками не будут отображаться.
-                    </td>
-                </tr>
-                <tr>
-                    <td>dotted</td>
-                    <td>Точечная граница.</td>
-                </tr>
-                <tr>
-                    <td>dashed</td>
-                    <td>Пунктирная граница.</td>
-                </tr>
-                <tr>
-                    <td>solid</td>
-                    <td>Сплошная граница.</td>
-                </tr>
-                <tr>
-                    <td>double</td>
-                    <td>Двойная граница.</td>
-                </tr>
-                <tr>
-                    <td>groove</td>
-                    <td>Отображает границы с 3d эффектом (противоположно значению ridge).</td>
-                </tr>
-                <tr>
-                    <td>ridge</td>
-                    <td>Отображает границы с 3d эффектом (противоположно значению groove).</td>
-                </tr>
-                <tr>
-                    <td>inset</td>
-                    <td>Отображает границы с 3d эффектом (противоположно значению outset).При применении к ячейке таблицы с border-collapse : "collapse" - это значение ведет себя как groove.</td>
-                </tr>
-                <tr>
-                    <td>outset</td>
-                    <td>Отображает границы с 3d эффектом (противоположно значению inset).При применении к ячейке таблицы с border-collapse : "collapse" - это значение ведет себя как ridge.</td>
-                </tr>
-            </table>
-        </div>
-        <div class="col-2" style="height: 500px;">
-            <div class="editorHTML">
-                <h1>HTML</h1>
-                <textarea id="editHtml_31">
-<br>
-<h1>Заголовок 1</h1></textarea>
-            </div>
-            <div class="editorCSS">
-                <h1>CSS</h1>
-                <textarea id="editCss_31">h1{
-    outline-style: solid;
-}</textarea>
-            </div>
-            <div class="frame">
-                <h1>Результат</h1>
-                <iframe id="result_31"></iframe>
-            </div>
-        </div>
-    </div>
-    <div class="calit drop-32"><code class="fan">outline-width :</code></div>
-    <div class="down-32">
-        <div class="col-1">
-            <h3><span class="option">Определение и применение <img class="pales" src="img/pales.gif" width="40"></h3>
-            <p>CSS свойство <span class="calit">outline-width:</span> Определяет толщину внешней границы элемента. В отличие от свойства border-width, для outline-width нельзя задать границу для каждой стороны элемента индивидуально. Чтобы outline-width работал, необходимо установить у свойства outline-style любое значение кроме none.</p>
-            <table border="2">
-                <tr>
-                    <th>Значение</th>
-                    <th>Описание</th>
-                </tr>
-                <tr>
-                    <td>medium</td>
-                    <td>Задает границу средней ширины. Это значение по умолчанию.</td>
-                </tr>
-                <tr>
-                    <td>thin</td>
-                    <td>Задает узкую ширину границы.</td>
-                </tr>
-                <tr>
-                    <td>thick</td>
-                    <td>Задает толстую ширину границы.</td>
-                </tr>
-                <tr>
-                    <td>px</td>
-                    <td>Позволяет вам определить толщину границы (например - 7px).</td>
-                </tr>
-            </table>
-        </div>
-        <div class="col-2" style="height: 500px;">
-            <div class="editorHTML">
-                <h1>HTML</h1>
-                <textarea id="editHtml_32">
-<br>
-<h1>Заголовок 1</h1></textarea>
-            </div>
-            <div class="editorCSS">
-                <h1>CSS</h1>
-                <textarea id="editCss_32">h1{
-    outline-style: solid;
-    outline-width: 10px;
-}</textarea>
-            </div>
-            <div class="frame">
-                <h1>Результат</h1>
-                <iframe id="result_32"></iframe>
-            </div>
-        </div>
-    </div>
-    <div class="calit drop-33"><code class="fan">outline-color :</code></div>
-    <div class="down-33">
-        <div class="col-1">
-            <h3><span class="option">Определение и применение <img class="pales" src="img/pales.gif" width="40"></h3>
-            <p>CSS свойство <span class="calit">border-color:</span> Указывает цвет внешней границы элемента. В отличие от линии, задаваемой через border, линия через свойство outline отображается вокруг элемента, не влияя на ширину блока или его положение.</p>
-            <table border="2">
-                <tr>
-                    <th>Значение</th>
-                    <th>Описание</th>
-                </tr>
-                <tr>
-                    <td>green</td>
-                    <td>Определяет цвет текста (text)</td>
-                </tr>
-                <tr>
-                    <td>rgb(0,128,0)</td>
-                    <td>Определяет цвет текста (RGB)</td>
-                </tr>
-                <tr>
-                    <td>rgba(0,128,0,0.5)</td>
-                    <td>Определяет прозрачность цвет текста (RGBA)</td>
-                </tr>
-                <tr>
-                    <td>hsl(120, 100%, 25%)</td>
-                    <td>Определяет цвет текста (HSL)</td>
-                </tr>
-                <tr>
-                    <td>hsla(120, 100%, 25%, 0.5)</td>
-                    <td>Определяет прозрачность цвет текста (HSLA)</td>
-                </tr>
-                <tr>
-                    <td>#00ff00</td>
-                    <td>Определяет прозрачность цвет текста (HEX)</td>
-                </tr>
-            </table>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="editorHTML">
@@ -2792,19 +2842,67 @@ background:
     <div class="down-34">
         <div class="col-1">
             <h3><span class="option">Определение и применение <img class="pales" src="img/pales.gif" width="40"></h3>
-            <p>CSS свойство <span class="calit">outline:</span> Универсальное свойство, одновременно устанавливающее цвет, стиль и толщину внешней границы на всех четырёх сторонах элемента.</p>
-            <div class="css" style="height: 110px;">
-                <code class="selektor">h1</code><code class="figura">{</code><br>
-                    <code class="fan l">outline-style</code><code class="nuqta">:</code> <code class="selektor animeStyleTop">solid</code><code class="nuqta">;</code>
-                    <br><code class="fan l">outline-width</code><code class="nuqta">:</code> <code class="number animeStyleRight">10px</code><code class="nuqta">;</code>
-                    <br><code class="fan l">outline-color</code><code class="nuqta">:</code> <code class="string animeStyleBottom">red</code><code class="nuqta">;</code>
-                    <br><code class="figura">}</code>
+            <p>CSS свойство <span class="calit p">outline:</span> Универсальное свойство, одновременно устанавливающее цвет, стиль и толщину внешней границы на всех четырёх сторонах элемента.</p>
+            <hr>
+            <div class="calit val dropVal_34">Значение <img class="pales2" src="img/1f448.png" alt="Error"></div>
+            <div class="downVal_34">
+                <table border="2">
+                    <tr>
+                        <th>Значение</th><th>Описание</th>
+                    </tr>
+                    <tr>
+                        <td class="fan">outline-style</td><td>Устанавливает стиль внешней границы элемента. <b>По умолчанию - "<code class="string2">none</code>".</b></td>
+                    </tr>
+                    <tr>
+                        <td class="fan">outline-width</td><td>Определяет толщину внешней границы элемента. <b>По умолчанию - "<code class="string2">medium</code>".</b></td>
+                    </tr>
+                    <tr>
+                        <td class="fan">outline-color</td><td>Указывает цвет внешней границы элемента.  <b>По умолчанию - цвет элемента.</b></td>
+                    </tr>
+                    <tr>
+                        <td class="string2">initial</td><td>Устанавливает свойство в значение по умолчанию.</td>
+                    </tr>
+                    <tr>
+                        <td class="string2">inherit</td><td>Указывает, что значение наследуется от родительского элемента.</td>
+                    </tr>
+                </table>
             </div>
-            <div class="css"style="height: 110px; width: 400px;">
-                <code class="selektor">h1</code><code class="figura">{</code><br>
-                    <code class="fan l">outline</code><code class="nuqta">:</code><code class="nuqta" style="margin-left: 230px;">;</code>
-                    <br><code class="figura">}</code>
+            <hr>
+            <div class="calit val dropEx_34">Примеры <img class="pales2" src="img/1f448.png" alt="Error"></div>
+            <div class="downEx_34">
+                <div class="css" style="margin-bottom: 5px;">
+                    <div class="fl-1">
+                        <code class="lineNum">1</code><br>
+                        <code class="lineNum">2</code><br>
+                        <code class="lineNum">3</code><br>
+                        <code class="lineNum">4</code><br>
+                        <code class="lineNum">5</code><br>
+                    </div>
+                    <div class="fl-2">
+                        <code class="selektr">h1</code><code class="figura">{</code><br>
+                        <code class="fan l">outline-style</code><code class="nuqta">:</code>
+                        <code class="string2 aniBorS">solid</code><code class="nuqta">;</code><br>
+                        <code class="fan l">outline-width</code><code class="nuqta">:</code>
+                        <code class="number aniBorW">10px</code><code class="nuqta">;</code><br>
+                        <code class="fan l">outline-color</code><code class="nuqta">:</code>
+                        <code class="string aniBorC">green</code><code class="nuqta">;</code><br>
+                        <code class="figura">}</code>
+                    </div>
+                </div>
+                <div class="css" style="width: 400px; margin-bottom: 5px;">
+                    <div class="fl-1" style="width: 8%;">
+                        <code class="lineNum">1</code><br>
+                        <code class="lineNum">2</code><br>
+                        <code class="lineNum">3</code><br>
+                    </div>
+                    <div class="fl-2" style="width: 92%;">
+                        <code class="selektr">h1</code><code class="figura">{</code><br>
+                        <code class="fan l">outline</code><code class="nuqta">:</code><code class="nuqta aniSleshBor" style="margin-left: 145px;">;</code><br>
+                        <code class="figura">}</code>
+                    </div>
+                </div>
             </div>
+            <hr>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="editorHTML">
@@ -2829,13 +2927,36 @@ background:
     <div class="down-35">
         <div class="col-1">
             <h3><span class="option">Определение и применение <img class="pales" src="img/pales.gif" width="40"></h3>
-            <p>CSS свойство <span class="calit">outline-offset:</span> Устанавливает расстояние между рамкой, созданной с помощью свойства outline, и краем или границей элемента добавленной через border.</p>
-            <table border="2">
-                <tr>
-                    <td>px</td>
-                    <td>Задаёт расстояние от края элемента до рамки. Отрицательное значение отображает рамку внутри элемента, положительное — вокруг элемента.</td>
-                </tr>
-            </table>
+            <p>CSS свойство <span class="calit p">outline-offset:</span> Устанавливает расстояние между рамкой, созданной с помощью свойства outline, и краем или границей элемента добавленной через border.</p>
+            <hr>
+            <div class="calit val dropVal_35">Значение <img class="pales2" src="img/1f448.png" alt="Error"></div>
+            <div class="downVal_35">
+                <table border="2">
+                    <tr>
+                        <th>Значение</th><th>Описание</th>
+                    </tr>
+                    <tr>
+                        <td class="number">px</td>
+                        <td>Задаёт расстояние от края элемента до рамки. Отрицательное значение отображает рамку внутри элемента, положительное — вокруг элемента.</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="calit val dropEx_35">Примеры <img class="pales2" src="img/1f448.png" alt="Error"></div>
+            <div class="downEx_35">
+                <div class="css">
+                    <div class="fl-1">
+                        <code class="lineNum">1</code><br>
+                    </div>
+                    <div class="fl-2">
+                        <cod class="selektr">h1</code><code class="figura">{</code>
+                        <code class="fan">outline-offset</code><code class="nuqta">:</code>
+                        <code class="number typingOutlineOFF"></code>
+                        <code class="nuqta">;</code><code class="figura">}</code>
+                    </div>
+                </div>
+            </div>
+            <hr>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="editorHTML">
@@ -2861,21 +2982,41 @@ background:
     <div class="down-36">
         <div class="col-1">
             <h3><span class="option">Определение и применение <img class="pales" src="img/pales.gif" width="40"></h3>
-            <p>CSS свойство <span class="calit">border-top-left-radius:</span> пределяет форму границы верхнего левого угла. Радиус скругления применяется ко всему заднему фону, либо фоновому изображению, заданными свойством background (даже если у элемента отсутствуют границы). Точное место отсечения определяется и задается значением свойства background-clip.</p>
-            <table border="2">
-                <tr>
-                    <th>Значение</th>
-                    <th>Описание</th>
-                </tr>
-                <tr>
-                    <td>px</td>
-                    <td>Определяет форму верхнего левого угла в пикселах. Значение по умолчанию 0 (ноль). Отрицательные значения недопустимы.</td>
-                </tr>
-                <tr>
-                    <td>%</td>
-                    <td>Определяет форму верхнего левого угла в процентах. Отрицательные значения недопустимы.</td>
-                </tr>
-            </table>
+            <p>CSS свойство <span class="calit p">border-top-left-radius:</span> пределяет форму границы верхнего левого угла. Радиус скругления применяется ко всему заднему фону, либо фоновому изображению, заданными свойством background (даже если у элемента отсутствуют границы). Точное место отсечения определяется и задается значением свойства background-clip.</p>
+            <hr>
+            <div class="calit val dropVal_36">Значение <img class="pales2" src="img/1f448.png" alt="Error"></div>
+            <div class="downVal_36">
+                <table border="2">
+                    <tr>
+                        <th>Значение</th>
+                        <th>Описание</th>
+                    </tr>
+                    <tr>
+                        <td class="number">px</td>
+                        <td>Определяет форму верхнего левого угла в пикселах. Значение по умолчанию 0 (ноль). Отрицательные значения недопустимы.</td>
+                    </tr>
+                    <tr>
+                        <td class="number">%</td>
+                        <td>Определяет форму верхнего левого угла в процентах. Отрицательные значения недопустимы.</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="calit val dropEx_36">Примеры <img class="pales2" src="img/1f448.png" alt="Error"></div>
+            <div class="downEx_36">
+                <div class="css">
+                    <div class="fl-1">
+                        <code class="lineNum">1</code><br>
+                    </div>
+                    <div class="fl-2">
+                        <cod class="selektr">h1</code><code class="figura">{</code>
+                        <code class="fan">border-top-left-radius</code><code class="nuqta">:</code>
+                        <code class="number typingBorTopLeftR"></code>
+                        <code class="nuqta">;</code><code class="figura">}</code>
+                    </div>
+                </div>
+            </div>
+            <hr>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="editorHTML">
@@ -2901,21 +3042,41 @@ background:
     <div class="down-37">
         <div class="col-1">
             <h3><span class="option">Определение и применение <img class="pales" src="img/pales.gif" width="40"></h3>
-            <p>CSS свойство <span class="calit">border-top-right-radius:</span> определяет форму границы верхнего правого угла. Радиус скругления применяется ко всему заднему фону, либо фоновому изображению, заданными свойством background (даже если у элемента отсутствуют границы). Точное место отсечения определяется и задается значением свойства background-clip</p>
-            <table border="2">
-                <tr>
-                    <th>Значение</th>
-                    <th>Описание</th>
-                </tr>
-                <tr>
-                    <td>px</td>
-                    <td>Определяет форму верхнего правого угла в пикселах. Значение по умолчанию 0 (ноль). Отрицательные значения недопустимы.</td>
-                </tr>
-                <tr>
-                    <td>%</td>
-                    <td>Определяет форму верхнего правого угла в процентах. Отрицательные значения недопустимы.</td>
-                </tr>
-            </table>
+            <p>CSS свойство <span class="calit p">border-top-right-radius:</span> определяет форму границы верхнего правого угла. Радиус скругления применяется ко всему заднему фону, либо фоновому изображению, заданными свойством background (даже если у элемента отсутствуют границы). Точное место отсечения определяется и задается значением свойства background-clip</p>
+            <hr>
+            <div class="calit val dropVal_37">Значение <img class="pales2" src="img/1f448.png" alt="Error"></div>
+            <div class="downVal_37">
+                <table border="2">
+                    <tr>
+                        <th>Значение</th>
+                        <th>Описание</th>
+                    </tr>
+                    <tr>
+                        <td class="number">px</td>
+                        <td>Определяет форму верхнего правого угла в пикселах. Значение по умолчанию 0 (ноль). Отрицательные значения недопустимы.</td>
+                    </tr>
+                    <tr>
+                        <td class="number">%</td>
+                        <td>Определяет форму верхнего правого угла в процентах. Отрицательные значения недопустимы.</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="calit val dropEx_37">Примеры <img class="pales2" src="img/1f448.png" alt="Error"></div>
+            <div class="downEx_37">
+                <div class="css">
+                    <div class="fl-1">
+                        <code class="lineNum">1</code><br>
+                    </div>
+                    <div class="fl-2">
+                        <cod class="selektr">h1</code><code class="figura">{</code>
+                        <code class="fan">border-top-right-radius</code><code class="nuqta">:</code>
+                        <code class="number typingBorTopRightR"></code>
+                        <code class="nuqta">;</code><code class="figura">}</code>
+                    </div>
+                </div>
+            </div>
+            <hr>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="editorHTML">
@@ -2941,21 +3102,40 @@ background:
     <div class="down-38">
         <div class="col-1">
             <h3><span class="option">Определение и применение <img class="pales" src="img/pales.gif" width="40"></h3>
-            <p>CSS свойство <span class="calit">border-bottom-right-radius:</span> определяет форму границы нижнего правого угла. Радиус скругления применяется ко всему заднему фону, либо фоновому изображению, заданными свойством background (даже если у элемента отсутствуют границы). Точное место отсечения определяется и задается значением свойства background-clip.</p>
-            <table border="2">
-                <tr>
-                    <th>Значение</th>
-                    <th>Описание</th>
-                </tr>
-                <tr>
-                    <td>px</td>
-                    <td>Определяет форму правого нижнего угла в пикселах. Значение по умолчанию 0 (ноль). Отрицательные значения недопустимы.</td>
-                </tr>
-                <tr>
-                    <td>%</td>
-                    <td>Определяет форму правого нижнего угла в процентах. Отрицательные значения недопустимы.</td>
-                </tr>
-            </table>
+            <p>CSS свойство <span class="calit p">border-bottom-right-radius:</span> определяет форму границы нижнего правого угла. Радиус скругления применяется ко всему заднему фону, либо фоновому изображению, заданными свойством background (даже если у элемента отсутствуют границы). Точное место отсечения определяется и задается значением свойства background-clip.</p>
+            <div class="calit val dropVal_38">Значение <img class="pales2" src="img/1f448.png" alt="Error"></div>
+            <div class="downVal_38">
+                <table border="2">
+                    <tr>
+                        <th>Значение</th>
+                        <th>Описание</th>
+                    </tr>
+                    <tr>
+                        <td class="number">px</td>
+                        <td>Определяет форму правого нижнего угла в пикселах. Значение по умолчанию 0 (ноль). Отрицательные значения недопустимы.</td>
+                    </tr>
+                    <tr>
+                        <td class="number">%</td>
+                        <td>Определяет форму правого нижнего угла в процентах. Отрицательные значения недопустимы.</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="calit val dropEx_38">Примеры <img class="pales2" src="img/1f448.png" alt="Error"></div>
+            <div class="downEx_38">
+                <div class="css" style="width: 400px;">
+                    <div class="fl-1" style="width: 8%;">
+                        <code class="lineNum">1</code><br>
+                    </div>
+                    <div class="fl-2" style="width: 92%;">
+                        <cod class="selektr">h1</code><code class="figura">{</code>
+                        <code class="fan">border-bottom-right-radius</code><code class="nuqta">:</code>
+                        <code class="number typingBorBotoomRightR"></code>
+                        <code class="nuqta">;</code><code class="figura">}</code>
+                    </div>
+                </div>
+            </div>
+            <hr>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="editorHTML">
@@ -2981,21 +3161,41 @@ background:
     <div class="down-39">
         <div class="col-1">
             <h3><span class="option">Определение и применение <img class="pales" src="img/pales.gif" width="40"></h3>
-            <p>CSS свойство <span class="calit">border-bottom-left-radius:</span> определяет форму границы нижнего левого угла. Радиус скругления применяется ко всему заднему фону, либо фоновому изображению, заданными свойством background (даже если у элемента отсутствуют границы). Точное место отсечения определяется и задается значением свойства background-clip.</p>
-            <table border="2">
-                <tr>
-                    <th>Значение</th>
-                    <th>Описание</th>
-                </tr>
-                <tr>
-                    <td>px</td>
-                    <td>Определяет форму левого нижнего угла в пикселах. Значение по умолчанию 0 (ноль). Отрицательные значения недопустимы.</td>
-                </tr>
-                <tr>
-                    <td>%</td>
-                    <td>Определяет форму левого нижнего угла в процентах. Отрицательные значения недопустимы.</td>
-                </tr>
-            </table>
+            <p>CSS свойство <span class="calit p">border-bottom-left-radius:</span> определяет форму границы нижнего левого угла. Радиус скругления применяется ко всему заднему фону, либо фоновому изображению, заданными свойством background (даже если у элемента отсутствуют границы). Точное место отсечения определяется и задается значением свойства background-clip.</p>
+            <hr>
+            <div class="calit val dropVal_39">Значение <img class="pales2" src="img/1f448.png" alt="Error"></div>
+            <div class="downVal_39">
+                <table border="2">
+                    <tr>
+                        <th>Значение</th>
+                        <th>Описание</th>
+                    </tr>
+                    <tr>
+                        <td class="number">px</td>
+                        <td>Определяет форму левого нижнего угла в пикселах. Значение по умолчанию 0 (ноль). Отрицательные значения недопустимы.</td>
+                    </tr>
+                    <tr>
+                        <td class="number">%</td>
+                        <td>Определяет форму левого нижнего угла в процентах. Отрицательные значения недопустимы.</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="calit val dropEx_39">Примеры <img class="pales2" src="img/1f448.png" alt="Error"></div>
+            <div class="downEx_39">
+                <div class="css" style="width: 400px;">
+                    <div class="fl-1" style="width: 8%;">
+                        <code class="lineNum">1</code><br>
+                    </div>
+                    <div class="fl-2" style="width: 92%;">
+                        <cod class="selektr">h1</code><code class="figura">{</code>
+                        <code class="fan">border-bottom-left-radius:</code><code class="nuqta">:</code>
+                        <code class="number typingBorBotoomLeftR"></code>
+                        <code class="nuqta">;</code><code class="figura">}</code>
+                    </div>
+                </div>
+            </div>
+            <hr>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="editorHTML">
@@ -3021,33 +3221,108 @@ background:
     <div class="down-40">
         <div class="col-1">
             <h3><span class="option">Определение и применение <img class="pales" src="img/pales.gif" width="40"></h3>
-            <p>CSS свойство <span class="calit">border-radius:</span> позволяет определить форму границ элемента. Это свойство является короткой записью для четырёх свойств: Радиус скругления применяется ко всему заднему фону, либо фоновому изображению, заданными свойством background (даже если у элемента отсутствуют границы). Точное место отсечения определяется и задается значением свойства background-clip.</p>
-            <div class="css" style="height: 130px;">
-                <code class="selektor">h1</code><code class="figura">{</code><br>
-                    <code class="fan l">border-top-left-radius</code><code class="nuqta">:</code> <code class="selektor animeStyleTop">10px</code><code class="nuqta">;</code>
-                    <br><code class="fan l">border-top-right-radius</code><code class="nuqta">:</code> <code class="selektor animeStyleRight">20px</code><code class="nuqta">;</code>
-                    <br><code class="fan l">border-bottom-right-radius</code><code class="nuqta">:</code> <code class="selektor animeStyleBottom">30px</code><code class="nuqta">;</code>
-                    <br><code class="fan l">border-bottom-left-radius</code><code class="nuqta">:</code> <code class="selektor animeStyleLeft">50px</code><code class="nuqta">;</code>
-                    <br><code class="figura">}</code>
+            <p>CSS свойство <span class="calit p">border-radius:</span> позволяет определить форму границ элемента. Это свойство является короткой записью для четырёх свойств: Радиус скругления применяется ко всему заднему фону, либо фоновому изображению, заданными свойством background (даже если у элемента отсутствуют границы). Точное место отсечения определяется и задается значением свойства background-clip.</p>
+            <hr>
+            <div class="calit val dropVal_40">Значение <img class="pales2" src="img/1f448.png" alt="Error"></div>
+            <div class="downVal_40">
+                <table border="2">
+                    <tr>
+                        <th>Значение</th><th>Описание</th>
+                    </tr>
+                    <tr>
+                        <td class="fan">border-top-left-radius</td><td>пределяет форму границы верхнего левого угла. Радиус скругления применяется ко всему заднему фону, либо фоновому изображению</td>
+                    </tr>
+                    <tr>
+                        <td class="fan">border-top-right-radius</td><td>определяет форму границы верхнего правого угла. Радиус скругления применяется ко всему заднему фону, либо фоновому изображению</td>
+                    </tr>
+                    <tr>
+                        <td class="fan">border-bottom-right-radius</td><td>определяет форму границы нижнего правого угла. Радиус скругления применяется ко всему заднему фону, либо фоновому изображению</td>
+                    </tr>
+                    <tr>
+                        <td class="fan">border-bottom-left-radius</td><td>определяет форму границы нижнего левого угла. Радиус скругления применяется ко всему заднему фону, либо фоновому изображению</td>
+                    </tr>
+                    <tr>
+                        <td class="string2">initial</td><td>Устанавливает свойство в значение по умолчанию.</td>
+                    </tr>
+                    <tr>
+                        <td class="string2">inherit</td><td>Указывает, что значение наследуется от родительского элемента.</td>
+                    </tr>
+                </table>
             </div>
-            <div class="css"style="height: 130px; width: 400px;">
-                <code class="selektor">h1</code><code class="figura">{</code><br>
-                    <code class="fan l">border-radius</code><code class="nuqta">:</code><code class="nuqta" style="margin-left: 230px;">;</code>
-                    <br><code class="figura">}</code>
+            <hr>
+            <div class="calit val dropEx_40">Примеры <img class="pales2" src="img/1f448.png" alt="Error"></div>
+            <div class="downEx_40">
+                <div class="css" style="width: 450px; margin-bottom: 5px;">
+                    <div class="fl-1" style="width: 7%;">
+                        <code class="lineNum">1</code><br>
+                        <code class="lineNum">2</code><br>
+                        <code class="lineNum">3</code><br>
+                        <code class="lineNum">4</code><br>
+                        <code class="lineNum">5</code><br>
+                        <code class="lineNum">6</code><br>
+                    </div>
+                    <div class="fl-2" style="width: 93%;">
+                        <code class="selektr">h1</code><code class="figura">{</code><br>
+                        <code class="fan l">border-top-left-radius</code><code class="nuqta">:</code>
+                        <code class="number aniBorTopLeftR">10px</code><code class="nuqta">;</code><br>
+                        <code class="fan l">border-top-right-radius</code><code class="nuqta">:</code>
+                        <code class="number aniBorTopRightR">20px</code><code class="nuqta">;</code><br>
+                        <code class="fan l">border-bottom-right-radius</code><code class="nuqta">:</code>
+                        <code class="number aniBorBottomLeftR">30px</code><code class="nuqta">;</code><br>
+                        <code class="fan l">border-bottom-left-radius</code><code class="nuqta">:</code>
+                        <code class="number aniBorBottomRightR">50px</code><code class="nuqta">;</code><br>
+                        <code class="figura">}</code>
+                    </div>
+                </div>
+                <div class="css" style="width: 450px; margin-bottom: 5px;">
+                    <div class="fl-1" style="width: 7%;">
+                        <code class="lineNum">1</code><br>
+                        <code class="lineNum">2</code><br>
+                        <code class="lineNum">3</code><br>
+                    </div>
+                    <div class="fl-2" style="width: 93%;">
+                        <code class="selektr">h1</code><code class="figura">{</code><br>
+                        <code class="fan l">border-radius</code><code class="nuqta">:</code><code class="nuqta aniSleshBor" style="margin-left: 172px;">;</code><br>
+                        <code class="figura">}</code>
+                    </div>
+                </div>
+                <hr>
+                <div class="css" style="width: 450px; margin-top: 5px;">
+                    <div class="fl-1" style="width: 7%;">
+                        <code class="lineNum">1</code><br>
+                        <code class="lineNum">2</code><br>
+                        <code class="lineNum">3</code><br>
+                        <code class="lineNum">4</code><br>
+                        <code class="lineNum">5</code><br>
+                        <code class="lineNum">6</code><br>
+                    </div>
+                    <div class="fl-2" style="width: 93%;">
+                        <code class="selektr">h1</code><code class="figura">{</code><br>
+                        <code class="fan l">border-top-left-radius</code><code class="nuqta">:</code>
+                        <code class="number aniBorTopLeftOp">50px</code><code class="nuqta">;</code><br>
+                        <code class="fan l">border-top-right-radius</code><code class="nuqta">:</code>
+                        <code class="number aniBorTopRightOp">50px</code><code class="nuqta">;</code><br>
+                        <code class="fan l">border-bottom-right-radius</code><code class="nuqta">:</code>
+                        <code class="number aniBorBottomLeftOp">50px</code><code class="nuqta">;</code><br>
+                        <code class="fan l">border-bottom-left-radius</code><code class="nuqta">:</code>
+                        <code class="number aniBorBottomRightOp">50px</code><code class="nuqta">;</code><br>
+                        <code class="figura">}</code>
+                    </div>
+                </div>
+                <div class="css" style="width: 450px; margin-top: 5px;">
+                    <div class="fl-1" style="width: 7%;">
+                        <code class="lineNum">1</code><br>
+                        <code class="lineNum">2</code><br>
+                        <code class="lineNum">3</code><br>
+                    </div>
+                    <div class="fl-2" style="width: 93%;">
+                        <code class="selektr">h1</code><code class="figura">{</code><br>
+                        <code class="fan l">border-radius</code><code class="nuqta">:</code><code class="nuqta aniSleshBor" style="margin-left: 45px;">;</code><br>
+                        <code class="figura">}</code>
+                    </div>
+                </div>
             </div>
-            <div class="css" style="height: 130px; clear: both; margin-top: 0px;">
-                <code class="selektor">h1</code><code class="figura">{</code><br>
-                    <code class="fan l">border-top-left-radius</code><code class="nuqta">:</code> <code class="selektor animeStyleTop_2">50px</code><code class="nuqta">;</code>
-                    <br><code class="fan l">border-top-right-radius</code><code class="nuqta">:</code> <code class="selektor animeStyleRight_2">50px</code><code class="nuqta">;</code>
-                    <br><code class="fan l">border-bottom-right-radius</code><code class="nuqta">:</code> <code class="selektor animeStyleBottom_2">50px</code><code class="nuqta">;</code>
-                    <br><code class="fan l">border-bottom-left-radius</code><code class="nuqta">:</code> <code class="selektor animeStyleLeft_2">50px</code><code class="nuqta">;</code>
-                    <br><code class="figura">}</code>
-            </div>
-            <div class="css"style="height: 130px; width: 400px; margin-top: 0px;">
-                <code class="selektor">h1</code><code class="figura">{</code><br>
-                    <code class="fan l">border-radius</code><code class="nuqta">:</code><code class="nuqta" style="margin-left: 230px;">;</code>
-                    <br><code class="figura">}</code>
-            </div>
+            <hr>
         </div>
         <div class="col-2" style="height: 500px;">
             <div class="editorHTML">
@@ -3069,7 +3344,6 @@ background:
             </div>
         </div>
     </div>
-    
 </fieldset>
 <fieldset><legend>Отступы и поля</legend>
     <div class="calit drop-41"><code class="fan">padding-top :</code></div>

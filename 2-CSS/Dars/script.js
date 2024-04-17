@@ -151,6 +151,62 @@ var typingBorderLeftC = new Typed(".typingBorderLeftC", {
     backDelay: 2000,
     loop: true
 });
+var typingOutlineS = new Typed(".typingOutlineS", {
+    strings: [' none',' hidden',' dotted',' dashed',' solid',' double',' groove',' ridge',' inset',' outset'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingOutlineW = new Typed(".typingOutlineW", {
+    strings: [' medium',' thin',' thick',' <code class="number">5px</code>'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingOutlineC = new Typed(".typingOutlineC", {
+    strings: [' red', ' green', ' blue'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingOutlineOFF = new Typed(".typingOutlineOFF", {
+    strings: [' 5px', ' 10px', ' 20px'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingBorTopLeftR = new Typed(".typingBorTopLeftR", {
+    strings: [' 10px', ' 20px', ' 50px','20%','50%'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingBorTopRightR = new Typed(".typingBorTopRightR", {
+    strings: [' 10px', ' 20px', ' 50px','20%','50%'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingBorBotoomRightR = new Typed(".typingBorBotoomRightR", {
+    strings: [' 10px', ' 20px', ' 50px','20%','50%'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingBorBotoomLeftR = new Typed(".typingBorBotoomLeftR", {
+    strings: [' 10px', ' 20px', ' 50px','20%','50%'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
 ////////////////////////////////////////////////// Function transform \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 function haver(){
     document.getElementById("haver").classList.toggle("show");
@@ -3104,10 +3160,10 @@ $(document).ready(function(){
     $(".drop-29").click(function(){
         $(".down-29").slideToggle(1000);
     });
-    // $(".down-30").hide();
-    // $(".drop-30").click(function(){
-    //     $(".down-30").slideToggle(1000);
-    // });
+    $(".down-30").hide();
+    $(".drop-30").click(function(){
+        $(".down-30").slideToggle(1000);
+    });
     $(".down-31").hide();
     $(".drop-31").click(function(){
         $(".down-31").slideToggle(1000);
@@ -3148,10 +3204,10 @@ $(document).ready(function(){
     $(".drop-40").click(function(){
         $(".down-40").slideToggle(1000);
     });
-    $(".down-41").hide();
-    $(".drop-41").click(function(){
-        $(".down-41").slideToggle(1000);
-    });
+    // $(".down-41").hide();
+    // $(".drop-41").click(function(){
+    //     $(".down-41").slideToggle(1000);
+    // });
     $(".down-42").hide();
     $(".drop-42").click(function(){
         $(".down-42").slideToggle(1000);
@@ -3465,6 +3521,50 @@ $(document).ready(function(){
     $(".dropVal_29").click(function(){
         $(".downVal_29").slideToggle(1000);
     });
+    $(".downVal_30").hide();
+    $(".dropVal_30").click(function(){
+        $(".downVal_30").slideToggle(1000);
+    });
+    $(".downVal_31").hide();
+    $(".dropVal_31").click(function(){
+        $(".downVal_31").slideToggle(1000);
+    });
+    $(".downVal_32").hide();
+    $(".dropVal_32").click(function(){
+        $(".downVal_32").slideToggle(1000);
+    });
+    $(".downVal_33").hide();
+    $(".dropVal_33").click(function(){
+        $(".downVal_33").slideToggle(1000);
+    });
+    $(".downVal_34").hide();
+    $(".dropVal_34").click(function(){
+        $(".downVal_34").slideToggle(1000);
+    });
+    $(".downVal_35").hide();
+    $(".dropVal_35").click(function(){
+        $(".downVal_35").slideToggle(1000);
+    });
+    $(".downVal_36").hide();
+    $(".dropVal_36").click(function(){
+        $(".downVal_36").slideToggle(1000);
+    });
+    $(".downVal_37").hide();
+    $(".dropVal_37").click(function(){
+        $(".downVal_37").slideToggle(1000);
+    });
+    $(".downVal_38").hide();
+    $(".dropVal_38").click(function(){
+        $(".downVal_38").slideToggle(1000);
+    });
+    $(".downVal_39").hide();
+    $(".dropVal_39").click(function(){
+        $(".downVal_39").slideToggle(1000);
+    });
+    $(".downVal_40").hide();
+    $(".dropVal_40").click(function(){
+        $(".downVal_40").slideToggle(1000);
+    });
 // ///////////////////////////// Misol \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\
     $(".downEx_1").hide();
     $(".dropEx_1").click(function(){
@@ -3581,5 +3681,49 @@ $(document).ready(function(){
     $(".downEx_29").hide();
     $(".dropEx_29").click(function(){
         $(".downEx_29").slideToggle(1000);
+    });
+    $(".downEx_30").hide();
+    $(".dropEx_30").click(function(){
+        $(".downEx_30").slideToggle(1000);
+    });
+    $(".downEx_31").hide();
+    $(".dropEx_31").click(function(){
+        $(".downEx_31").slideToggle(1000);
+    });
+    $(".downEx_32").hide();
+    $(".dropEx_32").click(function(){
+        $(".downEx_32").slideToggle(1000);
+    });
+    $(".downEx_33").hide();
+    $(".dropEx_33").click(function(){
+        $(".downEx_33").slideToggle(1000);
+    });
+    $(".downEx_34").hide();
+    $(".dropEx_34").click(function(){
+        $(".downEx_34").slideToggle(1000);
+    });
+    $(".downEx_35").hide();
+    $(".dropEx_35").click(function(){
+        $(".downEx_35").slideToggle(1000);
+    });
+    $(".downEx_36").hide();
+    $(".dropEx_36").click(function(){
+        $(".downEx_36").slideToggle(1000);
+    });
+    $(".downEx_37").hide();
+    $(".dropEx_37").click(function(){
+        $(".downEx_37").slideToggle(1000);
+    });
+    $(".downEx_38").hide();
+    $(".dropEx_38").click(function(){
+        $(".downEx_38").slideToggle(1000);
+    });
+    $(".downEx_39").hide();
+    $(".dropEx_39").click(function(){
+        $(".downEx_39").slideToggle(1000);
+    });
+    $(".downEx_40").hide();
+    $(".dropEx_40").click(function(){
+        $(".downEx_40").slideToggle(1000);
     });
 });
