@@ -150,8 +150,8 @@ hr{clear: both;}
 .aniBorS{animation: aniBorS 12s 1s infinite; position: relative;}
 .aniBorW{animation: aniBorW 12s 1.3s infinite; position: relative;}
 .aniBorC{animation: aniBorC 12s 1.6s infinite; position: relative;}
-.aniSleshBor{animation: aniSleshBor 12s 2.2s infinite; position: relative; opacity: 0;}
 
+.aniSleshBor{animation: aniSleshBor 12s 2.2s infinite; position: relative; opacity: 0;}
 /* ////////////////////////Border-style//////////////////////// */
 .aniBorTopS{animation: aniBorTopS 12s 1s infinite; position: relative;}
 .aniBorRightS{animation: aniBorRightS 12s 1.3s infinite; position: relative;}
@@ -180,12 +180,22 @@ hr{clear: both;}
 .aniBorTopLeftR{animation: aniBorTopLeftR 12s 1s infinite; position: relative;}
 .aniBorTopRightR{animation: aniBorTopRightR 12s 1.3s infinite; position: relative;}
 .aniBorBottomRightR{animation: aniBorBottomRightR 12s 1.6s infinite; position: relative;}
-.aniBorBottomLeftR{animation: aniBorBottomLeftR 12s 1.6s infinite; position: relative;}
+.aniBorBottomLeftR{animation: aniBorBottomLeftR 12s 1.9s infinite; position: relative;}
 /* //////////////////////// */
 .aniBorTopLeftOp{animation: aniBorTopLeftOp 12s 1s infinite; position: relative;}
 .aniBorTopRightOp{animation: aniBorTopRightOp 12s 1.3s infinite; position: relative;}
 .aniBorBottomRightOp{animation: aniBorBottomRightOp 12s 1.6s infinite; position: relative;}
-.aniBorBottomLeftOp{animation: aniBorBottomLeftOp 12s 1.6s infinite; position: relative;}
+.aniBorBottomLeftOp{animation: aniBorBottomLeftOp 12s 1.9s infinite; position: relative;}
+/* ////////////////////////Padding//////////////////////// */
+.aniPaddTop{animation: aniPaddTop 12s 1s infinite; position: relative;}
+.aniPaddRight{animation: aniPaddRight 12s 1.3s infinite; position: relative;}
+.aniPaddBottom{animation: aniPaddBottom 12s 1.6s infinite; position: relative;}
+.aniPaddLeft{animation: aniPaddLeft 12s 1.9s infinite; position: relative;}
+/* //////////////////////// */
+.aniPaddTopOp{animation: aniPaddTopOp 12s 1s infinite; position: relative;}
+.aniPaddRightOp{animation: aniPaddRightOp 12s 1.3s infinite; position: relative;}
+.aniPaddBottomOp{animation: aniPaddBottomOp 12s 1.6s infinite; position: relative;}
+.aniPaddLeftOp{animation: aniPaddLeftOp 12s 1.9s infinite; position: relative;}
 
 /* ////////////////////////Backgrund//////////////////////// */
 @keyframes aniBac{
@@ -458,6 +468,64 @@ hr{clear: both;}
     40%{left: 425px;bottom: 56px; opacity: 0;}
     50%{left: 425px;bottom: 56px; opacity: 0;}
     100%{left: 425px;bottom: 56px; opacity: 0;}
+}
+/* ////////////////////////Padding//////////////////////// */
+@keyframes aniPaddTop{
+    0%{left: 0px;}
+    10%{left: 0px;}
+    40%{left: 368px;}
+    50%{left: 368px;}
+    100%{left: 368px;}
+}
+@keyframes aniPaddRight{
+    0%{left: 0px; bottom: 0px;}
+    10%{left: 0px; bottom: 0px;}
+    40%{left: 395px;bottom: 18.8px;}
+    50%{left: 395px;bottom: 18.8px;}
+    100%{left: 395px;bottom: 18.8px;}
+}
+@keyframes aniPaddBottom{
+    0%{left: 0px; bottom: 0px;}
+    10%{left: 0px; bottom: 0px;}
+    40%{left: 430px;bottom: 37.8px;}
+    50%{left: 430px;bottom: 37.8px;}
+    100%{left: 430px;bottom: 37.8px;}
+}
+@keyframes aniPaddLeft{
+    0%{left: 0px; bottom: 0px;}
+    10%{left: 0px; bottom: 0px;}
+    40%{left: 490px;bottom: 55.8px;}
+    50%{left: 490px;bottom: 55.8px;}
+    100%{left: 490px;bottom: 55.8px;}
+}
+/* //////////// */
+@keyframes aniPaddTopOp{
+    0%{left: 0px;}
+    10%{left: 0px;}
+    40%{left: 368px;}
+    50%{left: 368px;}
+    100%{left: 368px;}
+}
+@keyframes aniPaddRightOp{
+    0%{left: 0px; bottom: 0px; opacity: 1;}
+    10%{left: 0px; bottom: 0px; opacity: 1;}
+    40%{left: 368px;bottom: 19px; opacity: 0;}
+    50%{left: 368px;bottom: 19px; opacity: 0;}
+    100%{left: 368px;bottom: 19px; opacity: 0;}
+}
+@keyframes aniPaddBottomOp{
+    0%{left: 0px; bottom: 0px; opacity: 1;}
+    10%{left: 0px; bottom: 0px; opacity: 1;}
+    40%{left: 368px;bottom: 37.5px; opacity: 0;}
+    50%{left: 368px;bottom: 37.5px; opacity: 0;}
+    100%{left: 368px;bottom: 37.5px; opacity: 0;}
+}
+@keyframes aniPaddLeftOp{
+    0%{left: 0px; bottom: 0px; opacity: 1;}
+    10%{left: 0px; bottom: 0px; opacity: 1;}
+    40%{left: 368px;bottom: 56px; opacity: 0;}
+    50%{left: 368px;bottom: 56px; opacity: 0;}
+    100%{left: 368px;bottom: 56px; opacity: 0;}
 }
 /* ***************************Transform shows******************************** */
 .show{transform: translate(50px,50px);}
