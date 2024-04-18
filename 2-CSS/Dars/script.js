@@ -180,84 +180,105 @@ var typingOutlineOFF = new Typed(".typingOutlineOFF", {
     loop: true
 });
 var typingBorTopLeftR = new Typed(".typingBorTopLeftR", {
-    strings: [' 10px', ' 20px', ' 50px','20%','50%'],
+    strings: [' 10px', ' 20px', ' 50px',' 20%',' 50%'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 2000,
     loop: true
 });
 var typingBorTopRightR = new Typed(".typingBorTopRightR", {
-    strings: [' 10px', ' 20px', ' 50px','20%','50%'],
+    strings: [' 10px', ' 20px', ' 50px',' 20%',' 50%'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 2000,
     loop: true
 });
 var typingBorBotoomRightR = new Typed(".typingBorBotoomRightR", {
-    strings: [' 10px', ' 20px', ' 50px','20%','50%'],
+    strings: [' 10px', ' 20px', ' 50px',' 20%',' 50%'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 2000,
     loop: true
 });
 var typingBorBotoomLeftR = new Typed(".typingBorBotoomLeftR", {
-    strings: [' 10px', ' 20px', ' 50px','20%','50%'],
+    strings: [' 10px', ' 20px', ' 50px',' 20%',' 50%'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 2000,
     loop: true
 });
 var typingPaddingTop = new Typed(".typingPaddingTop", {
-    strings: [' 10px', ' 20px', ' 50px','10%','30%'],
+    strings: [' 10px', ' 20px', ' 50px',' 10%',' 30%'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 2000,
     loop: true
 });
 var typingPaddingRight = new Typed(".typingPaddingRight", {
-    strings: [' 10px', ' 20px', ' 50px','10%','30%'],
+    strings: [' 10px', ' 20px', ' 50px',' 10%',' 30%'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 2000,
     loop: true
 });
 var typingPaddingBottom = new Typed(".typingPaddingBottom", {
-    strings: [' 10px', ' 20px', ' 50px','10%','30%'],
+    strings: [' 10px', ' 20px', ' 50px',' 10%',' 30%'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 2000,
     loop: true
 });
 var typingPaddingLeft = new Typed(".typingPaddingLeft", {
-    strings: [' 10px', ' 20px', ' 50px','10%','30%'],
+    strings: [' 10px', ' 20px', ' 50px',' 10%',' 30%'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 2000,
     loop: true
 });
 var typingMarginTop = new Typed(".typingMarginTop", {
-    strings: [' 10px', ' 20px', ' 50px','10%','30%'],
+    strings: [' 10px', ' 20px', ' 50px',' 10%',' 30%'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 2000,
     loop: true
 });
 var typingMarginRight = new Typed(".typingMarginRight", {
-    strings: [' 10px', ' 20px', ' 50px','10%','30%'],
+    strings: [' 10px', ' 20px', ' 50px',' 10%',' 30%'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 2000,
     loop: true
 });
 var typingMarginBottom = new Typed(".typingMarginBottom", {
-    strings: [' 10px', ' 20px', ' 50px','10%','30%'],
+    strings: [' 10px', ' 20px', ' 50px',' 10%',' 30%'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 2000,
     loop: true
 });
 var typingMarginLeft = new Typed(".typingMarginLeft", {
-    strings: [' 10px', ' 20px', ' 50px','10%','30%'],
+    strings: [' 10px', ' 20px', ' 50px',' 10%',' 30%'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingWidth = new Typed(".typingWidth", {
+    strings: [' 10px', ' 20px', ' 50px',' 10%',' 30%'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingHeight = new Typed(".typingHeight", {
+    strings: [' 10px', ' 20px', ' 50px',' 10%',' 30%'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true
+});
+var typingDisplay = new Typed(".typingDisplay", {
+    strings: [' inline', ' block', ' flex',' grid',' inline-block',' inline-flex',' inline-grid',' none'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 2000,
@@ -3300,18 +3321,18 @@ $(document).ready(function(){
     $(".drop-50").click(function(){
         $(".down-50").slideToggle(1000);
     });
-    // $(".down-51").hide();
-    // $(".drop-51").click(function(){
-    //     $(".down-51").slideToggle(1000);
-    // });
+    $(".down-51").hide();
+    $(".drop-51").click(function(){
+        $(".down-51").slideToggle(1000);
+    });
     $(".down-52").hide();
     $(".drop-52").click(function(){
         $(".down-52").slideToggle(1000);
     });
-    $(".down-53").hide();
-    $(".drop-53").click(function(){
-        $(".down-53").slideToggle(1000);
-    });
+    // $(".down-53").hide();
+    // $(".drop-53").click(function(){
+    //     $(".down-53").slideToggle(1000);
+    // });
     $(".down-54").hide();
     $(".drop-54").click(function(){
         $(".down-54").slideToggle(1000);
@@ -3661,6 +3682,18 @@ $(document).ready(function(){
     $(".dropVal_50").click(function(){
         $(".downVal_50").slideToggle(1000);
     });
+    $(".downVal_51").hide();
+    $(".dropVal_51").click(function(){
+        $(".downVal_51").slideToggle(1000);
+    });
+    $(".downVal_52").hide();
+    $(".dropVal_52").click(function(){
+        $(".downVal_52").slideToggle(1000);
+    });
+    $(".downVal_60").hide();
+    $(".dropVal_60").click(function(){
+        $(".downVal_60").slideToggle(1000);
+    });
 // ///////////////////////////// Misol \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\
     $(".downEx_1").hide();
     $(".dropEx_1").click(function(){
@@ -3861,5 +3894,17 @@ $(document).ready(function(){
     $(".downEx_50").hide();
     $(".dropEx_50").click(function(){
         $(".downEx_50").slideToggle(1000);
+    });
+    $(".downEx_51").hide();
+    $(".dropEx_51").click(function(){
+        $(".downEx_51").slideToggle(1000);
+    });
+    $(".downEx_52").hide();
+    $(".dropEx_52").click(function(){
+        $(".downEx_52").slideToggle(1000);
+    });
+    $(".downEx_60").hide();
+    $(".dropEx_60").click(function(){
+        $(".downEx_60").slideToggle(1000);
     });
 });
