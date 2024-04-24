@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vazifa</title>
+
+    <script src="../../../js/sweetalert.js"></script>
+</head>
+<body>
+    <button style="padding: 15px; font-size: 20px;" onclick=" fan();">Удалить</button>
+    <script>
+        function fan(){
+            swal({
+                title: "Вы уверены?",
+                text:"После удаления вы не сможете восстановить этот воображаемый файл!",
+                icon:"warning",
+                dangerMode: true,
+                buttons: true,
+            })
+            .then(function(udalit){
+                if(udalit){
+                    swal({
+                        title:"Ваш воображаемый файл был удален!",
+                        icon:"success",
+                    })
+                }
+                else{
+                    swal({
+                        title:"Ваш воображаемый файл в безопасности!",
+                        icon:"info",
+                    })
+                }
+            })
+            };
+    </script>
+</body>
+</html>

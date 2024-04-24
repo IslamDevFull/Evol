@@ -8,6 +8,7 @@
     <script src="../../../js/sweetalert.js"></script>
 </head>
 <body>
+    <h1>Log in</h1>
     <input type="text" id="demo">
     <button onclick="fan()">OK</button>
     <script>
@@ -15,21 +16,21 @@
            let name = document.getElementById("demo").value;
            if(name == ""){
             swal({
-                title: "To'ldiring",
+                title: "Ошибка !",
+                text: "Поля не должно быть пустым",
                 icon: "error",
                 buttons:{
-                    cancel:"Net",
-                    confirm: 'Da'
+                    confirm: 'Повторить'
                 },
             })
         }
         else{
                swal({
                 icon:"success",
-                   title: "Raxmat",
+                   title: "Правильно",
                    buttons:{
-                       cancel:"Net",
-                       confirm: 'Da'
+                       cancel:"Повторить",
+                       confirm: 'Отправить'
                    },
                })
 

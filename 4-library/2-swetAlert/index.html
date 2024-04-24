@@ -5,32 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../Code/lib/codemirror.css">
     <link rel="stylesheet" href="../../Code/theme/panda-syntax.css">
+    <link rel="stylesheet" href="../../Code/theme/darcula.css">
     <link rel="stylesheet" href="../../js/boots_style.css">
     <script src="../../Code/lib/codemirror.js"></script>
     <script src="../../Code/mode/xml.js"></script>
     <script src="../../Code/mode/htmlmixed.js"></script>
+    <script src="../../Code/mode/css.js"></script>
     <script src="../../Code/mode/javascript.js"></script>
     <script src="../../js/jquery.js"></script>
     <script src="../../js/sweetalert.js"></script>
     <!-- <script src="../../js/sweetalert2.js"></script> -->
     <title>Document</title>
     <style>
+        *{
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+
+        }
         .container{
-            height: 3500px;
+            height: 4500px;
             border: 2px solid red;
         }
+        .flex{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0px;
+        }
         .col-1{
-            float: right;
-            width: 69%;
-            margin-top: 20px;
-            /* border: 2px solid blue; */
+            width: 50%;
+            height: 200px;
         }
         .col-2{
-            float: right;
-            width: 30%;
             text-align: center;
-            margin-top: 20px;
-            /* border: 2px solid green; */
+            width: 50%;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .vazifa{
+            margin-top: 10px;
         }
         h1{text-align: center;}
         button{
@@ -43,11 +58,10 @@
         button:hover{
             box-shadow: 0px 0px 10px 5px gray;
         }
+        .blue{background-color: powderblue;}
         button:active{margin-top: 3px;}
-        hr,br{clear: both;}
         @media screen and (max-width: 400px) {
             .col-1 ,.col-2{
-                clear: both;
                 width: 100%;
             }
             button{
@@ -60,69 +74,116 @@
 <body>
     <div class="container">
         <h1>Sweetalert</h1>
-        <h1 class="col-1 non">Синтаксис</h1>
-        <h1 class="col-2 non">Результат</h1>
-        <div class="col-1">
+        <div class="flex">
+            <div class="col-2" style="width: 30%;">
+                <h2>CDN</h2>
+            </div>
+            <div class="col-1" style="height: 50px; width: 70%;">
+                <textarea id="edit">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script></textarea>
+            </div>
+        </div>
+        <div class="flex">
+            <h1 class="non" style="width: 50%;">Результат</h1>
+            <h1 class="non" style="width: 50%;">Синтаксис</h1>
+        </div>
+        <div class="flex">
+            <div class="col-2" style="height: 50px;">
+                <button onclick="fan_1()">Результат</button>
+            </div>
+        <div class="col-1" style="height: 50px;">
             <textarea id="edit_1">
 swal({text: 'Hello world!'});</textarea>
         </div>
-        <div class="col-2" style="height: 50px;">
-            <button onclick="fan_1()">Результат</button>
         </div>
-        <div class="col-1">
+        <div class="flex">
+            <div class="col-2" style="height: 50px;">
+                <button onclick="fan_2()">Результат</button>
+            </div>
+        <div class="col-1" style="height: 50px;">
             <textarea id="edit_2">
 swal('Hello world!','Привет, мир');</textarea>
         </div>
-        <div class="col-2" style="height: 50px;">
-            <button onclick="fan_2()">Результат</button>
         </div>
-        <div class="col-1">
+        <div class="flex">
+            <div class="col-2" style="height: 50px;">
+                <button onclick="fan_3()">Результат</button>
+            </div>
+        <div class="col-1" style="height: 50px;">
             <textarea id="edit_3">
 swal({title:'Hello world!'});</textarea>
         </div>
-        <div class="col-2" style="height: 50px;">
-            <button onclick="fan_3()">Результат</button>
         </div>
         <br><br><hr>
         <h1>Иконки</h1>
-        <div class="col-1">
+        <div class="flex">
+            <div class="col-2" style="height: 50px;">
+                <button onclick="fan_4()">Результат</button>
+            </div>
+        <div class="col-1" style="height: 50px;">
             <textarea id="edit_4">
 swal({icon:'success'});</textarea>
         </div>
-        <div class="col-2" style="height: 50px;">
-            <button onclick="fan_4()">Результат</button>
         </div>
-        <div class="col-1">
+        <div class="flex">
+            <div class="col-2" style="height: 50px;">
+                <button onclick="fan_5()">Результат</button>
+            </div>
+        <div class="col-1" style="height: 50px;">
             <textarea id="edit_5">
 swal({icon:'warning'});</textarea>
         </div>
-        <div class="col-2" style="height: 50px;">
-            <button onclick="fan_5()">Результат</button>
         </div>
-        <div class="col-1">
+        <div class="flex">
+            <div class="col-2" style="height: 50px;">
+                <button onclick="fan_6()">Результат</button>
+            </div>
+        <div class="col-1" style="height: 50px;">
             <textarea id="edit_6">
 swal({icon:'error'});</textarea>
         </div>
-        <div class="col-2" style="height: 50px;">
-            <button onclick="fan_6()">Результат</button>
         </div>
-        <div class="col-1">
+        <div class="flex">
+            <div class="col-2" style="height: 50px;">
+                <button onclick="fan_7()">Результат</button>
+            </div>
+        <div class="col-1" style="height: 50px;">
             <textarea id="edit_7">
 swal({icon:'info'});</textarea>
         </div>
-        <div class="col-2" style="height: 50px;">
-            <button onclick="fan_7()">Результат</button>
+        </div>
+        <div class="vazifa">
+            <a href="vazifa/vazifa.html" target="_blank"><button style="width: 100%;">Vazifa</button></a>
         </div>
         <br><br><hr>
-        <h1>Kнопки</h1>
-        <div class="col-1">
+        <h1>Kнопкa</h1>
+        <div class="flex">
+                <h3 style="width: 50%;text-align: center;">Значения по умолчанию</h3>
+            <div class="col-1" style="height: 180px;">
+                <textarea id="values_1" style="width: 50%;">
+{
+    text: "OK",
+    value: true,
+    visible: true,
+    className: "",
+    closeModal: true,
+}</textarea>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="col-2" style="height: 50px;">
+                <button onclick="fan_8()">Результат</button>
+            </div>
+        <div class="col-1" style="height: 50px;">
             <textarea id="edit_8">
 swal({button:'OK'});</textarea>
         </div>
-        <div class="col-2" style="height: 50px;">
-            <button onclick="fan_8()">Результат</button>
         </div>
-        <div class="col-1">
+        <div class="flex">
+            <div class="col-2" style="height: 130px;">
+                <button onclick="fan_9()">Результат</button>
+            </div>
+        <div class="col-1" style="height: 130px;">
             <textarea id="edit_9">
 swal({
     button:{
@@ -130,28 +191,58 @@ swal({
     },
 });</textarea>
         </div>
-        <div class="col-2" style="height: 130px;">
-            <button style="margin-top: 40px;" onclick="fan_9()">Результат</button>
         </div>
-        <div class="col-1">
+        <br><br><hr>
+        <h1>Кнопки</h1>
+        <div class="flex">
+            <h3 style="width: 50%;text-align: center;">Значения по умолчанию</h3>
+        <div class="col-1" style="height: 400px;">
+            <textarea id="values_2" style="width: 50%;">
+{
+    cancel: {
+        text: "Cancel",
+        value: null,
+        visible: false,
+        className: "",
+        closeModal: true,
+},
+    confirm: {
+        text: "OK",
+        value: true,
+        visible: true,
+        className: "",
+        closeModal: true
+    }
+}</textarea>
+        </div>
+    </div>
+        <div class="flex">
+            <div class="col-2" style="height: 85px;">
+                <button onclick="fan_10()">Результат</button>
+            </div>
+        <div class="col-1" style="height: 85px;">
             <textarea id="edit_10">
 swal({
-    buttons:{"Нет","Да"}
+    buttons:["Нет","Да"]
 });</textarea>
         </div>
-        <div class="col-2" style="height: 130px;">
-            <button style="margin-top: 20px;" onclick="fan_10()">Результат</button>
         </div>
-        <div class="col-1">
+        <div class="flex">
+            <div class="col-2" style="height: 85px;">
+                <button onclick="fan_11()">Результат</button>
+            </div>
+        <div class="col-1" style="height: 85px;">
             <textarea id="edit_11">
 swal({
     buttons:{true,true}
 });</textarea>
         </div>
-        <div class="col-2" style="height: 130px;">
-            <button style="margin-top: 20px;" onclick="fan_11()">Результат</button>
         </div>
-        <div class="col-1">
+        <div class="flex">
+            <div class="col-2" style="height: 160px;">
+                <button onclick="fan_12()">Результат</button>
+            </div>
+        <div class="col-1" style="height: 160px;">
             <textarea id="edit_12">
 swal({
     buttons:{
@@ -160,10 +251,12 @@ swal({
     },
 });</textarea>
         </div>
-        <div class="col-2" style="height: 130px;">
-            <button style="margin-top: 20px;" onclick="fan_12()">Результат</button>
         </div>
-        <div class="col-1">
+        <div class="flex">
+            <div class="col-2" style="height: 255px;">
+                <button onclick="fan_13()">Результат</button>
+            </div>
+        <div class="col-1" style="height: 255px;">
             <textarea id="edit_13">
 swal({
     buttons:{
@@ -176,28 +269,151 @@ swal({
     },
 });</textarea>
         </div>
-        <div class="col-2" style="height: 255px;">
-            <button style="margin-top: 100px;" onclick="fan_13()">Результат</button>
+        </div>
+        <div class="vazifa">
+            <a href="vazifa/vazfa_1.html" target="_blank"><button style="width: 100%;">Vazifa</button></a>
+        </div>
+        <br><br><hr>
+        <h1>content</h1>
+        <div class="flex">
+            <div class="col-2" style="height: 85px;">
+                <button onclick="fan_14()">Результат</button>
+            </div>
+        <div class="col-1" style="height: 85px;">
+            <textarea id="edit_14">
+swal({
+    content: "input"
+});</textarea>
+        </div>
+        </div>
+        <div class="flex">
+            <div class="col-2" style="height: 230px;">
+                <button onclick="fan_15()">Результат</button>
+            </div>
+        <div class="col-1" style="height: 230px;">
+            <textarea id="edit_15">
+swal({
+    content:{
+        element:"input",
+        attributes:{
+            placeholder:"Введите свой пароль",
+            type:"password"
+        }
+    }
+});</textarea>
+        </div>
+        </div>
+        <div class="flex">
+            <div class="col-2" style="height: 130px;">
+                <button onclick="fan_16()">Результат</button>
+            </div>
+        <div class="col-1" style="height: 130px;">
+            <textarea id="edit_16">
+let element = document.createElement("input");
+element.type = "range";
+swal({
+    content:element,
+});</textarea>
+        </div>
+        </div>
+        <div class="vazifa">
+            <a href="vazifa/vazifa_2.html" target="_blank"><button style="width: 100%;">Vazifa</button></a>
+        </div>
+        <div class="flex">
+            <div class="col-2" style="height: 105px;">
+                <button onclick="fan_17()">Результат</button>
+            </div>
+        <div class="col-1" style="height: 105px;">
+            <textarea id="edit_17">
+swal({
+    title:"Hello",
+    className:"blue"
+});</textarea>
+        </div>
+        </div>
+        <div class="flex">
+            <div class="col-2" style="height: 105px;">
+                <button onclick="fan_18()">Результат</button>
+            </div>
+        <div class="col-1" style="height: 105px;">
+            <textarea id="edit_18">
+swal({
+    title:"Hello",
+    closeOnClickOutside:false
+});</textarea>
+        </div>
+        </div>
+        <div class="flex">
+            <div class="col-2" style="height: 105px;">
+                <button onclick="fan_19()">Результат</button>
+            </div>
+        <div class="col-1" style="height: 105px;">
+            <textarea id="edit_19">
+swal({
+    title:"Hello",
+    closeOnEsc:false
+});</textarea>
+        </div>
+        </div>
+        <div class="flex">
+            <div class="col-2" style="height: 105px;">
+                <button onclick="fan_20()">Результат</button>
+            </div>
+        <div class="col-1" style="height: 105px;">
+            <textarea id="edit_20">
+swal({
+    title:"Hello",
+    dangerMode:true
+});</textarea>
+        </div>
+        </div>
+        <div class="flex">
+            <div class="col-2" style="height: 105px;">
+                <button onclick="fan_21()">Результат</button>
+            </div>
+        <div class="col-1" style="height: 105px;">
+            <textarea id="edit_21">
+swal({
+    title:"Hello",
+    timer:2000
+});</textarea>
+        </div>
+        </div>
+        <div class="vazifa">
+            <a href="vazifa/vazifa_3.html" target="_blank"><button style="width: 100%;">Vazifa</button></a>
+        </div>
+        <h1>CSS</h1>
+        <div class="flex">
+            <div class="col-2" style="height: 80px;">
+                <button id="fan22" onclick="fan_22()">Результат</button>
+            </div>
+        <div class="col-1" style="height: 80px;">
+            <textarea id="edit_22">
+.swal-overlay{
+    background-color: rgb(250,220,100,0.9);
+}</textarea>
+        </div>
         </div>
     </div>
     <script>
-        function fan_1(){swal({text: 'Hello world!'});}
-        function fan_2(){swal('Hello world!','Salom dunyo');}
-        function fan_3(){swal({title:'Hello world!'});}
-        function fan_4(){swal({icon:'success'});}
-        function fan_5(){swal({icon:'warning'});}
-        function fan_6(){swal({icon:'error'});}
-        function fan_7(){swal({icon:'info'});}
-        function fan_8(){swal({button:'OK'});}
+        function fan_1(){swal({text: 'Hello world!'});document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";}
+        function fan_2(){swal('Hello world!','Salom dunyo');document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";}
+        function fan_3(){swal({title:'Hello world!'});document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";}
+        function fan_4(){swal({icon:'success'});document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";}
+        function fan_5(){swal({icon:'warning'});document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";}
+        function fan_6(){swal({icon:'error'});document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";}
+        function fan_7(){swal({icon:'info'});document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";}
+        function fan_8(){swal({button:'OK'});document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";}
         function fan_9(){
             swal({
                 button:{
                     text: "Hello",
                 },
             });
+            document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
         }
-        function fan_10(){swal({buttons:["Нет","Да"]});}
-        function fan_11(){swal({buttons:[true,true]});}
+        function fan_10(){swal({buttons:["Нет","Да"]});document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";}
+        function fan_11(){swal({buttons:[true,true]});document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";}
         function fan_12(){
             swal({
                 buttons:{
@@ -205,6 +421,7 @@ swal({
                     confirm:"Да",
                 },
             });
+            document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
         }
         function fan_13(){
             swal({
@@ -217,85 +434,226 @@ swal({
                     },
                 },
             });
+            document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
         }
+        function fan_14(){
+            swal({
+                content: "input"
+            });
+            document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+        }
+        function fan_15(){
+            swal({
+                content:{
+                    element:"input",
+                    attributes:{
+                        placeholder:"Введите свой пароль",
+                        type:"password"
+                    }
+                }
+            });
+            document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+        }
+        function fan_16(){
+            let element = document.createElement("input");
+            element.type = "range";
+            swal({
+                content:element,
+            });
+            document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+        }
+        function fan_17(){
+            swal({
+                title:"Hello",
+                className:"blue"
+            });
+            document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+        }
+        function fan_18(){
+            swal({
+                title:"Hello",
+                closeOnClickOutside:false
+            });
+            document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+        }
+        function fan_19(){
+            swal({
+                title:"Hello",
+                closeOnEsc:false
+            });
+            document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+        }
+        function fan_20(){
+            swal({
+                title:"Hello",
+                dangerMode:true,
+            });
+            document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+        }
+        function fan_21(){
+            swal({
+                title:"Hello",
+                timer:2000
+            });
+            document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+        }
+        function fan_22(){
+            swal({
+                title:"Hello",
+            });
+            document.querySelector(".swal-overlay").style.backgroundColor = "rgb(250,220,100,0.9)";
+        }
+        
+         var edit = CodeMirror.fromTextArea(document.getElementById("edit"),{
+            mode:"javascript",
+            lineNumbers:true,
+            theme:"panda-syntax"
+        });
+        edit.setSize("100%","100%");
          var edit_1 = CodeMirror.fromTextArea(document.getElementById("edit_1"),{
             mode:"javascript",
             lineNumbers:true,
             theme:"panda-syntax"
         });
-        edit_1.setSize("100%","50");
+        edit_1.setSize("100%","100%");
          var edit_2 = CodeMirror.fromTextArea(document.getElementById("edit_2"),{
             mode:"javascript",
             lineNumbers:true,
             theme:"panda-syntax"
         });
-        edit_2.setSize("100%","50");
+        edit_2.setSize("100%","100%");
          var edit_3 = CodeMirror.fromTextArea(document.getElementById("edit_3"),{
             mode:"javascript",
             lineNumbers:true,
             theme:"panda-syntax"
         });
-        edit_3.setSize("100%","50");
+        edit_3.setSize("100%","100%");
          var edit_4 = CodeMirror.fromTextArea(document.getElementById("edit_4"),{
             mode:"javascript",
             lineNumbers:true,
             theme:"panda-syntax"
         });
-        edit_4.setSize("100%","50");
+        edit_4.setSize("100%","100%");
          var edit_5 = CodeMirror.fromTextArea(document.getElementById("edit_5"),{
             mode:"javascript",
             lineNumbers:true,
             theme:"panda-syntax"
         });
-        edit_5.setSize("100%","50");
+        edit_5.setSize("100%","100%");
          var edit_6 = CodeMirror.fromTextArea(document.getElementById("edit_6"),{
             mode:"javascript",
             lineNumbers:true,
             theme:"panda-syntax"
         });
-        edit_6.setSize("100%","50");
+        edit_6.setSize("100%","100%");
          var edit_7 = CodeMirror.fromTextArea(document.getElementById("edit_7"),{
             mode:"javascript",
             lineNumbers:true,
             theme:"panda-syntax"
         });
-        edit_7.setSize("100%","50");
+        edit_7.setSize("100%","100%");
          var edit_8 = CodeMirror.fromTextArea(document.getElementById("edit_8"),{
             mode:"javascript",
             lineNumbers:true,
             theme:"panda-syntax"
         });
-        edit_8.setSize("100%","50");
+        edit_8.setSize("100%","100%");
          var edit_9 = CodeMirror.fromTextArea(document.getElementById("edit_9"),{
             mode:"javascript",
             lineNumbers:true,
             theme:"panda-syntax"
         });
-        edit_9.setSize("100%","130");
+        edit_9.setSize("100%","100%");
          var edit_10 = CodeMirror.fromTextArea(document.getElementById("edit_10"),{
             mode:"javascript",
             lineNumbers:true,
             theme:"panda-syntax"
         });
-        edit_10.setSize("100%","85");
+        edit_10.setSize("100%","100%");
          var edit_11 = CodeMirror.fromTextArea(document.getElementById("edit_11"),{
             mode:"javascript",
             lineNumbers:true,
             theme:"panda-syntax"
         });
-        edit_11.setSize("100%","85");
+        edit_11.setSize("100%","100%");
          var edit_12 = CodeMirror.fromTextArea(document.getElementById("edit_12"),{
             mode:"javascript",
             lineNumbers:true,
             theme:"panda-syntax"
         });
-        edit_12.setSize("100%","160");
+        edit_12.setSize("100%","100%");
          var edit_13 = CodeMirror.fromTextArea(document.getElementById("edit_13"),{
             mode:"javascript",
             lineNumbers:true,
             theme:"panda-syntax"
         });
-        edit_13.setSize("100%","255");
+        edit_13.setSize("100%","100%");
+         var values_1 = CodeMirror.fromTextArea(document.getElementById("values_1"),{
+            mode:"javascript",
+            lineNumbers:true,
+            theme:"panda-syntax"
+        });
+        values_1.setSize("100%","100%");
+         var values_2 = CodeMirror.fromTextArea(document.getElementById("values_2"),{
+            mode:"javascript",
+            lineNumbers:true,
+            theme:"panda-syntax"
+        });
+        values_2.setSize("100%","100%");
+         var edit_14 = CodeMirror.fromTextArea(document.getElementById("edit_14"),{
+            mode:"javascript",
+            lineNumbers:true,
+            theme:"panda-syntax"
+        });
+        edit_14.setSize("100%","100%");
+         var edit_15 = CodeMirror.fromTextArea(document.getElementById("edit_15"),{
+            mode:"javascript",
+            lineNumbers:true,
+            theme:"panda-syntax"
+        });
+        edit_15.setSize("100%","100%");
+         var edit_16 = CodeMirror.fromTextArea(document.getElementById("edit_16"),{
+            mode:"javascript",
+            lineNumbers:true,
+            theme:"panda-syntax"
+        });
+        edit_16.setSize("100%","100%");
+         var edit_17 = CodeMirror.fromTextArea(document.getElementById("edit_17"),{
+            mode:"javascript",
+            lineNumbers:true,
+            theme:"panda-syntax"
+        });
+        edit_17.setSize("100%","100%");
+        var edit_18 = CodeMirror.fromTextArea(document.getElementById("edit_18"),{
+            mode:"javascript",
+            lineNumbers:true,
+            theme:"panda-syntax"
+        });
+        edit_18.setSize("100%","100%");
+        var edit_19 = CodeMirror.fromTextArea(document.getElementById("edit_19"),{
+            mode:"javascript",
+            lineNumbers:true,
+            theme:"panda-syntax"
+        });
+        edit_19.setSize("100%","100%");
+        var edit_20 = CodeMirror.fromTextArea(document.getElementById("edit_20"),{
+            mode:"javascript",
+            lineNumbers:true,
+            theme:"panda-syntax"
+        });
+        edit_20.setSize("100%","100%");
+        var edit_21 = CodeMirror.fromTextArea(document.getElementById("edit_21"),{
+            mode:"javascript",
+            lineNumbers:true,
+            theme:"panda-syntax"
+        });
+        edit_21.setSize("100%","100%");
+        var edit_22 = CodeMirror.fromTextArea(document.getElementById("edit_22"),{
+            mode:"css",
+            lineNumbers:true,
+            theme:"darcula"
+        });
+        edit_22.setSize("100%","100%");
     </script>
 </body>
 </html>

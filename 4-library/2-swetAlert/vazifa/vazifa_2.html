@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vazifa</title>
+
+    <script src="../../../js/sweetalert.js"></script>
+</head>
+<body>
+    <script>
+        function fan(){
+            swal({
+                title:"Напишите что-нибудь:",
+                content: "input",
+            })
+                .then(function(value) {
+                swal({
+                    title:`Вы набрали: ${value}`
+                });
+            });
+        }
+        fan()
+    </script>
+</body>
+</html>
