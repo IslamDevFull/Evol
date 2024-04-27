@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vazifa</title>
+    <script src="../../../js/sweetalert.js"></script>
+</head>
+<body>
+    <script>
+        function fan(){
+            swal({
+                title:"Введите имя:",
+                content: "input",
+                closeOnEsc:false,
+                closeOnClickOutside:false,
+            })
+                .then(function(value) {
+                    if(value === ""){
+                        swal({
+                            title:"Ошибка !",
+                            text:"Поля не должно быть пустым",
+                            icon:"error",
+                            closeOnEsc:false,
+                            closeOnClickOutside:false,
+                            button:{
+                                text: "Повторить",
+                                value: true,
+                                visible: true,
+                                className: "",
+                                closeModal: true,
+                            },
+                        })
+                    }
+                    else{
+                        swal({
+                            title:`Введите Фамилию: ${value}`,
+                            content:"input",
+                            closeOnEsc:false,
+                            closeOnClickOutside:false,
+                            icon: "https://www.digimarco.com/wp-content/uploads/2020/10/Avatar-Maker.png"
+                        })
+                        .then(function(value1) {
+                        swal({
+                            title:`Ваше полное имя: ${value1 + ' ' + value}`,
+                            closeOnEsc:false,
+                            closeOnClickOutside:false,
+                            icon: "https://www.digimarco.com/wp-content/uploads/2020/10/Avatar-Maker.png"
+                        });
+                    });
+
+                    }
+            });
+        };
+        fan()
+    </script>
+</body>
+</html>

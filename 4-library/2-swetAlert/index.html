@@ -23,7 +23,7 @@
 
         }
         .container{
-            height: 4500px;
+            height: 5500px;
             border: 2px solid red;
         }
         .flex{
@@ -382,10 +382,13 @@ swal({
         <div class="vazifa">
             <a href="vazifa/vazifa_3.html" target="_blank"><button style="width: 100%;">Vazifa</button></a>
         </div>
+        <div class="vazifa">
+            <a href="vazifa/vazifa_4.html" target="_blank"><button style="width: 100%;">Vazifa</button></a>
+        </div>
         <h1>CSS</h1>
         <div class="flex">
             <div class="col-2" style="height: 80px;">
-                <button id="fan22" onclick="fan_22()">Результат</button>
+                <button onclick="fan_22()">Результат</button>
             </div>
         <div class="col-1" style="height: 80px;">
             <textarea id="edit_22">
@@ -394,16 +397,116 @@ swal({
 }</textarea>
         </div>
         </div>
+        <div class="flex">
+            <div class="col-2" style="height: 105px;">
+                <button onclick="fan_23()">Результат</button>
+            </div>
+        <div class="col-1" style="height: 105px;">
+            <textarea id="edit_23">
+.swal-modal{
+    background-color: yellow;
+    border-radius: 0% 50%;
+}</textarea>
+        </div>
+        </div>
+        <div class="flex">
+            <div class="col-2" style="height: 105px;">
+                <button onclick="fan_24()">Результат</button>
+            </div>
+        <div class="col-1" style="height: 105px;">
+            <textarea id="edit_24">
+.swal-title{
+    background-color: yellow;
+    color: red;
+}</textarea>
+        </div>
+        </div>
+        <div class="flex">
+            <div class="col-2" style="height: 105px;">
+                <button onclick="fan_25()">Результат</button>
+            </div>
+        <div class="col-1" style="height: 105px;">
+            <textarea id="edit_25">
+.swal-text{
+    background-color: yellow;
+    color: red;
+}</textarea>
+        </div>
+        </div>
+        <div class="flex">
+            <div class="col-2" style="height: 105px;">
+                <button onclick="fan_26()">Результат</button>
+            </div>
+        <div class="col-1" style="height: 105px;">
+            <textarea id="edit_26">
+.swal-footer{
+    background-color: rgb(200,200,200);
+    border-top: 2px solid red;
+}</textarea>
+        </div>
+        </div>
+        <div class="flex">
+            <div class="col-2" style="height: 130px;">
+                <button onclick="fan_27()">Результат</button>
+            </div>
+        <div class="col-1" style="height: 130px;">
+            <textarea id="edit_27">
+.swal-button{
+    background-color: grey;
+    color: red;
+    padding: 10px 50px;
+}</textarea>
+        </div>
+        </div>
     </div>
     <script>
-        function fan_1(){swal({text: 'Hello world!'});document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";}
-        function fan_2(){swal('Hello world!','Salom dunyo');document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";}
-        function fan_3(){swal({title:'Hello world!'});document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";}
-        function fan_4(){swal({icon:'success'});document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";}
-        function fan_5(){swal({icon:'warning'});document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";}
-        function fan_6(){swal({icon:'error'});document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";}
-        function fan_7(){swal({icon:'info'});document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";}
-        function fan_8(){swal({button:'OK'});document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";}
+        function fan_1(){
+            swal({text: 'Hello world!'});
+            document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+            document.querySelector(".swal-modal").style.borderRadius = "5px";
+            document.querySelector(".swal-modal").style.backgroundColor = "#fff";
+    }
+        function fan_2(){
+            swal('Hello world!','Привет, мир');
+            document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+            document.querySelector(".swal-modal").style.borderRadius = "5px";
+            document.querySelector(".swal-modal").style.backgroundColor = "#fff";
+        }
+        function fan_3(){
+            swal({title:'Hello world!'});
+            document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+            document.querySelector(".swal-modal").style.borderRadius = "5px";
+            document.querySelector(".swal-modal").style.backgroundColor = "#fff";
+        }
+        function fan_4(){
+            swal({icon:'success'});
+            document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+            document.querySelector(".swal-modal").style.borderRadius = "5px";
+            document.querySelector(".swal-modal").style.backgroundColor = "#fff";
+        }
+        function fan_5(){
+            swal({icon:'warning'});
+            document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+            document.querySelector(".swal-modal").style.borderRadius = "5px";
+            document.querySelector(".swal-modal").style.backgroundColor = "#fff";
+        }
+        function fan_6(){
+            swal({icon:'error'});
+            document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+            document.querySelector(".swal-modal").style.borderRadius = "5px";
+            document.querySelector(".swal-modal").style.backgroundColor = "#fff";
+        }
+        function fan_7(){
+            swal({icon:'info'});
+            document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+            document.querySelector(".swal-modal").style.borderRadius = "5px";
+            document.querySelector(".swal-modal").style.backgroundColor = "#fff";
+        }
+        function fan_8(){
+            swal({button:'OK'});
+            document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+        document.querySelector(".swal-modal").style.borderRadius = "5px";
+    document.querySelector(".swal-modal").style.backgroundColor = "#fff";}
         function fan_9(){
             swal({
                 button:{
@@ -411,9 +514,21 @@ swal({
                 },
             });
             document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+            document.querySelector(".swal-modal").style.borderRadius = "5px";
+            document.querySelector(".swal-modal").style.backgroundColor = "#fff";
         }
-        function fan_10(){swal({buttons:["Нет","Да"]});document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";}
-        function fan_11(){swal({buttons:[true,true]});document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";}
+        function fan_10(){
+            swal({buttons:["Нет","Да"]});
+            document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+            document.querySelector(".swal-modal").style.borderRadius = "5px";
+            document.querySelector(".swal-modal").style.backgroundColor = "#fff";
+        }
+        function fan_11(){
+            swal({buttons:[true,true]});
+            document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+            document.querySelector(".swal-modal").style.borderRadius = "5px";
+            document.querySelector(".swal-modal").style.backgroundColor = "#fff";
+        }
         function fan_12(){
             swal({
                 buttons:{
@@ -422,6 +537,8 @@ swal({
                 },
             });
             document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+            document.querySelector(".swal-modal").style.borderRadius = "5px";
+            document.querySelector(".swal-modal").style.backgroundColor = "#fff";
         }
         function fan_13(){
             swal({
@@ -435,12 +552,16 @@ swal({
                 },
             });
             document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+            document.querySelector(".swal-modal").style.borderRadius = "5px";
+            document.querySelector(".swal-modal").style.backgroundColor = "#fff";
         }
         function fan_14(){
             swal({
                 content: "input"
             });
             document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+            document.querySelector(".swal-modal").style.borderRadius = "5px";
+            document.querySelector(".swal-modal").style.backgroundColor = "#fff";
         }
         function fan_15(){
             swal({
@@ -453,6 +574,8 @@ swal({
                 }
             });
             document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+            document.querySelector(".swal-modal").style.borderRadius = "5px";
+            document.querySelector(".swal-modal").style.backgroundColor = "#fff";
         }
         function fan_16(){
             let element = document.createElement("input");
@@ -461,6 +584,8 @@ swal({
                 content:element,
             });
             document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+            document.querySelector(".swal-modal").style.borderRadius = "5px";
+            document.querySelector(".swal-modal").style.backgroundColor = "#fff";
         }
         function fan_17(){
             swal({
@@ -468,6 +593,8 @@ swal({
                 className:"blue"
             });
             document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+            document.querySelector(".swal-modal").style.borderRadius = "5px";
+            document.querySelector(".swal-modal").style.backgroundColor = "#fff";
         }
         function fan_18(){
             swal({
@@ -475,6 +602,8 @@ swal({
                 closeOnClickOutside:false
             });
             document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+            document.querySelector(".swal-modal").style.borderRadius = "5px";
+            document.querySelector(".swal-modal").style.backgroundColor = "#fff";
         }
         function fan_19(){
             swal({
@@ -482,6 +611,8 @@ swal({
                 closeOnEsc:false
             });
             document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+            document.querySelector(".swal-modal").style.borderRadius = "5px";
+            document.querySelector(".swal-modal").style.backgroundColor = "#fff";
         }
         function fan_20(){
             swal({
@@ -489,6 +620,8 @@ swal({
                 dangerMode:true,
             });
             document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+            document.querySelector(".swal-modal").style.borderRadius = "5px";
+            document.querySelector(".swal-modal").style.backgroundColor = "#fff";
         }
         function fan_21(){
             swal({
@@ -496,12 +629,68 @@ swal({
                 timer:2000
             });
             document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+            document.querySelector(".swal-modal").style.borderRadius = "5px";
+            document.querySelector(".swal-modal").style.backgroundColor = "#fff";
         }
         function fan_22(){
             swal({
                 title:"Hello",
             });
             document.querySelector(".swal-overlay").style.backgroundColor = "rgb(250,220,100,0.9)";
+            document.querySelector(".swal-modal").style.borderRadius = "5px";
+            document.querySelector(".swal-modal").style.backgroundColor = "#fff";
+        }
+        function fan_23(){
+            swal({
+                title:"Hello",
+            });
+            document.querySelector(".swal-modal").style.backgroundColor = "yellow";
+            document.querySelector(".swal-modal").style.borderRadius = "0% 50%";
+            document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+        }
+        function fan_24(){
+            swal({
+                title:"Hello",
+            });
+            document.querySelector(".swal-title").style.backgroundColor = "yellow";
+            document.querySelector(".swal-title").style.color = "red";
+            document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+            document.querySelector(".swal-modal").style.backgroundColor = "#fff";
+            document.querySelector(".swal-modal").style.borderRadius = "5px";
+        }
+        function fan_25(){
+            swal({
+                title:"Hello",
+                text:"Hello world"
+            });
+            document.querySelector(".swal-text").style.backgroundColor = "yellow";
+            document.querySelector(".swal-text").style.color = "red";
+            document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+            document.querySelector(".swal-modal").style.backgroundColor = "#fff";
+            document.querySelector(".swal-modal").style.borderRadius = "5px";
+        }
+        function fan_26(){
+            swal({
+                title:"Hello",
+                text:"Hello world"
+            });
+            document.querySelector(".swal-footer").style.backgroundColor = "rgb(200,200,200)";
+            document.querySelector(".swal-footer").style.borderTop = "2px solid red";
+            document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+            document.querySelector(".swal-modal").style.backgroundColor = "#fff";
+            document.querySelector(".swal-modal").style.borderRadius = "5px";
+        }
+        function fan_27(){
+            swal({
+                title:"Hello",
+                text:"Hello world"
+            });
+            document.querySelector(".swal-button").style.backgroundColor = "grey";
+            document.querySelector(".swal-button").style.color = "red";
+            document.querySelector(".swal-button").style.padding = "10px 50px";
+            document.querySelector(".swal-overlay").style.backgroundColor = "rgb(0,0,0,.4)";
+            document.querySelector(".swal-modal").style.backgroundColor = "#fff";
+            document.querySelector(".swal-modal").style.borderRadius = "5px";
         }
         
          var edit = CodeMirror.fromTextArea(document.getElementById("edit"),{
@@ -654,6 +843,36 @@ swal({
             theme:"darcula"
         });
         edit_22.setSize("100%","100%");
+        var edit_23 = CodeMirror.fromTextArea(document.getElementById("edit_23"),{
+            mode:"css",
+            lineNumbers:true,
+            theme:"darcula"
+        });
+        edit_23.setSize("100%","100%");
+        var edit_24 = CodeMirror.fromTextArea(document.getElementById("edit_24"),{
+            mode:"css",
+            lineNumbers:true,
+            theme:"darcula"
+        });
+        edit_24.setSize("100%","100%");
+        var edit_25 = CodeMirror.fromTextArea(document.getElementById("edit_25"),{
+            mode:"css",
+            lineNumbers:true,
+            theme:"darcula"
+        });
+        edit_25.setSize("100%","100%");
+        var edit_26 = CodeMirror.fromTextArea(document.getElementById("edit_26"),{
+            mode:"css",
+            lineNumbers:true,
+            theme:"darcula"
+        });
+        edit_26.setSize("100%","100%");
+        var edit_27 = CodeMirror.fromTextArea(document.getElementById("edit_27"),{
+            mode:"css",
+            lineNumbers:true,
+            theme:"darcula"
+        });
+        edit_27.setSize("100%","100%");
     </script>
 </body>
 </html>
