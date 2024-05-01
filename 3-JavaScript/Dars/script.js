@@ -23,10 +23,10 @@ $(document).ready(function(){
     //     $(".down-2").slideToggle(1000);
     // });
 // ///////////////////////////// Xususiyat \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\
-    // $(".downs-1").hide();
-    // $(".drops-1").click(function(){
-    //     $(".downs-1").slideToggle(1000);
-    // });
+    $(".downs-1").hide();
+    $(".drops-1").click(function(){
+        $(".downs-1").slideToggle(1000);
+    });
     $(".downs-2").hide();
     $(".drops-2").click(function(){
         $(".downs-2").slideToggle(1000);
@@ -39,10 +39,10 @@ $(document).ready(function(){
     $(".drops-4").click(function(){
         $(".downs-4").slideToggle(1000);
     });
-    $(".downs-5").hide();
-    $(".drops-5").click(function(){
-        $(".downs-5").slideToggle(1000);
-    });
+    // $(".downs-5").hide();
+    // $(".drops-5").click(function(){
+    //     $(".downs-5").slideToggle(1000);
+    // });
     $(".downs-6").hide();
     $(".drops-6").click(function(){
         $(".downs-6").slideToggle(1000);
@@ -97,7 +97,8 @@ $(document).ready(function(){
     });
 // ///////////////////////////// Xususiyat \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\
 });
-// ///////////////////////////// Test \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\
+// ///////////////////////////// CodeMiror \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\
+// ///////////////////////////// 1 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\
 var editAlert = CodeMirror.fromTextArea(document.getElementById("editAlert"),{
     mode: "javascript",
     lineNumbers: true,
@@ -110,3 +111,55 @@ function codeAlert(){
     iframeAlert.close();
 }
 editAlert.setSize("100%","320");
+// ///////////////////////////// 2 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\
+var editConfirm = CodeMirror.fromTextArea(document.getElementById("editConfirm"),{
+    mode: "javascript",
+    lineNumbers: true,
+    theme: "panda-syntax"
+});
+var iframeConfirm = document.getElementById("iframeConfirm").contentWindow.document;
+function codeConfirm(){
+    let codeValue = editConfirm.getValue();
+    iframeConfirm.write(`<script>` + codeValue + `</script>`);
+    iframeConfirm.close();
+}
+editConfirm.setSize("100%","320");
+// ///////////////////////////// 3 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\
+var editPrompt = CodeMirror.fromTextArea(document.getElementById("editPrompt"),{
+    mode: "javascript",
+    lineNumbers: true,
+    theme: "panda-syntax"
+});
+var iframePrompt = document.getElementById("iframePrompt").contentWindow.document;
+function codePrompt(){
+    let codeValue = editPrompt.getValue();
+    iframePrompt.write(`<script>` + codeValue + `</script>`);
+    iframePrompt.close();
+}
+editPrompt.setSize("100%","320");
+// ///////////////////////////// 4 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\
+var editPrint = CodeMirror.fromTextArea(document.getElementById("editPrint"),{
+    mode: "javascript",
+    lineNumbers: true,
+    theme: "panda-syntax"
+});
+var iframePrint = document.getElementById("iframePrint").contentWindow.document;
+function codePrint(){
+    let codeValue = editPrint.getValue();
+    iframePrint.write(`<script>` + codeValue + `</script>`);
+    iframePrint.close();
+}
+editPrint.setSize("100%","320");
+// ///////////////////////////// 5 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\
+var editWrite = CodeMirror.fromTextArea(document.getElementById("editWrite"),{
+    mode: "javascript",
+    lineNumbers: true,
+    theme: "panda-syntax"
+});
+var iframeWrite = document.getElementById("iframeWrite").contentWindow.document;
+function codeWrite(){
+    let codeValue = editWrite.getValue();
+    iframeWrite.write(`<script>` + codeValue + `</script>`);
+    iframeWrite.close();
+}
+editWrite.setSize("100%","320");
