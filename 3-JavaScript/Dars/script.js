@@ -14,19 +14,19 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 $(document).ready(function(){
-    $(".down-1").hide();
-    $(".drop-1").click(function(){
-        $(".down-1").slideToggle(1000);
-    });
-    $(".down-2").hide();
-    $(".drop-2").click(function(){
-        $(".down-2").slideToggle(1000);
-    });
+    // $(".down-1").hide();
+    // $(".drop-1").click(function(){
+    //     $(".down-1").slideToggle(1000);
+    // });
+    // $(".down-2").hide();
+    // $(".drop-2").click(function(){
+    //     $(".down-2").slideToggle(1000);
+    // });
 // ///////////////////////////// Xususiyat \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\
-    $(".downs-1").hide();
-    $(".drops-1").click(function(){
-        $(".downs-1").slideToggle(1000);
-    });
+    // $(".downs-1").hide();
+    // $(".drops-1").click(function(){
+    //     $(".downs-1").slideToggle(1000);
+    // });
     $(".downs-2").hide();
     $(".drops-2").click(function(){
         $(".downs-2").slideToggle(1000);
@@ -97,3 +97,16 @@ $(document).ready(function(){
     });
 // ///////////////////////////// Xususiyat \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\
 });
+// ///////////////////////////// Test \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\
+var editAlert = CodeMirror.fromTextArea(document.getElementById("editAlert"),{
+    mode: "javascript",
+    lineNumbers: true,
+    theme: "panda-syntax"
+});
+var iframeAlert = document.getElementById("iframeAlert").contentWindow.document;
+function codeAlert(){
+    let codeValue = editAlert.getValue();
+    iframeAlert.write(`<script>` + codeValue + `</script>`);
+    iframeAlert.close();
+}
+editAlert.setSize("100%","320");

@@ -84,8 +84,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Code/lib/codemirror.css">
+    <link rel="stylesheet" href="../../Code/theme/panda-syntax.css">
+    <link rel="stylesheet" href="../../Code/theme/darcula.css">
     <link rel="stylesheet" href="style.css">
-    <!-- <script src="../../js/jquery.js"></script> -->
+    <script src="../../Code/lib/codemirror.js"></script>
+    <script src="../../Code/mode/xml.js"></script>
+    <script src="../../Code/mode/javascript.js"></script>
+    <script src="../../js/jquery.js"></script>
     <!-- <script src="../../js/typed.min.js"></script> -->
     <title>Evolution</title>
 </head>
@@ -95,14 +101,27 @@
     <div class="down-1">
         <div class="drops-1 sv">alert()</div>
         <div class="downs-1">
-            <hr>
-            <div class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="jORMMYe" data-preview="true" data-editable="true" data-user="IslamDevFull"  data-prefill='{"tags":[],"scripts":[],"stylesheets":[]}'>
+            <div class="btn">
+                <button onclick="codeAlert()" class="tekshirish">Tekshirish</button>
+            </div>
+            <div class="flex">
+                <div class="editor">
+                    <h1>Sintaksis</h1>
+        <textarea id="editAlert">
+window.alert();</textarea>
+                </div>
+                <div class="frame">
+                    <h1>Natija</h1>
+                    <iframe id="iframeAlert"></iframe>
+                </div>
+            </div>
+            <!-- <div class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="jORMMYe" data-preview="true" data-editable="true" data-user="IslamDevFull"  data-prefill='{"tags":[],"scripts":[],"stylesheets":[]}'>
 <pre data-lang="html">&lt;h1>Salom JavaScript&lt;/h1></pre>
 <pre data-lang="css"></pre>
 <pre data-lang="js">window.alert("salom");</pre>
-            </div>
+            </div> -->
         </div>
-        <div class="drops-2 sv">confirm()</div>
+        <!-- <div class="drops-2 sv">confirm()</div>
         <div class="downs-2">
             <hr>
             <div class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="jORMMYe" data-preview="true" data-editable="true" data-user="IslamDevFull"  data-prefill='{"tags":[],"scripts":[],"stylesheets":[]}'>
@@ -129,9 +148,9 @@
 <pre data-lang="js">window.print();</pre>
             </div>
         </div>
-        <a class="vazifa" href="../Mashq/1_Vazifa/index.html" target="_blank">Vazifa</a>
+        <a class="vazifa" href="../Mashq/1_Vazifa/index.html" target="_blank">Vazifa</a> -->
     </div>
-    <div class="obj drop-2"><code>document</code></div>
+    <!-- <div class="obj drop-2"><code>document</code></div>
     <div class="down-2">
         <div class="drops-5 sv">write()</div>
         <div class="downs-5">
@@ -157,13 +176,13 @@
             <hr>
             <div class="drops-8 sv">innerHTML</div>
             <div class="downs-8">
-                <hr>
+                <hr> -->
                 <!-- <div class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="jORMMYe" data-preview="true" data-editable="true" data-user="IslamDevFull"  data-prefill='{"tags":[],"scripts":[],"stylesheets":[]}'>
 <pre data-lang="html">&lt;h1 id="demo">Salom HTML&lt;/h1></pre>
 <pre data-lang="css"></pre>
 <pre data-lang="js">document.getElementById("demo").innerHTML = "Salom JavaScript";</pre>
                 </div> -->
-                <div>
+                <!-- <div>
                     <iframe
                         src="https://codesandbox.io/embed/dars-1-4xh3sq?theme=dark;view=split;codemirror=0;forcerefresh=1;fontsize=10"
                         style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
@@ -260,9 +279,9 @@ document.getElementById("demo").width = "300";
             </div>
             <a class="vazifa" href="../Mashq/6_Vazifa/index.html" target="_blank">Vazifa</a>
         </div>
-    </div>
+    </div> -->
 </fieldset>
-<fieldset><legend>Qoidalar</legend>
+<!-- <fieldset><legend>Qoidalar</legend>
     <div class="drops-13 sv calit">var</div>
     <div class="downs-13">
         <hr>
@@ -358,7 +377,7 @@ fan();
         <a class="vazifa" href="../Mashq/7_Vazifa/index.html" target="_blank">Vazifa</a>
         <a class="vazifa" href="../Mashq/8_Vazifa/index.html" target="_blank">Vazifa</a>
     </div>
-</fieldset>
+</fieldset> -->
     <script src="script.js"></script>
     <script src="../../js/codepen.js"></script>
 </body>

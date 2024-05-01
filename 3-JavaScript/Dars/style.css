@@ -46,3 +46,19 @@ legend{
 .l{margin-left: 20px;}
 .xl{margin-left: 135px;}
 hr{clear: both;}
+/**************************** Test ********************************/
+.flex{
+    display: flex;
+    
+}
+.flex h1{
+    text-align: center;
+}
+.frame{
+    margin-left: 10px;
+}
+
+iframe{
+    height: 320px;
+    
+}
