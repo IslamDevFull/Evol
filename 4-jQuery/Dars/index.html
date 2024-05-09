@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../Code/lib/codemirror.css">
+        <link rel="stylesheet" href="../../Code/theme/panda-syntax.css">
+        <link rel="stylesheet" href="../../Code/theme/darcula.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="../../Code/lib/codemirror.js"></script>
+        <script src="../../Code/mode/xml.js"></script>
+        <script src="../../Code/mode/javascript.js"></script>
+        <script src="../../js/jquery.js"></script>
+        <!-- <script src="../../js/typed.min.js"></script> -->
+        <title>jQuery</title>
+    </head>
+<body>
+    <fieldset><legend>Asosiy jQuery</legend>
+        <div class="svoys drop-1"><code>#</code></div>
+        <div class="down-1">
+            <div class="flex">
+                    <div class="btn">
+                        <button onclick="codeId()" class="tekshirish">Tekshirish</button>
+                    </div>
+                    <div class="editor" style="width: 500px;">
+                        <h1>HTML</h1>
+            <textarea id="HTMLId">
+<head>
+    <script src="../../js/jquery.js"></script>
+</head>
+<body>
+    <h1 id="demo">Hello World</h1>
+</body></textarea>
+                    </div>
+                    <div class="editor">
+                        <h1>jQuery</h1>
+            <textarea id="jQueryId">
+$("#demo");</textarea>
+                    </div>
+                    <div class="frame">
+                        <h1>Natija</h1>
+                        <iframe id="iframeId"></iframe>
+                    </div>
+                </div>
+        </div>
+        <div class="svoys drop-2"><code>.</code></div>
+        <div class="down-2">
+            <div class="flex">
+                    <div class="btn">
+                        <button onclick="codeClass()" class="tekshirish">Tekshirish</button>
+                    </div>
+                    <div class="editor" style="width: 500px;">
+                        <h1>HTML</h1>
+            <textarea id="HTMLClass">
+<head>
+    <script src="../../js/jquery.js"></script>
+</head>
+<body>
+    <h1 class="demo">Hello World</h1>
+</body></textarea>
+                    </div>
+                    <div class="editor">
+                        <h1>Sintaksis</h1>
+            <textarea id="jQueryClass">
+$(".demo");</textarea>
+                    </div>
+                    <div class="frame">
+                        <h1>Natija</h1>
+                        <iframe id="iframeClass"></iframe>
+                    </div>
+                </div>
+        </div>
+        <div class="svoys drop-3"><code>element</code></div>
+        <div class="down-3">
+            <div class="flex">
+                    <div class="btn">
+                        <button onclick="codeElmt()" class="tekshirish">Tekshirish</button>
+                    </div>
+                    <div class="editor" style="width: 500px;">
+                        <h1>HTML</h1>
+            <textarea id="HTMLElmt">
+<head>
+    <script src="../../js/jquery.js"></script>
+</head>
+<body>
+    <h1>Hello World</h1>
+</body></textarea>
+                    </div>
+                    <div class="editor">
+                        <h1>Sintaksis</h1>
+            <textarea id="jQueryElmt">
+$("h1");</textarea>
+                    </div>
+                    <div class="frame">
+                        <h1>Natija</h1>
+                        <iframe id="iframeElmt"></iframe>
+                    </div>
+                </div>
+        </div>
+        <div class="svoys drop-4"><code>Multiple Selector</code></div>
+        <div class="down-4">
+            <div class="flex">
+                    <div class="btn">
+                        <button onclick="codeMulti()" class="tekshirish">Tekshirish</button>
+                    </div>
+                    <div class="editor" style="width: 500px;">
+                        <h1>HTML</h1>
+            <textarea id="HTMLMulti">
+<head>
+    <script src="../../js/jquery.js"></script>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <h2>Hello World</h2>
+    <p>Hello World</p>
+    <div class="demo">Hello World</div>
+</body></textarea>
+                    </div>
+                    <div class="editor">
+                        <h1>Sintaksis</h1>
+            <textarea id="jQueryMulti">
+$("h1,p,div.demo");</textarea>
+                    </div>
+                    <div class="frame">
+                        <h1>Natija</h1>
+                        <iframe id="iframeMulti"></iframe>
+                    </div>
+                </div>
+        </div>
+    </fieldset>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+*{box-sizing: border-box;}
+body{
+    height: 3000px;
+}
+.svoys{
+    background-color: #2B2B2B;
+    color: rgb(156, 220, 254);
+    font-size: 18px; 
+    font-weight: bold;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 2px rgb(156, 220, 254);
+    transition: all 0.5s;
+}
+.svoys:hover{background-color: #444;}
+fieldset{
+    border: 5px solid purple;
+}
+legend{
+    font-size: 30px;
+    font-weight: bold;
+}
+/**************************** Code ********************************/
+.calit{color: rgb(86,156,214)}
+.figura{color: white}
+.fan{color: white}
+.nuqta{color: white}
+.string{color: rgb(255,120,180);}
+.number{color: rgb(240,185,100);}
+.tag{color: rgb(86, 156, 214);}
+.size{font-size: 16px; font-weight: bold;}
+.l{margin-left: 20px;}
+.xl{margin-left: 135px;}
+hr{clear: both;}
+/**************************** Test ********************************/
+.flex{
+    display: flex;
+    
+}
+.flex h1{
+    text-align: center;
+}
+.btn{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn button{
+    width: 100%;
+    padding: 20px 0px;
+    font-size: 20px;
+    border: 0px;
+    background-color: #333;
+    color: greenyellow;
+    transition: all 0.2s;
+}
+.btn button:hover{
+    transform: scale(1.1);
+}
+.btn button:active{
+    transition: all 0.1s;
+    transform: scale(1);
+}
+.editor{
+    width: 300px;
+    margin-left: 10px;
+}
+.frame{
+    margin-left: 10px;
+    width: 300px;
+}
+
+iframe{
+    width: 100%;
+    height: 250px;
+    
+}
