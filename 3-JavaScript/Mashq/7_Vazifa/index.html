@@ -4,88 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vazifa</title>
+    <title>Vazifa 25</title>
     <style>
-        body{
-            background-color: #999;
+        .container{
+            width: 350px;
+            height: 350px;
+            border: 3px outset;
+            margin: auto;
         }
-        div{
-            width: 550px;
-            height: 310px;
-            background-color: white;
-            float: left;
-            margin-left: 50px;
+        .svet{
+            background-color: blueviolet;
+            margin: 0;
+            padding: 10px;
         }
-        img,h2{
-            display: none;
+        .blok{
+            margin-top: 10px;
+            width: 50px;
+            height: 50px;
+            border: 1px solid red;
+            display: inline-block;
+            border: 3px outset;
+            margin-left: 8px;
         }
-        img{
-            width: 550px;
-            animation: img 1s linear forwards;
+        .blok:hover{
+            outline: 3px solid blueviolet;
+            outline-offset: 2px;
         }
-        h1{text-align: center;}
-        h2{
-            position: absolute;
-        }
-        p{
-            clear: both;
-            margin-top: 500px;
-        }
-        button{
-            margin-left: 50px;
-        }
-        br{
-            clear: both;
-        }
-        @keyframes img {
-            from{
-                opacity: 0;
-            }
-            to{
-                opacity: 1;
-            }
-        }
-        @keyframes bmw {
-            from{
-                left: -100px;
-            }
-            to{
-                left: 80px;
-            }
-        }
-        @keyframes porsh {
-            from{
-                top: -10px;
-            }
-            to{
-                top: 80px;
-            }
+        .blok:active{
+            border: 3px inset;
         }
     </style>
 </head>
-<body>
-    <h1>Auto Park</h1>
-    <div>
-        <h2 style="animation: bmw 1s linear forwards;" id="bmw1">BMW 330i</h2>
-        <img id="bmw2" src="bmw.png">
+<body id="demo">
+    <div class="container">
+        <h2 class="svet">Svet</h2>
+        <div onclick="fan1()" style="background-color: green;" class="blok"></div>
+        <div onclick="fan2()" style="background-color: grey;" class="blok"></div>
+        <div onclick="fan3()" style="background-color: yellow;" class="blok"></div>
+        <div onclick="fan4()" style="background-color: blue;" class="blok"></div>
+        <div onclick="fan5()" style="background-color: blueviolet;" class="blok"></div>
+        <div onclick="fan6()" style="background-color: greenyellow;" class="blok"></div>
+        <div onclick="fan7()" style="background-color: black;" class="blok"></div>
+        <div onclick="fan8()" style="background-color: wheat;" class="blok"></div>
+        <div onclick="fan9()" style="background-color: red;" class="blok"></div>
+        <div onclick="fan10()" style="background-color: powderblue;" class="blok"></div>
+        <div onclick="fan11()" style="background-color: tomato;" class="blok"></div>
+        <div onclick="fan12()" style="background-color: saddlebrown;" class="blok"></div>
+        <div onclick="fan13()" style="background-color: plum;" class="blok"></div>
     </div>
-    <div>
-        <h2 style="animation: porsh 1s linear forwards; margin-left: 20px;" id="porsh1">Porsche 911 Turbo</h2>
-        <img style="margin-top: 70px;" id="porsh2" src="porsh.png">
-    </div>
-    <p>
-        <button onclick="myBmw()">BMW</button>
-        <button style="margin-left: 600px;" onclick="myPorsh()">Porsche</button>
-    </p>
-    <script>
-        function myBmw(){
-            document.getElementById("bmw1").style.display = "block";
-            document.getElementById("bmw2").style.display = "block";
-        }
-        function myPorsh(){
-            document.getElementById("porsh1").style.display = "block";
-            document.getElementById("porsh2").style.display = "block";
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

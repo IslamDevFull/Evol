@@ -1,6 +1,9 @@
-function imgOn(){
-    document.getElementById('rasim'). src='pic_bulbon.gif'
+function bmw(){
+    document.getElementById('rasim'). src='bmw.png'
 }
-function imgOff(){
-    document.getElementById('rasim'). src='pic_bulboff.gif'
+function bmw1(){
+    document.getElementById('rasim'). src='bmw1.png'
+}
+function porsh(){
+    document.getElementById('rasim'). src='porsh.png'
 }

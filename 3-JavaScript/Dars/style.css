@@ -28,7 +28,7 @@ legend{
 .vazifa{
     background-color: #2B2B2B;
     color: rgb(220, 220, 170);
-    padding: 5px;
+    padding: 15px;
     display: block;
     text-decoration: none;
     color: greenyellow;
@@ -55,14 +55,14 @@ hr{clear: both;}
     text-align: center;
 }
 .btn{
-    width: 100px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .btn button{
-    width: 100%;
-    padding: 20px 0px;
+    width: 200px;
+    padding: 10px 0px;
     font-size: 20px;
     border: 0px;
     background-color: #333;
@@ -76,13 +76,12 @@ hr{clear: both;}
     transition: all 0.1s;
     transform: scale(1);
 }
-.editor_1{
-    width: 400px;
-    margin-left: 10px;
+.js{
+    width: 50%;
 }
 .frame{
-    margin-left: 10px;
-    width: 400px;
+    margin-left: 3px;
+    width: 50%;
 }
 
 iframe{
