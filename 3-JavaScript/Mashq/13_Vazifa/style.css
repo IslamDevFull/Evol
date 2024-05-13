@@ -1,0 +1,144 @@
+body{
+    height: 3000px;
+}
+.box{
+    padding: 10px;
+    background-color: #333;
+    display: flex;
+    flex-wrap: wrap;
+}
+.redactor{
+    display: flex;
+    border: 5px solid red;
+    position: fixed;
+    bottom: 0px;
+    width: 98%;
+    background-color: #666;
+}
+.shRedac,.mRedac{
+    box-shadow: 0px 0px 10px 5px inset powderblue;
+    width:30%;
+    padding: 10px;
+    background-color: #666;
+}
+h2{
+    margin: 0px 0px 10px 0px;
+    text-align: center;
+}
+button{
+    padding: 10px 10px;
+    width: 70px;
+    background-color: #333;
+    color: wheat;
+    border: 0px;
+    border-bottom: 1px solid powderblue;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #666;
+}
+button:active{
+    background-color: #333;
+}
+.drop{
+    border: 2px solid red;
+    position: fixed;
+    bottom: 90px;
+    width: 99%;
+}
+.flexBox{
+    display: flex;
+}
+.flex{
+    display: flex;
+    width: 33%;
+}
+.down{
+    width: 100px;
+    background-color: #333;
+    padding: 5px;
+    display: none;
+    margin-left: 2px;
+}
+.show{
+    display: block;
+}
+.down a{
+    display: block;
+    padding: 5px;
+    color: wheat;
+    border-bottom: 1px solid powderblue;
+    text-align: center;
+    cursor: pointer;
+}
+.down a:hover{
+    background-color: #666;
+}
+.down a:active{
+    background-color: #333;
+}
+
+/* *************************************Shapka*********************************************** */
+.padding{
+    padding: 100px;
+}
+
+.center{
+    text-align: center;
+}
+
+.border{
+    outline: 3px solid red;
+}
+
+.size{
+    font-size: 50px;
+}
+
+/* *************************************Menyu*********************************************** */
+.fonMenyu{
+    background-color: #333;
+}
+
+.paddingMenyu{
+    padding: 10px;
+}
+
+.borderMenyu{
+    outline: 3px solid greenyellow;
+}
+
+.sizeMenyu{
+    font-size: 20px;
+}
+
+.Color{
+    color: wheat;
+}
+
+.None{
+    text-decoration: none;
+}
+
+.Margin{
+    margin-left: 20px;
+}
+/* *************************************Content*********************************************** */
+.contBkColor{
+    background-color: pink;
+}
+.contPadding{
+    padding: 100px;
+}
+.contCenter{
+    text-align: center;
+}
+.contBorder{
+    border: 5px solid blue;
+}
+.contSize{
+    font-size: 50px;
+}
+.contHeight{
+    height: 1000px;
+}
