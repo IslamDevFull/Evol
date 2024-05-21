@@ -1,61 +1,80 @@
 function headerFonToggle(){
     document.getElementById("headerFonDown").classList.toggle("show");
+    document.getElementById("but1").classList.toggle("color");
 }
 function headerPaddingToggle(){
     document.getElementById("headerPaddingDown").classList.toggle("show");
+    document.getElementById("but2").classList.toggle("color");
 }
 function headerAliginToggle(){
     document.getElementById("headerAliginDown").classList.toggle("show");
+    document.getElementById("but3").classList.toggle("color");
 }
 function headerBorderToggle(){
     document.getElementById("headerBorderDown").classList.toggle("show");
+    document.getElementById("but4").classList.toggle("color");
 }
 function headerSizeToggle(){
     document.getElementById("headerSizeDown").classList.toggle("show");
+    document.getElementById("but5").classList.toggle("color");
 }
 // ***********************************Menyu************************************
 function menyuFonToggle(){
     document.getElementById("menyuFonDown").classList.toggle("show");
+    document.getElementById("but6").classList.toggle("color");
 }
 function menyuPaddingToggle(){
     document.getElementById("menyuPaddingDown").classList.toggle("show");
+    document.getElementById("but7").classList.toggle("color");
 }
 function menyuAliginToggle(){
     document.getElementById("menyuAliginDown").classList.toggle("show");
+    document.getElementById("but8").classList.toggle("color");
 }
 function menyuBorderToggle(){
     document.getElementById("menyuBorderDown").classList.toggle("show");
+    document.getElementById("but9").classList.toggle("color");
 }
 function menyuSizeToggle(){
     document.getElementById("menyuSizeDown").classList.toggle("show");
+    document.getElementById("but10").classList.toggle("color");
 }
 function menyuColorToggle(){
     document.getElementById("menyuColorDown").classList.toggle("show");
+    document.getElementById("but11").classList.toggle("color");
 }
 function menyuDecorToggle(){
     document.getElementById("menyurDecorDown").classList.toggle("show");
+    document.getElementById("but12").classList.toggle("color");
 }
 function menyuMarginToggle(){
     document.getElementById("menyurMarginDown").classList.toggle("show");
+    document.getElementById("but13").classList.toggle("color");
 }
 // ***********************************Content************************************
 function contentFonToggle(){
     document.getElementById("contentFonDown").classList.toggle("show");
+    document.getElementById("but14").classList.toggle("color");
 }
 function contentPaddingToggle(){
     document.getElementById("contentPaddingDown").classList.toggle("show");
+    document.getElementById("but15").classList.toggle("color");
 }
 function contentAliginToggle(){
     document.getElementById("contentAliginDown").classList.toggle("show");
+    document.getElementById("but16").classList.toggle("color");
 }
 function contentBorderToggle(){
     document.getElementById("contentBorderDown").classList.toggle("show");
+    document.getElementById("but17").classList.toggle("color");
 }
 function contentSizeToggle(){
     document.getElementById("contentSizeDown").classList.toggle("show");
+    document.getElementById("but18").classList.toggle("color");
 }
 function contentHeightToggle(){
     document.getElementById("contentHeightDown").classList.toggle("show");
+    document.getElementById("but19").classList.toggle("color");
 }
 // *************************************Style********************************************
 // *************************************Fon********************************************

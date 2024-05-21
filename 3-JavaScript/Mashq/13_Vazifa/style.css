@@ -9,7 +9,7 @@ body{
 }
 .redactor{
     display: flex;
-    border: 5px solid red;
+    /* border: 5px solid red; */
     position: fixed;
     bottom: 0px;
     width: 98%;
@@ -41,7 +41,7 @@ button:active{
     background-color: #333;
 }
 .drop{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     position: fixed;
     bottom: 90px;
     width: 99%;
@@ -78,67 +78,6 @@ button:active{
     background-color: #333;
 }
 
-/* *************************************Shapka*********************************************** */
-.padding{
-    padding: 100px;
-}
-
-.center{
-    text-align: center;
-}
-
-.border{
-    outline: 3px solid red;
-}
-
-.size{
-    font-size: 50px;
-}
-
-/* *************************************Menyu*********************************************** */
-.fonMenyu{
-    background-color: #333;
-}
-
-.paddingMenyu{
-    padding: 10px;
-}
-
-.borderMenyu{
-    outline: 3px solid greenyellow;
-}
-
-.sizeMenyu{
-    font-size: 20px;
-}
-
-.Color{
-    color: wheat;
-}
-
-.None{
-    text-decoration: none;
-}
-
-.Margin{
-    margin-left: 20px;
-}
-/* *************************************Content*********************************************** */
-.contBkColor{
-    background-color: pink;
-}
-.contPadding{
-    padding: 100px;
-}
-.contCenter{
-    text-align: center;
-}
-.contBorder{
-    border: 5px solid blue;
-}
-.contSize{
-    font-size: 50px;
-}
-.contHeight{
-    height: 1000px;
+.color{
+    background-color: #666;
 }
