@@ -1,55 +1,35 @@
 function fan(){
     let x = document.getElementById("demo").value;
-    if(900 < x && 2000 > x)
+    if(4 <= x && 12 > x)
     {
-        document.getElementById("suz").innerHTML = "Bir ming So'm";
+        document.getElementById("suz").innerHTML = "Доброе утро";
     }
-    else if(1000 < x && 3000 > x)
+    else if(12 <= x && 16 > x)
     {
-        document.getElementById("suz").innerHTML = "Ikki ming So'm";
+        document.getElementById("suz").innerHTML = "Добрый день";
     }
-    else if(2000 < x && 4000 > x)
+    else if(16 <= x && 20 > x)
     {
-        document.getElementById("suz").innerHTML = "Uch ming So'm";
+        document.getElementById("suz").innerHTML = "Добрый вечер";
     }
-    else if(3000 < x && 5000 > x)
+    else if(20 <= x && 23 >= x)
     {
-        document.getElementById("suz").innerHTML = "To'rt ming So'm";
+        document.getElementById("suz").innerHTML = "Добрый ночи";
     }
-    else if(4000 < x && 6000 > x)
+    else if(1 <= x && 3 >= x)
     {
-        document.getElementById("suz").innerHTML = "Besh ming So'm";
+        document.getElementById("suz").innerHTML = "Добрый ночи";
     }
-    else if(5000 < x && 7000 > x)
+    else if(0 == x)
     {
-        document.getElementById("suz").innerHTML = "Olti ming So'm";
+        document.getElementById("suz").innerHTML = "Добрый ночи";
     }
-    else if(6000 < x && 8000 > x)
+    else if('' == x || ' ' == x)
     {
-        document.getElementById("suz").innerHTML = "Yetti ming So'm";
-    }
-    else if(7000 < x && 9000 > x)
-    {
-        document.getElementById("suz").innerHTML = "Sakiz ming So'm";
-    }
-    else if(8000 < x && 10000 > x)
-    {
-        document.getElementById("suz").innerHTML = "To'qiz ming So'm";
-    }
-    else if(9000 < x && 11000 > x)
-    {
-        document.getElementById("suz").innerHTML = "O'n ming So'm";
-    }
-    else if(1 < x && 1000 > x)
-    {
-        document.getElementById("suz").innerHTML = "Kechirasiz bankomat ming sumdan kam pul bermaydi";
-    }
-    else if(10000 < x && 100000000 > x)
-    {
-        document.getElementById("suz").innerHTML = "Kechirasiz bankomat O'n ming sumdan ko'p pul bermaydi";
+        document.getElementById("suz").innerHTML = "Поля не должно быт пустим";
     }
     else
     {
-        document.getElementById("suz").innerHTML = "XATO! (24EREU)";
+        document.getElementById("suz").innerHTML = "Неизвестное время";
     }
 }

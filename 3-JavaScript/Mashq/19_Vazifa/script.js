@@ -1,5 +1,4 @@
 function fan(){
-    var input = document.getElementById("demo").value;
-    document.getElementById("text").innerHTML = input;
-
+    let valueName = document.querySelector('input').value;
+    document.querySelector('h1').innerHTML += `${valueName} `;
 }

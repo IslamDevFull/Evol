@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS</title>
+    <link rel="stylesheet" href="style.css">
+    <title>test</title>
 </head>
 <body>
-    <br><br>
-    <input id="demo" type="text">
-    <button onclick="fan()">Tekshirish</button>
-    <br>
-    <p id="suz"></p>
+    <div class="flex">
+        <div class="col">
+            <h2>So'zni kiriting</h2>
+            <input onkeyup="myText()" type="text" id="soz">
+            <textarea placeholder="Code :" id="soz1"></textarea>
+        </div>
+        <div class="col">
+            <h2>Kodni kiriting</h2>
+            <input onkeyup="myCod()" type="text" id="kod">
+            <textarea placeholder="Text :" id="kod1"></textarea>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

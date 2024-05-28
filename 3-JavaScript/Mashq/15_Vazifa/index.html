@@ -4,10 +4,215 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>addEventListener</title>
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p id="demo"></p>
-    <script src="script.js"></script>
-</body>
+    <div id="header">
+        <h1 id="header1">"Barkamol Avlod"</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam illum esse, qui maxime ut</p>
+    </div>
+    <nav id="menyu">
+            <a id="men" href="#">Uy</a>
+            <a id="men1" href="#">Dars</a>
+            <a id="men2" href="#">Barkamol</a>
+            <a id="men3" href="#">loyhalar</a>
+            <a id="men4" href="#">Yangiliklar</a>
+    </nav>
+    <div class="content" id="content">
+        <h1 id="conth1">Content</h1>
+    </div>
+    <div class="drop">
+        <div class="flexBox">
+            <div class="flex">
+                <div class="down" id="headerFonDown">
+                    <a onclick="bkRedColor()">Red</a>
+                    <a onclick="bkGreenColor()">Green</a>
+                    <a onclick="bkBlueColor()">Blue</a>
+                    <a onclick="bkPowderColor()">Powderblue</a>
+                    <a onclick="bkPinkColor()">Pink</a>
+                    <a onclick="bkNoneColor()">None</a>
+                </div>
+                <div class="down" id="headerPaddingDown">
+                    <a onclick="bkRedPadding()">5px</a>
+                    <a onclick="bkGreenPadding()">20px</a>
+                    <a onclick="bkBluePadding()">35px</a>
+                    <a onclick="bkPowderPadding()">50px</a>
+                    <a onclick="bkPinkPadding()">150px</a>
+                    <a onclick="bkNonePadding()">None</a>
+                </div>
+                <div class="down" id="headerAliginDown">
+                    <a onclick="bkRedAligin()">Left</a>
+                    <a onclick="bkGreenAligin()">Center</a>
+                    <a onclick="bkBlueAligin()">Right</a>
+                </div>
+                <div class="down" id="headerBorderDown">
+                    <a onclick="bkRedBorder()">Red</a>
+                    <a onclick="bkGreenBorder()">Green</a>
+                    <a onclick="bkBlueBorder()">Blue</a>
+                    <a onclick="bkPowderBorder()">Powderblue</a>
+                    <a onclick="bkPinkBorder()">Pink</a>
+                    <a onclick="bkNoneBorder()">None</a>
+                </div>
+                <div class="down" id="headerSizeDown">
+                    <a onclick="bkRedSize()">5px</a>
+                    <a onclick="bkGreenSize()">10px</a>
+                    <a onclick="bkBlueSize()">25px</a>
+                    <a onclick="bkPowderSize()">40px</a>
+                    <a onclick="bkPinkSize()">50px</a>
+                    <a onclick="bkNoneSize()">None</a>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="down" id="menyuFonDown">
+                    <a onclick="menyuBkRedColor()">Red</a>
+                    <a onclick="menyuBkGreenColor()">Green</a>
+                    <a onclick="menyuBkBlueColor()">Blue</a>
+                    <a onclick="menyuBkGreyColor()">Grey</a>
+                    <a onclick="menyuBkPowderColor()">Powderblue</a>
+                    <a onclick="menyuBkPinkColor()">Pink</a>
+                    <a onclick="menyuBkNoneColor()">None</a>
+                </div>
+                <div class="down" id="menyuPaddingDown">
+                    <a onclick="menyuBkRedPadding()">5px</a>
+                    <a onclick="menyuBkGreenPadding()">20px</a>
+                    <a onclick="menyuBkBluePadding()">35px</a>
+                    <a onclick="menyuBkPowderPadding()">50px</a>
+                    <a onclick="menyuBkPinkPadding()">150px</a>
+                    <a onclick="menyuBkNonePadding()">None</a>
+                </div>
+                <div class="down" id="menyuAliginDown">
+                    <a onclick="menyuBkRedAligin()">Left</a>
+                    <a onclick="menyuBkGreenAligin()">Center</a>
+                    <a onclick="menyuBkBlueAligin()">Right</a>
+                </div>
+                <div class="down" id="menyuBorderDown">
+                    <a onclick="menyuBkRedBorder()">Red</a>
+                    <a onclick="menyuBkGreenBorder()">Green</a>
+                    <a onclick="menyuBkBlueBorder()">Blue</a>
+                    <a onclick="menyuBkGreyBorder()">Grey</a>
+                    <a onclick="menyuBkPowderBorder()">Powderblue</a>
+                    <a onclick="menyuBkPinkBorder()">Pink</a>
+                    <a onclick="menyuBkNoneBorder()">None</a>
+                </div>
+                <div class="down" id="menyuSizeDown">
+                    <a onclick="menyuBkRedSize()">5px</a>
+                    <a onclick="menyuBkGreenSize()">10px</a>
+                    <a onclick="menyuBkBlueSize()">25px</a>
+                    <a onclick="menyuBkPowderSize()">40px</a>
+                    <a onclick="menyuBkPinkSize()">50px</a>
+                    <a onclick="menyuBkNoneSize()">None</a>
+                </div>
+                <div class="down" id="menyuColorDown">
+                    <a onclick="menyuColorRedColor()">Red</a>
+                    <a onclick="menyuColorGreenColor()">Green</a>
+                    <a onclick="menyuColorBlueColor()">Blue</a>
+                    <a onclick="menyuColorGreyColor()">Grey</a>
+                    <a onclick="menyuColorPowderColor()">Powderblue</a>
+                    <a onclick="menyuColorPinkColor()">Pink</a>
+                    <a onclick="menyuColorNoneColor()">None</a>
+                </div>
+                <div class="down" id="menyurDecorDown">
+                    <a onclick="menyuBkGreyDecor()">Underline</a>
+                    <a onclick="menyuBkPowderDecor()">Overline</a>
+                    <a onclick="menyuBkNoneDecor()">None</a>
+                </div>
+                <div class="down" id="menyurMarginDown">
+                    <a onclick="menyuBkRedMargin()">5px</a>
+                    <a onclick="menyuBkGreenMargin()">10px</a>
+                    <a onclick="menyuBkBlueMargin()">25px</a>
+                    <a onclick="menyuBkPowderMargin()">40px</a>
+                    <a onclick="menyuBkPinkMargin()">50px</a>
+                    <a onclick="menyuBkNoneMargin()">None</a>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="down" id="contentFonDown">
+                    <a onclick="contentBkRedColor()">Red</a>
+                    <a onclick="contentBkGreenColor()">Green</a>
+                    <a onclick="contentBkBlueColor()">Blue</a>
+                    <a onclick="contentBkPowderColor()">Powderblue</a>
+                    <a onclick="contentBkPinkColor()">Pink</a>
+                    <a onclick="contentBkNoneColor()">None</a>
+                </div>
+                <div class="down" id="contentPaddingDown">
+                    <a onclick="contentBkRedPadding()">5px</a>
+                    <a onclick="contentBkGreenPadding()">20px</a>
+                    <a onclick="contentBkBluePadding()">35px</a>
+                    <a onclick="contentBkPowderPadding()">50px</a>
+                    <a onclick="contentBkPinkPadding()">150px</a>
+                    <a onclick="contentBkNonePadding()">None</a>
+                </div>
+                <div class="down" id="contentAliginDown">
+                    <a onclick="contentBkRedAligin()">Left</a>
+                    <a onclick="contentBkGreenAligin()">Center</a>
+                    <a onclick="contentBkBlueAligin()">Right</a>
+                </div>
+                <div class="down" id="contentBorderDown">
+                    <a onclick="contentBkRedBorder()">Red</a>
+                    <a onclick="contentBkGreenBorder()">Green</a>
+                    <a onclick="contentBkBlueBorder()">Blue</a>
+                    <a onclick="contentBkPowderBorder()">Powderblue</a>
+                    <a onclick="contentBkPinkBorder()">Pink</a>
+                    <a onclick="contentBkNoneBorder()">None</a>
+                </div>
+                <div class="down" id="contentSizeDown">
+                    <a onclick="contentBkRedSize()">5px</a>
+                    <a onclick="contentBkGreenSize()">10px</a>
+                    <a onclick="contentBkBlueSize()">25px</a>
+                    <a onclick="contentBkPowderSize()">40px</a>
+                    <a onclick="contentBkPinkSize()">50px</a>
+                    <a onclick="contentBkNoneSize()">None</a>
+                </div>
+                <div class="down" id="contentHeightDown">
+                    <a onclick="contentBkRedHeight()">50px</a>
+                    <a onclick="contentBkGreenHeight()">200px</a>
+                    <a onclick="contentBkBlueHeight()">350px</a>
+                    <a onclick="contentBkPowderHeight()">500px</a>
+                    <a onclick="contentBkPinkHeight()">1500px</a>
+                    <a onclick="contentBkNoneHeight()">None</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="redactor">
+        <div class="shRedac">
+            <div class="box">
+                <h2 style="color: white; text-shadow: 2px 2px 2px blue;">Header</h2>
+                <button id="but1" onclick="headerFonToggle()">Fon</button>
+                <button id="but2" onclick="headerPaddingToggle()">Padding</button>
+                <button id="but3" onclick="headerAliginToggle()">Center</button>
+                <button id="but4" onclick="headerBorderToggle()">Border</button>
+                <button id="but5" onclick="headerSizeToggle()">Size</button>
+            </div>
+        </div>
+        
+        <div class="mRedac" style="width: 40%;">
+            <div class="box">
+                <h2 style="text-shadow: 2px 2px 2px red; color: white;">Menyu</h2>
+                <button id="but6" onclick="menyuFonToggle()">Fon</button>
+                <button id="but7" onclick="menyuPaddingToggle()">Padding</button>
+                <button id="but8" onclick="menyuAliginToggle()">Center</button>
+                <button id="but9" onclick="menyuBorderToggle()">Border</button>
+                <button id="but10" onclick="menyuSizeToggle()">Size</button>
+                <button id="but11" onclick="menyuColorToggle()">Color</button>
+                <button id="but12" onclick="menyuDecorToggle()">Decor</button>
+                <button id="but13" onclick="menyuMarginToggle()">Magin</button>
+            </div>
+        </div>
+        <div class="shRedac">
+            <div class="box">
+                <h2 style="color: white; text-shadow: 2px 2px 2px green;">Content</h2>
+                <button id="but14" onclick="contentFonToggle()">Fon</button>
+                <button id="but15" onclick="contentPaddingToggle()">Padding</button>
+                <button id="but16" onclick="contentAliginToggle()">Align</button>
+                <button id="but17" onclick="contentBorderToggle()">Border</button>
+                <button id="but18" onclick="contentSizeToggle()">Size</button>
+                <button id="but19" onclick="contentHeightToggle()">Height</button>
+            </div>
+        </div>
+    </div>
+ 
+        <script src="script.js"></script>
+    </body>
 </html>

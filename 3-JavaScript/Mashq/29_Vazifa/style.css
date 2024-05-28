@@ -1,0 +1,43 @@
+.container{
+    height: 5000px;
+}
+.box1{
+    float: left;
+    width: 50%;
+    position: sticky;
+    top: 15%;
+    margin: 400px 0;
+}
+.box2{
+    float: left;
+    width: 50%;
+    position: sticky;
+    top: 15%;
+    margin: 400px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+img{
+    display: none;
+    width: 70%;
+}
+
+.anime{
+    animation: anime 0.5s linear forwards;
+    position: absolute;
+}
+
+@keyframes anime {
+    from{
+        top: 300px;
+        opacity: 0;
+    }
+    to{
+        top: 0px;
+        opacity: 1;
+    }
+}

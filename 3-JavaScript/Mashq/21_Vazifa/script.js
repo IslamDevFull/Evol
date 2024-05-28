@@ -1,11 +1,5 @@
-function myText(){
-    let soz = document.getElementById("soz").value;
-    let getText = window.btoa(soz);
-    document.getElementById("soz1").innerHTML = getText;
-    }
+function fan(){
+    var input = document.getElementById("demo").value;
+    document.getElementById("text").innerHTML = input;
 
-    function myCod(){
-        let cod = document.getElementById("kod").value;
-        let getCod = window.atob(cod);
-        document.getElementById("kod1").innerHTML = getCod
-    }
+}

@@ -1,0 +1,1 @@
+Parametr sifatida 1 dan 7 gacha bo'lgan raqamni oladigan va o'zbek tilida haftaning kunini qaytaradigan funksiya yarating.

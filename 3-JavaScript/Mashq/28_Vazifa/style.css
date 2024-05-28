@@ -5,6 +5,10 @@ body{
     padding: 0px;
     margin: 0;
 }
+.box{
+    /* outline: 2px solid red; */
+    height: 90px;
+}
 .center{text-align: center;}
 img{display: none;}
 b{color: red;display: none;}
@@ -16,7 +20,7 @@ b{color: red;display: none;}
     border-width: 10px;
     border-color: grey;
     background: linear-gradient(to right, rgba(251, 208, 215,0.5), rgba(255, 71, 187,0.5));
-    position: absolute;
+    /* position: absolute; */
 }
 .ok:hover{
     background-color: rgb(255, 255, 255,1);
@@ -27,9 +31,6 @@ h3{
 }
 input{
     margin-bottom: 45px;
-}
-.knopka{
-    border: 2px solid red;
 }
 i{color: red;display: none;font-size: 15px;}
 /* form{display: none;} */
@@ -97,4 +98,7 @@ i{color: red;display: none;font-size: 15px;}
     }
     h1{font-size: 25px;}
     h3{font-size: 15px;}
+    .box{
+        height: 60px;
+    }
 }
