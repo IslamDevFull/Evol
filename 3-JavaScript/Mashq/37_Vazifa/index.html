@@ -5,6 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arrays</title>
+    <style>
+        div{
+            margin-top: 50px;
+        }
+        input{
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        button{
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <b style="margin-left: 70px;">Boshi</b>
@@ -14,19 +29,6 @@
     <input style="margin-left: 70px;" type="text" id="name1">
     <button onclick="fan()">try</button>
     <h2 id="demo"></h2>
-    <script>
-        fan();
-        function fan()
-        {
-            const cars = ["Matiz","Gentra","Nexia"];
-            let name = document.getElementById("name1").value;
-            let name2 = document.getElementById("name").value;
-            cars.push(name);
-            cars.unshift(name2);
-            document.getElementById("demo").innerHTML = cars;
-        } 
-
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
